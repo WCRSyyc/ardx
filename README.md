@@ -1,2 +1,11 @@
-# ardx
-Arduino Experimenters Kit extras
+# Arduino Experimenters Kit extras
+
+This repository holds additional circuits, code, and learning resources materials gathered and created by <a href="https://wcrsyyc.github.io">WCRS</a> for the Arduino Experimenter's (ARDX) Kit.  As far as I can tell, that was first developed by <a href="http:www.oomlout.com">Oomlout</a>.  Go to the <a href="https://wcrsyyc.github.io/ardx">web interface</a> to got both our additions and links directly to the oomlout supplied content.  Our interface is structured to both work and look like what they have already created.
+
+The kit, and many variations, is available from many locations.  Oomlout <a href="http://www.oomlout.com/a/distr/">has a page</a> with links to partners supplying the basic kits.  A web search for "arduino experimenters kit" will find those and more.  Some experimenter and starter kits have different component mixes, allowing different learning projects.  Not all of those have any sample circuits or code.  We hope to help that along here.
+
+We made a cloned version of the ARDX kit, without the fancy box or manual, available to people showing up for our Saturday morning (10:00AM until noon) gatherings at <a href = "http://www.asmac.ab.ca/">The Hanger Flight Museum</a> (formerly the Aerospace Museum of Calgary).  We have a few kits available for use there, or for sale to those that want to work on their own.
+
+Do you have a favourite component that needs to be accessed by an Arduino?  If so, drop us a note in the <a href="https://github.com/WCRSyyc/ardx/issues">issues</a> for this repository.  If we have access to the device, and some time, we'll try to come up with something.  For some things, the answer may be to use the code for something else.  The initial RGB LED blink circuit could be an example.  It was written for a common cathode RGB LED, but the circuit and code difference for common anode is trivial.
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/img/88x31.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="http://robotgames.com/" property="cc:attributionName" rel="cc:attributionURL">WCRSyyc</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

@@ -1,0 +1,152 @@
+/*
+ RGB_Blink
+ Cycle through colours on an RGB LED.
+
+ This example code is in the public domain.
+
+ This code is setup to cycle the colours for either a common cathode or a common
+ anode LED.  To switch the code from one to the other, it is only necessary to
+ change the lines initializing the COLOUR_ON and COLOUR_OFF values.  The circuit
+ difference is whether the common lead is connected to ground (for common
+ cathode), or the +5 (for common anode) line.  This has the effect of inverting
+ the LED states.  A HIGH signal turns on one colour of a common cathode RGB LED,
+ but a HIGH signal turns off one colour of a common anode RGB LED.  Reversing
+ the COLOUR_xxx values compensate for that.
+
+ modified 2016/12/01
+ by H. Phil Duby
+
+ Reference:
+ http://www.learningaboutelectronics.com/Articles/Common-cathode-RGB-LED-circuit.php
+ http://www.learningaboutelectronics.com/Articles/Common-anode-RGB-LED-circuit.php
+*/
+
+// Instead of specifying (and repeating) some common values in the actual code,
+// put them in variables with informative names at the beginning of the file,
+// then use the variables in sketch.  This can both make the code easier to
+// understand, and allow changes involving the named values much simpler.  They
+// would only need changing in one place.
+
+// Setup the values needed to turn an LED (colour) on and off.  To use a common
+// anode RGB LED, comment (add "//" to the start of) the next 2, and uncomment
+// (remove the "//" from) the following 2 lines.
+const unsigned int COLOUR_ON = HIGH; // for common cathode
+const unsigned int COLOUR_OFF = LOW;
+//const unsigned int COLOUR_ON = LOW; // for common anode
+//const unsigned int COLOUR_OFF = HIGH;
+
+// LED pin array colour index values
+const unsigned int RED = 0;
+const unsigned int GREEN = 1;
+const unsigned int BLUE = 2;
+
+// For the initial blink logic, any pins will work.  PWM capable pins were
+// selected, so that the same wiring can be used when using analogWrite to
+// using diming to 'make it better'.
+const unsigned int rgbPin[] = { 11 , 10 , 9 }; // pin numbers for Red, Green, and Blue
+// A *good* way to get the number of entries actually in an array
+const unsigned int rgbPinCount = sizeof ( rgbPin ) / sizeof ( unsigned int );
+
+// The time to show a single colour before changing to the next combination
+const unsigned long COLOUR_TIME = 500; // microseconds (0.5 seconds)
+
+
+void setup () {
+  // initialize all of the RGB control pins as outputs.
+  for ( unsigned int colour = 0; colour < rgbPinCount; colour++ ) {
+    pinMode ( rgbPin [ colour ] , OUTPUT );
+  }
+  // An alternate way to do the same thing
+//  pinMode ( rgb [ RED ]   , OUTPUT );
+//  pinMode ( rgb [ GREEN ] , OUTPUT );
+//  pinMode ( rgb [ BLUE ]  , OUTPUT );
+
+  // turn all of the led pins off (black) to start
+  digitalWrite ( rgbPin [ RED ]   , COLOUR_OFF );
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_OFF );
+  digitalWrite ( rgbPin [ BLUE ]  , COLOUR_OFF );
+}// ./void setup()
+
+void loop () {
+  cycleManual ();
+//  cycleRGBset ();
+}// ./void loop()
+
+
+/**
+ * Cycle through the RGB colours available when turning each colour either full
+ * on or full off, in all possible combinations.
+ *
+ * This version explictly turns each colour on and off as needed.
+ */
+void cycleManual () {
+  // Set RGB LED to Red
+  digitalWrite( rgbPin [ RED ]    , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to Green
+  digitalWrite ( rgbPin [ RED ]   , COLOUR_OFF );
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to Blue
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_OFF );
+  digitalWrite ( rgbPin [ BLUE ]  , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to Yellow ( RED + GREEN )
+  digitalWrite ( rgbPin [ BLUE ]  , COLOUR_OFF );
+  digitalWrite ( rgbPin [ RED ]   , COLOUR_ON );
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to Purple ( RED + BLUE )
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_OFF );
+  digitalWrite ( rgbPin [ BLUE ]  , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to Cyan ( GREEN + BLUE )
+  digitalWrite ( rgbPin [ RED ]   , COLOUR_OFF );
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to White ( RED + GREEN + BLUE )
+  digitalWrite ( rgbPin [ RED ]   , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to Black ( all off )
+  digitalWrite ( rgbPin [ RED ]   , COLOUR_OFF );
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_OFF );
+  digitalWrite ( rgbPin [ BLUE ]  , COLOUR_OFF );
+  delay ( COLOUR_TIME );
+}// ./void cycleManual ()
+
+
+/**
+ * Use a function to set the RGB colour, and wait.
+ */
+void cycleRGBset () {
+  setLedColour ( COLOUR_ON  , COLOUR_OFF , COLOUR_OFF ); // Red
+  setLedColour ( COLOUR_OFF , COLOUR_ON  , COLOUR_OFF ); // Green
+  setLedColour ( COLOUR_OFF , COLOUR_OFF , COLOUR_ON  ); // Blue
+  setLedColour ( COLOUR_ON  , COLOUR_ON  , COLOUR_OFF ); // Yellow
+  setLedColour ( COLOUR_ON  , COLOUR_OFF , COLOUR_ON  ); // Purple
+  setLedColour ( COLOUR_OFF , COLOUR_ON  , COLOUR_ON  ); // Cyan
+  setLedColour ( COLOUR_ON  , COLOUR_ON  , COLOUR_ON  ); // White
+  setLedColour ( COLOUR_OFF , COLOUR_OFF , COLOUR_OFF ); // Black
+}// ./void cycleRGBset ()
+
+
+/**
+ * set the RGB LED colour and wait for awhile
+ *
+ * @param red the ON/OFF state for the red LED
+ * @param green the ON/OFF state for the green LED
+ * @param blue the ON/OFF state for the blue LED
+ */
+void setLedColour ( const unsigned int red , const unsigned int green , const unsigned int blue ) {
+  digitalWrite ( rgbPin [ RED ]   , red );
+  digitalWrite ( rgbPin [ GREEN ] , green );
+  digitalWrite ( rgbPin [ BLUE ]  , blue );
+  delay ( COLOUR_TIME );
+}// ./void setLedColour ( const unsigned int red , const unsigned int green , const unsigned int blue )

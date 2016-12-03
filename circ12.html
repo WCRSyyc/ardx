@@ -1,0 +1,435 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-12[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit RGB LED circuit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<nav id="topnav">
+	<a id="logo" href="http://www.oomlout.com/oom.php/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="https://wcrsyyc.github.io">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<nav id="sidebar">
+	<section id="menu">
+		<ul>
+			<li><h2>PRODUCTS</h2>
+				<ul>
+					<li>
+						<a href="http://www.oomlout.com/a/products/ardx/"><h3>(ARDX)</h3>arduino experimentation kit</a>
+						<ul>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-01">
+								<h4>CIRC-01</h4>Blinking LED</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-02">
+								<h4>CIRC-02</h4>Multiple LEDs</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-03">
+								<h4>CIRC-03</h4>Transistors &amp; Motors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-04">
+								<h4>CIRC-04</h4>Servos</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-05">
+								<h4>CIRC-05</h4>74HC595 Shift Registers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-06">
+								<h4>CIRC-06</h4>Piezo Speaker</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-07">
+								<h4>CIRC-07</h4>Pushbuttons</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-08">
+								<h4>CIRC-08</h4>Potentiometers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-09">
+								<h4>CIRC-09</h4>Photo-Resistors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-10">
+								<h4>CIRC-10</h4>Temperature</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-11">
+								<h4>CIRC-11</h4>Relays</a></li>
+						</ul>
+					</li>
+					<li><a href="https://github.com/WCRSyyc/ardx/"><h3>(WCRS)</h3>ARDX additions</a>
+						<ul>
+							<li><a href="https://github.com/WCRSyyc/ardx/circ-12">
+								<h4>CIRC-12</h4>RGB LED blink</a></li>
+						</ul>
+					</li>
+					<li><a href="http://www.oomlout.com/oom.php/products/nedx/"><h3>(NEDX)</h3>netduino experimentation kit</a>
+						<ul>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-01">
+								<h4>NCIR-01</h4>Blinking LED</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-02">
+								<h4>NCIR-02</h4>Multiple LEDs</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-03">
+								<h4>NCIR-03</h4>Transistors &amp; Motors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-04">
+								<h4>NCIR-04</h4>Servos</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-05">
+								<h4>NCIR-05</h4>74HC595 Shift Registers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-06">
+								<h4>NCIR-06</h4>Piezo Speaker</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-07">
+								<h4>NCIR-07</h4>Pushbuttons</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-08">
+								<h4>NCIR-08</h4>Potentiometers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-09">
+								<h4>NCIR-09</h4>Photo-Resistors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-10">
+								<h4>NCIR-10</h4>Temperature</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-11">
+								<h4>NCIR-11</h4>Relays</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+			<img alt="Creative Commons License" style="border-width:0"
+				src="img/80x15.png"></a><br>
+		This work is licensed under a <a rel="license"
+			href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+			Attribution 4.0 International License</a>.
+	</section>
+</nav>
+
+<main id="circ-12">
+	<header>
+		<h1>CIRC<br/>12</h1>
+		<h2>.:LED Colours:.<br>.:single RGB LED:.</h2>
+		<img src="img/rgbled-100.jpg" width="100" height="100" alt="RGB LED">
+	</header>
+	<h2>(ARDX) .:Arduino Expermentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We're Doing</h2>
+		<p>We previously caused a single colour LED to blink. Now we will blink an
+		RGB LED in each of its possible (full brightness) colours. An RGB LED is
+		really 3 LEDs (Red, Green, Blue) in a single package.	Each can be turned on
+		(and off) separately.	With 3 LEDS, there are 8 possible states:</p>
+		<ol>
+			<li>Red off, Green off, Blue off (black)</li>
+			<li>Red off, Green off, Blue on (blue)</li>
+			<li>Red off, Green on, Blue off (green)</li>
+			<li>Red off, Green on, Blue on (cyan)</li>
+			<li>Red on, Green off, Blue off (red)</li>
+			<li>Red on, Green off, Blue on (purple)</li>
+			<li>Red on, Green on, Blue off (yellow)</li>
+			<li>Red on, Green on, Blue on (white)</li>
+		</ol>
+		<p>Along with controlling the LED, we look at some more programming methods
+		to keep your programs small, organized, and easier to change later.</p>
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="img/rgbled-36x60.png"
+						width="60" height="36" alt="rgb led"/></td>
+					<td>RGB LED<br/>Common Cathode<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="wire"/></td>
+					<td>Wire</td>
+					<td><img src="http://www.oomlout.com/parts/RES-561-60.png"
+						width="60" height="36" alt="resistor"/></td>
+					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>x3</td>
+				</tr>
+			</table>
+		</div>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink">
+			<image x="30" y="-55" height="400" width="400"
+				xlink:href="img/CIRC12-bb.svg"/>
+		</svg>
+		<div>
+			<h3>Schematic</h3>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink">
+				<image x="0" y="-57" height="150" width="160"
+					xlink:href="img/CIRC12-schem.svg"
+					transform="scale(1.3)"/>
+			</svg>
+		</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<p>Download the Code from ( <a
+			href="https://wcrsyyc.github.io/ardx/code/CIRC12-code.txt">
+			https://wcrsyyc.github.io/ardx/code/CIRC12-code.txt</a> )<br>
+			(and then copy the text and paste it into an empty Arduino Sketch)</p>
+		<pre>/*
+ RGB_Blink
+ Cycle through colours on an RGB LED.
+
+ This example code is in the public domain.
+
+ This code is setup to cycle the colours for either a common cathode or a common
+ anode LED.  To switch the code from one to the other, it is only necessary to
+ change the lines initializing the COLOUR_ON and COLOUR_OFF values.  The circuit
+ difference is whether the common lead is connected to ground (for common
+ cathode), or the +5 (for common anode) line.  This has the effect of inverting
+ the LED states.  A HIGH signal turns on one colour of a common cathode RGB LED,
+ but a HIGH signal turns off one colour of a common anode RGB LED.  Reversing
+ the COLOUR_xxx values compensate for that.
+
+ modified 2016/12/01
+ by H. Phil Duby
+
+ Reference:
+ http://www.learningaboutelectronics.com/Articles/Common-cathode-RGB-LED-circuit.php
+ http://www.learningaboutelectronics.com/Articles/Common-anode-RGB-LED-circuit.php
+*/
+
+// Instead of specifying (and repeating) some common values in the actual code,
+// put them in variables with informative names at the beginning of the file,
+// then use the variables in sketch.  This can both make the code easier to
+// understand, and allow changes involving the named values much simpler.  They
+// would only need changing in one place.
+
+// Setup the values needed to turn an LED (colour) on and off.  To use a common
+// anode RGB LED, comment (add "//" to the start of) the next 2, and uncomment
+// (remove the "//" from) the following 2 lines.
+const unsigned int COLOUR_ON = HIGH; // for common cathode
+const unsigned int COLOUR_OFF = LOW;
+//const unsigned int COLOUR_ON = LOW; // for common anode
+//const unsigned int COLOUR_OFF = HIGH;
+
+// LED pin array colour index values
+const unsigned int RED = 0;
+const unsigned int GREEN = 1;
+const unsigned int BLUE = 2;
+
+// For the initial blink logic, any pins will work.  PWM capable pins were
+// selected, so that the same wiring can be used when using analogWrite to
+// using diming to 'make it better'.
+const unsigned int rgbPin[] = { 11 , 10 , 9 }; // pin numbers for Red, Green, and Blue
+// A *good* way to get the number of entries actually in an array
+const unsigned int rgbPinCount = sizeof ( rgbPin ) / sizeof ( unsigned int );
+
+// The time to show a single colour before changing to the next combination
+const unsigned long COLOUR_TIME = 500; // microseconds (0.5 seconds)
+
+
+void setup () {
+  // initialize all of the RGB control pins as outputs.
+  for ( unsigned int colour = 0; colour < rgbPinCount; colour++ ) {
+    pinMode ( rgbPin [ colour ] , OUTPUT );
+  }
+  // An alternate way to do the same thing
+//  pinMode ( rgb [ RED ]   , OUTPUT );
+//  pinMode ( rgb [ GREEN ] , OUTPUT );
+//  pinMode ( rgb [ BLUE ]  , OUTPUT );
+
+  // turn all of the led pins off (black) to start
+  digitalWrite ( rgbPin [ RED ]   , COLOUR_OFF );
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_OFF );
+  digitalWrite ( rgbPin [ BLUE ]  , COLOUR_OFF );
+}// ./void setup()
+
+void loop () {
+  cycleManual ();
+//  cycleRGBset ();
+}// ./void loop()
+
+
+/**
+ * Cycle through the RGB colours available when turning each colour either full
+ * on or full off, in all possible combinations.
+ *
+ * This version explictly turns each colour on and off as needed.
+ */
+void cycleManual () {
+  // Set RGB LED to Red
+  digitalWrite( rgbPin [ RED ]    , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to Green
+  digitalWrite ( rgbPin [ RED ]   , COLOUR_OFF );
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to Blue
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_OFF );
+  digitalWrite ( rgbPin [ BLUE ]  , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to Yellow ( RED + GREEN )
+  digitalWrite ( rgbPin [ BLUE ]  , COLOUR_OFF );
+  digitalWrite ( rgbPin [ RED ]   , COLOUR_ON );
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to Purple ( RED + BLUE )
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_OFF );
+  digitalWrite ( rgbPin [ BLUE ]  , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to Cyan ( GREEN + BLUE )
+  digitalWrite ( rgbPin [ RED ]   , COLOUR_OFF );
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to White ( RED + GREEN + BLUE )
+  digitalWrite ( rgbPin [ RED ]   , COLOUR_ON );
+  delay ( COLOUR_TIME );
+
+  // Set RGB LED to Black ( all off )
+  digitalWrite ( rgbPin [ RED ]   , COLOUR_OFF );
+  digitalWrite ( rgbPin [ GREEN ] , COLOUR_OFF );
+  digitalWrite ( rgbPin [ BLUE ]  , COLOUR_OFF );
+  delay ( COLOUR_TIME );
+}// ./void cycleManual ()
+
+
+/**
+ * Use a function to set the RGB colour, and wait.
+ */
+void cycleRGBset () {
+  setLedColour ( COLOUR_ON  , COLOUR_OFF , COLOUR_OFF ); // Red
+  setLedColour ( COLOUR_OFF , COLOUR_ON  , COLOUR_OFF ); // Green
+  setLedColour ( COLOUR_OFF , COLOUR_OFF , COLOUR_ON  ); // Blue
+  setLedColour ( COLOUR_ON  , COLOUR_ON  , COLOUR_OFF ); // Yellow
+  setLedColour ( COLOUR_ON  , COLOUR_OFF , COLOUR_ON  ); // Purple
+  setLedColour ( COLOUR_OFF , COLOUR_ON  , COLOUR_ON  ); // Cyan
+  setLedColour ( COLOUR_ON  , COLOUR_ON  , COLOUR_ON  ); // White
+  setLedColour ( COLOUR_OFF , COLOUR_OFF , COLOUR_OFF ); // Black
+}// ./void cycleRGBset ()
+
+
+/**
+ * set the RGB LED colour and wait for awhile
+ *
+ * @param red the ON/OFF state for the red LED
+ * @param green the ON/OFF state for the green LED
+ * @param blue the ON/OFF state for the blue LED
+ */
+void setLedColour ( const unsigned int red , const unsigned int green , const unsigned int blue ) {
+  digitalWrite ( rgbPin [ RED ]   , red );
+  digitalWrite ( rgbPin [ GREEN ] , green );
+  digitalWrite ( rgbPin [ BLUE ]  , blue );
+  delay ( COLOUR_TIME );
+}// ./void setLedColour ( const unsigned int red , const unsigned int green , const unsigned int blue )
+		</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>3 things to try</span></h2>
+		<div>
+			<h3>The LED does not light</h3>
+			<p>It is easy to insert the LED backwards.	Check that it is inserted the
+				right way around. The longest lead is common.</p>
+			<p>The schematic and wiring diagram are for a common cathode RGB LED.	If
+				using a common anode device, connect the common lead to +5V instead of
+				GND.</p>
+		</div>
+		<div>
+			<h3>The colour sequence is wrong</h3>
+			<p>The example code is for a common cathode RGB LED.	If using a common
+				anode device, change the <code>COLOUR_ON</code> and
+				<code>COLOUR_OFF</code> initialization to:</p>
+			<pre>
+COLOUR_ON = LOW;
+COLOUR_OFF = HIGH;</pre>
+		</div>
+		<div>
+			<h3>Blue and Green light in reverse order</h3>
+			<p>Some RGB LEDs may have the pins that control the Blue and Green LEDs
+				reversed.	Either reverse the wires for pins 9 and 10, or change the
+				rgbPin array from { 11 , 10 , 9 } to { 11 , 9 , 10 }.	Either change
+				will fix the problem.</p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>Use colour setting function</h3>
+		<p>In the <code>loop()</code> function there are 2 lines.	The last starts
+			with <code>'//'</code>. This means the line is treated as a comment (not
+			run).	To switch the sketch to use the colour setting function, change the
+			<code>void loop()</code> code to:</p>
+		<pre>
+//	cycleManual ();
+	cycleRGBset ();</pre>
+		<p>Upload the sketch, and notice that nothing has changed. Each function
+			does the same thing, but uses different approaches (hint: the second
+			one calls another function to set all of the RGB LED pins).
+		<h4>Discussion</h4>
+		<p>The <code>setLedColour()</code> function always sets all 3 leds, whether
+			they are already correct or not.	However, using it also makes the code
+			easier to read, and simpler to change.	To change the order of the
+			displayed colours, it is only necessary to change the order of the
+			<code>setLedColour()</code> calls in <code>cycleRGBset()</code>.	There is
+			no need to consider how the previous colour left the pins set, or what the
+			following colour expects.</p>
+		<h3>Array of colour patterns</h3>
+		<p>Store the colour combinations in an array, then call
+			<code>setLedColour()</code> with the combinations, one after the other.
+			This becomes a flexible way to animate fairly long sequences of colours.</p>
+		<p>First, create an array to
+			hold the colour combinations.	At the top of the file, just after
+			<code>rgbPinCount</code> is initialized, add:</p>
+		<pre>
+unsigned const int pattern [][ 3 ] = {
+	{ COLOUR_ON	, COLOUR_OFF , COLOUR_OFF },
+	{ COLOUR_OFF , COLOUR_OFF , COLOUR_OFF },
+};
+unsigned const int patternCount = sizeof ( pattern ) / ( sizeof ( pattern [ 0 ]));</pre>
+		<p>That is a 2 dimensional array.	Think of it as a table, or an array where
+			each entry in the array is another array.	In this case, the main array
+			contains patterns, and each pattern is an array of colour settings.	The
+			array will be expanded a bit later, but this is enough to setup the rest
+			of the needed code.</p>
+		<p>Now, comment out both existing lines in <code>void loop()</code>, and
+			add:</p>
+		<pre>
+	rgbAnimage ();</pre>
+		<p>Finally, after the end of <code>void loop()</code>, create the
+			<code>rgbAnimage ()</code> function:</p>
+		<pre>
+void rgbAnimate () {
+	for ( unsigned int ptn = 0; ptn < patternCount; ptn++ ) {
+		setLedColour (
+			pattern [ ptn ][ RED ] ,
+			pattern [ ptn ][ GREEN ] ,
+			pattern [ ptn ][ BLUE ]);
+	}
+}</pre>
+		<p>That is enough to be able to load the new program.	It won't do much yet.
+			It just blinks the red LED.	To get something more to see, add some more
+			patterns to the array.	Each pattern needs to be an array of the 3 colour
+			settings <code>{ RED_setting, GREEN_setting, BLUE_setting },</code></p>
+		<p>Don't forget the comma after each set of colours.	To get the same pattern
+			as was seen initially, the patterns need to be the same as the values
+			passed to <code>setLedColour ()</code> in <code>cycleRGBset ()</code>.</p>
+		<p>IDEA: changing the value of <code>COLOUR_TIME</code> will change the
+			cycling speed for any of the versions.</p>
+		<p>IDEA: to get real colour <strong>blinking</strong>, make every other colour in
+			the pattern black (all colours OFF).</p>
+		<h3>External References</h3>
+		<ul>
+			<li><a href="https://cdn-learn.adafruit.com/downloads/pdf/adafruit-arduino-lesson-3-rgb-leds.pdf">Adafruit RGB lesson</a></li>
+		</ul>
+	</section>
+</main>
+
+		<footer>.: Welcome to the Bottom:.</footer>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-«circuit_number»[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit «description» circuit">
+#include «head.html»
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+#include «topnav.html»
+
+#include «sidebar.html»
+
+<main id="circ-«circuit_name»">
+	<header>
+		<h1>CIRC<br/>«circuit_number»</h1>
+		<h2>.:«title_line_1»:.<br>.:«title_line_2»:.</h2>
+		<img src="img/«circuit_name»-100.jpg" width="100" height="100" alt="«circuit_alt»">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We're Doing</h2>
+		<p>«whatDoing»</p>
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="wire"/></td>
+					<td>Wire</td>
+					<td><img src="http://www.oomlout.com/parts/RES-561-60.png"
+						width="60" height="36" alt="resistor"/></td>
+					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>x3</td>
+				</tr>
+			</table>
+		</div>
+		<svg
+		xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink">
+		<image x="40" y="-55" height="400" width="400"
+		xlink:href="img/CIRC«circuit_number»-bb.svg"/>
+	</svg>
+	<div>
+		<h3>Schematic</h3>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink">
+			<image x="0" y="0" height="150" width="160"
+				xlink:href="img/CIRC«circuit_number»-schem.svg"
+				transform="scale(1.5)"/>
+		</svg>
+	</div>
+	<div>
+		<h3>Resources</h3>
+	</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<p>Download the Code from ( <a
+			href="https://wcrsyyc.github.io/ardx/code/CIRC«circuit_number»-code.txt">
+			https://wcrsyyc.github.io/ardx/code/CIRC«circuit_number»-code.txt</a> )<br>
+			(and then copy the text and paste it into an empty Arduino Sketch)</p>
+		<pre>«raw_code»
+		</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>«nw_count» things to try</span></h2>
+		<div>
+			<h3>«nw_title»</h3>
+			<p>«nw_description»</p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>«mb_title»</h3>
+		<p>«mb_description»</p>
+	</section>
+</main>
+
+		<footer>.: Welcome to the Bottom:.</footer>
+	</body>
+</html>
