@@ -366,8 +366,8 @@ COLOUR_OFF = HIGH;</pre>
 			run).	To switch the sketch to use the colour setting function, change the
 			<code>void loop()</code> code to:</p>
 		<pre>
-//	cycleManual ();
-	cycleRGBset ();</pre>
+//  cycleManual ();
+  cycleRGBset ();</pre>
 		<p>Upload the sketch, and notice that nothing has changed. Each function
 			does the same thing, but uses different approaches (hint: the second
 			one calls another function to set all of the RGB LED pins).
@@ -388,8 +388,8 @@ COLOUR_OFF = HIGH;</pre>
 			<code>rgbPinCount</code> is initialized, add:</p>
 		<pre>
 unsigned const int pattern [][ 3 ] = {
-	{ COLOUR_ON	, COLOUR_OFF , COLOUR_OFF },
-	{ COLOUR_OFF , COLOUR_OFF , COLOUR_OFF },
+  { COLOUR_ON	, COLOUR_OFF , COLOUR_OFF },
+  { COLOUR_OFF , COLOUR_OFF , COLOUR_OFF },
 };
 unsigned const int patternCount = sizeof ( pattern ) / ( sizeof ( pattern [ 0 ]));</pre>
 		<p>That is a 2 dimensional array.	Think of it as a table, or an array where
@@ -400,17 +400,17 @@ unsigned const int patternCount = sizeof ( pattern ) / ( sizeof ( pattern [ 0 ])
 		<p>Now, comment out both existing lines in <code>void loop()</code>, and
 			add:</p>
 		<pre>
-	rgbAnimage ();</pre>
+  rgbAnimate ();</pre>
 		<p>Finally, after the end of <code>void loop()</code>, create the
-			<code>rgbAnimage ()</code> function:</p>
+			<code>rgbAnimate ()</code> function:</p>
 		<pre>
 void rgbAnimate () {
-	for ( unsigned int ptn = 0; ptn < patternCount; ptn++ ) {
-		setLedColour (
-			pattern [ ptn ][ RED ] ,
-			pattern [ ptn ][ GREEN ] ,
-			pattern [ ptn ][ BLUE ]);
-	}
+  for ( unsigned int ptn = 0; ptn < patternCount; ptn++ ) {
+    setLedColour (
+      pattern [ ptn ][ RED ] ,
+      pattern [ ptn ][ GREEN ] ,
+      pattern [ ptn ][ BLUE ]);
+  }
 }</pre>
 		<p>That is enough to be able to load the new program.	It won't do much yet.
 			It just blinks the red LED.	To get something more to see, add some more
