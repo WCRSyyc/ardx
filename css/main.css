@@ -428,6 +428,28 @@ main p {
 /* ==========================================================================
  Page specific styling
  ========================================================================== */
+main#preface h1 {
+  width: 400px;
+  text-align: left;
+  padding-left: 0.7rem;
+}
+main#preface h3 {
+  text-align: center;
+  margin: 0;
+}
+main#preface h4 {
+  text-align: center;
+  margin: 0;
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+main#preface p:last-child {
+  margin-top: 0.4rem;
+}
+main#preface #oomlout p {
+  text-align: center;
+}
+
 main#index h1 {
   width: auto;
   color: #444;
