@@ -126,7 +126,7 @@
 	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
 	<section>
 		<h2>Arduino Programming in Brief</h2>
-		<p>The Arduino is programmed in the C language. This is a quick little primer targeted at people who have a little bit of programing experience and just need a briefing on the idiosyncracies of C and the Arduino IDE. If you find the concepts a bit daunting, don't worry, you can start going through the circuits and pick up most of it along the way. For a more in-depth intro, the <a href="http://arduino.cc">Arduino.cc</a> website is a great resource.</p>
+		<p>The Arduino is programmed in the C language. This is a quick little primer targeted at people who have a little bit of programing experience and just need a briefing on the idiosyncracies of C and the Arduino IDE. If you find the concepts a bit daunting, don't worry, you can start going through the circuits and pick up most of it along the way. For a more in-depth intro, the <a rel="external" href="http://arduino.cc">Arduino.cc</a> website is a great resource.</p>
 	</section>
 	<section>
 		<h2>Structure</h2>
@@ -134,11 +134,11 @@
 			<p>Each Arduino program (often called a sketch) has two required functions (also called routines, or subroutines).</p>
 		</div>
 		<div>
-			<h3><code>void setup () { }</code></h3>
+			<h3><code>void <a rel="help" href="https://www.arduino.cc/en/Reference/Setup">setup</a> () { }</code></h3>
 			<p>All the code between the two curly brackets will be run once when your Arduino program first runs.</p>
 		</div>
 		<div>
-			<h3><code>void loop () { }</code></h3>
+			<h3><code>void <a rel="help" href="https://www.arduino.cc/en/Reference/Loop">loop</a> () { }</code></h3>
 			<p>This function is run after setup has finished. After it has run once it will be run again, and again, until power is removed.</p>
 		</div>
 	</section>
@@ -148,19 +148,19 @@
 			<p>One of the slightly frustrating elements of C is its formatting requirements (this also makes it very powerful). If you remember the following you should be alright.</p>
 		</div>
 		<div>
-			<h3><code>//</code> (single line comment)</h3>
+			<h3><a rel="help" href="https://www.arduino.cc/en/Reference/Comments"><code>//</code></a> (single line comment)</h3>
 			<p>It is often useful to write notes to yourself as you go along about what each line of code does. To do this type two forward slashes and everything until the end of the line will be ignored by your program.</p>
 		</div>
 		<div>
-			<h3><code>/*  */</code> (multi line comment)</h3>
+			<h3><a rel="help" href="https://www.arduino.cc/en/Reference/Comments"><code>/*  */</code></a> (multi line comment)</h3>
 			<p>If you have a lot to say you can span several lines as a comment. Everything between these two symbols will be ignored in your program.</p>
 		</div>
 		<div class="clearhere">
-			<h3><code>{ }</code> (curly brackets)</h3>
+			<h3><a rel="help" href="https://www.arduino.cc/en/Reference/Braces"><code>{ }</code></a> (curly brackets)</h3>
 			<p>Used to define when a block of code starts and ends (used in functions as well as loops).</p>
 		</div>
 		<div>
-			<h3><code>;</code> (semicolon)</h3>
+			<h3><a rel="help" href="https://www.arduino.cc/en/Reference/SemiColon"><code>;</code></a> (semicolon)</h3>
 			<p>Each line of code must be ended with a semicolon (a missing semicolon is often the reason for a program refusing to compile).</p>
 		</div>
 	</section>
@@ -170,23 +170,23 @@
 			<p>A program is nothing more than instructions to move numbers around in an intelligent way. Variables are used to do the moving.</p>
 		</div>
 		<div>
-			<h3><code>int</code> (integer)</h3>
+			<h3><a rel="help" href="https://www.arduino.cc/en/Reference/Int"><code>int</code></a> (integer)</h3>
 			<p>The main workhorse, stores a number in 2 bytes (16 bits). Has no decimal places and will store a value between -32,768 and 32,767.</p>
 		</div>
 		<div>
-			<h3><code>long</code> (long)</h3>
+			<h3><a rel="help" href="https://www.arduino.cc/en/Reference/Long"><code>long</code></a> (long)</h3>
 			<p>Used when an integer is not large enough. Takes 4 bytes (32 bits) of RAM and has a range between -2,147,483,648 and 2,147,483,647.</p>
 		</div>
 		<div class="clearhere">
-			<h3><code>boolean</code> (boolean)</h3>
+			<h3><a rel="help" href="https://www.arduino.cc/en/Reference/BooleanVariables"><code>boolean</code></a> (boolean)</h3>
 			<p>A simple True or False variable. Useful because it only uses 8 bits of RAM.</p>
 		</div>
 		<div>
-			<h3><code>float</code> (float)</h3>
+			<h3><a rel="help" href="https://www.arduino.cc/en/Reference/Float"><code>float</code></a> (float)</h3>
 			<p>Used for floating point math (decimals). Takes 4 bytes (32 bits) of RAM and has a range between -3.4028235E+38 and 3.4028235E+38.</p>
 		</div>
 		<div>
-			<h3><code>char</code> (character)</h3>
+			<h3><a rel="help" href="https://www.arduino.cc/en/Reference/Char"><code>char</code></a> (character)</h3>
 			<p>Stores one character using the ASCII code (ie 'A' = 65). Uses one byte (8 bits) of RAM. The Arduino handles strings as an array of char’s.</p>
 		</div>
 	</section>
@@ -196,17 +196,17 @@
 			<p>Operators used for manipulating numbers. (they work like simple math).</p>
 		</div>
 		<dl>
-			<dt>=</dt>
+			<dt><a rel="help" href="https://www.arduino.cc/en/Reference/Assignment">=</a></dt>
 			<dd>(assignment)  makes something equal to something else (eg. x = 10 * 2 (x now equals 20))</dd>
-			<dt>%</dt>
+			<dt><a rel="help" href="https://www.arduino.cc/en/Reference/Modulo">%</a></dt>
 			<dd>(modulo)  gives the remainder when one number is divided by another (ex. 12 % 10 (gives 2))</dd>
-			<dt>+</dt>
+			<dt><a rel="help" href="https://www.arduino.cc/en/Reference/Arithmetic">+</a></dt>
 			<dd>(addition)</dd>
-			<dt>-</dt>
+			<dt><a rel="help" href="https://www.arduino.cc/en/Reference/Arithmetic">-</a></dt>
 			<dd>(subtraction)</dd>
-			<dt>*</dt>
+			<dt><a rel="help" href="https://www.arduino.cc/en/Reference/Arithmetic">*</a></dt>
 			<dd>(multiplication)</dd>
-			<dt>/</dt>
+			<dt><a rel="help" href="https://www.arduino.cc/en/Reference/Arithmetic">/</a></dt>
 			<dd>(division)</dd>
 		</dl>
 	</section>
@@ -216,14 +216,14 @@
 			<p>Operators used for logical comparison.</p>
 		</div>
 		<dl>
-			<dt>==</dt>
+			<dt><a rel="help" href="https://www.arduino.cc/en/Reference/If">==</a></dt>
 			<dd>(equal to) <span>(eg. 12 == 10 is FALSE or 12 == 12 is TRUE)</span></dd>
-			<dt>!=</dt>
+			<dt><a rel="help" href="https://www.arduino.cc/en/Reference/If">!=</a></dt>
 			<dd>(not equal to) <span>(eg. 12 != 10 is TRUE or 12 != 12 is FALSE)</span></dd>
-			<dt>&lt;</dt>
-			<dd>(less than) V(eg. 12 < 10 is FALSE or 12 < 12 is FALSE or 12 < 14 is TRUE)</span></dd>
-			<dt>></dt>
-			<dd>(greater than) <span>(eg. 12 > 10 is TRUE or 12 > 12 is FALSE or 12 > 14 is FALSE)<span>/</dd>
+			<dt><a rel="help" href="https://www.arduino.cc/en/Reference/If">&lt;</a></dt>
+			<dd>(less than) (eg. 12 &lt; 10 is FALSE or 12 &lt; 12 is FALSE or 12 &lt; 14 is TRUE)</dd>
+			<dt><a rel="help" href="https://www.arduino.cc/en/Reference/If">></a></dt>
+			<dd>(greater than) <span>(eg. 12 > 10 is TRUE or 12 > 12 is FALSE or 12 > 14 is FALSE)</span></dd>
 		</dl>
 	</section>
 	<section>
@@ -232,26 +232,26 @@
 			<p>Programs are reliant on controlling what runs next, here are the basic control elements (there are many more online).</p>
 		</div>
 		<div>
-			<h3><code>if(condition){ }<br>else if( condition ){ }<br>else { }</code></h3>
+			<h3><code><a rel="help" href="https://www.arduino.cc/en/Reference/If">if</a>(condition){ }<br><a rel="help" href="https://www.arduino.cc/en/Reference/Else">else if</a>( condition ){ }<br><a rel="help" href="https://www.arduino.cc/en/Reference/Else">else</a> { }</code></h3>
 			<p>This will execute the code between the curly brackets if the condition is true, and if not it will test the else if condition if that is also false the else code will execute.</p>
 		</div>
 		<div>
-			<h3><code>for(int i = 0; i < #repeats; i++){ }</code></h3>
+			<h3><code><a rel="help" href="https://www.arduino.cc/en/Reference/For">for</a>(int i = 0; i &lt; #repeats; i++){ }</code></h3>
 			<p>Used when you would like to repeat a chunk of code a number of times (can count up <code>i++</code> or down <code>i--</code> or use any variable)</p>
 		</div>
 	</section>
 	<section>
 		<h2>Digital</h2>
 		<div>
-			<h3><code>pinMode(pin, mode);</code></h3>
+			<h3><code><a rel="help" href="https://www.arduino.cc/en/Reference/PinMode">pinMode</a>(pin, mode);</code></h3>
 			<p>Used to set a pin's mode, pin is the pin number you would like to address 0-19 (analog 0-5 are 14-19). The mode can either INPUT, INPUT_PULLUP, or OUTPUT.</p>
 		</div>
 		<div>
-			<h3><code>digitalWrite(pin, val);</code></h3>
+			<h3><code><a rel="help" href="https://www.arduino.cc/en/Reference/DigitalWrite">digitalWrite</a>(pin, val);</code></h3>
 			<p>Once a pin is set as an OUTPUT, it can be set either HIGH (pulled to +5 volts) or LOW (pulled to ground).</p>
 		</div>
 		<div>
-			<h3><code>int digitalRead(pin);</code></h3>
+			<h3><code>int <a rel="help" href="https://www.arduino.cc/en/Reference/DigitalRead">digitalRead</a>(pin);</code></h3>
 			<p>Once a pin is set as an INPUT or INPUT_PULLUP you can use this to return whether it is HIGH (pulled to +5 volts) or LOW (pulled to ground).</p>
 		</div>
 	</section>
@@ -261,16 +261,16 @@
 			<p>The Arduino is a digital machine but it has the ability to operate in the analog realm (through tricks). Here's how to deal with things that aren't digital.</p>
 		</div>
 		<div>
-			<h3><code>int analogWrite(pin, value);</code></h3>
+			<h3><code>int <a rel="help" href="https://www.arduino.cc/en/Reference/AnalogWrite">analogWrite</a>(pin, value);</code></h3>
 			<p>Some of the Arduino's pins support pulse width modulation (3, 5, 6, 9, 10, 11). This turns the pin on and off very quickly making it act like an analog output. The value is any number between 0 (0% duty cycle ~0v) and 255 (100% duty cycle ~5 volts).</p>
 		</div>
 		<div>
-			<h3><code>int analogRead(pin);</code></h3>
+			<h3><code>int <a rel="help" href="https://www.arduino.cc/en/Reference/AnalogRead">analogRead</a>(pin);</code></h3>
 			<p>When the analog input pins are set to input you can read their voltage. A value between 0 (for 0 volts) and 1023 (for 5 volts) will be returned.</p>
 		</div>
 	</section>
 </main>
 
-		<footer>.:For a full programming reference visit:.<br><a href="http://ardx.org/PROG">http://ardx.org/PROG</a></footer>
+		<footer>.:For a full programming reference visit:.<br><a rel="external" href="https://www.arduino.cc/en/Reference/HomePage">http://ardx.org/PROG</a></footer>
 	</body>
 </html>
