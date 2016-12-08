@@ -1,0 +1,276 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:primer[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit Programming Primer">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="https://wcrsyyc.github.io/ardx/">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<nav id="sidebar">
+	<section id="menu">
+		<ul>
+			<li><h2>PRODUCTS</h2>
+				<ul>
+					<li>
+						<a href="http://www.oomlout.com/a/products/ardx/"><h3>(ARDX)</h3>arduino experimenter´s kit</a>
+						<ul>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-01">
+								<h4>CIRC-01</h4>Blinking LED</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-02">
+								<h4>CIRC-02</h4>Multiple LEDs</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-03">
+								<h4>CIRC-03</h4>Transistors &amp; Motors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-04">
+								<h4>CIRC-04</h4>Servos</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-05">
+								<h4>CIRC-05</h4>74HC595 Shift Registers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-06">
+								<h4>CIRC-06</h4>Piezo Speaker</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-07">
+								<h4>CIRC-07</h4>Pushbuttons</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-08">
+								<h4>CIRC-08</h4>Potentiometers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-09">
+								<h4>CIRC-09</h4>Photo-Resistors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-10">
+								<h4>CIRC-10</h4>Temperature</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-11">
+								<h4>CIRC-11</h4>Relays</a></li>
+						</ul>
+					</li>
+					<li><a href="https://github.com/WCRSyyc/ardx/"><h3>(WCRS)</h3>ARDX additions</a>
+						<ul>
+							<li><a href="https://wcrsyyc.github.io/ardx/preface.html">
+								<h4>ABOUT</h4>A Few Words</a></li>
+							<!-- <li><a href="https://wcrsyyc.github.io/ardx/assembling.html">
+								<h4>ABOUT</h4>Putting It Together</a></li> -->
+							<li><a href="https://wcrsyyc.github.io/ardx/programming.html">
+								<h4>PROG</h4>Programming Primer</a></li>
+							<li><a href="https://wcrsyyc.github.io/ardx/circ12.html">
+								<h4>CIRC-12</h4>RGB LED blink</a></li>
+						</ul>
+					</li>
+					<li><a href="http://www.oomlout.com/oom.php/products/nedx/"><h3>(NEDX)</h3>netduino experimenter´s kit</a>
+						<ul>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-01">
+								<h4>NCIR-01</h4>Blinking LED</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-02">
+								<h4>NCIR-02</h4>Multiple LEDs</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-03">
+								<h4>NCIR-03</h4>Transistors &amp; Motors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-04">
+								<h4>NCIR-04</h4>Servos</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-05">
+								<h4>NCIR-05</h4>74HC595 Shift Registers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-06">
+								<h4>NCIR-06</h4>Piezo Speaker</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-07">
+								<h4>NCIR-07</h4>Pushbuttons</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-08">
+								<h4>NCIR-08</h4>Potentiometers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-09">
+								<h4>NCIR-09</h4>Photo-Resistors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-10">
+								<h4>NCIR-10</h4>Temperature</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-11">
+								<h4>NCIR-11</h4>Relays</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+			<img alt="Creative Commons License" style="border-width:0"
+				src="img/80x15.png"></a><br>
+		This work is licensed under a <a rel="license"
+			href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+			Attribution 4.0 International License</a>.
+	</section>
+</nav>
+
+<main id="prog" class="infoblock">
+	<header>
+		<h1>PROG<br/>programming primer</h1>
+		<h2>.:A Small Programming Primer:.</h2>
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>Arduino Programming in Brief</h2>
+		<p>The Arduino is programmed in the C language. This is a quick little primer targeted at people who have a little bit of programing experience and just need a briefing on the idiosyncracies of C and the Arduino IDE. If you find the concepts a bit daunting, don't worry, you can start going through the circuits and pick up most of it along the way. For a more in-depth intro, the <a href="http://arduino.cc">Arduino.cc</a> website is a great resource.</p>
+	</section>
+	<section>
+		<h2>Structure</h2>
+		<div>
+			<p>Each Arduino program (often called a sketch) has two required functions (also called routines, or subroutines).</p>
+		</div>
+		<div>
+			<h3><code>void setup () { }</code></h3>
+			<p>All the code between the two curly brackets will be run once when your Arduino program first runs.</p>
+		</div>
+		<div>
+			<h3><code>void loop () { }</code></h3>
+			<p>This function is run after setup has finished. After it has run once it will be run again, and again, until power is removed.</p>
+		</div>
+	</section>
+	<section>
+		<h2>Syntax</h2>
+		<div>
+			<p>One of the slightly frustrating elements of C is its formatting requirements (this also makes it very powerful). If you remember the following you should be alright.</p>
+		</div>
+		<div>
+			<h3><code>//</code> (single line comment)</h3>
+			<p>It is often useful to write notes to yourself as you go along about what each line of code does. To do this type two forward slashes and everything until the end of the line will be ignored by your program.</p>
+		</div>
+		<div>
+			<h3><code>/*  */</code> (multi line comment)</h3>
+			<p>If you have a lot to say you can span several lines as a comment. Everything between these two symbols will be ignored in your program.</p>
+		</div>
+		<div class="clearhere">
+			<h3><code>{ }</code> (curly brackets)</h3>
+			<p>Used to define when a block of code starts and ends (used in functions as well as loops).</p>
+		</div>
+		<div>
+			<h3><code>;</code> (semicolon)</h3>
+			<p>Each line of code must be ended with a semicolon (a missing semicolon is often the reason for a program refusing to compile).</p>
+		</div>
+	</section>
+	<section>
+		<h2>Variables</h2>
+		<div>
+			<p>A program is nothing more than instructions to move numbers around in an intelligent way. Variables are used to do the moving.</p>
+		</div>
+		<div>
+			<h3><code>int</code> (integer)</h3>
+			<p>The main workhorse, stores a number in 2 bytes (16 bits). Has no decimal places and will store a value between -32,768 and 32,767.</p>
+		</div>
+		<div>
+			<h3><code>long</code> (long)</h3>
+			<p>Used when an integer is not large enough. Takes 4 bytes (32 bits) of RAM and has a range between -2,147,483,648 and 2,147,483,647.</p>
+		</div>
+		<div class="clearhere">
+			<h3><code>boolean</code> (boolean)</h3>
+			<p>A simple True or False variable. Useful because it only uses 8 bits of RAM.</p>
+		</div>
+		<div>
+			<h3><code>float</code> (float)</h3>
+			<p>Used for floating point math (decimals). Takes 4 bytes (32 bits) of RAM and has a range between -3.4028235E+38 and 3.4028235E+38.</p>
+		</div>
+		<div>
+			<h3><code>char</code> (character)</h3>
+			<p>Stores one character using the ASCII code (ie 'A' = 65). Uses one byte (8 bits) of RAM. The Arduino handles strings as an array of char’s.</p>
+		</div>
+	</section>
+	<section>
+		<h2>Math Operators</h2>
+		<div>
+			<p>Operators used for manipulating numbers. (they work like simple math).</p>
+		</div>
+		<dl>
+			<dt>=</dt>
+			<dd>(assignment)  makes something equal to something else (eg. x = 10 * 2 (x now equals 20))</dd>
+			<dt>%</dt>
+			<dd>(modulo)  gives the remainder when one number is divided by another (ex. 12 % 10 (gives 2))</dd>
+			<dt>+</dt>
+			<dd>(addition)</dd>
+			<dt>-</dt>
+			<dd>(subtraction)</dd>
+			<dt>*</dt>
+			<dd>(multiplication)</dd>
+			<dt>/</dt>
+			<dd>(division)</dd>
+		</dl>
+	</section>
+	<section>
+		<h2>Comparison Operators</h2>
+		<div>
+			<p>Operators used for logical comparison.</p>
+		</div>
+		<dl>
+			<dt>==</dt>
+			<dd>(equal to) <span>(eg. 12 == 10 is FALSE or 12 == 12 is TRUE)</span></dd>
+			<dt>!=</dt>
+			<dd>(not equal to) <span>(eg. 12 != 10 is TRUE or 12 != 12 is FALSE)</span></dd>
+			<dt>&lt;</dt>
+			<dd>(less than) V(eg. 12 < 10 is FALSE or 12 < 12 is FALSE or 12 < 14 is TRUE)</span></dd>
+			<dt>></dt>
+			<dd>(greater than) <span>(eg. 12 > 10 is TRUE or 12 > 12 is FALSE or 12 > 14 is FALSE)<span>/</dd>
+		</dl>
+	</section>
+	<section>
+		<h2>Control Structure</h2>
+		<div>
+			<p>Programs are reliant on controlling what runs next, here are the basic control elements (there are many more online).</p>
+		</div>
+		<div>
+			<h3><code>if(condition){ }<br>else if( condition ){ }<br>else { }</code></h3>
+			<p>This will execute the code between the curly brackets if the condition is true, and if not it will test the else if condition if that is also false the else code will execute.</p>
+		</div>
+		<div>
+			<h3><code>for(int i = 0; i < #repeats; i++){ }</code></h3>
+			<p>Used when you would like to repeat a chunk of code a number of times (can count up <code>i++</code> or down <code>i--</code> or use any variable)</p>
+		</div>
+	</section>
+	<section>
+		<h2>Digital</h2>
+		<div>
+			<h3><code>pinMode(pin, mode);</code></h3>
+			<p>Used to set a pin's mode, pin is the pin number you would like to address 0-19 (analog 0-5 are 14-19). The mode can either INPUT, INPUT_PULLUP, or OUTPUT.</p>
+		</div>
+		<div>
+			<h3><code>digitalWrite(pin, val);</code></h3>
+			<p>Once a pin is set as an OUTPUT, it can be set either HIGH (pulled to +5 volts) or LOW (pulled to ground).</p>
+		</div>
+		<div>
+			<h3><code>int digitalRead(pin);</code></h3>
+			<p>Once a pin is set as an INPUT or INPUT_PULLUP you can use this to return whether it is HIGH (pulled to +5 volts) or LOW (pulled to ground).</p>
+		</div>
+	</section>
+	<section>
+		<h2>Analog</h2>
+		<div>
+			<p>The Arduino is a digital machine but it has the ability to operate in the analog realm (through tricks). Here's how to deal with things that aren't digital.</p>
+		</div>
+		<div>
+			<h3><code>int analogWrite(pin, value);</code></h3>
+			<p>Some of the Arduino's pins support pulse width modulation (3, 5, 6, 9, 10, 11). This turns the pin on and off very quickly making it act like an analog output. The value is any number between 0 (0% duty cycle ~0v) and 255 (100% duty cycle ~5 volts).</p>
+		</div>
+		<div>
+			<h3><code>int analogRead(pin);</code></h3>
+			<p>When the analog input pins are set to input you can read their voltage. A value between 0 (for 0 volts) and 1023 (for 5 volts) will be returned.</p>
+		</div>
+	</section>
+</main>
+
+		<footer>.:For a full programming reference visit:.<br><a href="http://ardx.org/PROG">http://ardx.org/PROG</a></footer>
+	</body>
+</html>

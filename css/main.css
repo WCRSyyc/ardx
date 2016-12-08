@@ -401,6 +401,7 @@ main p {
   font-weight: bold;
   line-height: 1.4;
 }
+.infoblock section > div,
 #CIRC-notworking > div {
   float: left;
   width: 13.2rem;
@@ -423,6 +424,9 @@ main p {
 #CIRC-makingBetter pre {
   margin: -0.2rem 0 0.2rem 0;
   padding: 0.2rem 0;
+}
+.clearhere {
+  clear: both;
 }
 
 /* ==========================================================================
@@ -448,6 +452,38 @@ main#preface p:last-child {
 }
 main#preface #oomlout p {
   text-align: center;
+}
+
+main#prog section h2 {
+  margin-left: 1em;
+}
+main#prog section > div {
+  margin-bottom: 0.8rem;
+}
+main#prog section > div p {
+  text-align: left;
+  padding: 0 0.3rem 0 0.3rem;
+}
+main#prog dl {
+  float: left;
+  width: 28rem;
+  padding: 3px;
+  margin: 0 5px 0 10px;
+  text-align: left;
+  border: 1.5px solid #444;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+main#prog dt {
+  display: inline-block;
+  float: left;
+  padding-left: 0.3rem;
+}
+main#prog dd {
+  margin-left: 2rem;
+}
+main#prog dd span {
+  font-size: 0.65rem;
 }
 
 main#index h1 {
