@@ -126,7 +126,7 @@
 	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
 	<section>
 		<h2>Arduino Programming in Brief</h2>
-		<p>The Arduino is programmed in the C language. This is a quick little primer targeted at people who have a little bit of programing experience and just need a briefing on the idiosyncracies of C and the Arduino IDE. If you find the concepts a bit daunting, don't worry, you can start going through the circuits and pick up most of it along the way. For a more in-depth intro, the <a rel="external" href="http://arduino.cc">Arduino.cc</a> website is a great resource.</p>
+		<p>The Arduino is programmed in the C language. This is a quick little primer targeted at people who have a little bit of programming experience and just need a briefing on the idiosyncrasies of C and the Arduino IDE. If you find the concepts a bit daunting, don't worry, you can start going through the circuits and pick up most of it along the way. For a more in-depth intro, the <a rel="external" href="http://arduino.cc">Arduino.cc</a> website is a great resource.</p>
 	</section>
 	<section>
 		<h2>Structure</h2>
@@ -187,7 +187,7 @@
 		</div>
 		<div>
 			<h3><a rel="help" href="https://www.arduino.cc/en/Reference/Char"><code>char</code></a> (character)</h3>
-			<p>Stores one character using the ASCII code (ie 'A' = 65). Uses one byte (8 bits) of RAM. The Arduino handles strings as an array of char’s.</p>
+			<p>Stores one character using the ASCII code (IE 'A' = 65). Uses one byte (8 bits) of RAM. The Arduino handles strings as an array of char’s.</p>
 		</div>
 	</section>
 	<section>
@@ -232,26 +232,26 @@
 			<p>Programs are reliant on controlling what runs next, here are the basic control elements (there are many more online).</p>
 		</div>
 		<div>
-			<h3><code><a rel="help" href="https://www.arduino.cc/en/Reference/If">if</a>(condition){ }<br><a rel="help" href="https://www.arduino.cc/en/Reference/Else">else if</a>( condition ){ }<br><a rel="help" href="https://www.arduino.cc/en/Reference/Else">else</a> { }</code></h3>
+			<h3><code><a rel="help" href="https://www.arduino.cc/en/Reference/If">if</a>( condition ) { }<br><a rel="help" href="https://www.arduino.cc/en/Reference/Else">else if</a>( condition ) { }<br><a rel="help" href="https://www.arduino.cc/en/Reference/Else">else</a> { }</code></h3>
 			<p>This will execute the code between the curly brackets if the condition is true, and if not it will test the else if condition if that is also false the else code will execute.</p>
 		</div>
 		<div>
-			<h3><code><a rel="help" href="https://www.arduino.cc/en/Reference/For">for</a>(int i = 0; i &lt; #repeats; i++){ }</code></h3>
+			<h3><code><a rel="help" href="https://www.arduino.cc/en/Reference/For">for</a>( int i = 0; i &lt; #repeats; i++ ) { }</code></h3>
 			<p>Used when you would like to repeat a chunk of code a number of times (can count up <code>i++</code> or down <code>i--</code> or use any variable)</p>
 		</div>
 	</section>
 	<section>
 		<h2>Digital</h2>
 		<div>
-			<h3><code><a rel="help" href="https://www.arduino.cc/en/Reference/PinMode">pinMode</a>(pin, mode);</code></h3>
+			<h3><code><a rel="help" href="https://www.arduino.cc/en/Reference/PinMode">pinMode</a>( pin, mode );</code></h3>
 			<p>Used to set a pin's mode, pin is the pin number you would like to address 0-19 (analog 0-5 are 14-19). The mode can either INPUT, INPUT_PULLUP, or OUTPUT.</p>
 		</div>
 		<div>
-			<h3><code><a rel="help" href="https://www.arduino.cc/en/Reference/DigitalWrite">digitalWrite</a>(pin, val);</code></h3>
+			<h3><code><a rel="help" href="https://www.arduino.cc/en/Reference/DigitalWrite">digitalWrite</a>( pin, val );</code></h3>
 			<p>Once a pin is set as an OUTPUT, it can be set either HIGH (pulled to +5 volts) or LOW (pulled to ground).</p>
 		</div>
 		<div>
-			<h3><code>int <a rel="help" href="https://www.arduino.cc/en/Reference/DigitalRead">digitalRead</a>(pin);</code></h3>
+			<h3><code>int <a rel="help" href="https://www.arduino.cc/en/Reference/DigitalRead">digitalRead</a>( pin );</code></h3>
 			<p>Once a pin is set as an INPUT or INPUT_PULLUP you can use this to return whether it is HIGH (pulled to +5 volts) or LOW (pulled to ground).</p>
 		</div>
 	</section>
@@ -261,11 +261,11 @@
 			<p>The Arduino is a digital machine but it has the ability to operate in the analog realm (through tricks). Here's how to deal with things that aren't digital.</p>
 		</div>
 		<div>
-			<h3><code>int <a rel="help" href="https://www.arduino.cc/en/Reference/AnalogWrite">analogWrite</a>(pin, value);</code></h3>
+			<h3><code>int <a rel="help" href="https://www.arduino.cc/en/Reference/AnalogWrite">analogWrite</a>( pin, value );</code></h3>
 			<p>Some of the Arduino's pins support pulse width modulation (3, 5, 6, 9, 10, 11). This turns the pin on and off very quickly making it act like an analog output. The value is any number between 0 (0% duty cycle ~0v) and 255 (100% duty cycle ~5 volts).</p>
 		</div>
 		<div>
-			<h3><code>int <a rel="help" href="https://www.arduino.cc/en/Reference/AnalogRead">analogRead</a>(pin);</code></h3>
+			<h3><code>int <a rel="help" href="https://www.arduino.cc/en/Reference/AnalogRead">analogRead</a>( pin );</code></h3>
 			<p>When the analog input pins are set to input you can read their voltage. A value between 0 (for 0 volts) and 1023 (for 5 volts) will be returned.</p>
 		</div>
 	</section>
