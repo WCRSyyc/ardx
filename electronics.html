@@ -1,0 +1,392 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:electronics[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit Electronics Primer">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="https://wcrsyyc.github.io/ardx/">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<nav id="sidebar">
+	<section id="menu">
+		<ul>
+			<li><h2>PRODUCTS</h2>
+				<ul>
+					<li>
+						<a href="http://www.oomlout.com/a/products/ardx/"><h3>(ARDX)</h3>arduino experimenter´s kit</a>
+						<ul>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-01">
+								<h4>CIRC-01</h4>Blinking LED</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-02">
+								<h4>CIRC-02</h4>Multiple LEDs</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-03">
+								<h4>CIRC-03</h4>Transistors &amp; Motors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-04">
+								<h4>CIRC-04</h4>Servos</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-05">
+								<h4>CIRC-05</h4>74HC595 Shift Registers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-06">
+								<h4>CIRC-06</h4>Piezo Speaker</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-07">
+								<h4>CIRC-07</h4>Pushbuttons</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-08">
+								<h4>CIRC-08</h4>Potentiometers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-09">
+								<h4>CIRC-09</h4>Photo-Resistors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-10">
+								<h4>CIRC-10</h4>Temperature</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-11">
+								<h4>CIRC-11</h4>Relays</a></li>
+						</ul>
+					</li>
+					<li><a href="https://github.com/WCRSyyc/ardx/"><h3>(WCRS)</h3>ARDX additions</a>
+						<ul>
+							<li><a href="https://wcrsyyc.github.io/ardx/preface.html">
+								<h4>ABOUT</h4>A Few Words</a></li>
+							<!-- <li><a href="https://wcrsyyc.github.io/ardx/assembling.html">
+								<h4>ABOUT</h4>Putting It Together</a></li> -->
+							<li><a href="https://wcrsyyc.github.io/ardx/programming.html">
+								<h4>PROG</h4>Programming Primer</a></li>
+							<li><a href="https://wcrsyyc.github.io/ardx/electronics.html">
+								<h4>ELEC</h4>Electronics Primer</a></li>
+							<li><a href="https://wcrsyyc.github.io/ardx/circ12.html">
+								<h4>CIRC-12</h4>RGB LED blink</a></li>
+						</ul>
+					</li>
+					<li><a href="http://www.oomlout.com/oom.php/products/nedx/"><h3>(NEDX)</h3>netduino experimenter´s kit</a>
+						<ul>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-01">
+								<h4>NCIR-01</h4>Blinking LED</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-02">
+								<h4>NCIR-02</h4>Multiple LEDs</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-03">
+								<h4>NCIR-03</h4>Transistors &amp; Motors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-04">
+								<h4>NCIR-04</h4>Servos</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-05">
+								<h4>NCIR-05</h4>74HC595 Shift Registers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-06">
+								<h4>NCIR-06</h4>Piezo Speaker</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-07">
+								<h4>NCIR-07</h4>Pushbuttons</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-08">
+								<h4>NCIR-08</h4>Potentiometers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-09">
+								<h4>NCIR-09</h4>Photo-Resistors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-10">
+								<h4>NCIR-10</h4>Temperature</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-11">
+								<h4>NCIR-11</h4>Relays</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+			<img alt="Creative Commons License" style="border-width:0"
+				src="img/80x15.png"></a><br>
+		This work is licensed under a <a rel="license"
+			href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+			Attribution 4.0 International License</a>.
+	</section>
+</nav>
+
+<main id="elec">
+	<header>
+		<h1>ELEC<br/>electronics primer</h1>
+		<h2>.:A Small Electronics Primer:.</h2>
+		<img src="img/«circuit_name»-100.jpg" width="100" height="100" alt="«circuit_alt»">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>Electronics in Brief</h2>
+		<p>No previous electronic experience is required to have fun with this kit. Here are a few details about each component to make identifying, and perhaps understanding them, a bit easier. If at any point you are worried about how a component is used or why it's not working the internet offers a treasure trove of advice, or we can be contacted at info@robotgames.com or questions can be posted to the <a href="https://github.com/WCRSyyc/ardx/issues">issues</a> for our github repository.</p>
+	</section>
+	<section>
+		<h2>Component Details</h2>
+		<div>
+			<div>
+				<h3>LED</h3>
+				<h4>(Light Emitting Diode)</h4>
+			</div>
+			<div>
+				<h3>What it Does:</h3>
+				<p>Emits light when a small current is passed through it. <span>(only in one direction)</span></p>
+				<h3>Identifying:</h3>
+				<p>Looks like a mini light bulb.</p>
+				<h3>No. of Leads:</h3>
+				<p>2 (one longer, this one connects to positive)</p>
+				<h3>Things to watch out for:</h3>
+				<ul>
+					<li>Will only work in one direction</li>
+					<li>Requires a current limiting resistor</li>
+				</ul>
+				<h3>More Details on Wikipedia:</h3>
+				<p><a href="http://ardx.org/LED">http://ardx.org/LED</a></p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h3>Diode</h3>
+			</div>
+			<div>
+				<h3>What it Does:</h3>
+				<p>The electronic equivalent of a one way valve. Allowing current to flow in one direction but not the other.</p>
+				<h3>Identifying:</h3>
+				<p>Usually a cylinder with wires extending from either end. <span>(and an off centre line indicating polarity)</span></p>
+				<h3>No. of Leads:</h3>
+				<p>2</p>
+				<h3>Things to watch out for:</h3>
+				<ul>
+					<li>Will only work in one direction <span>(current will flow if end with the line is connected to ground)</span></li>
+				</ul>
+				<h3>More Details on Wikipedia:</h3>
+				<p><a href="http://ardx.org/DIOD">http://ardx.org/DIOD</a></p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h3>Resistors</h3>
+			</div>
+			<div>
+				<h3>What it Does:</h3>
+				<p>Restricts the amount of current that can flow through a circuit.</p>
+				<h3>Identifying:</h3>
+				<p>Cylinder with wires extending from either end. The value is displayed using a colour coding system (for details see next page)</p>
+				<h3>No. of Leads:</h3>
+				<p>2</p>
+				<h3>Things to watch out for:</h3>
+				<ul>
+					<li>Easy to grab the wrong value <span>(double check the colours before using)</span></li>
+				</ul>
+				<h3>More Details on Wikipedia:</h3>
+				<p><a href="http://ardx.org/RESI">http://ardx.org/RESI</a></p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h3>Transistor</h3>
+			</div>
+			<div>
+				<h3>What it Does:</h3>
+				<p>Uses a small current to switch or amplify a much larger current.</p>
+				<h3>Identifying:</h3>
+				<p>Comes in many different packages but you can read the part number off the package. (P2N2222AG in this kit and find a datasheet online)</p>
+				<h3>No. of Leads:</h3>
+				<p>3 (Base<COMMA> Collector<COMMA> Emitter)</p>
+				<h3>Things to watch out for:</h3>
+				<ul>
+					<li>Plugging in the right way round <span>(also a current limiting resistor is often needed on the base pin)</span></li>
+				</ul>
+				<h3>More Details on Wikipedia:</h3>
+				<p><a href="http://ardx.org/TRAN">http://ardx.org/TRAN</a></p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h3>Hobby Servo</h3>
+			</div>
+			<div>
+				<h3>What it Does:</h3>
+				<p>Takes a timed pulse and converts it into an angular position of the output shaft.</p>
+				<h3>Identifying:</h3>
+				<p>A plastic box with 3 wires coming out one side and a shaft with a plastic horn out the top.</p>
+				<h3>No. of Leads:</h3>
+				<p>3</p>
+				<h3>Things to watch out for:</h3>
+				<ul>
+					<li>The plug is not polarized so make sure it is plugged in the right way</li>
+				</ul>
+				<h3>More Details on Wikipedia:</h3>
+				<p><a href="http://ardx.org/SERV">http://ardx.org/SERV</a></p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h3>DC Motor</h3>
+			</div>
+			<div>
+				<h3>What it Does:</h3>
+				<p>Spins when a current is passed through it.</p>
+				<h3>Identifying:</h3>
+				<p>This one is easy<COMMA> it looks like a motor. Usually a cylinder with a shaft coming out of one end.</p>
+				<h3>No. of Leads:</h3>
+				<p>2</p>
+				<h3>Things to watch out for:</h3>
+				<ul>
+					<li>Using a transistor or relay that is rated for the size of motor you're using.</li>
+				</ul>
+				<h3>More Details on Wikipedia:</h3>
+				<p><a href="http://ardx.org/MOTO">http://ardx.org/MOTO</a></p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h3>Piezo Element</h3>
+			</div>
+			<div>
+				<h3>What it Does:</h3>
+				<p>A pulse of current will cause it to click. A stream of pulses will cause it to emit a tone.</p>
+				<h3>Identifying:</h3>
+				<p>In this kit it comes in a little black barrel<COMMA> but sometimes they are just a gold disc.</p>
+				<h3>No. of Leads:</h3>
+				<p>2</p>
+				<h3>Things to watch out for:</h3>
+				<ul>
+					<li>Difficult to misuse</li>
+				</ul>
+				<h3>More Details on Wikipedia:</h3>
+				<p><a href="http://ardx.org/PIEZ">http://ardx.org/PIEZ</a></p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h3>IC</h3>
+				<h4>(Integrated Circuit)</h4>
+			</div>
+			<div>
+				<h3>What it Does:</h3>
+				<p>Combines any range of complicated electronics inside an easy to use package.</p>
+				<h3>Identifying:</h3>
+				<p>The part ID is written on the outside of the package. (this sometimes requires a lot of light or a magnifying glass to read).</p>
+				<h3>No. of Leads:</h3>
+				<p>2 - 100s <span>(in this kit there is one with 3 (TMP36) and one with 16 (74HC595)</span></p>
+				<h3>Things to watch out for:</h3>
+				<ul>
+					<li>Proper orientation. <span>(look for marks showing pin 1)</span></li>
+				</ul>
+				<h3>More Details on Wikipedia:</h3>
+				<p><a href="http://ardx.org/ICIC">http://ardx.org/ICIC</a></p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h3>Pushbutton</h3>
+			</div>
+			<div>
+				<h3>What it Does:</h3>
+				<p>Completes a circuit when it is pressed.</p>
+				<h3>Identifying:</h3>
+				<p>A little square with leads out the bottom and a button on the top.</p>
+				<h3>No. of Leads:</h3>
+				<p>4</p>
+				<h3>Things to watch out for:</h3>
+				<ul>
+					<li>These are almost square so can be inserted 90 degrees off angle</li>
+				</ul>
+				<h3>More Details on Wikipedia:</h3>
+				<p><a href="http://ardx.org/BUTT">http://ardx.org/BUTT</a></p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h3>Potentiomenter</h3>
+			</div>
+			<div>
+				<h3>What it Does:</h3>
+				<p>Produces a variable resistance dependant on the angular position of the shaft.</p>
+				<h3>Identifying:</h3>
+				<p>They can be packaged in many different form factors<COMMA> look for a dial to identify.</p>
+				<h3>No. of Leads:</h3>
+				<p>3</p>
+				<h3>Things to watch out for:</h3>
+				<ul>
+					<li>Accidentally buying logarithmic scale</li>
+				</ul>
+				<h3>More Details on Wikipedia:</h3>
+				<p><a href="http://ardx.org/POTE">http://ardx.org/POTE</a></p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h3>Photo Resistor</h3>
+				<h4>(Light Dependent Resistor)</h4>
+			</div>
+			<div>
+				<h3>What it Does:</h3>
+				<p>Produces a variable resistance dependant on the amount of incident light.</p>
+				<h3>Identifying:</h3>
+				<p>Usually a little disk with a clear top and a curvy line underneath.</p>
+				<h3>No. of Leads:</h3>
+				<p>2</p>
+				<h3>Things to watch out for:</h3>
+				<ul>
+					<li>Remember it needs to be in a voltage divider before it provides a useful input</li>
+				</ul>
+				<h3>More Details on Wikipedia:</h3>
+				<p><a href="http://ardx.org/PHOT">http://ardx.org/PHOT</a></p>
+			</div>
+		</div>
+	</section>
+	<section class="half">
+		<h2>Resistor Colour Codes</h2>
+		<h3>Examples:</h3>
+		<dl>
+			<dt>green-blue-brown</dt>
+			<dd>560 ohms</dd>
+			<dt>red-red-red</dt>
+			<dd>2,200 ohms (2.2k)</dd>
+			<dt>brown-black-orange</dt>
+			<dd>10,000 ohms (10k)</dd>
+		</dl>
+		<ul>
+			<li>0 - Black</li>
+			<li>1 - Brown</li>
+			<li>2 - Red</li>
+			<li>3 - Orange</li>
+			<li>4 - Yellow</li>
+			<li>5 - Green</li>
+			<li>6 - Blue</li>
+			<li>7 - Purple</li>
+			<li>8 - Grey</li>
+			<li>9 - White</li>
+			<li>20% - none</li>
+			<li>10% - silver</li>
+			<li>50% - gold</li>
+		</ul>
+		<a href="https://github.com/WCRSyyc/ardx/wiki/Resistor-colour-codes">Wiki resistor colour codes</a>
+	</section>
+	<section class="half">
+		<h2>Lead Clipping</h2>
+		<p>Some components in this kit come with very long wire leads. To make them more compatible with a breadboard a couple of changes are required.</p>
+		<h3>LEDs:</h3>
+		<p>Clip the leads so the long lead is ~10mm (3/8"") long and the short one is ~7mm (9/32"").</p>
+		<h3>Resistors:</h3>
+		<p>Bend the leads down so they are 90 degrees to the cylinder. Then snip them so they are ~6mm (1/4"") long.</p>
+		<h3>Other Components:</h3>
+		<p>Other components may need clipping. Use your discretion when doing so.</p>
+	</section>
+</main>
+
+		<footer>.: Welcome to the Bottom:.</footer>
+	</body>
+</html>
