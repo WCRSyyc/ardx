@@ -5,15 +5,15 @@
  This example code is in the public domain.
 
  This code is setup to cycle the colours for either a common cathode or a common
- anode LED.  To switch the code from one to the other, it is only necessary to
+ anode RGB LED.  To switch the code from one to the other, it is only necessary to
  change the lines initializing the COLOUR_ON and COLOUR_OFF values.  The circuit
  difference is whether the common lead is connected to ground (for common
- cathode), or the +5 (for common anode) line.  This has the effect of inverting
+ cathode), or to +5 (for common anode) line.  This has the effect of inverting
  the LED states.  A HIGH signal turns on one colour of a common cathode RGB LED,
  but a HIGH signal turns off one colour of a common anode RGB LED.  Reversing
- the COLOUR_xxx values compensate for that.
+ the COLOUR_xxx values compensates for that.
 
- modified 2016/12/01
+ modified 2017/01/24
  by H. Phil Duby
 
  Reference:
@@ -23,7 +23,7 @@
 
 // Instead of specifying (and repeating) some common values in the actual code,
 // put them in variables with informative names at the beginning of the file,
-// then use the variables in sketch.  This can both make the code easier to
+// then use the variables in the sketch.  This can both make the code easier to
 // understand, and allow changes involving the named values much simpler.  They
 // would only need changing in one place.
 
@@ -42,7 +42,7 @@ const unsigned int BLUE = 2;
 
 // For the initial blink logic, any pins will work.  PWM capable pins were
 // selected, so that the same wiring can be used when using analogWrite to
-// using diming to 'make it better'.
+// using diming and colour mixing to 'make it better'.
 const unsigned int rgbPin[] = { 11 , 10 , 9 }; // pin numbers for Red, Green, and Blue
 // A *good* way to get the number of entries actually in an array
 const unsigned int rgbPinCount = sizeof ( rgbPin ) / sizeof ( unsigned int );
