@@ -1,0 +1,434 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-15[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit dice simulator">
+<!-- #include «head.html» -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<!-- #include «topnav.html» -->
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="index.html">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<!-- #include «sidebar.html» -->
+<nav id="sidebar">
+	<section id="menu">
+		<ul>
+			<li><h2>PRODUCTS</h2>
+				<ul>
+					<li>
+						<a href="http://www.oomlout.com/a/products/ardx/"><h3>(ARDX)</h3>arduino experimenter´s kit</a>
+						<ul>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-01">
+								<h4>CIRC-01</h4>Blinking LED</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-02">
+								<h4>CIRC-02</h4>Multiple LEDs</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-03">
+								<h4>CIRC-03</h4>Transistors &amp; Motors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-04">
+								<h4>CIRC-04</h4>Servos</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-05">
+								<h4>CIRC-05</h4>74HC595 Shift Registers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-06">
+								<h4>CIRC-06</h4>Piezo Speaker</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-07">
+								<h4>CIRC-07</h4>Pushbuttons</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-08">
+								<h4>CIRC-08</h4>Potentiometers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-09">
+								<h4>CIRC-09</h4>Photo-Resistors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-10">
+								<h4>CIRC-10</h4>Temperature</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-11">
+								<h4>CIRC-11</h4>Relays</a></li>
+						</ul>
+					</li>
+					<li><a href="https://github.com/WCRSyyc/ardx/"><h3>(WCRS)</h3>ARDX additions</a>
+						<ul>
+							<li><a href="preface.html">
+								<h4>ABOUT</h4>A Few Words</a></li>
+							<!-- <li><a href="assembling.html">
+								<h4>ABOUT</h4>Putting It Together</a></li> -->
+							<li><a href="programming.html">
+								<h4>PROG</h4>Programming Primer</a></li>
+							<li><a href="electronics.html">
+								<h4>ELEC</h4>Electronics Primer</a></li>
+							<li><a href="circ12.html">
+								<h4>CIRC-12</h4>RGB LED blink</a></li>
+						</ul>
+					</li>
+					<li><a href="http://www.oomlout.com/oom.php/products/nedx/"><h3>(NEDX)</h3>netduino experimenter´s kit</a>
+						<ul>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-01">
+								<h4>NCIR-01</h4>Blinking LED</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-02">
+								<h4>NCIR-02</h4>Multiple LEDs</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-03">
+								<h4>NCIR-03</h4>Transistors &amp; Motors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-04">
+								<h4>NCIR-04</h4>Servos</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-05">
+								<h4>NCIR-05</h4>74HC595 Shift Registers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-06">
+								<h4>NCIR-06</h4>Piezo Speaker</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-07">
+								<h4>NCIR-07</h4>Pushbuttons</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-08">
+								<h4>NCIR-08</h4>Potentiometers</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-09">
+								<h4>NCIR-09</h4>Photo-Resistors</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-10">
+								<h4>NCIR-10</h4>Temperature</a></li>
+							<li><a href="http://www.oomlout.com/oom.php/products/nedx/ncir-11">
+								<h4>NCIR-11</h4>Relays</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+			<img alt="Creative Commons License" style="border-width:0"
+				src="img/80x15.png"></a><br>
+		This work is licensed under a <a rel="license"
+			href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+			Attribution 4.0 International License</a>.
+	</section>
+</nav>
+
+<main id="circ-15">
+	<header>
+		<h1>CIRC<br/>15</h1>
+		<h2>.:Dice Simulator:.<br>.:1d6 on 6 LEDs:.</h2>
+		<img src="img/d6-simulator-100.jpg" width="100" height="100" alt="1d6 die simulator">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We're Doing</h2>
+		<p>Simulate a six sided dice when a button is pressed, lighting from one to
+			six LED's matching the roll result.</p>
+		<p>This shows a few methods that can be used to light the correct LEDs.</p>
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="http://www.oomlout.com/parts/LED-05G-60.png"
+						width="60" height="34" alt="5mm Green LED"/></td>
+					<td>5mm LED<br/>x6</td>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="wire"/></td>
+					<td>Wire</td>
+					<td><img src="http://www.oomlout.com/parts/RES-561-60.png"
+						width="60" height="36" alt="resistor"/></td>
+					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>x6</td>
+					<td><img src="http://www.oomlout.com/parts/RES-561-60.png"
+						width="60" height="36" alt="resistor"/></td>
+					<td>2.2k Ohm Resistor<br/>Red-Red-Red</td>
+				</tr><tr>
+					<td><img src="http://www.oomlout.com/parts/BUTT-01-60.png"
+						width="60" height="36" alt="resistor"/></td>
+					<td>Pushbutton</td>
+				</tr>
+			</table>
+		</div>
+		<span class="bb-svg-container" style="padding-bottom: 60%;"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="-101 0 100 100"
+			preserveAspectRatio="xMaxYMin meet">
+			<image x="0" y="0" height="140" width="100"
+				xlink:href="img/CIRC15-bb.svg"
+				transform="rotate(90 0 0)"/>
+		</svg></span>
+		<div>
+			<h3>Schematic</h3>
+			<span class="sch-svg-container"	style="padding-bottom: 118%;"><svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="92 34 100 100"
+				preserveAspectRatio="xMidYMin meet">
+				<image x="0" y="0" width="190" height="190"
+					xlink:href="img/CIRC15-schem.svg" />
+			</svg></span>
+		</div>
+		<div>
+			<h3>Resources</h3>
+			<b>.:download:.</b></br>
+			Fritzing diagram</br><a href="fritzing/CIRC15.fzz">
+				https://wcrsyyc.github.io/ardx/fritzing/CIRC15.fzz</a>
+		</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<p>Download the Code from ( <a
+			href="code/CIRC15-code.txt">
+			https://wcrsyyc.github.io/ardx/code/CIRC15-code.txt</a> )<br>
+			(and then copy the text and paste it into an empty Arduino Sketch)</p>
+		<pre>/* 
+ Arduino Dice :)
+
+ Simulate throwing a dice (1d6), and displaying the result using 6 LEDs.
+
+ The circuit:
+ * 6 LEDs attached to consecutive digital pins (with 560 Ohm current limiting resistors)
+ * button (switch) connected to a digital pin
+
+ Created 26 Jan 2017
+ By H Phil Duby
+
+ Adapted from https://www.hackster.io/EvdS/led-dice-885cf1
+ By Esther van der Stappen
+
+ This code is in the public domain.
+ */
+
+// set to 1 if we're debugging
+#define DEBUG 0
+
+// Set the die rolling animation speed (smaller is faster)
+const long ANIM_WAIT = 100; // milliseconds (0.1 seconds)
+const int IS_PRESSED = LOW; // Pullup resistor makes normal (not pressed) value HIGH
+
+// 6 consecutive digital pins for the LEDs
+const int first = 2;
+const int second = 3;
+const int third = 4;
+const int fourth = 5;
+const int fifth = 6;
+const int sixth = 7;
+
+// pin for the button to trigger a die roll
+const int rollBtn = 12;
+
+void setup() {
+  // set all LED pins to OUTPUT
+  for ( int  i = first; i <= sixth; i++ ) {
+    pinMode ( i, OUTPUT );
+  }
+  // set button pin to INPUT, and use internal pullup resistor
+  pinMode ( rollBtn, INPUT_PULLUP );
+
+  // initialize random seed by noise from analog pin 0 (should be unconnected)
+  randomSeed ( analogRead ( 0 ));
+
+  // if we're debugging, connect to serial
+  #ifdef DEBUG
+    Serial.begin ( 9600 );
+  #endif
+}
+
+void loop()
+{
+  // Declare local variables
+  int dieResult;
+  int btnState;
+
+  btnState = digitalRead ( rollBtn ); // Check button
+
+  if ( btnState == IS_PRESSED ) { // is button currently pressed?
+    setAllLEDs ( LOW ); // remove previous number
+
+    // Different ways to animate the wait for the roll
+    animateDieRolling();
+//    animateWithMemory();
+
+    dieResult = roll1d6();
+
+    // Different ways to turn on the LEDs that show the result
+    showDieByIf ( dieResult );
+//    showDieBySwitch ( dieResult );
+//    showDieByFor( dieResult );
+  }
+}// ./void loop()
+
+/**
+ * light individual LEDs from left to right and back to build up tension while
+ * waiting for the dice to be thrown.
+ */
+void animateDieRolling()
+{
+  // left to right
+  for ( int i = first; i <= sixth; i++ ) {
+    if ( i != first ) {
+      digitalWrite ( i - 1, LOW );
+    }
+    digitalWrite ( i, HIGH );
+    delay ( ANIM_WAIT );
+  }
+  // right to left
+  for ( int i = sixth; i >= first; i-- ) {
+    if ( i != sixth ) {
+      digitalWrite ( i + 1, LOW );
+    }
+    digitalWrite ( i, HIGH );
+    delay ( ANIM_WAIT );
+  }
+}// ./void animateDieRolling()
+
+/**
+ * Remember the pin number for the LED being turned ON, then use that to turn
+ * it OFF again when turn the next one ON
+ */
+void animateWithMemory()
+{
+  int prevLed = sixth;
+  // left to right
+  for ( int i = first; i <= sixth; i++ ) {
+    digitalWrite ( prevLed, LOW ); // Turn previous LED OFF
+    digitalWrite ( i, HIGH ); // Turn current LED ON
+    prevLed = i; // Remember the pin for the currently ON LED
+    delay ( ANIM_WAIT );
+  }
+  // right to left
+  for ( int i = sixth; i >= first; i-- ) {
+    digitalWrite ( prevLed, LOW ); // Turn previous LED OFF
+    digitalWrite ( i, HIGH ); // Turn current LED ON
+    prevLed = i; // Remember the pin for the currently ON LED
+    delay ( ANIM_WAIT );
+  }
+  // This leaves the final (first) LED on, but that is OK.  It will always be
+  // Turned on any when displaying the roll result
+//  digitalWrite ( prevLed, LOW ); // Turn final LED OFF
+}
+
+/**
+ * Use if statements to decide whether to turn ON each LED.  The first is always
+ * turned ON.
+ *
+ * @param number the 1d6 value to display
+ */
+void showDieByIf( int number )
+{
+  digitalWrite ( first, HIGH );
+  if ( number >= 2 ) {
+    digitalWrite(second, HIGH );
+  }
+  if ( number >= 3 ) {
+    digitalWrite ( third, HIGH );
+  }
+  if ( number >= 4 ) {
+    digitalWrite ( fourth, HIGH );
+  }
+  if ( number >= 5 ) {
+    digitalWrite ( fifth, HIGH );
+  }
+  if ( number == 6 ) {
+    digitalWrite ( sixth, HIGH );
+  }
+}// ./void showDieByIf( int number )
+
+/**
+ * Use a switch statement to pick the highest LED pin number to set, then turn
+ * it and all lower pin numbers ON
+ *
+ * @param number the 1d6 value to display
+ */
+void showDieBySwitch( int number )
+{
+  // When not using 'break' at the end of each case, all of the cases following
+  // the matched one are executed as well.
+  switch ( number ) {
+  case 6:
+    digitalWrite ( sixth, HIGH );
+  case 5:
+    digitalWrite ( fifth, HIGH );
+  case 4:
+    digitalWrite ( fourth, HIGH );
+  case 3:
+    digitalWrite ( third, HIGH );
+  case 2:
+    digitalWrite ( second, HIGH );
+  }
+  digitalWrite ( first, HIGH ); // Always at least one
+}// ./void showDieBySwitch( int number )
+
+/**
+ * Use a for loop to sequence through the LED pin numbers to be turned ON
+ *
+ * @param number the 1d6 value to display
+ */
+void showDieByFor( int number )
+{
+  // Turn on the first 'number' LEDs
+  for ( int i = first; i < first + number; i++ ) {
+    digitalWrite ( i, HIGH );
+  }
+}// ./void showDieByFor( int number )
+
+/**
+ * generate a random 1d6 value
+ *
+ * @return random 1d6 value
+ */
+int roll1d6()
+{
+  // get a random number in the range [1,6]
+  int random1d6 = random ( 1, 7 );
+
+  #ifdef DEBUG
+    Serial.println ( random1d6 );
+  #endif
+
+  return random1d6;
+}// ./int roll1d6()
+
+/**
+ * Set all LEDs to a single state
+ *
+ * @param value the state to set the pins to
+ */
+void setAllLEDs( int value )
+{
+  for ( int i = first; i <= sixth; i++ ) {
+    digitalWrite ( i, value );
+  }
+}// ./void setAllLEDs( int value )
+		</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>«nw_count» things to try</span></h2>
+		<div>
+			<h3>«nw_title»</h3>
+			<p>«nw_description»</p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>«mb_title»</h3>
+		<p>«mb_description»</p>
+	</section>
+</main>
+
+		<footer>.: Welcome to the Bottom:.</footer>
+	</body>
+</html>
