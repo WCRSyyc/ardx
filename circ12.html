@@ -143,7 +143,7 @@
 			<li>Red on, Green on, Blue off (yellow)</li>
 			<li>Red on, Green on, Blue on (white)</li>
 		</ol>
-		<p>Along with controlling the LED, we look at some more programming methods
+		<p>Along with controlling the RGB LED, we look at some more programming methods
 		to keep your programs small, organized, and easier to change later.</p>
 	</section>
 	<section id="circuit">
@@ -167,7 +167,7 @@
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink">
-			<image x="30" y="-55" height="400" width="400"
+			<image x="-150" y="-80" height="580" width="580"
 				xlink:href="img/CIRC12-bb.svg"/>
 		</svg>
 		<div>
@@ -175,9 +175,8 @@
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink">
-				<image x="-3" y="-89" height="150" width="160"
-					xlink:href="img/CIRC12c-schem.svg"
-					transform="scale(2)"/>
+				<image x="-230" y="-72" height="350" width="350"
+					xlink:href="img/CIRC12c-schem.svg" />
 			</svg>
 		</div>
 		<div>
@@ -185,10 +184,17 @@
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink">
-				<image x="5" y="-83" height="150" width="160"
-					xlink:href="img/CIRC12a-schem.svg"
-					transform="scale(2.5)"/>
+				<image x="-290" y="-111" height="420" width="420"
+					xlink:href="img/CIRC12a-schem.svg" />
 			</svg>
+		</div>
+		<div>
+			<h3>Resources</h3>
+			<h4>.:download:.</h4>
+			<p>
+				Fritzing Diagram</br>
+				<a href="fritzing/circ12.fzz">https://wcrsyyc.github.io/ardx/fritzing/circ12.fzz</a>
+			</p>
 		</div>
 	</section>
 	<section id="code">
@@ -204,15 +210,15 @@
  This example code is in the public domain.
 
  This code is setup to cycle the colours for either a common cathode or a common
- anode LED.  To switch the code from one to the other, it is only necessary to
+ anode RGB LED.  To switch the code from one to the other, it is only necessary to
  change the lines initializing the COLOUR_ON and COLOUR_OFF values.  The circuit
  difference is whether the common lead is connected to ground (for common
- cathode), or the +5 (for common anode) line.  This has the effect of inverting
+ cathode), or to +5 (for common anode) line.  This has the effect of inverting
  the LED states.  A HIGH signal turns on one colour of a common cathode RGB LED,
  but a HIGH signal turns off one colour of a common anode RGB LED.  Reversing
- the COLOUR_xxx values compensate for that.
+ the COLOUR_xxx values compensates for that.
 
- modified 2016/12/01
+ modified 2017/01/24
  by H. Phil Duby
 
  Reference:
@@ -222,7 +228,7 @@
 
 // Instead of specifying (and repeating) some common values in the actual code,
 // put them in variables with informative names at the beginning of the file,
-// then use the variables in sketch.  This can both make the code easier to
+// then use the variables in the sketch.  This can both make the code easier to
 // understand, and allow changes involving the named values much simpler.  They
 // would only need changing in one place.
 
@@ -241,7 +247,7 @@ const unsigned int BLUE = 2;
 
 // For the initial blink logic, any pins will work.  PWM capable pins were
 // selected, so that the same wiring can be used when using analogWrite to
-// using diming to 'make it better'.
+// using diming and colour mixing to 'make it better'.
 const unsigned int rgbPin[] = { 11 , 10 , 9 }; // pin numbers for Red, Green, and Blue
 // A *good* way to get the number of entries actually in an array
 const unsigned int rgbPinCount = sizeof ( rgbPin ) / sizeof ( unsigned int );
@@ -445,11 +451,11 @@ void rgbAnimate () {
 			the pattern black (all colours OFF).</p>
 		<h3>External References</h3>
 		<ul>
-			<li><a href="https://cdn-learn.adafruit.com/downloads/pdf/adafruit-arduino-lesson-3-rgb-leds.pdf">Adafruit RGB lesson</a></li>
+			<li><a href="https://cdn-learn.adafruit.com/downloads/pdf/adafruit-arduino-lesson-3-rgb-leds.pdf">Adafruit RGB lesson</a> https://cdn-learn.adafruit.com/downloads/pdf/adafruit-arduino-lesson-3-rgb-leds.pdf</li>
 		</ul>
 	</section>
 </main>
 
-		<footer>.: Welcome to the Bottom:.</footer>
+		<footer>.:Welcome to the Bottom:.</footer>
 	</body>
 </html>

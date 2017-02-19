@@ -376,6 +376,16 @@ main p {
 #circuit h3 {
   text-align: center;
 }
+#circuit h4 {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+#circuit p {
+  text-align: center;
+  font-size: 0.78rem;
+}
 #circuit #CIRC-theparts {
   width: 42.6rem;
 }
@@ -573,10 +583,10 @@ main#index h1 {
 }
 
 main#circ-12 div svg {
-  height: 130px;
+  height: 163px;
 }
 main#circ-12 #circuit > svg {
-  height: 300px;
+  height: 390px;
 }
 
 
