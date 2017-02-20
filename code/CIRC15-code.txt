@@ -1,0 +1,219 @@
+/*
+ Arduino Dice :)
+
+ Simulate throwing a dice (1d6), and displaying the result using 6 LEDs.
+
+ The circuit:
+ * 6 LEDs attached to consecutive digital pins (with 560 Ohm current limiting resistors)
+ * button (switch) connected to a digital pin
+
+ Created 26 Jan 2017
+ By H Phil Duby
+
+ Adapted from https://www.hackster.io/EvdS/led-dice-885cf1
+ By Esther van der Stappen
+
+ This code is in the public domain.
+ */
+
+// set to 1 if we're debugging
+#define DEBUG 0
+
+// Set the die rolling animation speed (smaller is faster)
+const long ANIM_WAIT = 100; // milliseconds (0.1 seconds)
+const int IS_PRESSED = LOW; // Pullup resistor makes normal (not pressed) value HIGH
+
+// 6 consecutive digital pins for the LEDs
+const int first = 2;
+const int second = 3;
+const int third = 4;
+const int fourth = 5;
+const int fifth = 6;
+const int sixth = 7;
+
+// pin for the button to trigger a die roll
+const int rollBtn = 12;
+
+void setup() {
+  // set all LED pins to OUTPUT
+  for ( int  i = first; i <= sixth; i++ ) {
+    pinMode ( i, OUTPUT );
+  }
+  // set button pin to INPUT, and use internal pullup resistor
+  pinMode ( rollBtn, INPUT_PULLUP );
+
+  // initialize random seed by noise from analog pin 0 (should be unconnected)
+  randomSeed ( analogRead ( 0 ));
+
+  // if we're debugging, connect to serial
+  #ifdef DEBUG
+    Serial.begin ( 9600 );
+  #endif
+}
+
+void loop()
+{
+  // Declare local variables
+  int dieResult;
+  int btnState;
+
+  btnState = digitalRead ( rollBtn ); // Check button
+
+  if ( btnState == IS_PRESSED ) { // is button currently pressed?
+    setAllLEDs ( LOW ); // remove previous number
+
+    // Different ways to animate the wait for the roll
+    animateDieRolling();
+//    animateWithMemory();
+
+    dieResult = roll1d6();
+
+    // Different ways to turn on the LEDs that show the result
+    showDieByIf ( dieResult );
+//    showDieBySwitch ( dieResult );
+//    showDieByFor( dieResult );
+  }
+}// ./void loop()
+
+/**
+ * light individual LEDs from left to right and back to build up tension while
+ * waiting for the dice to be thrown.
+ */
+void animateDieRolling()
+{
+  // left to right
+  for ( int i = first; i <= sixth; i++ ) {
+    if ( i != first ) {
+      digitalWrite ( i - 1, LOW );
+    }
+    digitalWrite ( i, HIGH );
+    delay ( ANIM_WAIT );
+  }
+  // right to left
+  for ( int i = sixth; i >= first; i-- ) {
+    if ( i != sixth ) {
+      digitalWrite ( i + 1, LOW );
+    }
+    digitalWrite ( i, HIGH );
+    delay ( ANIM_WAIT );
+  }
+}// ./void animateDieRolling()
+
+/**
+ * Remember the pin number for the LED being turned ON, then use that to turn
+ * it OFF again when turn the next one ON
+ */
+void animateWithMemory()
+{
+  int prevLed = sixth;
+  // left to right
+  for ( int i = first; i <= sixth; i++ ) {
+    digitalWrite ( prevLed, LOW ); // Turn previous LED OFF
+    digitalWrite ( i, HIGH ); // Turn current LED ON
+    prevLed = i; // Remember the pin for the currently ON LED
+    delay ( ANIM_WAIT );
+  }
+  // right to left
+  for ( int i = sixth; i >= first; i-- ) {
+    digitalWrite ( prevLed, LOW ); // Turn previous LED OFF
+    digitalWrite ( i, HIGH ); // Turn current LED ON
+    prevLed = i; // Remember the pin for the currently ON LED
+    delay ( ANIM_WAIT );
+  }
+  // This leaves the final (first) LED on, but that is OK.  It will always be
+  // Turned on any when displaying the roll result
+//  digitalWrite ( prevLed, LOW ); // Turn final LED OFF
+}// ./void animateWithMemory()
+
+/**
+ * Use if statements to decide whether to turn ON each LED.  The first is always
+ * turned ON.
+ *
+ * @param number the 1d6 value to display
+ */
+void showDieByIf( int number )
+{
+  digitalWrite ( first, HIGH );
+  if ( number >= 2 ) {
+    digitalWrite(second, HIGH );
+  }
+  if ( number >= 3 ) {
+    digitalWrite ( third, HIGH );
+  }
+  if ( number >= 4 ) {
+    digitalWrite ( fourth, HIGH );
+  }
+  if ( number >= 5 ) {
+    digitalWrite ( fifth, HIGH );
+  }
+  if ( number == 6 ) {
+    digitalWrite ( sixth, HIGH );
+  }
+}// ./void showDieByIf( int number )
+
+/**
+ * Use a switch statement to pick the highest LED pin number to set, then turn
+ * it and all lower pin numbers ON
+ *
+ * @param number the 1d6 value to display
+ */
+void showDieBySwitch( int number )
+{
+  // When not using 'break' at the end of each case, all of the cases following
+  // the matched one are executed as well.
+  switch ( number ) {
+  case 6:
+    digitalWrite ( sixth, HIGH );
+  case 5:
+    digitalWrite ( fifth, HIGH );
+  case 4:
+    digitalWrite ( fourth, HIGH );
+  case 3:
+    digitalWrite ( third, HIGH );
+  case 2:
+    digitalWrite ( second, HIGH );
+  }
+  digitalWrite ( first, HIGH ); // Always at least one
+}// ./void showDieBySwitch( int number )
+
+/**
+ * Use a for loop to sequence through the LED pin numbers to be turned ON
+ *
+ * @param number the 1d6 value to display
+ */
+void showDieByFor( int number )
+{
+  // Turn on the first 'number' LEDs
+  for ( int i = first; i < first + number; i++ ) {
+    digitalWrite ( i, HIGH );
+  }
+}// ./void showDieByFor( int number )
+
+/**
+ * generate a random 1d6 value
+ *
+ * @return random 1d6 value
+ */
+int roll1d6()
+{
+  // get a random number in the range [1,6]
+  int random1d6 = random ( 1, 7 );
+
+  #ifdef DEBUG
+    Serial.println ( random1d6 );
+  #endif
+
+  return random1d6;
+}// ./int roll1d6()
+
+/**
+ * Set all LEDs to a single state
+ *
+ * @param value the state to set the pins to
+ */
+void setAllLEDs( int value )
+{
+  for ( int i = first; i <= sixth; i++ ) {
+    digitalWrite ( i, value );
+  }
+}// ./void setAllLEDs( int value )
