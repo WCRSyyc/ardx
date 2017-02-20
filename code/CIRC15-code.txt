@@ -1,4 +1,4 @@
-/* 
+/*
  Arduino Dice :)
 
  Simulate throwing a dice (1d6), and displaying the result using 6 LEDs.
@@ -123,7 +123,7 @@ void animateWithMemory()
   // This leaves the final (first) LED on, but that is OK.  It will always be
   // Turned on any when displaying the roll result
 //  digitalWrite ( prevLed, LOW ); // Turn final LED OFF
-}
+}// ./void animateWithMemory()
 
 /**
  * Use if statements to decide whether to turn ON each LED.  The first is always

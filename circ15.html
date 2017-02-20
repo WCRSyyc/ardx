@@ -132,8 +132,10 @@
 	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
 	<section>
 		<h2>What We're Doing</h2>
-		<p>Simulate a six sided dice when a button is pressed, lighting from one to
-			six LED's matching the roll result.</p>
+		<p>When a button is pressed, display a short animation sequence on six
+			LEDs, then light a random number of LEDs to simulate rolling a single 6
+			side die.
+		</p>
 		<p>This shows a few methods that can be used to light the correct LEDs.</p>
 	</section>
 	<section id="circuit">
@@ -183,9 +185,9 @@
 		</div>
 		<div>
 			<h3>Resources</h3>
-			<b>.:download:.</b></br>
-			Fritzing diagram</br><a href="fritzing/CIRC15.fzz">
-				https://wcrsyyc.github.io/ardx/fritzing/CIRC15.fzz</a>
+			<h4>.:download:.</h4>
+			<p>Fritzing diagram</br><a href="fritzing/CIRC15.fzz">
+				https://wcrsyyc.github.io/ardx/fritzing/CIRC15.fzz</a></p>
 		</div>
 	</section>
 	<section id="code">
@@ -194,7 +196,7 @@
 			href="code/CIRC15-code.txt">
 			https://wcrsyyc.github.io/ardx/code/CIRC15-code.txt</a> )<br>
 			(and then copy the text and paste it into an empty Arduino Sketch)</p>
-		<pre>/* 
+		<pre>/*
  Arduino Dice :)
 
  Simulate throwing a dice (1d6), and displaying the result using 6 LEDs.
@@ -319,7 +321,7 @@ void animateWithMemory()
   // This leaves the final (first) LED on, but that is OK.  It will always be
   // Turned on any when displaying the roll result
 //  digitalWrite ( prevLed, LOW ); // Turn final LED OFF
-}
+}// ./void animateWithMemory()
 
 /**
  * Use if statements to decide whether to turn ON each LED.  The first is always
@@ -416,19 +418,87 @@ void setAllLEDs( int value )
 		</pre>
 	</section>
 	<section id="CIRC-notworking">
-		<h2>Not Working? <span>«nw_count» things to try</span></h2>
+		<h2>Not Working? <span>3 things to try</span></h2>
 		<div>
-			<h3>«nw_title»</h3>
-			<p>«nw_description»</p>
+			<h3>Some LEDs Fail to Light</h3>
+			<p>It is easy to insert an LED backwards. Check the LEDs that aren't
+				working and ensure they the right way around.</p>
+			<p>Check that the ground wire is install.  Connecting all of the
+				current limiting resistors to the ground (blue) line on the breadboard
+			  is not (quite) enough.  The line also needs to be connected to one of
+				the ground pins on the Arduino board.</p>
+		</div>
+		<div>
+			<h3>Button does nothing</h3>
+			<p>Some of the push button switches are square.  Try removing it, rotating
+				it 1 quarter turn, and inserting it again.</p>
+		</div>
+		<div>
+			<h3>Some LEDs dimmer</h3>
+			<p>Make sure that the value of the current limiting resistor connected
+				to the LED is the right value.  Different values will work, but
+				using the same value for all of the LEDs should keep them about the
+			  same brightness.</p>
 		</div>
 	</section>
 	<section id="CIRC-makingBetter">
 		<h2>Making it Better?</h2>
-		<h3>«mb_title»</h3>
-		<p>«mb_description»</p>
+		<h3>Better animations:</h3>
+		<p>The current animation just 'runs' a single LED up and back across the
+			string of six.  See the code in CIRC-02 for ideas of other possible
+			patterns.  That has a string of 8 LEDs, but minor changes will let similar
+			patterns be used here.</p>
+		<p>With the dice simulation code as an example, another animation could
+			randomly blink the LEDs.</p>
+		<pre>void animateRandomLed()
+{
+  int randomLed;
+  for ( int i = 0; i < 15; i++ ) {
+    randomLed = random ( 2, 8 ); // Lowest to one above highest LED pin number
+    digitalWrite ( randomLed, HIGH );
+    delay ( ANIM_WAIT );
+    digitalWrite ( randomLed, LOW );
+  }
+}// ./void animateRandomLed()</pre>
+		<p>Once more than one animation pattern has been define, the one to use
+			could be selected randomly</p>
+		<pre>void animateRandomPick()
+{
+  unsigned int animPick = random ( 0, 2 ); // 0 to number of animations to choose from
+  switch ( animPick ) {
+    case 0:
+      animateRandomLed();
+      break;
+    case 1:
+      animateWithMemory();
+			break;
+		// add more cases and animation function calls
+  }
+}// ./void animateRandomPick()</pre>
+		<h3>Change animation speed:</h3>
+		<p>The time between steps of the tension building animation can be changed.
+			Currently all of the animations use "ANIM_WAIT" to control the speed.
+			Changing that will change the speed.  The delays used though do not have
+			to be all the same, even within a single animation.  The initial simple
+			run up and down could be change to slow down as at gets near the end.
+			Change each of the delay calls in animateWithMemory to:</p><pre>delay ( animWaIT );
+animWaIT += animStep;</pre>
+		<p>and after "int prevLed = sixth;" at the start of the function, add:
+<pre>unsigned long animWaIT = 30;
+unsigned long animStep = 30;</pre>
+		<p>Each of the above values can be changed to set how fast the animation
+			starts, and how fast it slows down as it progresses.</p>
+		<h3>Simulate different dice sizes:</h3>
+		<p>Add more LEDs, and change the code to simulate different numbers of dice
+		  sides.  1d8, 1d10, etc.  Change the code that does the animations, as well
+			as the code the calcualtions and displays the roll result.  If you want to
+			try 1d20, you probably want to look at CIRC-05.  Using a shift register
+			will allow more LEDs to be controlled using fewer pins.  Mutiple shift
+			registers can be chained together to control even more LEDs without used
+			only the pins needed for a single 74HC595.</p>
 	</section>
 </main>
 
-		<footer>.: Welcome to the Bottom:.</footer>
+		<footer>.:Welcome to the Bottom:.</footer>
 	</body>
 </html>
