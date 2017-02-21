@@ -200,6 +200,9 @@ pre {
   text-align: right;
   margin-top: 1.6rem;
 }
+#sidebar a[rel="license"] img {
+  border-width: 0;
+}
 
 #menu { /* nested navication menus */
   border-right: 1px solid #000;
@@ -354,7 +357,6 @@ main h2 span {
   font-size: 0.667rem;
 }
 h3 {
-  /*color: #111;*/
   font-size: 0.945rem;
   font-weight: bold;
   margin: 0;
@@ -371,9 +373,6 @@ h3 {
 main p {
   margin: 0 0 0.4rem 0;
 }
-/*#CIRC-makingBetter p {
-  margin: 0 0 0.4rem 0;
-}*/
 
 #circuit > div {
   margin-left: 1rem;
@@ -411,7 +410,7 @@ main p {
   position: relative;
   height: 0;
   padding: 0;
-  padding-bottom: 100%; /* override this inline for aspect ration other than square */
+  padding-bottom: 100%; /* override this inline for aspect ratio other than square */
 }
 .bb-svg-container {
   float: right;
@@ -601,13 +600,18 @@ main#index h1 {
   margin: 0 0 1rem 0;
 }
 
-main#circ-12 div svg {
-  height: 163px;
+main#circ-12 .bb-svg-container {
+  padding-bottom: 86%;
 }
-main#circ-12 #circuit > svg {
-  height: 390px;
+main#circ-12 .sch-svg-container {
+  padding-bottom: 110%;
 }
-
+main#circ-15 .bb-svg-container {
+  padding-bottom: 53%;
+}
+main#circ-15 .sch-svg-container {
+  padding-bottom: 118%;
+}
 
 /* ==========================================================================
  Helper classes

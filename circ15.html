@@ -5,7 +5,6 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<title>ardx:circ-15[.:wcrs:.]</title>
 		<meta name="description" content="Arduino Experimenters Kit dice simulator">
-<!-- #include «head.html» -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
@@ -21,7 +20,6 @@
 				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-<!-- #include «topnav.html» -->
 <nav id="topnav">
 	<a id="logo" href="https://wcrsyyc.github.io/"><img
 		src="img/wcrs_logo.png" alt="logo"></a>
@@ -35,7 +33,6 @@
 	<p><!-- current message text --></p>
 </nav>
 
-<!-- #include «sidebar.html» -->
 <nav id="sidebar">
 	<section id="menu">
 		<ul>
@@ -80,6 +77,8 @@
 								<h4>ELEC</h4>Electronics Primer</a></li>
 							<li><a href="circ12.html">
 								<h4>CIRC-12</h4>RGB LED blink</a></li>
+							<li><a href="circ15.html">
+								<h4>CIRC-15</h4>Dice Simulator</a></li>
 						</ul>
 					</li>
 					<li><a href="http://www.oomlout.com/oom.php/products/nedx/"><h3>(NEDX)</h3>netduino experimenter´s kit</a>
@@ -115,7 +114,7 @@
 
 	<section>
 		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-			<img alt="Creative Commons License" style="border-width:0"
+			<img alt="Creative Commons License"
 				src="img/80x15.png"></a><br>
 		This work is licensed under a <a rel="license"
 			href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
@@ -163,23 +162,23 @@
 				</tr>
 			</table>
 		</div>
-		<span class="bb-svg-container" style="padding-bottom: 60%;"><svg
+		<span class="bb-svg-container"><svg
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
-			viewBox="-101 0 100 100"
+			viewBox="-77 11 77 77"
 			preserveAspectRatio="xMaxYMin meet">
-			<image x="0" y="0" height="140" width="100"
+			<image height="100" width="100"
 				xlink:href="img/CIRC15-bb.svg"
 				transform="rotate(90 0 0)"/>
 		</svg></span>
 		<div>
 			<h3>Schematic</h3>
-			<span class="sch-svg-container"	style="padding-bottom: 118%;"><svg
+			<span class="sch-svg-container"><svg
 				xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
-				viewBox="92 34 100 100"
+				viewBox="51 20 51 51"
 				preserveAspectRatio="xMidYMin meet">
-				<image x="0" y="0" width="190" height="190"
+				<image width="100" height="100"
 					xlink:href="img/CIRC15-schem.svg" />
 			</svg></span>
 		</div>
@@ -491,10 +490,10 @@ unsigned long animStep = 30;</pre>
 		<h3>Simulate different dice sizes:</h3>
 		<p>Add more LEDs, and change the code to simulate different numbers of dice
 		  sides.  1d8, 1d10, etc.  Change the code that does the animations, as well
-			as the code the calcualtions and displays the roll result.  If you want to
-			try 1d20, you probably want to look at CIRC-05.  Using a shift register
-			will allow more LEDs to be controlled using fewer pins.  Mutiple shift
-			registers can be chained together to control even more LEDs without used
+			as the code that calculates and displays the roll result.  If you want to
+			try 1d20, you probably want to look at CIRC-05 first.  Using a shift
+			register will allow more LEDs to be controlled using fewer pins.  Mutiple
+			shift registers can be chained together to control even more LEDs using
 			only the pins needed for a single 74HC595.</p>
 	</section>
 </main>
