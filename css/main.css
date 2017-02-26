@@ -371,14 +371,18 @@ h3 {
   font-weight: normal;
   }
 main p {
-  margin: 0 0 0.4rem 0;
+  margin: 0 0 1.4rem 0;
+}
+main p:last-child {
+  margin: 0;
 }
 
 #circuit > div {
   margin-left: 1rem;
   margin-bottom: 0.695rem;
-  padding: 3px 0 0 2px;
+  padding: 3px 0 3px 2px;
   border: 1.5px solid #444;
+  width: 12.3rem;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
 }
@@ -402,8 +406,14 @@ main p {
   text-align: left;
   margin-left: 0.1rem;
 }
-#circuit > div {
-  width: 12.3rem;
+#CIRC-theparts table {
+  border-collapse: collapse;
+}
+#CIRC-theparts table td {
+  padding: 0;
+  border-spacing: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 .bb-svg-container,
 .sch-svg-container {
@@ -592,14 +602,30 @@ main#elec dd {
   /*float: left;*/
 }
 
-
-
 main#index h1 {
   width: auto;
   color: #444;
   margin: 0 0 1rem 0;
 }
 
+main#circ-01 .bb-svg-container {
+  padding-bottom: 53%;
+}
+/*main#circ-01 .sch-svg-container {
+  padding-bottom: 100%;
+}*/
+main#circ-02 .bb-svg-container {
+  padding-bottom: 56%;
+}
+main#circ-02 .sch-svg-container {
+  padding-bottom: 95%;
+}
+main#circ-03 .bb-svg-container {
+  padding-bottom: 50%;
+}
+/*main#circ-03 .sch-svg-container {
+  padding-bottom: 100%;
+}*/
 main#circ-12 .bb-svg-container {
   padding-bottom: 86%;
 }

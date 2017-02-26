@@ -1,0 +1,50 @@
+#! /bin/sh
+
+# Code to take the raw svg images exported from Fritzing, and do automatic
+# adjustments them.  Typically this is to add text that the svg export dropped.
+# If any either automatic or manual corrections are need to an image file, this
+# script will create a raw/«name»-fix.svg file.  Otherwise the original
+# raw/«name».svg is left alone.
+
+# # CIRC-01
+# # Put back the text that Fritzing svg export dropped off the schematic
+# # Have not found an svgo option to consolidate transform and coordinate attribuees,
+# # and have not found a way to get text attributes moved to parent group element.
+# # Need to include the y value from the text element in the inserted tspans to
+# # get things to position correctly.
+# # s «delimi»«regexp»«delimi»«replacement»«delimi»«flags»
+# sed '
+# s^>LED</text>^>LED<tspan font-size="4" x="0" y="8.25">(light emitting diode)</tspan><tspan font-size="4" x="7" y="-6">longer lead</tspan><tspan font-size="6" x="-12" y="-19">Arduino</tspan></text>^
+# s^>gnd</text>^>gnd<tspan font-size="4" x="0" y="9.25">(ground) (-)</tspan></text>^
+# s^>resistor</text>^>resistor<tspan font-size="4" x="0" y="13.25">(green-blue-brown)</tspan></text>^
+# ' raw/CIRC01_schem.svg >raw/CIRC01_schem-fix.svg
+# # This does not fix the inverted text, so need to do that manually:
+# # Manually (text editor) remove the x,y coordinates for the Pin «n» text. and the
+# # matrix entry for the containing group, then use Inkscape to reposition the text
+# # Still need to insert the "longer lead" line and arrow as well
+
+# # CIRC-02
+# cp raw/CIRC02_bb.svg raw/CIRC02_bb-fix.svg
+# # manually add the longest lead arrow using Inkscape
+# cp raw/CIRC02_schem.svg raw/CIRC02_schem-fix.svg
+# # fix the inverted pin number text
+# # Manually (text editor) remove the x,y coordinates for the Pin «n» text. and the
+# # matrix entry for the containing group, then use Inkscape to reposition the text
+
+# # CIRC-03
+# cp raw/CIRC03_bb.svg raw/CIRC03_bb-fix.svg
+# # manually add the longest lead arrow using Inkscape
+#
+# # Put back the text that Fritzing svg export dropped off the schematic
+# # Have not found an svgo option to consolidate transform and coordinate attribuees,
+# # and have not found a way to get text attributes moved to parent group element.
+# # Need to include the y value from the text element in the inserted tspans to
+# # get things to position correctly.
+# sed '
+# s^>Motor</text>^>Motor<tspan font-size="3.9" x="-16" y="-8.2">Collector</tspan><tspan font-size="3.9" x="12" y="-16.1">Base</tspan><tspan font-size="3.9" x="19" y="-8.2">Emitter</tspan></text>^
+# s^>gnd</text>^>gnd<tspan font-size="4" x="0" y="9.25">(ground) (-)</tspan></text>^
+# s^>resistor</text>^>resistor<tspan font-size="5.5" x="2" y="-14">Arduino</tspan></text>^
+# ' raw/CIRC03_schem.svg >raw/CIRC03_schem-fix.svg
+# # This does not fix the inverted text, so need to do that manually:
+# # Manually (text editor) remove the x,y coordinates for the Pin «n» text. and the
+# # matrix entry for the containing group, then use Inkscape to reposition the text

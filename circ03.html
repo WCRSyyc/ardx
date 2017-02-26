@@ -1,0 +1,253 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-03[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit Spin Motor Spin circuit">
+		<!-- #include «head.html» -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<!-- #include «topnav.html» -->
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="index.html">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<!-- #include «sidebar.html» -->
+
+<main id="circ-03">
+	<header>
+		<h1>CIRC<br/>03</h1>
+		<h2>.:Spin Motor Spin:.<br>.:Transistor &amp; Motor:.</h2>
+		<img src="http://www.ardx.org/src/circ/CIRC-03-square-100.jpg" width="100" height="100" alt="small motor">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We're Doing</h2>
+		<p>The Arduino's pins are great for directly controlling small electric items like LEDs. However, when dealing with larger items (like a toy motor or washing machine), an external transistor is required. A transistor is incredibly useful. It switches a lot of current using a much smaller current. A transistor has 3 pins. For a negative type (NPN) transistor, you connect your load to collector and the emitter to ground. Then when a small current flows from base to the emitter, a current will flow through the transistor and your motor will spin (this happens when we set our Arduino pin HIGH). There are literally thousands of different types of transistors, allowing every situation to be perfectly matched. We have chosen a P2N2222AG a rather common general purpose transistor. The important factors in our case are that its maximum voltage (40v) and its maximum current (200 milliamp) are both high enough for our toy motor (full details can be found on its datasheet <a href="http://ardx.org/2222">http://ardx.org/2222</a> ).<br/>
+		(The 1N4001 diode is acting as a flyback diode for details on why its there visit: <a href="http://ardx.org/4001">http://ardx.org/4001</a> )</p>
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="http://www.oomlout.com/parts/CIRC-03-3dsheet-60.png"
+						width="60" height="36" alt="circuit 3 breadboard sheet 3d view"/></td>
+					<td>CIRC-03<br/>Breadboard Sheet<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/HEAD-02-60.png"
+						width="60" height="36" alt="2 pin header"/></td>
+					<td>2 Pin Header<br/>x4</td>
+					<td><img src="http://www.oomlout.com/parts/IC-2222A-60.png"
+						width="60" height="36" alt="P2N2222AG transistor"/></td>
+					<td>Transistor<br/>P2N2222AG(TO92)<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="wire"/></td>
+					<td>Wire</td>
+				</tr><tr>
+					<td><img src="http://www.oomlout.com/parts/MOTOR-01-60.png"
+						width="60" height="36" alt="toy motor"/></td>
+					<td>Toy Motor<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/DIOD-01-60.png"
+						width="60" height="36" alt="resistor"/></td>
+					<td>Diode<br/>(1N4001)<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/RES-103-60.png"
+						width="60" height="36" alt="resistor"/></td>
+					<td>10k Ohm Resistor<br/>Brown-Black-Orange<br/>x1</td>
+				</tr>
+			</table>
+		</div>
+		<span class="bb-svg-container"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="29 14 71 71"
+			preserveAspectRatio="xMaxYMin meet">
+			<image height="100" width="100"
+				xlink:href="img/CIRC03_bb.svg"/>
+				<!-- transform="rotate(90 0 0)" -->
+		</svg></span>
+		<div>
+			<h3>Schematic</h3>
+			<span class="sch-svg-container"><svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="50 50.3 35 35"
+				preserveAspectRatio="xMidYMin meet">
+				<image height="100" width="100"
+					xlink:href="img/CIRC03_schem.svg" />
+			</svg></span>
+		</div>
+		<div>
+			<h3>Resources</h3>
+			<h4>.:download:.</h4>
+			<p>Breadboard layout sheet</br>
+				<a href="http://ardx.org/BBLS03">http://ardx.org/BBLS03</a>
+			</p>
+			<p>Fritzing diagram</br><a href="fritzing/CIRC03.fzz">
+				https://wcrsyyc.github.io/ardx/fritzing/CIRC03.fzz</a></p>
+			<h4>.:view:.</h4>
+			<p>
+				assembly video</br>
+				<a href="http://ardx.org/VIDE03">http://ardx.org/VIDE03</a>
+			</p>
+		</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<p>Download the Code from ( <a
+			href="http://ardx.org/src/circ/CIRC03-code.txt">http://ardx.org/CODE03</a> )<br>
+			(and then copy the text and paste it into an empty Arduino Sketch)</p>
+		<pre>/*     -----------------------------------------------------------
+ *     |  Arduino Experimentation Kit Example Code               |
+ *     |  CIRC-03 .: Spin Motor Spin :. (Transistor and Motor)   |
+ *     -----------------------------------------------------------
+ *
+ * The Arduinos pins are great for driving LEDs however if you hook
+ * up something that requires more power you will quickly break them.
+ * To control bigger items we need the help of a transistor.
+ * Here we will use a transistor to control a small toy motor
+ *
+ * http://tinyurl.com/d4wht7
+ *
+ */
+
+int motorPin = 9;  // define the pin the motor is connected to
+                   // (if you use pin 9,10,11 or 3you can also control speed)
+
+/*
+ * setup() - this function runs once when you turn your Arduino on
+ * We set the motors pin to be an output (turning the pin high (+5v) or low (ground) (-))
+ * rather than an input (checking whether a pin is high or low)
+ */
+void setup()
+{
+ pinMode(motorPin, OUTPUT);
+}
+
+
+/*
+ * loop() - this function will start after setup finishes and then repeat
+ * we call a function called motorOnThenOff()
+ */
+
+void loop()                     // run over and over again
+{
+ motorOnThenOff();
+ //motorOnThenOffWithSpeed();
+ //motorAcceleration();
+}
+
+/*
+ * motorOnThenOff() - turns motor on then off
+ * (notice this code is identical to the code we used for
+ * the blinking LED)
+ */
+void motorOnThenOff(){
+  int onTime = 2500;  //the number of milliseconds for the motor to turn on for
+  int offTime = 1000; //the number of milliseconds for the motor to turn off for
+
+  digitalWrite(motorPin, HIGH); // turns the motor On
+  delay(onTime);                // waits for onTime milliseconds
+  digitalWrite(motorPin, LOW);  // turns the motor Off
+  delay(offTime);               // waits for offTime milliseconds
+}
+
+/*
+ * motorOnThenOffWithSpeed() - turns motor on then off but uses speed values as well
+ * (notice this code is identical to the code we used for
+ * the blinking LED)
+ */
+void motorOnThenOffWithSpeed(){
+
+  int onSpeed = 200;  // a number between 0 (stopped) and 255 (full speed)
+  int onTime = 2500;  //the number of milliseconds for the motor to turn on for
+
+  int offSpeed = 50;  // a number between 0 (stopped) and 255 (full speed)
+  int offTime = 1000; //the number of milliseconds for the motor to turn off for
+
+  analogWrite(motorPin, onSpeed);   // turns the motor On
+  delay(onTime);                    // waits for onTime milliseconds
+  analogWrite(motorPin, offSpeed);  // turns the motor Off
+  delay(offTime);                   // waits for offTime milliseconds
+}
+
+/*
+ * motorAcceleration() - accelerates the motor to full speed then
+ * back down to zero
+*/
+void motorAcceleration(){
+  int delayTime = 50; //milliseconds between each speed step
+
+  //Accelerates the motor
+  for(int i = 0; i < 256; i++){ //goes through each speed from 0 to 255
+    analogWrite(motorPin, i);   //sets the new speed
+    delay(delayTime);           // waits for delayTime milliseconds
+  }
+
+  //Decelerates the motor
+  for(int i = 255; i >= 0; i--){ //goes through each speed from 255 to 0
+    analogWrite(motorPin, i);   //sets the new speed
+    delay(delayTime);           // waits for delayTime milliseconds
+  }
+}</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>(3 things to try)</span></h2>
+		<div>
+			<h3>Motor Not Spinning?</h3>
+			<p>If you sourced your own transistor, double check with the data sheet that the pinout is compatible with a P2N2222AG
+(many are reversed).</p>
+		</div>
+		<div>
+			<h3>Still No Luck?</h3>
+			<p>If you sourced your own motor, double check that it will work with 5 volts and that it does not draw too much power.</p>
+		</div>
+		<div>
+			<h3>Still Not Working?</h3>
+			<p>Sometimes the Arduino board will disconnect from the computer. Try un-plugging and then re-plugging it into your USB port.</p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>Controlling Speed:</h3>
+		<p>We played with the Arduino's ability to control the brightness of an LED earlier, now we will use the same feature to control the speed of our motor. The Arduino does this using something called Pulse Width Modulation (PWM). This relies on the Arduino's ability to operate really, really fast. Rather than directly controlling the voltage coming from the pin, the Arduino will switch the pin on and off very quickly. In the computer world this is going from 0 to 5 volts many times a second, but in the human world we see it as a voltage. For example if the Arduino is PWM'ing at 50% we see the light dimmed 50% because our eyes are not quick enough to see it flashing on and off. The same feature works with transistors. Don't believe me? Try it out.</p>
+		<p>In the loop() section change it to this
+		<pre>// motorOnThenOff();
+motorOnThenOffWithSpeed();
+//motorAcceleration();</pre></p>
+		<p>Then upload the program. You can change the speeds by changing the variables onSpeed and offSpeed.</p>
+		<h3>Accelerating and decelerating:</h3>
+		<p>Why stop at two speeds, why not accelerate and decelerate the motor. To do this simply change the loop() code to read
+<pre>// motorOnThenOff();
+// motorOnThenOffWithSpeed();
+motorAcceleration();</pre></p>
+		<p>Then upload the program and watch as your motor slowly accelerates up to full speed then slows down again. If you would like to change the speed of acceleration, change the variable delayTime (larger means a longer acceleration time).</p>
+	</section>
+</main>
+
+		<footer>.:Welcome to the Bottom:.</footer>
+	</body>
+</html>

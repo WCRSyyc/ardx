@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-01[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit Blinking LED circuit">
+		<!-- #include «head.html» -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<!-- #include «topnav.html» -->
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="index.html">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<!-- #include «sidebar.html» -->
+
+<main id="circ-01">
+	<header>
+		<h1>CIRC<br/>01</h1>
+		<h2>.:Getting Started:.<br>.:Blinking LED:.</h2>
+		<img src="http://www.ardx.org/src/circ/CIRC-01-square-100.jpg" width="100" height="100" alt="blinking led circuit">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We're Doing</h2>
+		<p>LEDs (light emitting diodes) are used in all sorts of clever things which is why we have included them in this kit. We will start off with something very simple, turning one on and off, repeatedly, producing a pleasant blinking effect. To get started, grab the parts listed below, pin the layout sheet to your breadboard and then plug everything in. Once the circuit is assembled you'll need to upload the program. To do this plug the Arduino board into your USB port. Then select the proper port in Tools > Serial Port > (the comm port of your Arduino). Next upload the program by going to File > Upload to I/O Board (ctrl+U). Finally, bask in the glory and possibility that controlling lights offers.</p>
+		<p>If you are having trouble uploading, a full trouble shooting guide can be found here: <a href="http://ardx.org/TRBL">http://ardx.org/TRBL</a></p>
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="http://www.oomlout.com/parts/CIRC-01-3dsheet-60.png"
+						width="60" height="36" alt="circuit 1 breadboard sheet 3d view"/></td>
+					<td>CIRC-01<br/>Breadboard Sheet<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/HEAD-02-60.png"
+						width="60" height="36" alt="2 pin header"/></td>
+					<td>2 Pin Header<br/>x4</td>
+					<td><img src="http://www.oomlout.com/parts/LED-10B-60.png"
+						width="60" height="36" alt="10mm LED"/></td>
+					<td>10mm LED<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="wire"/></td>
+					<td>Wire</td>
+				</tr><tr>
+					<td><img src="http://www.oomlout.com/parts/RES-561-60.png"
+						width="60" height="36" alt="resistor"/></td>
+					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>x1</td>
+				</tr>
+			</table>
+		</div>
+		<span class="bb-svg-container"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="23 13 76 76"
+			preserveAspectRatio="xMaxYMin meet">
+			<image height="100" width="100"
+				xlink:href="img/CIRC01_bb.svg"/>
+		</svg></span>
+		<div>
+			<h3>Schematic</h3>
+			<span class="sch-svg-container"><svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="68 53.5 27 27"
+				preserveAspectRatio="xMidYMin meet">
+				<image height="100" width="100"
+					xlink:href="img/CIRC01_schem.svg" />
+			</svg></span>
+		</div>
+		<div>
+			<h3>Resources</h3>
+			<h4>.:download:.</h4>
+			<p>Breadboard layout sheet</br>
+				<a href="http://ardx.org/BBLS01">http://ardx.org/BBLS01</a>
+			</p>
+			<p>Fritzing diagram</br><a href="fritzing/CIRC01.fzz">
+				https://wcrsyyc.github.io/ardx/fritzing/CIRC01.fzz</a></p>
+			<h4>.:view:.</h4>
+			<p>
+				assembly video</br>
+				<a href="http://ardx.org/VIDE01">http://ardx.org/VIDE01</a>
+			</p>
+		</div>
+	</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<h3>File > Examples > 1.Basic > Blink</h3>
+		<p>(example from the great <a	href="https://www.arduino.cc/">arduino.cc</a> site, check it out for other ideas)</p>
+		<pre>/*
+  *Blink
+  *Turns on an LED on for one second, then off for one second, repeatedly.
+  *The circuit:
+  * LED connected from digital pin 13 to ground.
+  * Note: On most Arduino boards, there is already an LED on the board
+  * connected to pin 13, so you don't need any extra components for this example.
+
+  *Created 1 June 2005
+  *By David Cuartielles
+  *http://arduino.cc/en/Tutorial/Blink
+  *based on an orginal by H. Barragan for the Wiring i/o board
+*/
+
+int ledPin =  13;    // LED connected to digital pin 13
+
+// The setup() method runs once, when the sketch starts
+
+void setup()   {
+  // initialize the digital pin as an output:
+  pinMode(ledPin, OUTPUT);
+}
+
+// the loop() method runs over and over again,
+// as long as the Arduino has power
+
+void loop()
+{
+  digitalWrite(ledPin, HIGH);   // set the LED on
+  delay(1000);                  // wait for a second
+  digitalWrite(ledPin, LOW);    // set the LED off
+  delay(1000);                  // wait for a second
+}</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>(3 things to try)</span></h2>
+		<div>
+			<h3>LED Not Lighting Up?</h3>
+			<p>LEDs will only work in one direction. Try taking it out and twisting it 180 degrees.</br>
+				(no need to worry, installing it backwards does no permanent harm).</p>
+		</div>
+		<div>
+			<h3>Program Not Uploading</h3>
+			<p>This happens sometimes, the most likely cause is a confused serial port, you can change this in <b>tools>serial port></b></p>
+		</div>
+		<div>
+			<h3>Still No Success?</h3>
+			<p>A broken circuit is no fun, send us an e-mail and we will get back to you as soon as we can.</p>
+			<p><a href="mailto:info@robotgames.com">info@robotgames.com</a></p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>Changing the pin:</h3>
+		<p>The LED is connected to pin 13 but we can use any of the Arduino's pins. To change it take the wire plugged into pin 13 and move it to a pin of your choice (from 0-13) (you can also use analog 0-5 analog 0 is 14...)</p>
+		<p>Then in the code change the line:</br>
+			&nbsp; &nbsp; &nbsp; &nbsp; <code>int ledPin = 13;</code> -> <code>int ledPin = newpin;</code></br>
+			Fill in your own number for "newpin".</p>
+		<p>Then upload the sketch: (ctrl-u) </p>
+		<h3>Change the Blink Time:</h3>
+		<p>Unhappy with one second on one second off?</p>
+		<p>In the code change the lines:
+<pre>      digitalWrite(ledPin, HIGH);
+      delay(time on); //(seconds * 1000)
+      digitalWrite(ledPin, LOW);
+      delay(time off); //(seconds * 1000</pre>
+		Fill in your own numbers for "time on" and "time off".</p>
+		<h3>Control the Brightness:</h3>
+		<p>Along with digital (on/off) control the Arduino can control some pins in an analog (brightness) fashion. (more details on this in later circuits). To play around with it.</p>
+		<p>Change the LED to pin 9: (also change the wire)</br>
+			&nbsp; &nbsp; &nbsp; &nbsp; <code>int ledPin = 13;</code> -> <code>int ledPin = 9;</code></p>
+		<p>Replace the code inside the { }'s of loop() with this:
+<pre>    analogWrite(ledPin, new number);</pre></p>
+		<p>(new number) = any number between 0 and 255. 0 = off, 255 = on, in between = different brightness</p>
+		<h3>Fading:</h3>
+		<p>We will use another included example program. To open go to.</br>
+			&nbsp; &nbsp; &nbsp; &nbsp; <b>File > Examples > Analog > Fading</b></p>
+		<p>Then upload to your board and watch as the LED fades in and then out.</p>
+	</section>
+</main>
+
+		<footer>.:Welcome to the Bottom:.</footer>
+	</body>
+</html>
