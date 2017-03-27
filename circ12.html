@@ -113,9 +113,9 @@
 	</section>
 
 	<section>
-		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+		<h3><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
 			<img alt="Creative Commons License"
-				src="img/80x15.png"></a><br>
+				src="img/80x15.png"></a></h3>
 		This work is licensed under a <a rel="license"
 			href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
 			Attribution 4.0 International License</a>.
@@ -200,7 +200,7 @@
 			<h3>Resources</h3>
 			<h4>.:download:.</h4>
 			<p>
-				Fritzing Diagram</br>
+				Fritzing Diagram<br/>
 				<a href="fritzing/CIRC12.fzz">https://wcrsyyc.github.io/ardx/fritzing/CIRC12.fzz</a>
 			</p>
 		</div>
@@ -266,7 +266,7 @@ const unsigned long COLOUR_TIME = 500; // milliseconds (0.5 seconds)
 
 void setup () {
   // initialize all of the RGB control pins as outputs.
-  for ( unsigned int colour = 0; colour < rgbPinCount; colour++ ) {
+  for ( unsigned int colour = 0; colour &lt; rgbPinCount; colour++ ) {
     pinMode ( rgbPin [ colour ] , OUTPUT );
   }
   // An alternate way to do the same thing
@@ -439,7 +439,7 @@ unsigned const int patternCount = sizeof ( pattern ) / ( sizeof ( pattern [ 0 ])
 			<code>rgbAnimate ()</code> function:</p>
 		<pre>
 void rgbAnimate () {
-  for ( unsigned int ptn = 0; ptn < patternCount; ptn++ ) {
+  for ( unsigned int ptn = 0; ptn &lt; patternCount; ptn++ ) {
     setLedColour (
       pattern [ ptn ][ RED ] ,
       pattern [ ptn ][ GREEN ] ,

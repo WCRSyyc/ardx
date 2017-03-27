@@ -113,9 +113,9 @@
 	</section>
 
 	<section>
-		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+		<h3><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
 			<img alt="Creative Commons License"
-				src="img/80x15.png"></a><br>
+				src="img/80x15.png"></a></h3>
 		This work is licensed under a <a rel="license"
 			href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
 			Attribution 4.0 International License</a>.
@@ -159,6 +159,7 @@
 					<td><img src="http://www.oomlout.com/parts/BUTT-01-60.png"
 						width="60" height="36" alt="resistor"/></td>
 					<td>Pushbutton</td>
+					<td colspan="6"></td>
 				</tr>
 			</table>
 		</div>
@@ -185,7 +186,7 @@
 		<div>
 			<h3>Resources</h3>
 			<h4>.:download:.</h4>
-			<p>Fritzing diagram</br><a href="fritzing/CIRC15.fzz">
+			<p>Fritzing diagram<br/><a href="fritzing/CIRC15.fzz">
 				https://wcrsyyc.github.io/ardx/fritzing/CIRC15.fzz</a></p>
 		</div>
 	</section>
@@ -233,7 +234,7 @@ const int rollBtn = 12;
 
 void setup() {
   // set all LED pins to OUTPUT
-  for ( int  i = first; i <= sixth; i++ ) {
+  for ( int  i = first; i &lt;= sixth; i++ ) {
     pinMode ( i, OUTPUT );
   }
   // set button pin to INPUT, and use internal pullup resistor
@@ -279,7 +280,7 @@ void loop()
 void animateDieRolling()
 {
   // left to right
-  for ( int i = first; i <= sixth; i++ ) {
+  for ( int i = first; i &lt;= sixth; i++ ) {
     if ( i != first ) {
       digitalWrite ( i - 1, LOW );
     }
@@ -304,7 +305,7 @@ void animateWithMemory()
 {
   int prevLed = sixth;
   // left to right
-  for ( int i = first; i <= sixth; i++ ) {
+  for ( int i = first; i &lt;= sixth; i++ ) {
     digitalWrite ( prevLed, LOW ); // Turn previous LED OFF
     digitalWrite ( i, HIGH ); // Turn current LED ON
     prevLed = i; // Remember the pin for the currently ON LED
@@ -381,7 +382,7 @@ void showDieBySwitch( int number )
 void showDieByFor( int number )
 {
   // Turn on the first 'number' LEDs
-  for ( int i = first; i < first + number; i++ ) {
+  for ( int i = first; i &lt; first + number; i++ ) {
     digitalWrite ( i, HIGH );
   }
 }// ./void showDieByFor( int number )
@@ -410,7 +411,7 @@ int roll1d6()
  */
 void setAllLEDs( int value )
 {
-  for ( int i = first; i <= sixth; i++ ) {
+  for ( int i = first; i &lt;= sixth; i++ ) {
     digitalWrite ( i, value );
   }
 }// ./void setAllLEDs( int value )
@@ -452,7 +453,7 @@ void setAllLEDs( int value )
 		<pre>void animateRandomLed()
 {
   int randomLed;
-  for ( int i = 0; i < 15; i++ ) {
+  for ( int i = 0; i &lt; 15; i++ ) {
     randomLed = random ( 2, 8 ); // Lowest to one above highest LED pin number
     digitalWrite ( randomLed, HIGH );
     delay ( ANIM_WAIT );
