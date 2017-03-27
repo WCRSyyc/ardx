@@ -1,50 +1,112 @@
 #! /bin/sh
 
 # Code to take the raw svg images exported from Fritzing, and do automatic
-# adjustments them.  Typically this is to add text that the svg export dropped.
+# adjustments on them.  Typically this is to add text that the svg export dropped.
 # If any either automatic or manual corrections are need to an image file, this
 # script will create a raw/«name»-fix.svg file.  Otherwise the original
 # raw/«name».svg is left alone.
 
-# # CIRC-01
-# # Put back the text that Fritzing svg export dropped off the schematic
-# # Have not found an svgo option to consolidate transform and coordinate attribuees,
-# # and have not found a way to get text attributes moved to parent group element.
-# # Need to include the y value from the text element in the inserted tspans to
-# # get things to position correctly.
-# # s «delimi»«regexp»«delimi»«replacement»«delimi»«flags»
-# sed '
-# s^>LED</text>^>LED<tspan font-size="4" x="0" y="8.25">(light emitting diode)</tspan><tspan font-size="4" x="7" y="-6">longer lead</tspan><tspan font-size="6" x="-12" y="-19">Arduino</tspan></text>^
-# s^>gnd</text>^>gnd<tspan font-size="4" x="0" y="9.25">(ground) (-)</tspan></text>^
-# s^>resistor</text>^>resistor<tspan font-size="4" x="0" y="13.25">(green-blue-brown)</tspan></text>^
-# ' raw/CIRC01_schem.svg >raw/CIRC01_schem-fix.svg
-# # This does not fix the inverted text, so need to do that manually:
-# # Manually (text editor) remove the x,y coordinates for the Pin «n» text. and the
-# # matrix entry for the containing group, then use Inkscape to reposition the text
-# # Still need to insert the "longer lead" line and arrow as well
+# CIRC-01
+# Put back the text that Fritzing svg export dropped off the schematic
+# Have not found an svgo option to consolidate transform and coordinate attribuees,
+# and have not found a way to get text attributes moved to parent group element.
+# Need to include the y value from the text element in the inserted tspans to
+# get things to position correctly.
+# s «delimi»«regexp»«delimi»«replacement»«delimi»«flags»
+sed '
+s^>LED</text>^>LED<tspan font-size="4" x="0" y="8.25">(light emitting diode)</tspan><tspan font-size="4" x="7" y="-6">longer lead</tspan><tspan font-size="6" x="-12" y="-19">Arduino</tspan></text>^
+s^>gnd</text>^>gnd<tspan font-size="4" x="0" y="9.25">(ground) (-)</tspan></text>^
+s^>resistor</text>^>resistor<tspan font-size="4" x="0" y="13.25">(green-blue-brown)</tspan></text>^
+' raw/CIRC01_schem.svg >raw/CIRC01_schem-fix.svg
+# This does not fix the inverted text, so need to do that manually:
+# Manually (text editor) remove the x,y coordinates for the Pin «n» text. and the
+# matrix entry for the containing group, then use Inkscape to reposition the text
+# Still need to insert the "longer lead" line and arrow as well.
 
-# # CIRC-02
-# cp raw/CIRC02_bb.svg raw/CIRC02_bb-fix.svg
-# # manually add the longest lead arrow using Inkscape
-# cp raw/CIRC02_schem.svg raw/CIRC02_schem-fix.svg
-# # fix the inverted pin number text
-# # Manually (text editor) remove the x,y coordinates for the Pin «n» text. and the
-# # matrix entry for the containing group, then use Inkscape to reposition the text
+# CIRC-02
+cp raw/CIRC02_bb.svg raw/CIRC02_bb-fix.svg
+# manually add the longest lead arrow using Inkscape
+cp raw/CIRC02_schem.svg raw/CIRC02_schem-fix.svg
+# fix the inverted pin number text
+# Manually (text editor) remove the x,y coordinates for the Pin «n» text. and the
+# matrix entry for the containing group, then use Inkscape to reposition the text
 
-# # CIRC-03
-# cp raw/CIRC03_bb.svg raw/CIRC03_bb-fix.svg
-# # manually add the longest lead arrow using Inkscape
+# CIRC-03
+cp raw/CIRC03_bb.svg raw/CIRC03_bb-fix.svg
+# manually add the longest lead arrow using Inkscape
 #
-# # Put back the text that Fritzing svg export dropped off the schematic
-# # Have not found an svgo option to consolidate transform and coordinate attribuees,
-# # and have not found a way to get text attributes moved to parent group element.
-# # Need to include the y value from the text element in the inserted tspans to
-# # get things to position correctly.
-# sed '
-# s^>Motor</text>^>Motor<tspan font-size="3.9" x="-16" y="-8.2">Collector</tspan><tspan font-size="3.9" x="12" y="-16.1">Base</tspan><tspan font-size="3.9" x="19" y="-8.2">Emitter</tspan></text>^
-# s^>gnd</text>^>gnd<tspan font-size="4" x="0" y="9.25">(ground) (-)</tspan></text>^
-# s^>resistor</text>^>resistor<tspan font-size="5.5" x="2" y="-14">Arduino</tspan></text>^
-# ' raw/CIRC03_schem.svg >raw/CIRC03_schem-fix.svg
-# # This does not fix the inverted text, so need to do that manually:
-# # Manually (text editor) remove the x,y coordinates for the Pin «n» text. and the
-# # matrix entry for the containing group, then use Inkscape to reposition the text
+# Put back the text that Fritzing svg export dropped off the schematic
+sed '
+s^>Motor</text>^>Motor<tspan font-size="3.9" x="-16" y="-8.2">Collector</tspan><tspan font-size="3.9" x="12" y="-16.1">Base</tspan><tspan font-size="3.9" x="19" y="-8.2">Emitter</tspan></text>^
+s^>gnd</text>^>gnd<tspan font-size="4" x="0" y="9.25">(ground) (-)</tspan></text>^
+s^>resistor</text>^>resistor<tspan font-size="5.5" x="2" y="-14">Arduino</tspan></text>^
+' raw/CIRC03_schem.svg >raw/CIRC03_schem-fix.svg
+# This does not fix the inverted text, so need to do that manually:
+# Manually (text editor) remove the x,y coordinates for the Pin «n» text. and the
+# matrix entry for the containing group, then use Inkscape to reposition the text
+# Also need to fix the "M"otor entry: find ">M<" then change the wrapping matrix
+# transfrom from "1, 0, 0, 1" to "1, 0, 0, -1", and reduce the y offset by 3.0
+
+# CIRC-04
+# Put back the text that Fritzing svg export dropped off the schematic
+sed '
+s^>gnd</text>^>gnd<tspan font-size="4" x="-14" y="9.25">(ground) (-)</tspan></text>^
+s^>Mini Servo</text>^>Mini Servo<tspan font-size="3.5" x="36" y="8">+5v</tspan><tspan font-size="3.5" x="36" y="11.8">(red)</tspan><tspan font-size="3.5" x="64" y="19.4">signal</tspan><tspan font-size="3.5" x="36" y="24.3">(white, yellow or orange)</tspan><tspan font-size="3.5" x="36" y="31.6">gnd</tspan><tspan font-size="3.5" x="36" y="35.9">(black or brown)</tspan><tspan font-size="5.5" x="62" y="1">Arduino</tspan></text>^
+# ' raw/CIRC04_schem.svg >raw/CIRC04_schem-fix.svg
+# This does not fix the offset "pin 9" text, so need to do that manually with inkscape
+
+# CIRC-05
+cp raw/CIRC05_bb.svg raw/CIRC05_bb-fix.svg
+# manually bring the IC pin labels to the front using Inkscape
+#
+# Put back the text that Fritzing svg export dropped off the schematic
+sed '
+s^>gnd</text>^>gnd<tspan font-size="4" x="-14" y="8.5">(ground) (-)</tspan></text>^
+s^>LED1</text>^>LED<tspan font-size="4" x="-4.5" y="26">resistor</tspan><tspan font-size="4" x="-8.5" y="30">(560ohm)</tspan></text>^
+' raw/CIRC05_schem.svg >raw/CIRC05_schem-fix.svg
+# This does not fix the offset "pin «n»" text, so do that manually with inkscape
+
+# CIRC-06
+# Put back the text that Fritzing svg export dropped off the schematic
+sed '
+s^>gnd</text>^>gnd<tspan font-size="4" x="0" y="8.9">(ground) (-)</tspan></text>^
+s^>Piezo</text>^>Piezo<tspan font-size="4" x="0" y="8.5">Element</tspan><tspan font-size="6" x="-18.5" y="-26">Arduino</tspan></text>^
+' raw/CIRC06_schem.svg >raw/CIRC06_schem-fix.svg
+# This does not fix the offset "pin «n»" text, so do that manually with inkscape
+
+# CIRC-07
+cp raw/CIRC07_bb.svg raw/CIRC07_bb-fix.svg
+# manually add the "longer lead" arrow using Inkscape
+#
+# Put back the text that Fritzing svg export dropped off the schematic
+sed '
+s^>gnd</text>^>gnd<tspan font-size="4" x="0" y="8.9">(ground) (-)</tspan></text>^
+s^>LED</text>^>LED<tspan font-size="6" x="-12.8" y="-18.4">Arduino</tspan><tspan font-size="6" x="35" y="-25">Arduino</tspan></text>^
+' raw/CIRC07_schem.svg >raw/CIRC07_schem-fix.svg
+# This does not fix the offset "pin «n»" text, so do that manually with inkscape
+
+# CIRC-08
+cp raw/CIRC08_bb.svg raw/CIRC08_bb-fix.svg
+# manually add the "longer lead" arrow using Inkscape
+#
+# Put back the text that Fritzing svg export dropped off the schematic
+sed '
+s^>gnd</text>^>gnd<tspan font-size="4" x="0" y="8.9">(ground) (-)</tspan></text>^
+s^>resistor</text>^>resistor<tspan font-size="4" x="0" y="13">(blue-green</tspan><tspan font-size="4" x="0" y="17.5">-brown)</tspan></text>^
+s^>LED</text>^>LED<tspan font-size="4" x="0" y="8.5">(light</tspan><tspan font-size="4" x="0" y="13">emitting</tspan><tspan font-size="4" x="0" y="17.5">diode)</tspan><tspan font-size="6" x="-7.2" y="-17.8">Arduino</tspan><tspan font-size="6" x="46.5" y="-7.3">Arduino</tspan><tspan font-size="4" x="51.2" y="-3.2">analog</tspan></text>^
+' raw/CIRC08_schem.svg >raw/CIRC08_schem-fix.svg
+# This does not fix the offset "pin «n»" text, so do that manually with inkscape
+
+# CIRC09
+cp raw/CIRC09_bb.svg raw/CIRC09_bb-fix.svg
+# manually add the "longer lead" arrow using Inkscape
+#
+# Put back the text that Fritzing svg export dropped off the schematic
+sed '
+s^>gnd</text>^>gnd<tspan font-size="4" x="0" y="8.9">(ground) (-)</tspan></text>^
+s^>photo</text>^>photo<tspan font-size="5.3" x="0" y="9.1">resistor</tspan><tspan font-size="4.5" x="-45.4" y="-25">Arduino</tspan><tspan font-size="4" x="-2.4" y="20.5">Arduino</tspan><tspan font-size="4" x="-1.4" y="25.1">analog</tspan></text>^
+' raw/CIRC09_schem.svg >raw/CIRC09_schem-fix.svg
+# This does not fix the offset "pin «n»" text, so do that manually with inkscape
+
+# CIRC10
+# CIRC11

@@ -71,6 +71,7 @@
 					<td><img src="http://www.oomlout.com/parts/RES-561-60.png"
 						width="60" height="36" alt="resistor"/></td>
 					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>x1</td>
+					<td colspan="6"></td>
 				</tr>
 			</table>
 		</div>
@@ -96,18 +97,17 @@
 		<div>
 			<h3>Resources</h3>
 			<h4>.:download:.</h4>
-			<p>Breadboard layout sheet</br>
+			<p>Breadboard layout sheet<br/>
 				<a href="http://ardx.org/BBLS01">http://ardx.org/BBLS01</a>
 			</p>
-			<p>Fritzing diagram</br><a href="fritzing/CIRC01.fzz">
+			<p>Fritzing diagram<br/><a href="fritzing/CIRC01.fzz">
 				https://wcrsyyc.github.io/ardx/fritzing/CIRC01.fzz</a></p>
 			<h4>.:view:.</h4>
 			<p>
-				assembly video</br>
+				assembly video<br/>
 				<a href="http://ardx.org/VIDE01">http://ardx.org/VIDE01</a>
 			</p>
 		</div>
-	</div>
 	</section>
 	<section id="code">
 		<h2>Code <span>(no need to type everything in just)</span></h2>
@@ -151,7 +151,7 @@ void loop()
 		<h2>Not Working? <span>(3 things to try)</span></h2>
 		<div>
 			<h3>LED Not Lighting Up?</h3>
-			<p>LEDs will only work in one direction. Try taking it out and twisting it 180 degrees.</br>
+			<p>LEDs will only work in one direction. Try taking it out and twisting it 180 degrees.<br/>
 				(no need to worry, installing it backwards does no permanent harm).</p>
 		</div>
 		<div>
@@ -168,27 +168,27 @@ void loop()
 		<h2>Making it Better?</h2>
 		<h3>Changing the pin:</h3>
 		<p>The LED is connected to pin 13 but we can use any of the Arduino's pins. To change it take the wire plugged into pin 13 and move it to a pin of your choice (from 0-13) (you can also use analog 0-5 analog 0 is 14...)</p>
-		<p>Then in the code change the line:</br>
-			&nbsp; &nbsp; &nbsp; &nbsp; <code>int ledPin = 13;</code> -> <code>int ledPin = newpin;</code></br>
+		<p>Then in the code change the line:<br/>
+			&nbsp; &nbsp; &nbsp; &nbsp; <code>int ledPin = 13;</code> -> <code>int ledPin = newpin;</code><br/>
 			Fill in your own number for "newpin".</p>
 		<p>Then upload the sketch: (ctrl-u) </p>
 		<h3>Change the Blink Time:</h3>
 		<p>Unhappy with one second on one second off?</p>
-		<p>In the code change the lines:
-<pre>      digitalWrite(ledPin, HIGH);
+		<p>In the code change the lines:</p>
+		<pre>      digitalWrite(ledPin, HIGH);
       delay(time on); //(seconds * 1000)
       digitalWrite(ledPin, LOW);
       delay(time off); //(seconds * 1000</pre>
-		Fill in your own numbers for "time on" and "time off".</p>
+		<p>Fill in your own numbers for "time on" and "time off".</p>
 		<h3>Control the Brightness:</h3>
 		<p>Along with digital (on/off) control the Arduino can control some pins in an analog (brightness) fashion. (more details on this in later circuits). To play around with it.</p>
-		<p>Change the LED to pin 9: (also change the wire)</br>
+		<p>Change the LED to pin 9: (also change the wire)<br/>
 			&nbsp; &nbsp; &nbsp; &nbsp; <code>int ledPin = 13;</code> -> <code>int ledPin = 9;</code></p>
-		<p>Replace the code inside the { }'s of loop() with this:
-<pre>    analogWrite(ledPin, new number);</pre></p>
+		<p>Replace the code inside the { }'s of loop() with this:</p>
+		<pre>    analogWrite(ledPin, new number);</pre>
 		<p>(new number) = any number between 0 and 255. 0 = off, 255 = on, in between = different brightness</p>
 		<h3>Fading:</h3>
-		<p>We will use another included example program. To open go to.</br>
+		<p>We will use another included example program. To open go to.<br/>
 			&nbsp; &nbsp; &nbsp; &nbsp; <b>File > Examples > Analog > Fading</b></p>
 		<p>Then upload to your board and watch as the LED fades in and then out.</p>
 	</section>

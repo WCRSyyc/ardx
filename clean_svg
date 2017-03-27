@@ -1,17 +1,35 @@
 #! /bin/sh
 
-# Code to take fixed svg file images, and minify them for inclusion of the web
+# Code to take fixed svg file images, and minify them for inclusion on the web
 # pages.  The sources are raw/«name».svg or raw/«name»-fix.svg, and the
 # corresponding output is img/«name».svg
 
-svgo -i raw/CIRC01_bb.svg -o img/CIRC01_bb.svg
-svgo -i raw/CIRC01_schem-fix.svg -o img/CIRC01_schem.svg
+svgo -i raw/CIRC01_bb.svg         -o img/CIRC01_bb.svg
+svgo -i raw/CIRC01_schem-fix.svg  -o img/CIRC01_schem.svg
 
-svgo -i raw/CIRC02_bb-fix.svg -o img/CIRC02_bb.svg
-svgo -i raw/CIRC02_schem-fix.svg -o img/CIRC02_schem.svg
+svgo -i raw/CIRC02_bb-fix.svg     -o img/CIRC02_bb.svg
+svgo -i raw/CIRC02_schem-fix.svg  -o img/CIRC02_schem.svg
 
-svgo -i raw/CIRC03_bb-fix.svg -o img/CIRC03_bb.svg
-svgo -i raw/CIRC03_schem-fix.svg -o img/CIRC03_schem.svg
+svgo -i raw/CIRC03_bb-fix.svg     -o img/CIRC03_bb.svg
+svgo -i raw/CIRC03_schem-fix.svg  -o img/CIRC03_schem.svg
+
+svgo -i raw/CIRC04_bb.svg         -o img/CIRC04_bb.svg
+svgo -i raw/CIRC04_schem-fix.svg  -o img/CIRC04_schem.svg
+
+svgo -i raw/CIRC05_bb-fix.svg     -o img/CIRC05_bb.svg
+svgo -i raw/CIRC05_schem-fix.svg  -o img/CIRC05_schem.svg
+
+svgo -i raw/CIRC06_bb.svg         -o img/CIRC06_bb.svg
+svgo -i raw/CIRC06_schem-fix.svg  -o img/CIRC06_schem.svg
+
+svgo -i raw/CIRC07_bb-fix.svg     -o img/CIRC07_bb.svg
+svgo -i raw/CIRC07_schem-fix.svg  -o img/CIRC07_schem.svg
+
+svgo -i raw/CIRC08_bb-fix.svg     -o img/CIRC08_bb.svg
+svgo -i raw/CIRC08_schem-fix.svg  -o img/CIRC08_schem.svg
+
+svgo -i raw/CIRC09_bb-fix.svg     -o img/CIRC09_bb.svg
+svgo -i raw/CIRC09_schem-fix.svg  -o img/CIRC09_schem.svg
 
 # svgo -i raw/CIRC12_bb.svg     -o img/CIRC12_bb.svg
 # svgo -i raw/CIRC12a_schem.svg -o img/CIRC12a_schem.svg

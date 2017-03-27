@@ -48,7 +48,7 @@
 		<h2>What We're Doing</h2>
 		<p>We have caused one LED to blink, now it's time to up the stakes. Lets connect eight. We'll also have an opportunity to stretch the Arduino a bit by creating various lighting sequences. This circuit is also a nice setup to experiment with writing your own programs and getting a feel for how the Arduino works.</p>
 		<p>Along with controlling the LEDs we start looking into a few simple programming methods to keep your programs small.</p>
-		<p>for() loops - used when you want to run a piece of code several times.</br>
+		<p>for() loops - used when you want to run a piece of code several times.<br/>
 			arrays[] - used to make managing variables easier (it's a group of variables).</p>
 	</section>
 	<section id="circuit">
@@ -64,7 +64,7 @@
 						width="60" height="36" alt="2 pin header"/></td>
 					<td>2 Pin Header<br/>x4</td>
 					<td><img src="http://www.oomlout.com/parts/LED-05G-60.png"
-						width="60" height="36" alt="10mm LED"/></td>
+						width="60" height="36" alt="Green LED"/></td>
 					<td>5mm Green LED<br/>x8</td>
 					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
 						width="60" height="36" alt="wire"/></td>
@@ -73,6 +73,7 @@
 					<td><img src="http://www.oomlout.com/parts/RES-561-60.png"
 						width="60" height="36" alt="resistor"/></td>
 					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>x8</td>
+					<td colspan="6"></td>
 				</tr>
 			</table>
 		</div>
@@ -98,24 +99,22 @@
 		<div>
 			<h3>Resources</h3>
 			<h4>.:download:.</h4>
-			<p>Breadboard layout sheet</br>
+			<p>Breadboard layout sheet<br/>
 				<a href="http://ardx.org/BBLS02">http://ardx.org/BBLS02</a>
 			</p>
-			<p>Fritzing diagram</br><a href="fritzing/CIRC02.fzz">
+			<p>Fritzing diagram<br/><a href="fritzing/CIRC02.fzz">
 				https://wcrsyyc.github.io/ardx/fritzing/CIRC02.fzz</a></p>
 			<h4>.:view:.</h4>
 			<p>
-				assembly video</br>
+				assembly video<br/>
 				<a href="http://ardx.org/VIDE02">http://ardx.org/VIDE02</a>
 			</p>
 		</div>
 	</section>
 	<section id="code">
 		<h2>Code <span>(no need to type everything in just)</span></h2>
-		<p>Download the Code from ( <a
-			href="https://wcrsyyc.github.io/ardx/code/CIRC02-code.txt">
-			https://wcrsyyc.github.io/ardx/code/CIRC02-code.txt</a> )<br>
-			(and then copy the text and paste it into an empty Arduino Sketch)</p>
+		<p>Download the Code from ( <a href="https://wcrsyyc.github.io/ardx/code/CIRC02-code.txt">https://wcrsyyc.github.io/ardx/code/CIRC02-code.txt</a> )<br>
+		(and then copy the text and paste it into an empty Arduino Sketch)</p>
 		<pre>/*     ---------------------------------------------------------
  *     |  Arduino Experimentation Kit Example Code             |
  *     |  CIRC-02 .: 8 LED Fun :. (Multiple LEDs)   |
@@ -141,7 +140,7 @@ void setup()
 {
 
   //Set each pin connected to an LED to output mode (pulling high (on) or low (off)
-  for(int i = 0; i < 8; i++){         //this is a loop and will repeat eight times
+  for(int i = 0; i &lt; 8; i++){         //this is a loop and will repeat eight times
       pinMode(ledPins[i],OUTPUT); //we use this to set each LED pin to output
   }                                   //the code this replaces is below
 
@@ -236,7 +235,7 @@ void oneAfterAnotherLoop(){
                        //make smaller for quicker switching and larger for slower
 
 //Turn Each LED on one after another
-  for(int i = 0; i <= 7; i++){
+  for(int i = 0; i &lt;= 7; i++){
     digitalWrite(ledPins[i], HIGH);  //Turns on LED #i each time this runs i
     delay(delayTime);                //gets one added to it so this will repeat
   }                                  //8 times the first time i will = 0 the final
@@ -260,7 +259,7 @@ void oneOnAtATime(){
   int delayTime = 100; //the time (in milliseconds) to pause between LEDs
                        //make smaller for quicker switching and larger for slower
 
-  for(int i = 0; i <= 7; i++){
+  for(int i = 0; i &lt;= 7; i++){
     int offLED = i - 1;  //Calculate which LED was turned on last time through
     if(i == 0) {         //for i = 1 to 7 this is i minus 1 (i.e. if i = 2 we will
       offLED = 7;        //turn on LED 2 and off LED 1)
@@ -281,7 +280,7 @@ void inAndOut(){
                        //make smaller for quicker switching and larger for slower
 
   //runs the LEDs out from the middle
-  for(int i = 0; i <= 3; i++){
+  for(int i = 0; i &lt;= 3; i++){
     int offLED = i - 1;  //Calculate which LED was turned on last time through
     if(i == 0) {         //for i = 1 to 7 this is i minus 1 (i.e. if i = 2 we will
       offLED = 3;        //turn on LED 2 and off LED 1)
@@ -341,19 +340,19 @@ void inAndOut(){
 	<section id="CIRC-makingBetter">
 		<h2>Making it Better?</h2>
 		<h3>Switching to Loops:</h3>
-		<p>in the loop() function there are 4 lines. The last three all start with a '//' this means the line is treated as a comment (not run). To switch the program to use loops change the void loop() code to:
-			<pre>//oneAfterAnotherNoLoop();
+		<p>in the loop() function there are 4 lines. The last three all start with a '//' this means the line is treated as a comment (not run). To switch the program to use loops change the void loop() code to:</p>
+		<pre>//oneAfterAnotherNoLoop();
 oneAfterAnotherLoop();
 //oneOnAtATime();
-//inAndOut();</pre></p>
+//inAndOut();</pre>
 		<p>Upload the program, and notice that nothing has changed. You can take a look at the two functions, each does the same thing, but use different approaches (hint the second one uses a for loop)</p>
 		<h3>Extra Animations:</h3>
 		<p>Tired of this animation? Then try the other two sample animations. Uncomment their lines and upload the program to your board and enjoy the new light animations. (delete the slashes in front of row 3 and then 4)</p>
 		<h3>Testing out your own Animations:</h3>
-		<p>Jump into the included code and start changing things. The main point is to turn an LED on use:
-			<pre>  digitalWrite(pinNumber, HIGH);</pre>
-			Then to turn it off use;
-			<pre>  digitalWrite(pinNumber, LOW);</pre></p>
+		<p>Jump into the included code and start changing things. The main point is to turn an LED on use:</p>
+		<pre>  digitalWrite(pinNumber, HIGH);</pre>
+		<p>Then to turn it off use;</p>
+		<pre>  digitalWrite(pinNumber, LOW);</pre>
 		<p>"pinNumber" needs to be a number (2-9), or a variable that is set to a number in that range.</p>
 		<p>Type away, regardless of what you change you won't break anything.</p>
 	</section>

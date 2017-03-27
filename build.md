@@ -6,9 +6,10 @@ A circuit needs:
   * from Arduino sketch
 * img/CIRC«nn»-bb.svg
 * img/CIRC«nn»-schem.svg
-  * From Fritzing
+  * From Fritzing, possibly adjusted to enhance and repair image
 * img/«circuit-header-image».jpg
   * cleanest with rounded transparent corners on right
+* fritzing/CIRC«nn».fzz
 * resources: ?optional?
   * CIRC«nn»-sheet-WCRS.pdf
   * youtube video

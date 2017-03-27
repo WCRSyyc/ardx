@@ -1,0 +1,266 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-05[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit Shift Register circuit">
+		<!-- #include «head.html» -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<!-- #include «topnav.html» -->
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="index.html">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<!-- #include «sidebar.html» -->
+
+<main id="circ-05">
+	<header>
+		<h1>CIRC<br/>05</h1>
+		<h2>.:«title_line_1»:.<br>.:«title_line_2»:.</h2>
+		<img src="http://www.ardx.org/src/circ/CIRC-05-square-100.jpg" width="100" height="100" alt="16 pin dip chip">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We're Doing</h2>
+		<p>Time to start playing with chips, or integrated circuits (ICs) as they like to be called. The external packaging of a chip can be very deceptive. For example, the chip on the Arduino board (a microcontroller) and the one we will use in this circuit (a shift register) look very similar but are in fact rather different. The price of the ATMega chip on the Arduino board is a few dollars while the 74HC595 is a couple dozen cents. It's a good introductory chip, and once you're comfortable playing around with it and its datasheet (available online <a href="http://ardx.org/74HC595">http://ardx.org/74HC595</a>) the world of chips will be your oyster. The shift register (also called a serial to parallel converter), will give you an additional 8 outputs (to control LEDs and the like) using only three Arduino pins. They can also be linked together to give you a nearly unlimited number of outputs using the same three pins. To use it you "clock in" the data and then lock it in (latch it). To do this you set the data pin to either HIGH or LOW, pulse the clock, then set the data pin again and pulse the clock repeating until you have shifted out 8 bits of data. Then you pulse the latch and the 8 bits are transferred to the shift registers pins. It sounds complicated but is really simple once you get the hang of it.</p>
+		<p>(for a more in depth look at how a shift register works visit: <a href="http://ardx.org/SHIF">http://ardx.org/SHIF</a>)</p>
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="http://www.oomlout.com/parts/CIRC-05-3dsheet-60.png"
+						width="60" height="36" alt="circuit 5 breadboard sheet 3d view"/></td>
+					<td>CIRC-05<br/>Breadboard Sheet<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/HEAD-02-60.png"
+						width="60" height="36" alt="2 pin header"/></td>
+					<td>2 Pin Header<br/>x4</td>
+					<td><img src="http://www.oomlout.com/parts/IC-74HC595-60.png"
+						width="60" height="36" alt="74HC595 dip IC"/></td>
+					<td>Shift Register<br/>74HC595<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="wire"/></td>
+					<td>Wire</td>
+				</tr><tr>
+					<td><img src="http://www.oomlout.com/parts/LED-05R-60.png"
+						width="60" height="36" alt="10mm LED"/></td>
+					<td>Red LED<br/>x8</td>
+					<td><img src="http://www.oomlout.com/parts/RES-561-60.png"
+						width="60" height="36" alt="resistor"/></td>
+					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>x8</td>
+					<td colspan="4"></td>
+				</tr>
+			</table>
+		</div>
+		<span class="bb-svg-container"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="24 14.5 75 75"
+			preserveAspectRatio="xMaxYMin meet">
+			<image height="100" width="100"
+				xlink:href="img/CIRC05_bb.svg"/>
+		</svg></span>
+		<div>
+			<h3>Schematic</h3>
+			<span class="sch-svg-container"><svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="57 15 50 50"
+				preserveAspectRatio="xMidYMin meet">
+				<image height="100" width="100"
+					xlink:href="img/CIRC05_schem.svg" />
+			</svg></span>
+		</div>
+		<div>
+			<h3>Resources</h3>
+			<h4>.:download:.</h4>
+			<p>Breadboard layout sheet<br/>
+				<a href="http://ardx.org/BBLS05">http://ardx.org/BBLS05</a>
+			</p>
+			<p>Fritzing diagram<br/><a href="fritzing/CIRC05.fzz">
+				https://wcrsyyc.github.io/ardx/fritzing/CIRC05.fzz</a></p>
+			<h4>.:view:.</h4>
+			<p>
+				assembly video<br/>
+				<a href="http://ardx.org/VIDE05">http://ardx.org/VIDE05</a>
+			</p>
+		</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<p>Download the Code from ( <a
+			href="http://ardx.org/src/circ/CIRC05-code.txt">
+			http://ardx.org/CODE05</a> )<br>
+			(and then copy the text and paste it into an empty Arduino Sketch)</p>
+		<pre>/*     ---------------------------------------------------------
+ *     |  Arduino Experimentation Kit Example Code             |
+ *     |  CIRC-05 .: 8 More LEDs :. (74HC595 Shift Register)   |
+ *     ---------------------------------------------------------
+ *
+ * We have already controlled 8 LEDs however this does it in a slightly
+ * different manner. Rather than using 8 pins we will use just three
+ * and an additional chip.
+ *
+ *
+ */
+
+
+//Pin Definitions
+//The 74HC595 uses a serial communication
+//link which has three pins
+int data = 2;
+int clock = 3;
+int latch = 4;
+
+//Used for single LED manipulation
+int ledState = 0;
+const int ON = HIGH;
+const int OFF = LOW;
+
+
+/*
+ * setup() - this function runs once when you turn your Arduino on
+ * We set the three control pins to outputs
+ */
+void setup()
+{
+  pinMode(data, OUTPUT);
+  pinMode(clock, OUTPUT);
+  pinMode(latch, OUTPUT);
+}
+
+/*
+ * loop() - this function will start after setup finishes and then repeat
+ * we set which LEDs we want on then call a routine which sends the states to the 74HC595
+ */
+void loop()                     // run over and over again
+{
+  int delayTime = 100; //the number of milliseconds to delay between LED updates
+  for(int i = 0; i &lt; 256; i++){
+    updateLEDs(i);
+    delay(delayTime);
+  }
+}
+
+
+/*
+ * updateLEDs() - sends the LED states set in ledStates to the 74HC595
+ * sequence
+ */
+void updateLEDs(int value)
+{
+  digitalWrite(latch, LOW);     //Pulls the chips latch low
+  shiftOut(data, clock, MSBFIRST, value); //Shifts out the 8 bits to the shift register
+  digitalWrite(latch, HIGH);   //Pulls the latch high displaying the data
+}
+
+/*
+ * updateLEDsLong() - sends the LED states set in ledStates to the 74HC595
+ * sequence. Same as updateLEDs except the shifting out is done in software
+ * so you can see what is happening.
+ */
+void updateLEDsLong(int value)
+{
+  digitalWrite(latch, LOW);      //Pulls the chips latch low
+  for(int i = 0; i &lt; 8; i++){    //Will repeat 8 times (once for each bit)
+	  int bit = value &amp; B10000000; //We use a "bitmask" to select only the eighth
+	                               //bit in our number (the one we are addressing this time through
+	  value = value &lt;&lt; 1;          //we move our number up one bit value so next time bit 7 will be
+	                               //bit 8 and we will do our math on it
+	  if(bit == 128){digitalWrite(data, HIGH);} //if bit 8 is set then set our data pin high
+	  else{digitalWrite(data, LOW);}            //if bit 8 is unset then set the data pin low
+	  digitalWrite(clock, HIGH);                //the next three lines pulse the clock pin
+	  delay(1);
+	  digitalWrite(clock, LOW);
+  }
+  digitalWrite(latch, HIGH);  //pulls the latch high shifting our data into being displayed
+}
+
+
+//These are used in the bitwise math that we use to change individual LEDs
+//For more details http://en.wikipedia.org/wiki/Bitwise_operation
+int bits[] = {B00000001, B00000010, B00000100, B00001000, B00010000, B00100000, B01000000, B10000000};
+int masks[] = {B11111110, B11111101, B11111011, B11110111, B11101111, B11011111, B10111111, B01111111};
+/*
+ * changeLED(int led, int state) - changes an individual LED
+ * LEDs are 0 to 7 and state is either 0 - OFF or 1 - ON
+ */
+void changeLED(int led, int state)
+{
+  ledState = ledState &amp; masks[led];  //clears ledState of the bit we are addressing
+  if(state == ON){ledState = ledState | bits[led];} //if the bit is on we will add it to ledState
+  updateLEDs(ledState);              //send the new LED state to the shift register
+}</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>(3 things to try)</span></h2>
+		<div>
+			<h3>The Arduino's power LED goes out</h3>
+			<p>This happened to us a couple of times, it happens when the chip is inserted backwards. If you fix it quickly nothing will break.</p>
+		</div>
+		<div>
+			<h3>Not Quite Working</h3>
+			<p>Sorry to sound like a broken record but it is probably something as simple as a crossed wire.</p>
+		</div>
+		<div>
+			<h3>Frustration?</h3>
+			<p>Shoot us an e-mail, this circuit is both simple and complex at the same time. We want to hear about problems you have so we can address them in future editions.<br/>
+			<a href="mailto:help@oomlout.com">help@oomlout.com</a><br/>
+			<a href="mailto:info@robotgames.com">info@robotgames.com</a></p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>Doing it the hard way:</h3>
+		<p>An Arduino makes rather complex actions very easy, shifting out data is one of these cases. However one of the nice features of an Arduino is you can make things as easy or difficult as you like. Lets try an example of this. In your loop switch the line.<br/>
+		<code>updateLEDs(i);</code> -> <code>updateLEDsLong(i);</code><br/>
+		Upload the program and notice nothing has changed. If you look at the code you can see how we are communicating with the chip one bit at a time. (for more details <a href="http://ardx.org/SPI">http://ardx.org/SPI</a> ).</p>
+		<h3>Controlling Individual LEDs:</h3>
+		<p>Time to start controlling the LEDs using a method similar to what we did in CIRC02. As the eight LED states are stored in one byte (an 8 bit value) for details on how this works try <a href="http://ardx.org/BINA">http://ardx.org/BINA</a>. An Arduino is very good at manipulating bits and there are an entire set of operators that help us out. Details on bitwise operations at ( <a href="http://ardx.org/BITW">http://ardx.org/BITW</a> ).</p>
+		<h4>Our implementation</h4>
+    <p>Replace the loop() code with</p>
+		<pre>  int delayTime = 100; //the number of milliseconds to delay
+                       //between LED updates
+  for(int i = 0; i &lt; 8; i++){
+    changeLED(i,ON);
+    delay(delayTime);
+  }
+  for(int i = 0; i &lt; 8; i++){
+    changeLED(i,OFF);
+    delay(delayTime);
+  }</pre>
+		<p>and upload to cause the lights to light up one after another and then off in a similar manner. Check the code and wikipedia to see how it works, or shoot us an e-mail if you have questions.</p>
+		<h3>More Animations:</h3>
+		<p>Now things get more interesting. If you look back to the code from CIRC02 (8 LED Fun) you see we change the LEDs using digitalWrite(led, state), this is the same format as the routine we wrote changeLED(led, state). You can use the animations you wrote for CIRC02 by copying the code into this sketch and changing all the digitalWrite()'s to changeLED()'s. Powerful? Very. (you'll also need to change a few other things but follow the compile errors and it works itself out).</p>
+	</section>
+</main>
+
+		<footer>.:Welcome to the Bottom:.</footer>
+	</body>
+</html>

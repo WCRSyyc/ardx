@@ -1,0 +1,197 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-04[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit Servo circuit">
+		<!-- #include «head.html» -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<!-- #include «topnav.html» -->
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="index.html">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<!-- #include «sidebar.html» -->
+
+<main id="circ-04">
+	<header>
+		<h1>CIRC<br/>04</h1>
+		<h2>.:A Single Servo:.<br>.:Servos:.</h2>
+		<img src="http://www.ardx.org/src/circ/CIRC-04-square-100.jpg" width="100" height="100" alt="micro servo">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We're Doing</h2>
+		<p>Spinning a motor is good fun but when it comes to projects where motion control is required they tend to leave us wanting more. The answer? Hobby servos. They are mass produced, widely available and cost anything from a couple of dollars to hundreds. Inside is a small gearbox (to make the movement more powerful) and some electronics (to make it easier to control). A standard servo is positionable from 0 to 180 degrees. Positioning is controlled through a timed pulse, between 1.25 milliseconds (0 degrees) and 1.75 milliseconds (180 degrees) (1.5 milliseconds for 90 degrees). Timing varies between manufacturer. If the pulse is sent every 25-50 milliseconds the servo will run smoothly. One of the great features of the Arduino is it has a software library that allows you to control two servos (connected to pin 9 or 10) using a single line of code.</p>
+		<p>CAUTION: Not all servos have the same connector or wire colors.  If you are using a different brand of servo, double (and triple) check how it is wired before you start.  You <b>CAN</b> damage the servo by connecting it incorrectly.  A place to start for checking sevro connector wiring is Servo City <a href="https://www.servocity.com/servo-connector-types/">https://www.servocity.com/servo-connector-types</a>.
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="http://www.oomlout.com/parts/CIRC-04-3dsheet-60.png"
+						width="60" height="36" alt="circuit 4 breadboard sheet 3d view"/></td>
+					<td>CIRC-04<br/>Breadboard Sheet<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/HEAD-02-60.png"
+						width="60" height="36" alt="2 pin header"/></td>
+					<td>2 Pin Header<br/>x4</td>
+					<td><img src="http://www.oomlout.com/parts/HEAD-03-60.png"
+						width="60" height="36" alt="2 pin header"/></td>
+					<td>3 Pin Header<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="wire"/></td>
+					<td>Wire</td>
+				</tr><tr>
+					<td><img src="http://www.oomlout.com/parts/SERV-04-60.png"
+						width="60" height="36" alt="resistor"/></td>
+					<td>Mini Servo<br/>x1</td>
+					<td colspan="6"></td>
+				</tr>
+			</table>
+		</div>
+		<span class="bb-svg-container"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="23.8 12 76 76"
+			preserveAspectRatio="xMaxYMin meet">
+			<image height="100" width="100"
+				xlink:href="img/CIRC04_bb.svg"/>
+		</svg></span>
+		<div>
+			<h3>Schematic</h3>
+			<span class="sch-svg-container"><svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="54.5 61 31 31"
+				preserveAspectRatio="xMidYMin meet">
+				<image height="100" width="100"
+					xlink:href="img/CIRC04_schem.svg" />
+			</svg></span>
+		</div>
+		<div>
+			<h3>Resources</h3>
+			<h4>.:download:.</h4>
+			<p>Breadboard layout sheet<br/>
+				<a href="http://ardx.org/BBLS04">http://ardx.org/BBLS04</a>
+			</p>
+			<p>Fritzing diagram<br/><a href="fritzing/CIRC04.fzz">
+				https://wcrsyyc.github.io/ardx/fritzing/CIRC04.fzz</a></p>
+			<h4>.:view:.</h4>
+			<p>
+				assembly video<br/>
+				<a href="http://ardx.org/VIDE04">http://ardx.org/VIDE04</a>
+			</p>
+		</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<h3>File > Examples > Servo > Sweep</h3>
+		<p>(example from the great <a	href="https://www.arduino.cc/">arduino.cc</a> site, check it out for other ideas)</p>
+		<pre>// Sweep
+// by BARRAGAN
+
+#include &lt;Servo.h>
+
+Servo myservo;  // create servo object to control a servo
+                // a maximum of eight servo objects can be created
+
+int pos = 0;    // variable to store the servo position
+
+void setup()
+{
+  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+}
+
+
+void loop()
+{
+  for(pos = 0; pos &lt; 180; pos += 1)  // goes from 0 degrees to 180 degrees
+  {                                  // in steps of 1 degree
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }
+  for(pos = 180; pos>=1; pos-=1)     // goes from 180 degrees to 0 degrees
+  {
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }
+}</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>(3 things to try)</span></h2>
+		<div>
+			<h3>Servo Not Twisting?</h3>
+			<p>Even with colored wires it is still shockingly easy to plug a servo in backwards. This might be the case.</p>
+		</div>
+		<div>
+			<h3>Still Not Working</h3>
+			<p>A mistake we made a time or two was simply forgetting to connect the power (red and brown wires) to +5 volts and ground.</p>
+		</div>
+		<div>
+			<h3>Fits and Starts</h3>
+			<p>If the servo begins moving then twitches, and there's a flashing light on your Arduino board, the power supply you are using is not quite up to the challenge. Using a fresh battery instead of USB should solve this problem.</p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>Potentiometer Control:</h3>
+		<p>We have yet to experiment with inputs but if you would like to read ahead, there is an example program File > Library-Servo > Knob. This uses a potentiometer (CIRC08) to control the servo. You can find instructions online here: <a href="http://ardx.org/KNOB">http://ardx.org/KNOB</a></p>
+		<h3>Self Timing:</h3>
+		<p>While it is easy to control a servo using the Arduino's included library sometimes it is fun to figure out how to program something yourself. Try it. We're controlling the pulse directly so you could use this method to control servos on any of the Arduino's 20 available pins (you need to highly optimize this code before doing that).</p>
+		<pre>int servoPin = 9;
+
+void setup() {
+  pinMode(servoPin,OUTPUT);
+}
+
+void loop() {
+  int pulseTime = 2100; //(the number of microseconds
+                        //to pause for (1500 90 degrees
+                        // 900 0 degrees 2100 180 degrees)
+  digitalWrite(servoPin, HIGH);
+  delayMicroseconds(pulseTime);
+  digitalWrite(servoPin, LOW);
+  delay(25);
+}</pre>
+		<h3>Great Ideas:</h3>
+		<p>Servos can be used to do all sorts of great things, here are a few of our favorites.</p>
+		<dl>
+			<dt>Xmas Hit Counter</dt>
+			<dd><a href="http://ardx.org/XMAS">http://ardx.org/XMAS</a></dd>
+			<dt>Open Source Robotic Arm (uses a servo controller as well as the Arduino)</dt>
+			<dd><a href="http://ardx.org/RARM">http://ardx.org/RARM</a></dd>
+			<dt>Servo Walker</dt>
+    	<dd><a href="http://ardx.org/SEWA">http://ardx.org/SEWA</a></dd>
+		</dl>
+	</section>
+</main>
+
+		<footer>.:Welcome to the Bottom:.</footer>
+	</body>
+</html>

@@ -1,0 +1,210 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-08[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit Potentiometers circuit">
+		<!-- #include «head.html» -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<!-- #include «topnav.html» -->
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="index.html">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<!-- #include «sidebar.html» -->
+
+<main id="circ-08">
+	<header>
+		<h1>CIRC<br/>08</h1>
+		<h2>.:Twisting:.<br>.:Potentiometers:.</h2>
+		<img src="http://www.ardx.org/src/circ/CIRC-08-square-100.jpg" width="100" height="100" alt="blue potentiometer on breadboard">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We're Doing</h2>
+		<p>Along with the digital pins, the Arduino also has 6 pins which can be used for analog input. These inputs take a voltage (from 0 to 5 volts) and convert it to a digital number between 0 (0 volts) and 1023 (5 volts) (10 bits of resolution). A very useful device that exploits these inputs is a potentiometer (also called a variable resistor). When it is connected with 5 volts across its outer pins the middle pin will read some value between 0 and 5 volts dependent on the angle to which it is turned (ie. 2.5 volts in the middle). We can then use the returned values as a variable in our program.</p>
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="http://www.oomlout.com/parts/CIRC-08-3dsheet-60.png"
+						width="60" height="36" alt="circuit 8 breadboard sheet 3d view"/></td>
+					<td>CIRC-08<br/>Breadboard Sheet<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/HEAD-02-60.png"
+						width="60" height="36" alt="2 pin header"/></td>
+					<td>2 Pin Header<br/>x4</td>
+					<td><img src="http://www.oomlout.com/parts/POT-103-60.png"
+						width="60" height="36" alt="small potentiometer"/></td>
+					<td>Wire</td>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="male-male dupont jumper wire"/></td>
+					<td>Wire</td>
+				</tr><tr>
+					<td><img src="http://www.oomlout.com/parts/LED-05G-60.png"
+						width="60" height="36" alt="through hole green LED"/></td>
+					<td>Green LED<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/RES-561-60.png"
+						width="60" height="36" alt="through hole resistor"/></td>
+					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>x1</td>
+					<td colspan="4"></td>
+				</tr>
+			</table>
+		</div>
+		<span class="bb-svg-container"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="25 13 75 75"
+			preserveAspectRatio="xMaxYMin meet">
+			<image height="100" width="100"
+				xlink:href="img/CIRC08_bb.svg"/>
+		</svg></span>
+		<div>
+			<h3>Schematic</h3>
+			<span class="sch-svg-container"><svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="61 26 36 36"
+				preserveAspectRatio="xMidYMin meet">
+				<image height="100" width="100"
+					xlink:href="img/CIRC08_schem.svg" />
+			</svg></span>
+		</div>
+		<div>
+			<h3>Resources</h3>
+			<h4>.:download:.</h4>
+			<p>Breadboard layout sheet<br/>
+				<a href="http://ardx.org/BBLS08">http://ardx.org/BBLS08</a>
+			</p>
+			<p>Fritzing diagram<br/><a href="fritzing/CIRC08.fzz">
+				https://wcrsyyc.github.io/ardx/fritzing/CIRC08.fzz</a></p>
+			<h4>.:view:.</h4>
+			<p>
+				assembly video<br/>
+				<a href="http://ardx.org/VIDE08">http://ardx.org/VIDE08</a>
+			</p>
+		</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<h3>File > Examples > 3.Analog > AnalogInput</h3>
+		<p>(example from the great <a	href="https://www.arduino.cc/">arduino.cc</a> site, check it out for other ideas)</p>
+		<pre>/*
+  Analog Input
+ Demonstrates analog input by reading an analog sensor on analog pin 0 and
+ turning on and off a light emitting diode(LED)  connected to digital pin 13.
+ The amount of time the LED will be on and off depends on
+ the value obtained by analogRead().
+
+ The circuit:
+ * Potentiometer attached to analog input 0
+ * center pin of the potentiometer to the analog pin
+ * one side pin (either one) to ground
+ * the other side pin to +5V
+ * LED anode (long leg) attached to digital output 13
+ * LED cathode (short leg) attached to ground
+
+ * Note: because most Arduinos have a built-in LED attached
+ to pin 13 on the board, the LED is optional.
+
+
+ Created by David Cuartielles
+ modified 30 Aug 2011
+ By Tom Igoe
+
+ This example code is in the public domain.
+
+ http://arduino.cc/en/Tutorial/AnalogInput
+
+ */
+
+int sensorPin = A0;    // select the input pin for the potentiometer
+int ledPin = 13;      // select the pin for the LED
+int sensorValue = 0;  // variable to store the value coming from the sensor
+
+void setup() {
+  // declare the ledPin as an OUTPUT:
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // read the value from the sensor:
+  sensorValue = analogRead(sensorPin);
+  // turn the ledPin on
+  digitalWrite(ledPin, HIGH);
+  // stop the program for &lt;sensorValue> milliseconds:
+  delay(sensorValue);
+  // turn the ledPin off:
+  digitalWrite(ledPin, LOW);
+  // stop the program for for &lt;sensorValue> milliseconds:
+  delay(sensorValue);
+}</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>(3 things to try)</span></h2>
+		<div>
+			<h3>Sporadically Working</h3>
+			<p>This is most likely due to a slightly dodgy connection with the potentiometer's pins. This can usually be conquered by taping the potentiometer down.</p>
+		</div>
+		<div>
+			<h3>Not Working</h3>
+			<p>Make sure you haven't accidentally connected the potentiometer's wiper to digital pin 0 rather than analog pin 0. (the row of pins beneath the power pins)</p>
+		</div>
+		<div>
+			<h3>Still Backward</h3>
+			<p>You can try operating the circuit upside down. Sometimes this helps.</p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>Threshold Switching:</h3>
+		<p>Sometimes you will want to switch an output when a value exceeds a certain threshold. To do this with a potentiometer change the loop() code to.</p>
+		<pre>void loop() {
+  int threshold = 512;
+  if(analogRead(potPin) > threshold){ digitalWrite(ledPin, HIGH);}
+  else{ digitalWrite(ledPin, LOW);}
+}</pre>
+		<p>This will cause the LED to turn on when the value is above 512 (about halfway), you can adjust the sensitivity by changing the threshold value.</p>
+		<h3>Fading:</h3>
+		<p>Lets control the brightness of an LED directly from the potentiometer. To do this we need to first change the pin the LED is connected to. Move the wire from pin 13 to pin 9 and change one line in the code.<br/>
+  	<code>int ledPin = 13;</code> ----> <code>int ledPin = 9;</code><br/>
+		Then change the loop code to.</p>
+		<pre>void loop() {
+  int value = analogRead(potPin) / 4;
+  analogWrite(ledPin, value);
+}</pre>
+		<p>Upload the code and watch as your LED fades in relation to your potentiometer spinning. (Note: the reason we divide the value by 4 is the analogRead() function returns a value from 0 to 1023 (10 bits), and analogWrite() takes a value from 0 to 255 (8 bits) )</p>
+		<h3>Controlling a Servo:</h3>
+		<p>This is a really neat example and brings a couple of circuits together. Wire up the servo like you did in CIRC-04, without changing the potentiometer wiring. Then open the example program Knob (File > Examples > Library-Servo > Knob ), upload to your Arduino and watch the servo shaft rotate as you turn the potentiometer.</p>
+	</section>
+</main>
+
+		<footer>.:Welcome to the Bottom:.</footer>
+	</body>
+</html>

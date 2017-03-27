@@ -1,0 +1,238 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-07[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit Button Pressing circuit">
+		<!-- #include «head.html» -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<!-- #include «topnav.html» -->
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="index.html">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<!-- #include «sidebar.html» -->
+
+<main id="circ-07">
+	<header>
+		<h1>CIRC<br/>07</h1>
+		<h2>.:Button Pressing:.<br>.:Pushbuttons:.</h2>
+		<img src="http://www.ardx.org/src/circ/CIRC-07-square-100.jpg" width="100" height="100" alt="push buttons on breadboard">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We're Doing</h2>
+		<p>Up to this point we have focused entirely on outputs, time to get our Arduino to listen, watch and feel. We'll start with a simple pushbutton. Wiring up the pushbutton is simple. There is one component, the pull up resistor, that might seem out of place. This is included because an Arduino doesn't sense the same way we do (ie button pressed, button unpressed). Instead it looks at the voltage on the pin and decides whether it is HIGH or LOW. The button is set up to pull the Arduino's pin LOW when it is pressed, however, when the button is unpressed the voltage of the pin will float (causing occasional errors). To get the Arduino to reliably read the pin as HIGH when the button is unpressed, we add the pull up resistor.</p>
+		<p>(note: the first example program uses only one of the two buttons)</p>
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="http://www.oomlout.com/parts/CIRC-07-3dsheet-60.png"
+						width="60" height="36" alt="circuit 7 breadboard sheet 3d view"/></td>
+					<td>CIRC-07<br/>Breadboard Sheet<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/HEAD-02-60.png"
+						width="60" height="36" alt="2 pin header"/></td>
+					<td>2 Pin Header<br/>x4</td>
+					<td><img src="http://www.oomlout.com/parts/BUTT-01-60.png"
+						width="60" height="36" alt="push button"/></td>
+					<td>Pushbutton<br/>x2</td>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="wire"/></td>
+					<td>Wire</td>
+				</tr><tr>
+					<td><img src="http://www.oomlout.com/parts/RES-103-60.png"
+						width="60" height="36" alt="10k ohm resistor"/></td>
+					<td>10k Ohm Resistor<br/>Brown-Black-Orange<br/>x2</td>
+					<td><img src="http://www.oomlout.com/parts/RES-561-60.png"
+						width="60" height="36" alt="560 ohm resistor"/></td>
+					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/LED-05R-60.png"
+						width="60" height="36" alt="red LED"/></td>
+					<td>Red LED<br/>x1</td>
+					<td colspan="2"></td>
+				</tr>
+			</table>
+		</div>
+		<span class="bb-svg-container"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="2 12.5 69 69"
+			preserveAspectRatio="xMaxYMin meet">
+			<image height="100" width="100"
+				xlink:href="img/CIRC07_bb.svg"/>
+		</svg></span>
+		<div>
+			<h3>Schematic</h3>
+			<span class="sch-svg-container"><svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="58.5 47.5 45 45"
+				preserveAspectRatio="xMidYMin meet">
+				<image height="100" width="100"
+					xlink:href="img/CIRC07_schem.svg" />
+			</svg></span>
+		</div>
+		<div>
+			<h3>Resources</h3>
+			<h4>.:download:.</h4>
+			<p>Breadboard layout sheet<br/>
+				<a href="http://ardx.org/BBLS07">http://ardx.org/BBLS07</a>
+			</p>
+			<p>Fritzing diagram<br/><a href="fritzing/CIRC07.fzz">
+				https://wcrsyyc.github.io/ardx/fritzing/CIRC07.fzz</a></p>
+			<h4>.:view:.</h4>
+			<p>
+				assembly video<br/>
+				<a href="http://ardx.org/VIDE07">http://ardx.org/VIDE07</a>
+			</p>
+		</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<h3>File > Examples > 2.Digital > Button</h3>
+		<p>(example from the great <a	href="https://www.arduino.cc/">arduino.cc</a> site, check it out for other ideas)</p>
+		<pre>/*
+  Button
+
+ Turns on and off a light emitting diode(LED) connected to digital
+ pin 13, when pressing a pushbutton attached to pin 2.
+
+
+ The circuit:
+ * LED attached from pin 13 to ground
+ * pushbutton attached to pin 2 from +5V
+ * 10K resistor attached to pin 2 from ground
+
+ * Note: on most Arduinos there is already an LED on the board
+ attached to pin 13.
+
+
+ created 2005
+ by DojoDave &lt;http://www.0j0.org>
+ modified 30 Aug 2011
+ by Tom Igoe
+
+ This example code is in the public domain.
+
+ http://www.arduino.cc/en/Tutorial/Button
+ */
+
+// constants won't change. They're used here to
+// set pin numbers:
+const int buttonPin = 2;     // the number of the pushbutton pin
+const int ledPin =  13;      // the number of the LED pin
+
+// variables will change:
+int buttonState = 0;         // variable for reading the pushbutton status
+
+void setup() {
+  // initialize the LED pin as an output:
+  pinMode(ledPin, OUTPUT);
+  // initialize the pushbutton pin as an input:
+  pinMode(buttonPin, INPUT);
+}
+
+void loop() {
+  // read the state of the pushbutton value:
+  buttonState = digitalRead(buttonPin);
+
+  // check if the pushbutton is pressed.
+  // if it is, the buttonState is HIGH:
+  if (buttonState == HIGH) {
+    // turn LED on:
+    digitalWrite(ledPin, HIGH);
+  }
+  else {
+    // turn LED off:
+    digitalWrite(ledPin, LOW);
+  }
+}</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>(3 things to try)</span></h2>
+		<div>
+			<h3>Light Not Turning On</h3>
+			<p>The pushbutton is square and because of this it is easy to put it in the wrong way. Give it a 90 degree twist and see if it starts working.</p>
+		</div>
+		<div>
+			<h3>Light Not Fading</h3>
+			<p>A bit of a silly mistake we constantly made, when you switch from simple on off to fading remember to move the LED wire from pin 13 to pin 9.</p>
+		</div>
+		<div>
+			<h3>Underwhelmed?</h3>
+			<p>No worries these circuits are all super stripped down to make playing with the components easy, but once you throw them together the sky is the limit.</p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>On button off button:</h3>
+		<p>The initial example may be a little underwhelming (ie. I don't really need an Arduino to do this), lets make it a little more complicated. One button will turn the LED on the other will turn the LED off. Change the code to.</p>
+		<pre>int ledPin = 13; // choose the pin for the LED
+int inputPin1 = 3; // button 1
+int inputPin2 = 2; // button 2
+
+void setup() {
+  pinMode(ledPin, OUTPUT); // declare LED as output
+  pinMode(inputPin1, INPUT); // make button 1 an input
+  pinMode(inputPin2, INPUT); // make button 2 an input
+}
+
+void loop(){
+  if (digitalRead(inputPin1) == LOW) {
+    digitalWrite(ledPin, LOW); // turn LED OFF
+  } else if (digitalRead(inputPin2) == LOW) {
+    digitalWrite(ledPin, HIGH); // turn LED ON
+  }
+}</pre><br/>
+		<p>Upload the program to your board, and start toggling the LED on and off.</p>
+
+		<h3>Fading up and down:</h3>
+		<p>Lets use the buttons to control an analog signal. To do this you will need to change the wire connecting the LED from pin 13 to pin 9, also change this in code.<br/>
+    <code>int ledPin = 13;</code> ----> <code>int ledPin = 9;</code><br/>
+		Next change the loop() code to read.</p>
+		<pre>int value = 0;
+void loop(){
+  if (digitalRead(inputPin1) == LOW) { value--; }
+  else if (digitalRead(inputPin2) == LOW) { value++; }
+  value = constrain(value, 0, 255);
+  analogWrite(ledPin, value);
+  delay(10);
+}</pre>
+		<h3>Changing Fade Speed:</h3>
+		<p>If you would like the LED to fade faster or slower, there is only one line of code that needs changing;<br/>
+   	<code>delay(10);</code> ----> <code>delay(new #);</code><br/>
+		To fade faster make the number smaller, slower requires a larger number.</p>
+	</section>
+</main>
+
+		<footer>.:Welcome to the Bottom:.</footer>
+	</body>
+</html>

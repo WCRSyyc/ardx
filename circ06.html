@@ -1,0 +1,223 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-06[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit Piezo Elements circuit">
+		<!-- #include «head.html» -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<!-- #include «topnav.html» -->
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="index.html">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<!-- #include «sidebar.html» -->
+
+<main id="circ-06">
+	<header>
+		<h1>CIRC<br/>06</h1>
+		<h2>.:Music:.<br>.:Piezo Elements:.</h2>
+		<img src="http://www.ardx.org/src/circ/CIRC-06-square-100.jpg" width="100" height="100" alt="Piezo Element on breadboard">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We're Doing</h2>
+		<p>To this point we have controlled light, motion, and electrons. Let's tackle sound next. But sound is an analog phenomena, how will our digital Arduino cope? We will once again rely on its incredible speed which will let it mimic analog behavior. To do this, we will attach a piezo element to one of the Arduino's digital pins. A piezo element makes a clicking sound each time it is pulsed with current. If we pulse it at the right frequency (for example 440 times a second to make the note middle A) these clicks will run together to produce notes. Let's get to experimenting with it and get your Arduino playing "Twinkle Twinkle Little Star".</p>
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="http://www.oomlout.com/parts/CIRC-06-3dsheet-60.png"
+						width="60" height="36" alt="circuit 6 breadboard sheet 3d view"/></td>
+					<td>CIRC-06<br/>Breadboard Sheet<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/HEAD-02-60.png"
+						width="60" height="36" alt="2 pin header"/></td>
+					<td>2 Pin Header<br/>x4</td>
+					<td><img src="http://www.oomlout.com/parts/PIEZ-01-60.png"
+						width="60" height="36" alt="74HC595 dip IC"/></td>
+					<td>Piezo Element<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="wire"/></td>
+					<td>Wire</td>
+				</tr>
+			</table>
+		</div>
+		<span class="bb-svg-container"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="8 22.3 64 64"
+			preserveAspectRatio="xMaxYMin meet">
+			<image height="100" width="100"
+				xlink:href="img/CIRC06_bb.svg"/>
+		</svg></span>
+		<div>
+			<h3>Schematic</h3>
+			<span class="sch-svg-container"><svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="66 29 35 35"
+				preserveAspectRatio="xMidYMin meet">
+				<image height="100" width="100"
+					xlink:href="img/CIRC06_schem.svg" />
+			</svg></span>
+		</div>
+		<div>
+			<h3>Resources</h3>
+			<h4>.:download:.</h4>
+			<p>Breadboard layout sheet<br/>
+				<a href="http://ardx.org/BBLS06">http://ardx.org/BBLS06</a>
+			</p>
+			<p>Fritzing diagram<br/><a href="fritzing/CIRC06.fzz">
+				https://wcrsyyc.github.io/ardx/fritzing/CIRC06.fzz</a></p>
+			<h4>.:view:.</h4>
+			<p>
+				assembly video<br/>
+				<a href="http://ardx.org/VIDE06">http://ardx.org/VIDE06</a>
+			</p>
+		</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<p>Download the Code from ( <a
+			href="http://ardx.org/src/circ/CIRC06-code.txt">http://ardx.org/CODE06</a> )<br>
+			(and then copy the text and paste it into an empty Arduino Sketch)</p>
+		<pre>/* Melody
+ * (cleft) 2005 D. Cuartielles for K3
+ *
+ * This example uses a piezo speaker to play melodies.  It sends
+ * a square wave of the appropriate frequency to the piezo, generating
+ * the corresponding tone.
+ *
+ * The calculation of the tones is made following the mathematical
+ * operation:
+ *
+ *       timeHigh = period / 2 = 1 / (2 * toneFrequency)
+ *
+ * where the different tones are described as in the table:
+ *
+ * note 	frequency 	period 	timeHigh
+ * c 	        261 Hz 	        3830 	1915
+ * d 	        294 Hz 	        3400 	1700
+ * e 	        329 Hz 	        3038 	1519
+ * f 	        349 Hz 	        2864 	1432
+ * g 	        392 Hz 	        2550 	1275
+ * a 	        440 Hz 	        2272 	1136
+ * b 	        493 Hz 	        2028	1014
+ * C	        523 Hz	        1912 	956
+ *
+ * http://www.arduino.cc/en/Tutorial/Melody
+ */
+
+int speakerPin = 9;
+
+int length = 15; // the number of notes
+char notes[] = "ccggaagffeeddc "; // a space represents a rest
+int beats[] = { 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 4 };
+int tempo = 300;
+
+void playTone(int tone, int duration) {
+  for (long i = 0; i &lt; duration * 1000L; i += tone * 2) {
+    digitalWrite(speakerPin, HIGH);
+    delayMicroseconds(tone);
+    digitalWrite(speakerPin, LOW);
+    delayMicroseconds(tone);
+  }
+}
+
+void playNote(char note, int duration) {
+  char names[] = { 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'C' };
+  int tones[] = { 1915, 1700, 1519, 1432, 1275, 1136, 1014, 956 };
+
+  // play the tone corresponding to the note name
+  for (int i = 0; i &lt; 8; i++) {
+    if (names[i] == note) {
+      playTone(tones[i], duration);
+    }
+  }
+}
+
+void setup() {
+  pinMode(speakerPin, OUTPUT);
+}
+
+void loop() {
+  for (int i = 0; i &lt; length; i++) {
+    if (notes[i] == ' ') {
+      delay(beats[i] * tempo); // rest
+    } else {
+      playNote(notes[i], beats[i] * tempo);
+    }
+
+    // pause between notes
+    delay(tempo / 2);
+  }
+}</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>(3 things to try)</span></h2>
+		<div>
+			<h3>No Sound</h3>
+			<p>Given the size and shape of the piezo element it is easy to miss the right holes on the breadboard. Try double checking its placement.</p>
+		</div>
+		<div>
+			<h3>Can't Think While the Melody is Playing?</h3>
+			<p>Just pull up the piezo element whilst you think, upload your program then plug it back in.</p>
+		</div>
+		<div>
+			<h3>Tired of Twinkle Twinkle Little Star?</h3>
+			<p>The code is written so you can easily add your own songs, check out the code below to get started.</p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>Playing with the speed:</h3>
+		<p>The timing for each note is calculated based on variables, as such we can tweak the sound of each note or the timing. To change the speed of the melody you need to change only one line.<br/>
+		<code>int tempo = 300;</code> ---> <code>int tempo = (new #)</code><br/>
+		Change it to a larger number to slow the melody down, or a smaller number to speed it up.</p>
+		<h3>Tuning the notes:</h3>
+		<p>If you are worried about the notes being a little out of tune this can be fixed as well. The notes have been calculated based on a formula in the comment block at the top of the program. But to tune individual notes just adjust their values in the tones[] array up or down until they sound right. (each note is matched by its name in the names[] (array ie. c = 1915 )</p>
+		<pre>char names[] = { 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'C' };
+int tones[] = { 1915, 1700, 1519, 1432, 1275, 1136, 1014, 956 };</pre>
+		<h3>Composing your own melodies:</h3>
+		<p>The program is pre-set to play 'Twinkle Twinkle Little Star' however the way it is programmed makes changing the song easy. Each song is defined in one int and two arrays, the int length defines the number of notes, the first array notes[] defines each note, and the second beats[] defines how long each note is played. Some Examples:
+		<h4>Twinkle Twinkle Little Star</h4>
+		<pre>  int length = 15;
+  char notes[] = "ccggaagffeeddc ";
+  int beats[] = { 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 4 };</pre>
+    <h4>Happy Birthday (first line)</h4>
+		<pre>  int length = 13;
+  char notes[] = "ccdcfeccdcgf ";
+  int beats[] = {1,1,1,1,1,2,1,1,1,1,1,2,4};</pre>
+	</section>
+</main>
+
+		<footer>.:Welcome to the Bottom:.</footer>
+	</body>
+</html>

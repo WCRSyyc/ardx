@@ -111,6 +111,7 @@ footer {
   clear: both;
   text-align: center;
   margin-left: 12rem;
+  margin-bottom: 1.5rem;
 }
 h1 {
   color: #444;
@@ -128,6 +129,15 @@ pre {
   margin: 0;
   text-align: left;
   background-color: #ddd;
+}
+dl {
+  margin-left: 1rem;
+}
+dt {
+  margin-top: 1rem;
+}
+dd {
+  margin-left: 1rem;
 }
 
 /* The top common page header and navigation bar */
@@ -369,7 +379,7 @@ h3 {
   margin: 1rem 0 0.5rem 0;
   font-size: 1.2rem;
   font-weight: normal;
-  }
+}
 main p {
   margin: 0 0 1.4rem 0;
 }
@@ -460,7 +470,7 @@ main p:last-child {
   margin-bottom: 0;
 }
 #CIRC-makingBetter pre {
-  margin: -0.2rem 0 0.2rem 0;
+  margin: -0.75rem 0 0.9rem 0;
   padding: 0.2rem 0;
 }
 .clearhere {
@@ -626,6 +636,48 @@ main#circ-03 .bb-svg-container {
 /*main#circ-03 .sch-svg-container {
   padding-bottom: 100%;
 }*/
+main#circ-04 .bb-svg-container {
+  padding-bottom: 52%;
+}
+main#circ-04 .sch-svg-container {
+  padding-bottom: 78%;
+}
+main#circ-05 .bb-svg-container {
+  padding-bottom: 52%;
+}
+main#circ-05 .sch-svg-container {
+  padding-bottom: 156%;
+}
+main#circ-05 #CIRC-makingBetter h4 {
+  margin: 1rem 0 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+main#circ-06 .bb-svg-container {
+  padding-bottom: 63.5%;
+}
+main#circ-06 .sch-svg-container {
+  padding-bottom: 90%;
+}
+main#circ-07 .bb-svg-container {
+  padding-bottom: 66.2%;
+}
+/*main#circ-07 .sch-svg-container {
+  padding-bottom: 100%;
+}*/
+main#circ-08 .bb-svg-container {
+  padding-bottom: 51%;
+}
+main#circ-08 .sch-svg-container {
+  padding-bottom: 90%;
+}
+main#circ-09 .bb-svg-container {
+  padding-bottom: 51%;
+}
+main#circ-09 .sch-svg-container {
+  padding-bottom: 124%;
+}
+
 main#circ-12 .bb-svg-container {
   padding-bottom: 86%;
 }

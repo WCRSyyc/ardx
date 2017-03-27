@@ -1,0 +1,206 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-09[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit Photo Resistors circuit">
+		<!-- #include «head.html» -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<!-- #include «topnav.html» -->
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="index.html">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<!-- #include «sidebar.html» -->
+
+<main id="circ-09">
+	<header>
+		<h1>CIRC<br/>09</h1>
+		<h2>.:Light:.<br>.:Photo Resistors:.</h2>
+		<img src="http://www.ardx.org/src/circ/CIRC-09-square-100.jpg" width="100" height="100" alt="green led and photo resistor on circuit 9 breadboard sheet">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We're Doing</h2>
+		<p>Whilst getting input from a potentiometer can be useful for human controlled experiments, what do we use when we want an environmentally controlled experiment? We use exactly the same principles but instead of a potentiometer (twist based resistance) we use a photo resistor (light based resistance). The Arduino cannot directly sense resistance (it senses voltage) so we set up a <a href="https://github.com/WCRSyyc/ardx/wiki/voltage-divider">voltage divider</a> (<a href="http://ardx.org/VODI">http://ardx.org/VODI</a>). The exact voltage at the sensing pin is calculable, but for our purposes (just sensing relative light) we can experiment with the values and see what works for us. A low resistance value will occur when the sensor is well lit while a high value will occur when it is in darkness.</p>
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="http://www.oomlout.com/parts/CIRC-09-3dsheet-60.png"
+						width="60" height="36" alt="circuit 9 breadboard sheet 3d view"/></td>
+					<td>CIRC-09<br/>Breadboard Sheet<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/HEAD-02-60.png"
+						width="60" height="36" alt="2 pin header"/></td>
+					<td>2 Pin Header<br/>x4</td>
+					<td><img src="http://www.oomlout.com/parts/IC-PHOTO-01-60.png"
+						width="60" height="36" alt="photo resistor"/></td>
+					<td>Photo-Resistor<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="wire"/></td>
+					<td>Wire</td>
+				</tr><tr>
+					<td><img src="http://www.oomlout.com/parts/RES-103-60.png"
+						width="60" height="36" alt="10k ohm resistor"/></td>
+					<td>10k Ohm Resistor<br/>Brown-Black-Orange<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/RES-561-60.png"
+						width="60" height="36" alt="560 ohm resistor"/></td>
+					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/LED-05G-60.png"
+						width="60" height="36" alt="green LED"/></td>
+					<td>Green LED<br/>x1</td>
+					<td colspan="2"></td>
+				</tr>
+			</table>
+		</div>
+		<span class="bb-svg-container"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="25.5 12.5 75 75"
+			preserveAspectRatio="xMaxYMin meet">
+			<image height="100" width="100"
+				xlink:href="img/CIRC09_bb.svg"/>
+		</svg></span>
+		<div>
+			<h3>Schematic</h3>
+			<span class="sch-svg-container"><svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="63 42 37 37"
+				preserveAspectRatio="xMidYMin meet">
+				<image height="100" width="100"
+					xlink:href="img/CIRC09_schem.svg" />
+			</svg></span>
+		</div>
+		<div>
+			<h3>Resources</h3>
+			<h4>.:download:.</h4>
+			<p>Breadboard layout sheet<br/>
+				<a href="http://ardx.org/BBLS09">http://ardx.org/BBLS09</a>
+			</p>
+			<p>Fritzing diagram<br/><a href="fritzing/CIRC09.fzz">
+				https://wcrsyyc.github.io/ardx/fritzing/CIRC09.fzz</a></p>
+			<h4>.:view:.</h4>
+			<p>
+				assembly video<br/>
+				<a href="http://ardx.org/VIDE09">http://ardx.org/VIDE09</a>
+			</p>
+		</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<p>Download the Code from ( <a
+			href="http://ardx.org/src/circ/CIRC09-code.txt">
+			http://ardx.org/CODE09</a> )<br>
+			(and then copy the text and paste it into an empty Arduino Sketch)</p>
+		<pre>/*
+ * A simple programme that will change the intensity of
+ * an LED based  * on the amount of light incident on
+ * the photo resistor.
+ *
+ */
+
+//PhotoResistor Pin
+int lightPin = 0; //the analog pin the photoresistor is
+                  //connected to
+                  //the photoresistor is not calibrated to any units so
+                  //this is simply a raw sensor value (relative light)
+//LED Pin
+int ledPin = 9;   //the pin the LED is connected to
+                  //we are controlling brightness so
+                  //we use one of the PWM (pulse width
+                  // modulation pins)
+void setup()
+{
+  pinMode(ledPin, OUTPUT); //sets the led pin to output
+}
+ /*
+ * loop() - this function will start after setup
+ * finishes and then repeat
+ */
+void loop()
+{
+ int lightLevel = analogRead(lightPin); //Read the
+                                        // lightlevel
+ lightLevel = map(lightLevel, 0, 900, 0, 255);
+         //adjust the value 0 to 900 to
+         //span 0 to 255
+
+
+
+ lightLevel = constrain(lightLevel, 0, 255);//make sure the
+                                           //value is betwween
+                                           //0 and 255
+ analogWrite(ledPin, lightLevel);  //write the value
+}</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>(3 things to try)</span></h2>
+		<div>
+			<h3>LED Remains Dark</h3>
+			<p>This is a mistake we continue to make time and time again, if only they could make an LED that worked both ways. Pull it up and give it a twist.</p>
+		</div>
+		<div>
+			<h3>It Isn't Responding to Changes in Light.</h3>
+			<p>Given that the spacing of the wires on the photo-resistor is not standard, it is easy to misplace it. Double check it´s in the right place.</p>
+		</div>
+		<div>
+			<h3>Still not quite working?</h3>
+			<p>You may be in a room which is either too bright or dark. Try turning the lights on or off to see if this helps. Or if you have a flashlight near by give that a try.</p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>Reverse the response:</h3>
+		<p>Perhaps you would like the opposite response. Don't worry we can easily reverse this response just change:<br/>
+    <code>analogWrite(ledPin, lightLevel);</code> ----> <code>analogWrite(ledPin, 255 - lightLevel);</code><br/>
+		Upload and watch the response change:</p>
+		<h3>Night light:</h3>
+		<p>Rather than controlling the brightness of the LED in response to light, lets instead turn it on or off based on a threshold value. Change the loop() code with.</p>
+		<pre>void loop(){
+  int threshold = 300;
+  if(analogRead(lightPin) > threshold){
+    digitalWrite(ledPin, HIGH);
+  }else{
+    digitalWrite(ledPin, LOW);
+  }
+}</pre>
+		<h3>Light controlled servo:</h3>
+		<p>Lets use our newly found light sensing skills to control a servo (and at the same time engage in a little bit of Arduino code hacking). Wire up a servo connected to pin 9 (like in CIRC-04). Then open the Knob example program (the same one we used in CIRC-08) File > Examples > Library-Servo > Knob. Upload the code to your board and watch as it works unmodified.</p>
+		<h3>Using the full range of your servo:</h3>
+		<p>You'll notice that the servo will only operate over a limited portion of its range. This is because with the <a href="https://github.com/WCRSyyc/ardx/wiki/voltage-divider">voltage dividing</a> circuit we use the voltage on analog pin 0 will not range from 0 to 5 volts but instead between two lesser values (these values will change based on your setup). To fix this play with the val = map(val, 0, 1023, 0, 179); line. For hints on what to do visit <a href="http://arduino.cc/en/Reference/Map">http://arduino.cc/en/Reference/Map</a>.  HINT: It is also a good idea to make sure that the requested servo position stays in the valid range of 0 to 180.  To combine that with the map function, you can use something like</p>
+		<pre>val = constrain( map( val, 100, 900, 0, 180 ), 0, 180 );</pre>
+		<p>to say that values of 100 to 900 will translate to angles from 0 to 180 degrees, but still keep in the valid range if the input value is less than 100 or greater than 900.</p>
+	</section>
+</main>
+
+		<footer>.:Welcome to the Bottom:.</footer>
+	</body>
+</html>
