@@ -1,0 +1,191 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-10[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit Analog Temperature Sensor circuit">
+		<!-- #include «head.html» -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<!-- #include «topnav.html» -->
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="index.html">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<!-- #include «sidebar.html» -->
+
+<main id="circ-10">
+	<header>
+		<h1>CIRC<br/>10</h1>
+		<h2>.:Temperature:.<br/>.:TMP36 Precision Temperature Sensor:.</h2>
+		<img src="http://www.ardx.org/src/circ/CIRC-10-square-100.jpg" width="100" height="100" alt="TMP36">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We´re Doing</h2>
+		<p>What´s the next phenomena we will measure with our Arduino? Temperature. To do this we'll use a rather complicated IC (integrated circuit) hidden in a package identical to our P2N2222AG transistors. It has three pin's, ground, signal and +5 volts, and is easy to use. It outputs 10 millivolts per degree centigrade on the signal pin (to allow measuring temperatures below freezing there is a 500 mV offset eg. 25 degrees C = 750 mV, 0 degrees C = 500mV). To convert this from the digital value to degrees, we will use some of the Arduino's math abilities. Then to display it we'll use one of the IDE's rather powerful features, the debug window. We'll output the value over a serial connection to display on the screen. Let's get to it.</p>
+		<p>One extra note, this circuit uses the Arduino IDE's serial monitor. To open this, first upload the program then click the button which looks like a square with an antennae.</p>
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="http://www.oomlout.com/parts/CIRC-10-3dsheet-60.png"
+						width="60" height="36" alt="circuit 10 breadboard sheet 3d view"/></td>
+					<td>CIRC-10<br/>Breadboard Sheet<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/HEAD-02-60.png"
+						width="60" height="36" alt="2 pin header"/></td>
+					<td>2 Pin Header<br/>x4</td>
+					<td><img src="http://www.oomlout.com/parts/IC-TMP36-60.png"
+						width="60" height="36" alt="TMP36 temperature sensor"/></td>
+						<td>TMP36<br/>Temperature Sensor<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="wire"/></td>
+					<td>Wire</td>
+				</tr>
+			</table>
+		</div>
+		<span class="bb-svg-container"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="5 12 60 60"
+			preserveAspectRatio="xMaxYMin meet">
+			<image height="100" width="100"
+				xlink:href="img/CIRC10_bb.svg"/>
+		</svg></span>
+		<div>
+			<h3>Schematic</h3>
+			<span class="sch-svg-container"><svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="66.5 35 28 28"
+				preserveAspectRatio="xMidYMin meet">
+				<image height="100" width="100"
+					xlink:href="img/CIRC10_schem.svg" />
+			</svg></span>
+		</div>
+		<div>
+			<h3>Resources</h3>
+			<h4>.:download:.</h4>
+			<p>Breadboard layout sheet<br/>
+				<a href="http://ardx.org/BBLS10">http://ardx.org/BBLS10</a>
+			</p>
+			<p>Fritzing diagram<br/><a href="fritzing/CIRC10.fzz">
+				https://wcrsyyc.github.io/ardx/fritzing/CIRC10.fzz</a></p>
+			<h4>.:view:.</h4>
+			<p>assembly video<br/>
+				<a href="http://ardx.org/VIDE10">http://ardx.org/VIDE10</a>
+			</p>
+			<p>TMP36 Datasheet<br/>
+				<a href="http://ardx.org/TMP36">http://ardx.org/TMP36</a>
+			</p>
+		</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<p>Download the Code from ( <a
+			href="http://ardx.org/CODE09">http://ardx.org/CODE09</a> )<br/>
+			(and then copy the text and paste it into an empty Arduino Sketch)</p>
+		<pre>/*     ---------------------------------------------------------
+ *     |  Arduino Experimentation Kit Example Code             |
+ *     |  CIRC-10 .: Temperature :. (TMP36 Temperature Sensor) |
+ *     ---------------------------------------------------------
+ *
+ *  A simple program to output the current temperature to the IDE's debug window
+ */
+
+//TMP36 Pin Variables
+int temperaturePin = 0; //the analog pin the TMP36's Vout (sense) pin is connected to
+                        //the resolution is 10 mV / degree centigrade
+                        //(500 mV offset) to make negative temperatures an option
+
+/*
+ * setup() - this function runs once when you turn your Arduino on
+ * We initialize the serial connection with the computer
+ */
+void setup()
+{
+  Serial.begin(9600);  //Start the serial connection with the copmuter
+                       //to view the result open the serial monitor
+                       //last button beneath the file bar (looks like a box with an antenae)
+}
+
+void loop()                     // run over and over again
+{
+ float temperature = getVoltage(temperaturePin);  //getting the voltage reading from the temperature sensor
+ temperature = (temperature - .5) * 100;          //converting from 10 mv per degree wit 500 mV offset
+                                                  //to degrees ((volatge - 500mV) times 100)
+ Serial.println(temperature);                     //printing the result
+ delay(1000);                                     //waiting a second
+}
+
+/*
+ * getVoltage() - returns the voltage on the analog input defined by
+ * pin
+ */
+float getVoltage(int pin){
+ return (analogRead(pin) * .004882814); //converting from a 0 to 1023 digital range
+                                        // to 0 to 5 volts (each 1 reading equals ~ 5 millivolts
+}</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>3 things to try</span></h2>
+		<div>
+			<h3>Nothing Seems to Happen</h3>
+			<p>This program has no outward indication it is working. To see the results you must open the Arduino IDE's serial monitor.<br/>
+			(instructions on previous page)</p>
+		</div>
+		<div>
+			<h3>Gibberish is Displayed</h3>
+			<p>This happens because the serial monitor is receiving data at a different speed than expected. To fix this, click the pull-down box that reads "*** baud" and change it to "9600 baud".</p>
+		</div>
+		<div>
+			<h3>Temperature Value is Unchanging</h3>
+			<p>Try pinching the sensor with your fingers to heat it up or pressing a bag of ice against it to cool it down.</p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>Outputting voltage:</h3>
+		<p>This is a simple matter of changing one line. Our sensor outputs 10mv per degree centigrade so to get voltage we simply display the result of <code>getVoltage()</code>.</p>
+		<p>delete the line <code>temperature = (temperature - .5) * 100;</code></p>
+		<h3>Outputting degrees Fahrenheit:</h3>
+		<p>Again this is a simple change requiring only math. To go degrees C ----> degrees F we use the formula <code>( F = C * 1.8) + 32 )</code>. Add the line</p><pre>  temperature = (((temperature - .5) * 100)*1.8) + 32;</pre>
+    <p>before <code>Serial.println(temperature);</code></p>
+		<h3>More informative output:</h3>
+		<p>Lets add a message to the serial output to make what is appearing in the Serial Monitor more informative. To do this first revert to the original code then change:<br/>&nbsp; <code>Serial.println(temperature);</code> ----><pre><code>  Serial.print(temperature);</code>
+  Serial.println(" degrees centigrade");</pre>
+		<p>The change to the first line means when we next output it will appear on the same line, then we add the informative text and a new line.</p>
+		<h3>Changing the serial speed:</h3>
+		<p>If you ever wish to output a lot of data over the serial line, time is of the essence. We are currently transmitting at 9600 baud but much faster speeds are possible. To change this, change the line:<br/>&nbsp; <code>Serial.begin(9600);</code> ----> <code>Serial.begin(115200);</code></br/>Upload the sketch, turn on the serial monitor, then change the speed from 9600 baud to 115200 baud in the pull down menu. You are now transmitting data 12 times faster.</p>
+	</section>
+</main>
+
+		<footer>.:Welcome to the Bottom:.</footer>
+	</body>
+</html>

@@ -37,7 +37,7 @@ cp raw/CIRC03_bb.svg raw/CIRC03_bb-fix.svg
 #
 # Put back the text that Fritzing svg export dropped off the schematic
 sed '
-s^>Motor</text>^>Motor<tspan font-size="3.9" x="-16" y="-8.2">Collector</tspan><tspan font-size="3.9" x="12" y="-16.1">Base</tspan><tspan font-size="3.9" x="19" y="-8.2">Emitter</tspan></text>^
+s^>Transistor</text>^>Transistor<tspan font-size="3.9" x="10" y="17">Collector</tspan><tspan font-size="3.9" x="37" y="9">Base</tspan><tspan font-size="3.9" x="44" y="17">Emitter</tspan></text>^
 s^>gnd</text>^>gnd<tspan font-size="4" x="0" y="9.25">(ground) (-)</tspan></text>^
 s^>resistor</text>^>resistor<tspan font-size="5.5" x="2" y="-14">Arduino</tspan></text>^
 ' raw/CIRC03_schem.svg >raw/CIRC03_schem-fix.svg
@@ -109,4 +109,30 @@ s^>photo</text>^>photo<tspan font-size="5.3" x="0" y="9.1">resistor</tspan><tspa
 # This does not fix the offset "pin «n»" text, so do that manually with inkscape
 
 # CIRC10
+cp raw/CIRC10_bb.svg raw/CIRC10_bb-fix.svg
+# manually remove the connector«n»leg line elements
+#
+# Put back the text that Fritzing svg export dropped off the schematic
+# text-anchor="middle" for TMP36
+sed '
+s^>gnd</text>^>gnd<tspan font-size="4" x="0" y="8.9">(ground) (-)</tspan></text>^
+s^>TMP36</text>^>TMP36<tspan font-size="4.5" x="53" y="5">Arduino</tspan><tspan font-size="4" x="53" y="9.5">analog</tspan><tspan font-size="4" x="23" y="-10.5">(precision</tspan><tspan font-size="4" x="23" y="-6.0">temperature</tspan><tspan font-size="4" x="23" y="-1.5">sensor)</tspan></text>^
+' raw/CIRC10_schem.svg >raw/CIRC10_schem-fix.svg
+# This does not fix the offset "pin «n»" text, so do that manually with inkscape
+
 # CIRC11
+# Put back the text that Fritzing svg export dropped off the schematic
+sed '
+s^>Diode</text>^>Diode<tspan font-size="4" x="0" y="8.9">(flyback)</tspan></text>^
+s^>Transistor</text>^>Transistor<tspan font-size="3.9" x="2" y="-3">Collector</tspan><tspan font-size="3.9" x="-22" y="9">Base</tspan><tspan font-size="3.9" x="2" y="16">Emitter</tspan></text>^
+' raw/CIRC11_schem.svg >raw/CIRC11_schem-fix.svg
+# This does not fix mirrored text: second instance of "N.C</text>" change containing group matrix from 1 0 0 1 to -1 0 0 1.  Repeat for the immediately following groups wrapping "C" and "N.O." text elements.  Change the common parent group text-anchor property from "start" to "end".
+# This does not fix the offset "pin «n»" text, so do that manually with inkscape, or add 3.0 to the (first) "pin 2" text element x coordinate
+sed '
+s^>Diode</text>^>Diode<tspan font-size="4" x="0" y="8.9">(flyback)</tspan></text>^
+s^>Transistor</text>^>Transistor<tspan font-size="3.9" x="2" y="-3">Collector</tspan><tspan font-size="3.9" x="-22" y="9">Base</tspan><tspan font-size="3.9" x="2" y="16">Emitter</tspan></text>^
+' raw/CIRC11h_schem.svg >raw/CIRC11h_schem-fix.svg
+# This does not fix mirrored text: For the 2 instances of "N.C.</text>", matrix x 0 0 1 ==> x 0 0 -1 and subtract one from the y offset for each of the block of text groups, including the connection pin label text just after that.
+# This does not fix the offset "pin «n»" text, so do that manually with inkscape, or add 3.0 to the (first) "pin 2" text element x coordinate
+
+#

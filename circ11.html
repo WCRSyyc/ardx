@@ -1,0 +1,203 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ardx:circ-11[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit relays circuit">
+		<!-- #include «head.html» -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="favicon.png">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<!-- #include «topnav.html» -->
+<nav id="topnav">
+	<a id="logo" href="https://wcrsyyc.github.io/"><img
+		src="img/wcrs_logo.png" alt="logo"></a>
+	<h2><a href="index.html">WCRS</a></h2>
+	<ul>
+		<li><a href="https://github.com/WCRSyyc/ardx">about</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/issues">contact</a> |</li>
+		<li><a href="https://github.com/WCRSyyc/ardx/wiki">wiki</a></li>
+	</ul>
+	<hr>
+	<p><!-- current message text --></p>
+</nav>
+
+<!-- #include «sidebar.html» -->
+
+<main id="circ-11">
+	<header>
+		<h1>CIRC<br/>11</h1>
+		<h2>.:Larger Loads:.<br/>.:Relays:.</h2>
+		<img src="http://www.ardx.org/src/circ/CIRC-11-square-100.jpg" width="100" height="100" alt="breadboard compatible relay">
+	</header>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
+	<section>
+		<h2>What We´re Doing</h2>
+		<p>This next circuit is a bit of a test. We combine what we learned about using transistors in CIRC03 to control a relay. A relay is an electrically controlled mechanical switch. Inside the little plastic box is an electromagnet that, when energized, causes a switch to trip (often with a very satisfying clicking sound). You can buy relays that vary in size from a quarter of the size of the one in this kit up to as big as a fridge, each capable of switching a certain amount of current. They are immensely fun because there is an element of the physical to them. While all the silicon we´ve played with to this point is fun, sometimes you may just want to wire up a hundred switches to control something magnificent. Relays give you the ability to dream it up then control it with your Arduino. How to use today´s technology to control the past. (The 1N4001 diode is acting as a flyback diode, for details on why it´s there visit: <a href="https://en.wikipedia.org/wiki/Flyback_diode">http://ardx.org/4001</a>)</p>
+	</section>
+	<section id="circuit">
+		<h2>The Circuit</h2>
+		<div id="CIRC-theparts">
+			<h3>The Parts</h3>
+			<table>
+				<tr>
+					<td><img src="http://www.oomlout.com/parts/CIRC-11-3dsheet-60.png"
+						width="60" height="36" alt="circuit 10 breadboard sheet 3d view"/></td>
+					<td>CIRC-11<br/>Breadboard Sheet<br/>(optional)<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/HEAD-02-60.png"
+						width="60" height="36" alt="2 pin header"/></td>
+					<td>2 Pin Header<br/>(optional)<br/>x4</td>
+					<td><img src="http://www.oomlout.com/parts/DIOD-01-60.png"
+						width="60" height="36" alt="1N4001 diode"/></td>
+					<td>Diode<br/>(1N4001)<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/RELAY-01-60.png"
+						width="60" height="36" alt="relay"/></td>
+					<td>Relay<br/>(DPDT)<br/>x1</td>
+				</tr><tr>
+					<td><img src="http://www.oomlout.com/parts/RES-222-60.png"
+						width="60" height="36" alt="resistor"/></td>
+					<td>2.2k Ohm Resistor<br/>Red-Red-Red<br/>or Red-Red-Blk-Brn<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/RES-561-60.png"
+						width="60" height="36" alt="resistor"/></td>
+					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>or Grn-Blue-Blk-Blk<br/>x2</td>
+					<td><img src="http://www.oomlout.com/parts/LED-05G-60.png"
+						width="60" height="36" alt="5mm green LED"/></td>
+					<td>Green LED<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/LED-05R-60.png"
+						width="60" height="36" alt="5mm red LED"/></td>
+					<td>Red LED<br/>x1</td>
+				</tr><tr>
+					<td><img src="http://www.oomlout.com/parts/IC-2222A-60.png"
+						width="60" height="36" alt="transistor"/></td>
+					<td>Transistor<br/>P2N2222AG<br/>(T092)<br/>x1</td>
+					<td><img src="http://www.oomlout.com/parts/WIRE-01-60.png"
+						width="60" height="36" alt="wire"/></td>
+					<td>Wire</td>
+					<td colspan="4"></td>
+				</tr>
+			</table>
+		</div>
+		<span class="bb-svg-container"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="0 12 60 60"
+			preserveAspectRatio="xMaxYMin meet">
+			<image height="100" width="100"
+				xlink:href="img/CIRC11_bb.svg"/>
+				<!-- transform="rotate(90 0 0)" -->
+		</svg></span>
+		<div>
+			<h3>Schematic</h3>
+			<span class="sch-svg-container"><svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="53.5 52 35 35"
+				preserveAspectRatio="xMidYMin meet">
+				<image height="100" width="100"
+					xlink:href="img/CIRC11_schem.svg" />
+			</svg></span>
+		</div>
+		<div>
+			<h3>Resources</h3>
+			<h4>.:download:.</h4>
+			<p>Breadboard layout sheet<br/>
+				<a href="http://ardx.org/BBLS11">http://ardx.org/BBLS11</a>
+			</p>
+			<p>Fritzing diagram<br/><a href="fritzing/CIRC11.fzz">
+				https://wcrsyyc.github.io/ardx/fritzing/CIRC11.fzz</a></p>
+			<p>Fritzing relay part<br/><a href="fritzing/DPDT-941-Relay.fzpz">
+				https://wcrsyyc.github.io/ardx/fritzing/DPDT-941-Relay.fzpz</a></p>
+			<h4>.:view:.</h4>
+			<p>assembly video<br/>
+				<a href="http://ardx.org/VIDE11">http://ardx.org/VIDE11</a>
+			</p>
+		</div>
+	</section>
+	<section id="code">
+		<h2>Code <span>(no need to type everything in just)</span></h2>
+		<h3>File > Examples > 1.Basic > Blink</h3>
+		<p>(example from the great <a	href="https://www.arduino.cc/">arduino.cc</a> site, check it out for other great ideas)</p>
+		<pre>/*
+  Blink
+  Turns on an LED on for one second, then off for one second, repeatedly.
+  The circuit:
+ * LED connected from digital pin 13 to ground.
+  * Note: On most Arduino boards, there is already an LED on the board
+ connected to pin 13, so you don´t need any extra components for this example.
+
+ Created 1 June 2005
+ By David Cuartielles
+ http://arduino.cc/en/Tutorial/Blink
+ based on an orginal by H. Barragan for the Wiring i/o board
+ */
+
+int ledPin =  2;    // Relay connected to digital pin 2   &lt;----- Change this to pin 2
+
+// The setup() method runs once, when the sketch starts
+
+void setup()   {
+  // initialize the digital pin as an output:
+  pinMode(ledPin, OUTPUT);
+}
+
+// the loop() method runs over and over again,
+// as long as the Arduino has power
+
+void loop()
+{
+  digitalWrite(ledPin, HIGH);   // set the LED on
+  delay(1000);                  // wait for a second
+  digitalWrite(ledPin, LOW);    // set the LED off
+  delay(1000);                  // wait for a second
+}</pre>
+	</section>
+	<section id="CIRC-notworking">
+		<h2>Not Working? <span>3 things to try</span></h2>
+		<div>
+			<h3>Nothing Happens</h3>
+			<p>The example code uses pin 13 and we have the relay connected to pin 2. Make sure you made this change in the code.</p>
+		</div>
+		<div>
+			<h3>No Clicking Sound</h3>
+			<p>The transistor or coil portion of the circuit isn´t quite working. Check the transistor is plugged in the right way.</p>
+		</div>
+		<div>
+			<h3>Not Quite Working</h3>
+			<p>The included relays are designed to be soldered rather than used in a breadboard. As such you may need to press it in to ensure it works (and it may pop out occasionally).</p>
+		</div>
+	</section>
+	<section id="CIRC-makingBetter">
+		<h2>Making it Better?</h2>
+		<h3>Watch the Back-EMF Pulse</h3>
+		<p>Replace the 1N4001 diode with an LED. You´ll see it blink each time it "snubs" the coil voltage spike when it turns off.</p>
+		<h3>Controlling a Motor</h3>
+		<p>In CIRC-03 we controlled a motor using a transistor. However if you want to control a larger motor, a relay is a good option. <span class="sch-svg-container"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="81.5 54.5 16.8 16.8"
+			preserveAspectRatio="xMidYMin meet">
+			<image height="100" width="100"
+				xlink:href="img/CIRC11h_schem.svg" />
+		</svg></span>
+			To do this simply remove the red LED, and connect the motor in its place (remember to bypass the 560 Ohm resistor).</p>
+		<h3>Controlling Motor Direction</h3>
+		<p>A bit of a complicated improvement to finish. To control the direction of spin of a DC motor we must be able to reverse the direction of current flow through it. To do this manually, we reverse the leads. To do it electrically we require something called an h-bridge. This can be done using a DPDT relay to control the motor´s direction. Wire up the following circuit. It looks complicated but can be accomplished using only a few extra wires. Give it a try.  Here is a link to the full H bridge Fritzing diagram <a href="fritzing/CIRC11h.fzz">https://wcrsyyc.github.io/ardx/fritzing/CIRC11h.fzz</a></p>
+	</section>
+</main>
+
+		<footer>.:Welcome to the Bottom:.</footer>
+	</body>
+</html>

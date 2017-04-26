@@ -31,8 +31,15 @@ svgo -i raw/CIRC08_schem-fix.svg  -o img/CIRC08_schem.svg
 svgo -i raw/CIRC09_bb-fix.svg     -o img/CIRC09_bb.svg
 svgo -i raw/CIRC09_schem-fix.svg  -o img/CIRC09_schem.svg
 
-# svgo -i raw/CIRC12_bb.svg     -o img/CIRC12_bb.svg
-# svgo -i raw/CIRC12a_schem.svg -o img/CIRC12a_schem.svg
-# svgo -i raw/CIRC12c_schem.svg -o img/CIRC12c_schem.svg
-# svgo -i raw/CIRC15_bb.svg     -o img/CIRC15_bb.svg
-# svgo -i raw/CIRC15_schem.svg  -o img/CIRC15_schem.svg
+svgo -i raw/CIRC10_bb-fix.svg     -o img/CIRC10_bb.svg
+svgo -i raw/CIRC10_schem-fix.svg  -o img/CIRC10_schem.svg
+
+svgo -i raw/CIRC11_bb.svg         -o img/CIRC11_bb.svg
+svgo -i raw/CIRC11_schem-fix.svg  -o img/CIRC11_schem.svg
+svgo -i raw/CIRC11h_schem-fix.svg -o img/CIRC11h_schem.svg
+
+svgo -i raw/CIRC12_bb.svg         -o img/CIRC12_bb.svg
+svgo -i raw/CIRC12a_schem.svg     -o img/CIRC12a_schem.svg
+svgo -i raw/CIRC12c_schem.svg     -o img/CIRC12c_schem.svg
+svgo -i raw/CIRC15_bb.svg         -o img/CIRC15_bb.svg
+svgo -i raw/CIRC15_schem.svg      -o img/CIRC15_schem.svg

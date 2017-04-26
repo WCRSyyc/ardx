@@ -419,11 +419,13 @@ main p:last-child {
 #CIRC-theparts table {
   border-collapse: collapse;
 }
-#CIRC-theparts table td {
-  padding: 0;
-  border-spacing: 0;
+#CIRC-theparts td {
+  padding: 0.3rem 0 0 0;
   font-size: 0.8rem;
   font-weight: bold;
+}
+#CIRC-theparts tr:first-of-type td {
+  padding: 0;
 }
 .bb-svg-container,
 .sch-svg-container {
@@ -633,9 +635,9 @@ main#circ-02 .sch-svg-container {
 main#circ-03 .bb-svg-container {
   padding-bottom: 50%;
 }
-/*main#circ-03 .sch-svg-container {
-  padding-bottom: 100%;
-}*/
+main#circ-03 .sch-svg-container {
+  padding-bottom: 93%;
+}
 main#circ-04 .bb-svg-container {
   padding-bottom: 52%;
 }
@@ -646,7 +648,7 @@ main#circ-05 .bb-svg-container {
   padding-bottom: 52%;
 }
 main#circ-05 .sch-svg-container {
-  padding-bottom: 156%;
+  padding-bottom: 150%;
 }
 main#circ-05 #CIRC-makingBetter h4 {
   margin: 1rem 0 0.5rem 1rem;
@@ -672,10 +674,29 @@ main#circ-08 .sch-svg-container {
   padding-bottom: 90%;
 }
 main#circ-09 .bb-svg-container {
-  padding-bottom: 51%;
+  padding-bottom: 52%;
 }
 main#circ-09 .sch-svg-container {
   padding-bottom: 124%;
+}
+main#circ-10 .bb-svg-container {
+  padding-bottom: 80%;
+}
+main#circ-10 .sch-svg-container {
+  padding-bottom: 80%;
+}
+main#circ-11 .bb-svg-container {
+  padding-bottom: 85%;
+}
+main#circ-11 .sch-svg-container {
+  padding-bottom: 81%;
+}
+main#circ-11 #CIRC-makingBetter .sch-svg-container {
+  padding-bottom: 33%;
+  float: right;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 25px;
 }
 
 main#circ-12 .bb-svg-container {
