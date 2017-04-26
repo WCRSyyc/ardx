@@ -5,6 +5,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<title>ardx:circ-15[.:wcrs:.]</title>
 		<meta name="description" content="Arduino Experimenters Kit dice simulator">
+		<!-- #include «head.html» -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
@@ -20,6 +21,7 @@
 				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
+<!-- #include «topnav.html» -->
 <nav id="topnav">
 	<a id="logo" href="https://wcrsyyc.github.io/"><img
 		src="img/wcrs_logo.png" alt="logo"></a>
@@ -33,6 +35,7 @@
 	<p><!-- current message text --></p>
 </nav>
 
+<!-- #include «sidebar.html» -->
 <nav id="sidebar">
 	<section id="menu">
 		<ul>
@@ -75,6 +78,28 @@
 								<h4>PROG</h4>Programming Primer</a></li>
 							<li><a href="electronics.html">
 								<h4>ELEC</h4>Electronics Primer</a></li>
+							<li><a href="circ01.html">
+								<h4>CIRC-01</h4>Blinking LED</a></li>
+							<li><a href="circ02.html">
+								<h4>CIRC-02</h4>Multiple LEDs</a></li>
+							<li><a href="circ03.html">
+								<h4>CIRC-03</h4>Transistors &amp; Motors</a></li>
+							<li><a href="circ04.html">
+								<h4>CIRC-04</h4>Servos</a></li>
+							<li><a href="circ05.html">
+								<h4>CIRC-05</h4>74HC595 Shift Registers</a></li>
+							<li><a href="circ06.html">
+								<h4>CIRC-06</h4>Piezo Speaker</a></li>
+							<li><a href="circ07.html">
+								<h4>CIRC-07</h4>Pushbuttons</a></li>
+							<li><a href="circ08.html">
+								<h4>CIRC-08</h4>Potentiometers</a></li>
+							<li><a href="circ09.html">
+								<h4>CIRC-09</h4>Photo-Resistors</a></li>
+							<li><a href="circ10.html">
+								<h4>CIRC-10</h4>Temperature</a></li>
+							<li><a href="circ11.html">
+								<h4>CIRC-11</h4>Relays</a></li>
 							<li><a href="circ12.html">
 								<h4>CIRC-12</h4>RGB LED blink</a></li>
 							<li><a href="circ15.html">
@@ -125,7 +150,7 @@
 <main id="circ-15">
 	<header>
 		<h1>CIRC<br/>15</h1>
-		<h2>.:Dice Simulator:.<br>.:1d6 on 6 LEDs:.</h2>
+		<h2>.:Dice Simulator:.<br/>.:1d6 on 6 LEDs:.</h2>
 		<img src="img/d6-simulator-100.jpg" width="100" height="100" alt="1d6 die simulator">
 	</header>
 	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
@@ -194,7 +219,7 @@
 		<h2>Code <span>(no need to type everything in just)</span></h2>
 		<p>Download the Code from ( <a
 			href="code/CIRC15-code.txt">
-			https://wcrsyyc.github.io/ardx/code/CIRC15-code.txt</a> )<br>
+			https://wcrsyyc.github.io/ardx/code/CIRC15-code.txt</a> )<br/>
 			(and then copy the text and paste it into an empty Arduino Sketch)</p>
 		<pre>/*
  Arduino Dice :)
