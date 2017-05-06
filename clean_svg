@@ -4,7 +4,7 @@
 # pages.  The sources are raw/«name».svg or raw/«name»-fix.svg, and the
 # corresponding output is img/«name».svg
 
-svgo -i raw/CIRC01_bb.svg         -o img/CIRC01_bb.svg
+svgo -i raw/CIRC01_bb-fix.svg     -o img/CIRC01_bb.svg
 svgo -i raw/CIRC01_schem-fix.svg  -o img/CIRC01_schem.svg
 
 svgo -i raw/CIRC02_bb-fix.svg     -o img/CIRC02_bb.svg
@@ -38,8 +38,9 @@ svgo -i raw/CIRC11_bb.svg         -o img/CIRC11_bb.svg
 svgo -i raw/CIRC11_schem-fix.svg  -o img/CIRC11_schem.svg
 svgo -i raw/CIRC11h_schem-fix.svg -o img/CIRC11h_schem.svg
 
-svgo -i raw/CIRC12_bb.svg         -o img/CIRC12_bb.svg
+svgo -i raw/CIRC12_bb-fix.svg     -o img/CIRC12_bb.svg
+svgo -i raw/CIRC12_schem.svg      -o img/CIRC12c_schem.svg
 svgo -i raw/CIRC12a_schem.svg     -o img/CIRC12a_schem.svg
-svgo -i raw/CIRC12c_schem.svg     -o img/CIRC12c_schem.svg
+
 svgo -i raw/CIRC15_bb.svg         -o img/CIRC15_bb.svg
 svgo -i raw/CIRC15_schem.svg      -o img/CIRC15_schem.svg

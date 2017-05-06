@@ -78,6 +78,8 @@
 								<h4>PROG</h4>Programming Primer</a></li>
 							<li><a href="electronics.html">
 								<h4>ELEC</h4>Electronics Primer</a></li>
+							<li><a href="fritzing.html">
+								<h4>FRITZING</h4>Fritzing with ARDX</a></li>
 							<li><a href="circ01.html">
 								<h4>CIRC-01</h4>Blinking LED</a></li>
 							<li><a href="circ02.html">
@@ -214,7 +216,7 @@
 			<span class="sch-svg-container"><svg
 				xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
-				viewBox="53.5 52 35 35"
+				viewBox="51.8 52 35 35"
 				preserveAspectRatio="xMidYMin meet">
 				<image height="100" width="100"
 					xlink:href="img/CIRC11_schem.svg" />
@@ -294,15 +296,15 @@ void loop()
 		<h3>Watch the Back-EMF Pulse</h3>
 		<p>Replace the 1N4001 diode with an LED. You´ll see it blink each time it "snubs" the coil voltage spike when it turns off.</p>
 		<h3>Controlling a Motor</h3>
-		<p>In CIRC-03 we controlled a motor using a transistor. However if you want to control a larger motor, a relay is a good option. <span class="sch-svg-container"><svg
+		<p>In CIRC-03 we controlled a motor using a transistor. However if you want to control a larger motor, a relay is a good option. To do this simply remove the red LED, and connect the motor in its place (remember to bypass the 560 Ohm resistor).</p>
+		<span class="sch-svg-container"><svg
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
-			viewBox="81.5 54.5 16.8 16.8"
+			viewBox="79 56 24 24"
 			preserveAspectRatio="xMidYMin meet">
 			<image height="100" width="100"
 				xlink:href="img/CIRC11h_schem.svg" />
 		</svg></span>
-			To do this simply remove the red LED, and connect the motor in its place (remember to bypass the 560 Ohm resistor).</p>
 		<h3>Controlling Motor Direction</h3>
 		<p>A bit of a complicated improvement to finish. To control the direction of spin of a DC motor we must be able to reverse the direction of current flow through it. To do this manually, we reverse the leads. To do it electrically we require something called an h-bridge. This can be done using a DPDT relay to control the motor´s direction. Wire up the following circuit. It looks complicated but can be accomplished using only a few extra wires. Give it a try.  Here is a link to the full H bridge Fritzing diagram <a href="fritzing/CIRC11h.fzz">https://wcrsyyc.github.io/ardx/fritzing/CIRC11h.fzz</a></p>
 	</section>

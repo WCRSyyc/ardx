@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>ardx:preface[.:wcrs:.]</title>
-		<meta name="description" content="Arduino Experimentation Kit guide preface">
+		<title>ardx:fritzing[.:wcrs:.]</title>
+		<meta name="description" content="Arduino Experimenters Kit using Fritzing">
 		<!-- #include «head.html» -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -149,40 +149,61 @@
 	</section>
 </nav>
 
-<main id="preface">
+<main id="frtz">
 	<header>
-		<h1>A Few Words</h1>
-		<img src="img/wcrsyyc-100.jpg" width="100" height="100" alt="wcrsyyc">
+		<h1>FRITZING<br/>use with ARDX</h1>
+		<h2>.:How we use it:.</h2>
+		<img src="img/«circuit_name»-100.jpg" width="100" height="100" alt="«circuit_alt»">
 	</header>
-	<h2>(ARDX) .:Arduino Experimenter´s Kit:. (ARDX)</h2>
+	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
 	<section>
-		<h2>About This Kit</h2>
-		<p>The overall goal of this kit is fun. Beyond this, the aim is to get you comfortable using a wide range of electronic components through small, simple, and easy circuits. The focus is to get each circuit working then giving you the tools to figure out why. If you encounter any problems, want to ask a question, or would like to know more about any part, extra help is only an e-mail away at info@robotgames.com, or questions can be posted to the <a href="https://github.com/WCRSyyc/ardx/issues">issues</a> for our github repository.</p>
+		<h2>Using Fritzing</h2>
+		<p>The WCRS version of the ARDX experiment instruction pages includes links to <a href="http://fritzing.org/">Fritzing</a> sketch documents. The schematic and wiring layout images have been generated from the program, usually with a little after the fact tweaking to add or repair things that the application does not currently handle well.</p>
+    <p>In the process of creating the exeriment sketches for the web pages, additional parts that were not (then) part of the core library, were needed. There were created as needed. If you just want to work with copies of our fritzing sketches, there is nothing extra that needs to be done. The custom parts are included as part of the sketch document.</p>
+    <p>However, if you want to create your own sketches from scratch, those extra parts could be useful. Links to them are supplied here, along with a few notes about when to use them. To use one of them, down load it to your local machine, then open it in Fritzing. That will add it to the "My Parts" bin. Remember to save the imported parts, and the "My Parts" bin updates, if you do not want to have to import it again each time you need it for a new sketch.</p>
 	</section>
 	<section>
-		<h2>About Open Source Hardware</h2>
-		<p>The ARDX project at <em>WCRS</em> is open source. What does this mean? It means everything involved in making this kit, be it this guide, 3D models, or code, is available for free download. But it goes further, you're also free to reproduce and modify any of this material, then distribute it for yourself. The catch? Quite simple. It is released under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. This means you must credit <em>WCRS</em> in your design and share your developments in a similar manner. This project is based on, and extended from, the ARDX project from .:oomlout:. which is released under a <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons (By - Share Alike)</a> license.</p>
+		<h2>The parts files</h2>
+		<ul>
+			<li><a href="fritzing/2-pin-header.fzpz">2-pin-header.fzpz</a></li>
+			<li><a href="fritzing/2-by-10-header2dip.fzpz">2-by-10-header2dip.fzpz</a></li>
+			<li><a href="fritzing/DPDT-941-Relay.fzpz">DPDT-941-Relay.fzpz</a></li>
+			<li><a href="fritzing/nrf24L01.fzpz">nrf24L01.fzpz</a></li>
+			<li><a href="fritzing/SPST-D31A-Relay.fzpz">SPST-D31A-Relay.fzpz</a></h3>
+		</ul>
 	</section>
-	<section id="oomlout">
-		<h2>About .: OOMLOUT :.</h2>
-		<p>We’re a plucky little design company focusing on producing <br/>¨delightfully fun open source products¨</p>
-		<h4>To check out what we are up to</h4>
-		<h3><a href="http://www.oomlout.com">http://www.oomlout.com</a></h3>
-	</section>
-	<section>
-		<h2>About .: WCRS :.</h2>
-		<p>We are a non-profit organization dedicated to encouraging an interest in robotics. We provide mentoring and tools to create robots and robotic systems. We are eager to share our enthusiasm for robotics with students, teachers, and anyone of any age who is interested in learning about robotics.</p>
-		<p>See more about us, and what we are up to, at <a href="https://wcrsyyc.github.io/">https://wcrsyyc.github.io/</a>, <a href="http://robotgames.com">http://robotgames.com</a>, and facebook <a href="https://www.facebook.com/WCRS.YYC/">https://www.facebook.com/WCRS.YYC/</a>.
-	</section>
-	<section>
-		<h2>About Problems</h2>
-		<p>We strive to deliver the highest level of quality in each and every thing we produce. If you ever find an ambiguous instruction, a missing piece, or would just like to ask a question, we’ll try our best to help out.</p>
-		<h3><a href="https://github.com/WCRSyyc/ardx/issues">https://github.com/WCRSyyc/ardx/issues</a></h3>
-		<h4>(we like hearing about problems it helps us improve future versions)</h4>
-		<p>Another resource is the ARDX wiki at <a href="https://github.com/WCRSyyc/ardx/wiki">https://github.com/WCRSyyc/ardx/wiki</a></p>
+	<section id="fparts">
+		<h2>Background and Usage</h2>
+		<article>
+      <h3><a href="fritzing/2-pin-header.fzpz">2 pin header</a></h3>
+      <h4>https://wcrsyyc.github.io/ardx/fritzing/2-pin-header.fzpz</h4>
+      <p>This should never be needed for new sketches. Unless you are creating a new circuit that is be added to our ARDX pages. It has no electronic functionality. The physical header is used to hold the paper breadboard sheet in place when building the circuit from the ARDX documentation. The part is only used to make the generated images look more like the breadboard sheets for the original ARDX documentation.</p>
+    </article>
+    <article>
+      <h3><a href="fritzing/2-by-10-header2dip.fzpz">2 row by 10 header 2 dip footprint adapter</a></h3>
+      <h4>https://wcrsyyc.github.io/ardx/fritzing/2-by-10-header2dip.fzpz</h4>
+      <p>This is an adapter part, that allows a 2 row male header to be plugged in to a breadboard.  The physical part was custom built as well.  It is just 2 headers with long pins¸ that are normally used to build arduino shields.  The pins are bent, near the body of the header, about 45 degrees 'outward'.  then, about 0.14 inches further down the pin, bent 45 degrees in the opposite direction.  The result is a header where female socket connections are offset about 0.1 inch sideways from the pins.  2 of those 'back to back' will fit across the center of a breadboard, fitting in the save position as a DIP chip would.  The header sockets are then adjacent, and a 2 row header will fit in them.  This was initially created to connected an nRF24L01 radio module to a breadboard.  It is a lot more (physically) stable that way, than running 8 separate wires.  It also means that only the standard ARDX kit male to male dupont jumper wires are needed.  No male to female jumpers are needed.</p>
+      <p>The fritzing part provides the same functionality for sketches. Placing the adapter part across the center of the breadboard allows an nRF24L01 moddule (see below) to be placed on the header, and jumper wires connected to the breadboard view correctly create connections on the schematice and pcb views.</p>
+      <p>Like the main breadboard, a part inserted in the header will move when the header part is moved.  However, the pins from that part do not get reconnected to the underlying breadboard when the adapter is positioned again. To get the connections back, the parts in the header must be moved out and back again. This seems to be a limitation of the way the Fritzing program works.</p>
+		</article>
+    <article>
+      <h3><a href="fritzing/DPDT-941-Relay.fzpz">DPDT 941 series relay</a></h3>
+      <h4>https://wcrsyyc.github.io/ardx/fritzing/DPDT-941-Relay.fzpz</h4>
+      <p>This is the standard relay included with ARDX kits.  The part has been configured with schematic subparts for the energizing coil, and each set of the double pole switch contacts.  That can make the schematic simpler.  The circuitry to control the relay coil often as very little to do with the load being controlled by either or both of the switches.</p>
+		</article>
+    <article>
+      <h3><a href="fritzing/nrf24L01.fzpz">nRF24L01 radio module</a></h3>
+      <h4>https://wcrsyyc.github.io/ardx/fritzing/nrf24L01.fzpz</h4>
+      <p>This is a version of the radio we have been using for the <a href="https://github.com/wcrsyyc/carbot">CarBot</a>.  This version has the antenna built into the printed circuit board.  The version with the external antenna has exactly the same interface pins, so this can be used in Fritzing for either module.</p>
+		</article>
+    <article>
+      <h3><a href="fritzing/SPST-D31A-Relay.fzpz">SPST D31A series DIP reed relay</a></h3>
+      <h4>https://wcrsyyc.github.io/ardx/fritzing/SPST-D31A-Relay.fzpz</h4>
+      <p>This is a recreation of the core "DIP-Relay-D31A" part.  I needed a part for a 941 series relay, and this was a working example to start from.  In the process, the original part was rebuilt with a different schematic view that supports sub parts.  The relay switch contacts and shield connection are moveable independent of the energizing coil.</p>
+		</article>
 	</section>
 </main>
 
-		<footer>.: Welcome to the Bottom:.</footer>
+		<footer>.:Welcome to the Bottom:.</footer>
 	</body>
 </html>

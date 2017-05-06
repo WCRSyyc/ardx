@@ -614,6 +614,14 @@ main#elec dd {
   /*float: left;*/
 }
 
+main#frtz article > h3 {
+  margin: 0.8rem 0 0 0;
+}
+
+main#frtz article h4 {
+  margin: 0 0 0.8rem 0;
+}
+
 main#index h1 {
   width: auto;
   color: #444;
@@ -692,9 +700,9 @@ main#circ-11 .sch-svg-container {
   padding-bottom: 81%;
 }
 main#circ-11 #CIRC-makingBetter .sch-svg-container {
-  padding-bottom: 33%;
+  padding-bottom: 30%;
   float: right;
-  width: 100px;
+  width: 170px;
   border: 2px solid black;
   border-radius: 25px;
 }

@@ -7,6 +7,9 @@
 # raw/«name».svg is left alone.
 
 # CIRC-01
+cp raw/CIRC01_bb.svg raw/CIRC01_bb-fix.svg
+# manually add the longest lead arrow using Inkscape: width=2.5
+#
 # Put back the text that Fritzing svg export dropped off the schematic
 # Have not found an svgo option to consolidate transform and coordinate attribuees,
 # and have not found a way to get text attributes moved to parent group element.
@@ -33,7 +36,7 @@ cp raw/CIRC02_schem.svg raw/CIRC02_schem-fix.svg
 
 # CIRC-03
 cp raw/CIRC03_bb.svg raw/CIRC03_bb-fix.svg
-# manually add the longest lead arrow using Inkscape
+# manually add the longest lead arrow using Inkscape: width=1.9
 #
 # Put back the text that Fritzing svg export dropped off the schematic
 sed '
@@ -126,7 +129,7 @@ sed '
 s^>Diode</text>^>Diode<tspan font-size="4" x="0" y="8.9">(flyback)</tspan></text>^
 s^>Transistor</text>^>Transistor<tspan font-size="3.9" x="2" y="-3">Collector</tspan><tspan font-size="3.9" x="-22" y="9">Base</tspan><tspan font-size="3.9" x="2" y="16">Emitter</tspan></text>^
 ' raw/CIRC11_schem.svg >raw/CIRC11_schem-fix.svg
-# This does not fix mirrored text: second instance of "N.C</text>" change containing group matrix from 1 0 0 1 to -1 0 0 1.  Repeat for the immediately following groups wrapping "C" and "N.O." text elements.  Change the common parent group text-anchor property from "start" to "end".
+# This does not fix mirrored text: "N.C.", "C" and "N.O." text elements amd following pin number text labels.
 # This does not fix the offset "pin «n»" text, so do that manually with inkscape, or add 3.0 to the (first) "pin 2" text element x coordinate
 sed '
 s^>Diode</text>^>Diode<tspan font-size="4" x="0" y="8.9">(flyback)</tspan></text>^
@@ -135,4 +138,43 @@ s^>Transistor</text>^>Transistor<tspan font-size="3.9" x="2" y="-3">Collector</t
 # This does not fix mirrored text: For the 2 instances of "N.C.</text>", matrix x 0 0 1 ==> x 0 0 -1 and subtract one from the y offset for each of the block of text groups, including the connection pin label text just after that.
 # This does not fix the offset "pin «n»" text, so do that manually with inkscape, or add 3.0 to the (first) "pin 2" text element x coordinate
 
+sed '
+s^>Diode</text>^>Diode<tspan font-size="4" x="0" y="8.9">(flyback)</tspan></text>^
+s^>Transistor</text>^>Transistor<tspan font-size="3.9" x="2" y="-3">Collector</tspan><tspan font-size="3.9" x="-22" y="9">Base</tspan><tspan font-size="3.9" x="2" y="16">Emitter</tspan></text>^
+' raw/CIRC11hc_schem.svg >raw/CIRC11hc_schem-fix.svg
+# This does not fix mirrored text: "N.C.", "N.O.", "C", and pin number labels for the relay switch contacts.
+# * matrix -1 0 0 1 ==> 1 0 0 1 and text-anchor="end" ==> text-anchor="start"
+# * matrix 1 0 0 1 ==> -1 0 0 1 and text-anchor="start" ==> text-anchor="end"
+# lots of graphic elements that have been converted to "g" elements that can be deleted.
+
+Rotate the "M" in the motor 90 degrees counter-clockwise: matrix 1 0 0 1 ==> 0 -1 -1 0 and adjust postion: x+=3.4, y-=3.4
+For motor pin number 1 and 2, matrix 1 0 0 1 ==> 0 -1 1 - and (only) x+=1.6
+
+# CIRC12
+cp raw/CIRC12_bb.svg raw/CIRC12_bb-fix.svg
+# manually add the "longer lead" arrow using Inkscape
+
+# Put back the text that Fritzing svg export dropped off the schematic
+sed '
+s^>RGB LED</text>^>RGB LED<tspan font-size="5" x="0" y="-7.5">common</tspan><tspan font-size="5" x="1" y="-2">cathode</tspan><tspan font-size="4" x="25" y="9.5">longest</tspan><tspan font-size="4" x="30.7" y="14">lead</tspan></text>^
+' raw/CIRC12_schem.svg >raw/CIRC12c_schem-fix.svg
+# This does not fix the inverted text, so need to do that manually:
+# Manually (text editor) remove the x,y coordinates for the Pin «n» text. and the
+# matrix entry for the containing group, then use Inkscape to reposition the text.
+# Need to move "Pin 9" separate from the others.
+
+# Put back the text that Fritzing svg export dropped off the schematic
+sed '
+s^>RGB LED</text>^>RGB LED<tspan font-size="5" x="0" y="-7.5">common</tspan><tspan font-size="5" x="0" y="-2">anode</tspan><tspan font-size="4" x="25" y="-18.5">longest</tspan><tspan font-size="4" x="30.7" y="-14">lead</tspan></text>^
+' raw/CIRC12a_schem.svg >raw/CIRC12a_schem-fix.svg
+# This does not fix the inverted text, so need to do that manually:
+# Manually (text editor) remove the x,y coordinates for the Pin «n» text. and the
+# matrix entry for the containing group, then use Inkscape to reposition the text.
+# Need to move "Pin 9" separate from the others.
+
+# CIRC15
+# nothing to doe
+
+# sed '
+# ' raw/CIRC15_schem.svg >raw/CIRC15_schem-fix.svg
 #
