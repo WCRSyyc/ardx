@@ -291,6 +291,7 @@ main {
   float: right;
   width: 46.111rem;
   margin-left: -16rem;
+  margin-top: 0.35rem;
   z-index: 1;
 }
 main > header {
@@ -622,18 +623,45 @@ main#frtz article h4 {
   margin: 0 0 0.8rem 0;
 }
 
-main#index h1 {
-  width: auto;
-  color: #444;
-  margin: 0 0 1rem 0;
+main#index h2 {
+  margin-top: 1.8rem;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+main#index section h2 {
+  margin: 0;
+}
+main#index section div {
+  float: left;
+  margin-bottom: 1.6rem;
+  margin-top: 3rem;
+  padding: 0em;
+  text-align: center;
+  width: 14.9rem;
+}
+main#index section div h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+main#index section div a {
+  text-decoration: none;
+  color: inherit;
+}
+main#index h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+main#index section p {
+  margin-bottom: 0;
 }
 
 main#circ-01 .bb-svg-container {
   padding-bottom: 53%;
 }
-/*main#circ-01 .sch-svg-container {
-  padding-bottom: 100%;
-}*/
 main#circ-02 .bb-svg-container {
   padding-bottom: 56%;
 }
@@ -672,9 +700,6 @@ main#circ-06 .sch-svg-container {
 main#circ-07 .bb-svg-container {
   padding-bottom: 66.2%;
 }
-/*main#circ-07 .sch-svg-container {
-  padding-bottom: 100%;
-}*/
 main#circ-08 .bb-svg-container {
   padding-bottom: 51%;
 }

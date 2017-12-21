@@ -44,6 +44,8 @@
 					<li>
 						<a href="http://www.oomlout.com/a/products/ardx/"><h3>(ARDX)</h3>arduino experimenter´s kit</a>
 						<ul>
+							<li><a href="http://www.oomlout.com/oom.php/products/ardx">
+								<h4>ALL</h4>circuits</a></li>
 							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-01">
 								<h4>CIRC-01</h4>Blinking LED</a></li>
 							<li><a href="http://www.oomlout.com/oom.php/products/ardx/circ-02">
@@ -74,6 +76,8 @@
 								<h4>ABOUT</h4>A Few Words</a></li>
 							<!-- <li><a href="assembling.html">
 								<h4>ABOUT</h4>Putting It Together</a></li> -->
+							<li><a href="starthere.html">
+								<h4>START</h4>Startup Links</a></li>
 							<li><a href="programming.html">
 								<h4>PROG</h4>Programming Primer</a></li>
 							<li><a href="electronics.html">
@@ -367,7 +371,7 @@ void changeLED(int led, int state)
     changeLED(i,OFF);
     delay(delayTime);
   }</pre>
-		<p>and upload to cause the lights to light up one after another and then off in a similar manner. Check the code and wikipedia to see how it works, or shoot us an e-mail if you have questions.</p>
+		<p>and upload to cause the lights to light up one after another and then off in a similar manner. Check the code and Wikipedia to see how it works, or shoot us an e-mail if you have questions.</p>
 		<h3>More Animations:</h3>
 		<p>Now things get more interesting. If you look back to the code from CIRC02 (8 LED Fun) you see we change the LEDs using digitalWrite(led, state), this is the same format as the routine we wrote changeLED(led, state). You can use the animations you wrote for CIRC02 by copying the code into this sketch and changing all the digitalWrite()'s to changeLED()'s. Powerful? Very. (you'll also need to change a few other things but follow the compile errors and it works itself out).</p>
 	</section>
