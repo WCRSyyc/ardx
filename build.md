@@ -1,4 +1,4 @@
-# Building circuit pages
+﻿# Building circuit pages
 
 A circuit needs:
 * CIRC«nn».html
