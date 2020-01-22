@@ -1,0 +1,39 @@
+# CIRC05 Shift register
+
+
+import board
+import adafruit_74hc595
+import busio
+import digitalio
+import time
+
+print("SCK  " + str(board.SCK))
+print("MOSI " + str(board.MOSI))
+
+spi = busio.SPI(board.SCK, MOSI=board.MOSI)
+#spi = busio.SPI(board.D3, MOSI=board.D2)
+
+latch_pin = digitalio.DigitalInOut(board.D5)
+#latch_pin = digitalio.DigitalInOut(board.D4)
+sr = adafruit_74hc595.ShiftRegister74HC595(spi, latch_pin)
+
+pin0 = sr.get_pin(0)
+pin1 = sr.get_pin(1)
+pin2 = sr.get_pin(2)
+
+while True:
+  pin0.value = True
+  time.sleep(1)
+  pin1.value = True
+  time.sleep(1)
+  pin2.value = True
+  time.sleep(1)
+
+  pin2.value = False
+  time.sleep(1)
+  pin1.value = False
+  time.sleep(1)
+  pin0.value = False
+  time.sleep(1)
+
+  print("looping")

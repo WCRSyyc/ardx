@@ -1,0 +1,69 @@
+# CIRC06 Pizeo music
+import board
+import time
+import simpleio
+
+
+# Define pin connected to piezo buzzer.
+PIEZO_PIN = board.D9
+Measure_time = 2.0      # time in seconds of one musical measure
+SONG_SEPARATION = 2.0   # time between songs
+
+
+TONE_FREQ = {   # use a dictionary to map note names to note frequency
+            'REST' : 0,
+            'G3' : 196,
+            'A4' : 220,
+			'B4' : 247,
+			'C4' : 262, # middle C
+            'D4' : 294,
+            'E4' : 330,
+            'F4' : 349,
+            'G4' : 392,
+            'A5' : 440,
+            'B5' : 494,
+			'C5' : 523,
+			'D5' : 587,
+            'E5' : 659,
+            'F5' : 698
+			}
+			
+# the music is encoded in a list of lists
+# the inner list is the note name followed
+# by the length of time the note is held as a fraction of the measure time
+# So it's 1/4 for quarter notes and 1/2 for half notes
+
+# the outer list is the notes in the musical score
+
+twinkle = [
+           ['C4', 1/4], ['C4', 1/4], ['G4', 1/4], ['G4', 1/4],
+           ['A5', 1/4], ['A5', 1/4], ['G4', 1/2], ['F4', 1/4],
+           ['F4', 1/4], ['E4', 1/4], ['E4', 1/4], ['D4', 1/4],
+           ['D4', 1/4], ['C4', 1/2]
+          ]
+
+birthday = [
+            ['C4', 1/4], ['C4', 1/4], ['D4', 1/4], ['C4', 1/4],
+            ['F4', 1/4], ['E4', 1/2], ['REST', 1/2],
+            ['C4', 1/4], ['C4', 1/4], ['D4', 1/4], ['C4', 1/4],
+            ['G4', 1/4], ['F4', 1/2]
+           ]
+
+while True:
+#   # Play tones going from start to end of list.
+
+    for note in twinkle:
+ #       print (note)
+        if (note[0] == 'REST'):
+            time.sleep((note[1] * Measure_time ))
+        else:
+            simpleio.tone(PIEZO_PIN, TONE_FREQ[note[0]], duration= (note[1] * Measure_time ) )
+    time.sleep(SONG_SEPARATION) # some time between songs
+
+    for note in birthday:
+ #       print (note)
+        if (note[0] == 'REST'):
+            time.sleep((note[1] * Measure_time ))
+        else:
+            simpleio.tone(PIEZO_PIN, TONE_FREQ[note[0]], duration= (note[1] * Measure_time ) )
+    time.sleep(SONG_SEPARATION)

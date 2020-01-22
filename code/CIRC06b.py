@@ -1,0 +1,54 @@
+import board
+import time
+import simpleio
+
+
+# Define pin connected to piezo buzzer.
+PIEZO_PIN = board.D9
+
+# use a dictionary to map note names to its frequency
+# Define a dictionary of music note names and its frequency
+TONE_FREQ = {
+            'G3' : 196,
+            'A4' : 220,
+			'B4' : 247,
+			'C4' : 262, # middle C
+            'D4' : 294,
+            'E4' : 330,
+            'F4' : 349,
+            'G4' : 392,
+            'A5' : 440,
+            'B5' : 494,
+			'C5' : 523,
+			'D5' : 587,
+            'E5' : 659,
+            'F5' : 698
+			}
+			
+twinkle = [      # list of lists # note followed by number of beats
+           ['C4', 1],['C4', 1],['G4', 1],['G4', 1],['A5', 1],['A5', 1],
+           ['G4', 2],['F4', 1],['F4', 1],['E4', 1],['E4', 1],['D4', 1],
+           ['D4', 1],['C4', 2]
+          ]
+
+birthday = [
+            ['C4', 1],['C4', 1],['D4', 1],['C4', 1],['F4', 1],['E4', 2],
+            ['C4', 1],['C4', 1],['D4', 1],['C4', 1],['G4', 1],['F4', 2]
+           ]
+
+while True:
+    # Play tones going from start to end of list.
+#    for i in sorted (TONE_FREQ.keys()):
+#       print (i)
+#       simpleio.tone(PIEZO_PIN, TONE_FREQ[i], duration=0.5)
+
+
+    for n in twinkle:
+ #       print (n)
+        simpleio.tone(PIEZO_PIN, TONE_FREQ[n[0]], duration= (n[1] * 0.5 ) ) # 0.5 is beat length
+    time.sleep(1.5) # some time between songs
+
+    for n in birthday:
+ #       print (n)
+        simpleio.tone(PIEZO_PIN, TONE_FREQ[n[0]], duration= (n[1] * 0.5 ) ) # 0.5 is beat length
+    time.sleep(1.5)
