@@ -1,339 +1,294 @@
-<!-- cSpell:enable -->
-# The ARDX in Python Project
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>html,body{color:black}*{margin:0;padding:0}body{font:13.34px helvetica,arial,freesans,clean,sans-serif;-webkit-font-smoothing:subpixel-antialiased;line-height:1.4;padding:3px;background:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}p{margin:1em 0}a{color:#4183c4;text-decoration:none}#wrapper{background-color:#fff;padding:30px;font-size:14px;line-height:1.6;width:900px;margin:15px auto;}@media screen{#wrapper{box-shadow:0 0 0 1px #cacaca,0 0 0 4px #eee}}#wrapper>*:first-child{margin-top:0!important}#wrapper>*:last-child{margin-bottom:0!important}h1,h2,h3,h4,h5,h6{margin:20px 0 10px;padding:0;font-weight:bold;-webkit-font-smoothing:subpixel-antialiased;cursor:text}h1{font-size:28px;color:#000}h2{font-size:24px;border-bottom:1px solid #ccc;color:#000}h3{font-size:18px;color:#333}h4{font-size:16px;color:#333}h5{font-size:14px;color:#333}h6{color:#777;font-size:14px}p,blockquote,ul,ol,dl,table,pre{margin:15px 0}ul,ol{padding-left:30px}hr{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;border:0 none;color:#ccc;height:4px;padding:0}#wrapper>h2:first-child,#wrapper>h1:first-child,#wrapper>h1:first-child+h2,#wrapper>h3:first-child,#wrapper>h4:first-child,#wrapper>h5:first-child,#wrapper>h6:first-child{margin-top:0;padding-top:0}a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top:0}ul li>:first-child,ol li>:first-child{margin-top:0}dl{padding:0}dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px}dl dt:first-child{padding:0}dl dt>:first-child{margin-top:0}dl dt>:last-child{margin-bottom:0}dl dd{margin:0 0 15px;padding:0 15px}dl dd>:first-child{margin-top:0}dl dd>:last-child{margin-bottom:0}blockquote{border-left:4px solid #DDD;padding:0 15px;color:#777}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}table{border-collapse:collapse;border-spacing:0;font-size:100%;font:inherit}table th{font-weight:bold}table th,table td{border:1px solid #ccc;padding:6px 13px}table tr{border-top:1px solid #ccc;background-color:#fff}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%}code,tt{margin:0 2px;padding:0 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px}pre>code{margin:0;padding:0;white-space:pre;border:0;background:transparent}.highlight pre,pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre code,pre tt{background-color:transparent;border:0}.poetry pre{font-family:Georgia,Garamond,serif!important;font-style:italic;font-size:110%!important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif!important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}@media print{body{background:#fff}img,pre,blockquote,table,figure{page-break-inside:avoid}#wrapper{background:#fff;border:0}code{background-color:#fff;color:#444!important;padding:0 .2em;border:1px solid #dedede}pre code{background-color:#fff!important;overflow:visible}pre{background:#fff}}@media screen{body.inverted,.inverted #wrapper,.inverted hr .inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt,.inverted blockquote{color:#eee!important;border-color:#555}.inverted td,.inverted th{background:#333}.inverted pre,.inverted code,.inverted tt{background:#444!important}.inverted h2{border-color:#555}.inverted hr{border-color:#777;border-width:1px!important}::selection{background:rgba(157,193,200,.5)}h1::selection{background-color:rgba(45,156,208,.3)}h2::selection{background-color:rgba(90,182,224,.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,.3)}code::selection{background-color:rgba(0,0,0,.7);color:#eee}code span::selection{background-color:rgba(0,0,0,.7)!important;color:#eee!important}a::selection{background-color:rgba(255,230,102,.2)}.inverted a::selection{background-color:rgba(255,230,102,.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,.5)}.inverted{background:#0b2531}.inverted #wrapper,.inverted{background:rgba(37,42,42,1)}.inverted a{color:rgba(172,209,213,1)}}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k{font-weight:bold}.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#800080;font-weight:bold}.highlight .gt{color:#a00}.highlight .kc{font-weight:bold}.highlight .kd{font-weight:bold}.highlight .kn{font-weight:bold}.highlight .kp{font-weight:bold}.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086b3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne{color:#900;font-weight:bold}.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf{color:#099}.highlight .mh{color:#099}.highlight .mi{color:#099}.highlight .mo{color:#099}.highlight .sb{color:#d14}.highlight .sc{color:#d14}.highlight .sd{color:#d14}.highlight .s2{color:#d14}.highlight .se{color:#d14}.highlight .sh{color:#d14}.highlight .si{color:#d14}.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc{color:#008080}.highlight .vg{color:#008080}.highlight .vi{color:#008080}.highlight .il{color:#099}.highlight .gc{color:#999;background-color:#eaf2f5}.type-csharp .highlight .k{color:#00F}.type-csharp .highlight .kt{color:#00F}.type-csharp .highlight .nf{color:#000;font-weight:normal}.type-csharp .highlight .nc{color:#2b91af}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s{color:#a31515}.type-csharp .highlight .sc{color:#a31515}</style>
 
-* [Objective](#block_objective)
-* [Materials](#block_materials)
-* [Setup](#block_setup)
-* [Doing the LABs](#block_labs)
-* [CIRC01](#block_circ01) Blinking LED
-* [CIRC02](#block_circ02) 8 LEDs
-* [CIRC03](#block_circ03) Transistor & Motor
-* [CIRC04](#block_circ04) Servos
-* [CIRC05](#block_circ05) Shift Registers
-* [CIRC06](#block_circ06) Piezo Speaker
-* [CIRC07](#block_circ07) Pushbuttons
-* [CIRC08](#block_circ08) Potentiometers
-* [CIRC09](#block_circ09) Photo Resistor
-* [CIRC10](#block_circ10) Temperature Sensor
-* [CIRC11](#block_circ11) Relays
-* [CIRC12](#block_circ12) RRB LED
+ </head>
+<body>
+<div id=wrapper>
+<h1>The ARDX in Python Project</h1>
+<ul>
+<li><a href="#block_objective">Objective</a></li>
+<li><a href="#block_materials">Materials</a></li>
+<li><a href="#block_setup">Setup</a></li>
+<li><a href="#block_labs">Doing the LABs</a></li>
+<li><a href="#block_circ01">CIRC01</a> Blinking LED</li>
+<li><a href="#block_circ02">CIRC02</a> 8 LEDs</li>
+<li><a href="#block_circ03">CIRC03</a> Transistor &amp; Motor</li>
+<li><a href="#block_circ04">CIRC04</a> Servos</li>
+<li><a href="#block_circ05">CIRC05</a> Shift Registers</li>
+<li><a href="#block_circ06">CIRC06</a> Piezo Speaker</li>
+<li><a href="#block_circ07">CIRC07</a> Pushbuttons</li>
+<li><a href="#block_circ08">CIRC08</a> Potentiometers</li>
+<li><a href="#block_circ09">CIRC09</a> Photo Resistor</li>
+<li><a href="#block_circ10">CIRC10</a> Temperature Sensor</li>
+<li><a href="#block_circ11">CIRC11</a> Relays</li>
+<li><a href="#block_circ12">CIRC12</a> RRB LED</li>
+</ul>
 
-<!--
-* [Link](#block_link)
-## <a name="block_link">⚓</a> Link
--->
-
-## <a name="block_objective">⚓</a> Objective
-
-To do all of the LABs in the Arduino ARDX experimenter’s kit, but instead of using C++ we will substitute circuitPython.
-
-## <a name="block_materials">⚓</a> Materials
-
-* an ARDX kit
-* the ADRX experiment instructions [https://wcrsyyc.github.io/ardx/starthere.html](https://wcrsyyc.github.io/ardx/starthere.html)
-* a Python capable micro controller board (These programs were tested using the [AdaFruit Grand Central M4](https://www.adafruit.com/product/4064) board.)
-* A USB cable compatible with your micro controller board.
-* A laptop or desktop workstation.
-
-## <a name="block_setup">⚓</a> Setup
-
-* [The Board](#block_board)
-* [The IDE](#block_ide)
-
-### <a name="block_board">⚓</a> The Board
-
-Note: this is just a summary of the board setup procedure, if you need further detail: go to [AdaFruit](https://learn.adafruit.com/welcome-to-circuitpython) and follow their instructions.
-
-* use a web browser to go to [circuitPython.org](https://circuitPython.org), find your board and download the latest stable version of CircuitPython.
-  * For the Grand Central the file was:</br>
-    adafruit-circuitpython-grandcentral_m4_express-en_US-4.1.0(1).uf2
-  * For the CircuitPythonExpress the file was:</br>
-    adafruit-circuitpython-circuitplayground_express-en_US-4.1.0(1).uf2
-* connect your board to the laptop with the USB cable
-* Double click the reset button on your micro controller board.
-* the board should show up in your Workstation’s file browser as a disk drive. The name/label of the drive should include BOOT.
-
-Use your file browser to confirm that you see files something like these on the boards disk drive:
-
-```t
-CURRENT.UF2
+<h2><a name="block_objective">⚓</a> Objective</h2>
+<p>To do all of the LABs in the Arduino ARDX experimenter’s kit, but instead of using C++ we will substitute circuitPython.</p>
+<h2><a name="block_materials">⚓</a> Materials</h2>
+<ul>
+<li>an ARDX kit</li>
+<li>the ADRX experiment instructions <a href="https://wcrsyyc.github.io/ardx/starthere.html" rel="nofollow">https://wcrsyyc.github.io/ardx/starthere.html</a></li>
+<li>a Python capable micro controller board (These programs were tested using the <a href="https://www.adafruit.com/product/4064" rel="nofollow">AdaFruit Grand Central M4</a> board.)</li>
+<li>A USB cable compatible with your micro controller board.</li>
+<li>A laptop or desktop workstation.</li>
+</ul>
+<h2><a name="block_setup">⚓</a> Setup</h2>
+<ul>
+<li><a href="#block_board">The Board</a></li>
+<li><a href="#block_ide">The IDE</a></li>
+</ul>
+<h3><a name="block_board">⚓</a> The Board</h3>
+<p>Note: this is just a summary of the board setup procedure, if you need further detail: go to <a href="https://learn.adafruit.com/welcome-to-circuitpython" rel="nofollow">AdaFruit</a> and follow their instructions.</p>
+<ul>
+<li>use a web browser to go to <a href="https://circuitPython.org" rel="nofollow">circuitPython.org</a>, find your board and download the latest stable version of CircuitPython.
+<ul>
+<li>For the Grand Central the file was:<br>
+adafruit-circuitpython-grandcentral_m4_express-en_US-4.1.0(1).uf2</li>
+<li>For the CircuitPythonExpress the file was:<br>
+adafruit-circuitpython-circuitplayground_express-en_US-4.1.0(1).uf2</li>
+</ul>
+</li>
+<li>connect your board to the laptop with the USB cable</li>
+<li>Double click the reset button on your micro controller board.</li>
+<li>the board should show up in your Workstation’s file browser as a disk drive. The name/label of the drive should include BOOT.</li>
+</ul>
+<p>Use your file browser to confirm that you see files something like these on the boards disk drive:</p>
+<div class="highlight highlight-source-perl"><pre>CURRENT.UF2
 INDEX.HTM
-INFO_UF2.TXT
-```
-
-If the disk label or files that you see look nothing like this: try double clicking the reset button again.
-
-* In your file browser, drag the file (.UF2) that you downloaded from AdaFruit into the disk drive on your micro controller board.
-* The board should reboot.
-
-The previous disk drive should go away and a new disk drive show up. Its name/label should be: CIRCUITPY
-
-Now use your file browser to confirm that you see files/directories something like this on the boards disk drive:
-
-```t
-.fseventsd
+INFO_UF2.TXT</pre></div>
+<p>If the disk label or files that you see look nothing like this: try double clicking the reset button again.</p>
+<ul>
+<li>In your file browser, drag the file (.UF2) that you downloaded from AdaFruit into the disk drive on your micro controller board.</li>
+<li>The board should reboot.</li>
+</ul>
+<p>The previous disk drive should go away and a new disk drive show up. Its name/label should be: CIRCUITPY</p>
+<p>Now use your file browser to confirm that you see files/directories something like this on the boards disk drive:</p>
+<div class="highlight highlight-source-perl"><pre>.fseventsd
 lib
 .metadata_never_index
-boot_out.txt
-```
-
-* Now download the library bundle that matches the version of circuitPython you just installed on the micro controller. This is a .zip file.
-
-  * The library bundles are here:
-    * [https://circuitpython.org/libraries](https://circuitpython.org/libraries)
-
-The bundle that matches the version of CircuitPython downloaded above is:
-adafruit-circuitpython-bundle-4.x-mpy-20191216.zip
-
-* There is not room for all of the available library files in the micro controllers onboard disk drive, so if you need one you will have to:
-  * extract the library.zip file
-  * find the directory that you need
-  * copy it (file browser)
-  * paste it into the lib folder on your micro controller.
-
-You can defer this step until you get an error saying that a module cannot be found.
-
-The board is now ready.
-
-### <a name="block_ide">⚓</a> The IDE
-
-If you haven't already installed the MU editor/IDE on your Laptop/Workstation do that now.
-(you can use other editors and other serial terminals but this one is the easiest.)
-Download MU here:  [https://codewith.mu](https://codewith.mu)
-
-You will use the MU editor to write your program and save your program in a local file.
-When you then want to try your program on the micro controller, save it to the disk drive on the micro controller board with a file name of: `code.py`.
-
-When running your Python programs you should open the serial terminal that is built into MU in order to see any error messages and to see any output from print statements in your program.
-
-You can edit the file in the micro controller disk drive directory, but don’t forget to save a copy in your computer’s local drive when you are finished for the day.
-
-## <a name="block_labs">⚓</a> Doing the LABs
-
-Look at each LAB in the Arduino ARDX experimenters guide and setup a similar hardware configuration except for substituting the Arduino with a Python capable micro controller and using Python code instead of the Arduino version of C++. You may also have to change the pin names in some of the LABs.
-
-Also note that the ARDX experimenter’s guide assumes a 5 volt Arduino but most of the Python capable micro controllers have a 3.3 volt VCC. The I/O pins on most 3.3 volt micro controllers are not 5 volt tolerant, so be careful that you do not connect then to any signal or power supply higher than 3.3 volts.
-
-Pin names: In Arduino the pins names are different than in MicroPython. In MicroPython the pins have  names like this:
-
-```c
-board.D13
+boot_out.txt</pre></div>
+<ul>
+<li>
+<p>Now download the library bundle that matches the version of circuitPython you just installed on the micro controller. This is a .zip file.</p>
+<ul>
+<li>The library bundles are here:
+<ul>
+<li><a href="https://circuitpython.org/libraries" rel="nofollow">https://circuitpython.org/libraries</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>The bundle that matches the version of CircuitPython downloaded above is:<br>
+adafruit-circuitpython-bundle-4.x-mpy-20191216.zip</p>
+<ul>
+<li>There is not room for all of the available library files in the micro controllers onboard disk drive, so if you need one you will have to:
+<ul>
+<li>extract the library.zip file</li>
+<li>find the directory that you need</li>
+<li>copy it (file browser)</li>
+<li>paste it into the lib folder on your micro controller.</li>
+</ul>
+</li>
+</ul>
+<p>You can defer this step until you get an error saying that a module cannot be found.</p>
+<p>The board is now ready.</p>
+<h3><a name="block_ide">⚓</a> The IDE</h3>
+<p>If you haven't already installed the MU editor/IDE on your Laptop/Workstation do that now.<br>
+(you can use other editors and other serial terminals but this one is the easiest.)<br>
+Download MU here:  <a href="https://codewith.mu" rel="nofollow">https://codewith.mu</a></p>
+<p>You will use the MU editor to write your program and save your program in a local file.<br>
+When you then want to try your program on the micro controller, save it to the disk drive on the micro controller board with a file name of: <code>code.py</code>.</p>
+<p>When running your Python programs you should open the serial terminal that is built into MU in order to see any error messages and to see any output from print statements in your program.</p>
+<p>You can edit the file in the micro controller disk drive directory, but don’t forget to save a copy in your computer’s local drive when you are finished for the day.</p>
+<h2><a name="block_labs">⚓</a> Doing the LABs</h2>
+<p>Look at each LAB in the Arduino ARDX experimenters guide and setup a similar hardware configuration except for substituting the Arduino with a Python capable micro controller and using Python code instead of the Arduino version of C++. You may also have to change the pin names in some of the LABs.</p>
+<p>Also note that the ARDX experimenter’s guide assumes a 5 volt Arduino but most of the Python capable micro controllers have a 3.3 volt VCC. The I/O pins on most 3.3 volt micro controllers are not 5 volt tolerant, so be careful that you do not connect then to any signal or power supply higher than 3.3 volts.</p>
+<p>Pin names: In Arduino the pins names are different than in MicroPython. In MicroPython the pins have  names like this:</p>
+<div class="highlight highlight-source-c"><pre>board.D13
 board.A1
-board.SCK
-```
-
-When you want to save a MU file to a different file name, start by double clicking on the tab in the editor. (There is a [MU editor command cheat sheet](https://cdn-learn.adafruit.com/assets/assets/000/067/029/original/Mu_CircuitPython_Mode_Cheat_Sheet_1.pdf) available at AdaFruit that you may want to keep handy.
-
-You can edit `code.py` directly, but don’t forget that after you get your code working as `code.py` on the Micro controller board – you still have to save the new version with it’s own file name to the hard drive on your laptop/workstation.
-
-## <a name="block_circ01">⚓</a> [CIRC01](CIRC01.html) Blinking LED
-
-If your LED is not on pin board.D13 then revise the program appropriately. See the hardware documentation on the AdaFruit web site.
-
-This code also works on the CircuitPythonExpress.
-
-[the code](code/CIRC01p-code.txt)
-
-[the code](code/CIRC01.py)
-
-## <a name="block_circ02">⚓</a> [CIRC02](CIRC02.html) 8 LEDs
-
-Choose the correct boardPins list for the micro controller that you have.
-
-## <a name="block_circ03">⚓</a> [CIRC03](CIRC03.html) Transistor & Motor
-
-Note: the motor goes to 5 volts (or whatever the motor’s voltage is) even though this is a 3.3 volt VCC board. Use a separate power supply for the motor. Remember to connect the ground from the separate power supply to the ground of the micro controller.
-
-If you are using a 3.3 volt micro controller board, you should drop the value of resistor on the base of the transistor from 2.2 K ohm down to a 1.2K ohm resistor (or a 1K ohm resistor or two 560 ohm resistors in series, whatever you have available). This because the output from the pin will only go to a 3.3 volt high instead of approximately 5 volts the way it would on a 5 volt VCC board, and we want to be sure the transistor gets fully turned on (saturated).
-
-Did you get: ImportError: no module named 'adafruit_motor' on the MU serial terminal?
-
-There is not room for all of the library files available on this small board so you will have copy individual library files as needed.
-
-You will have to copy the file folder adafruit_motor from the library files you extracted in setup above to the lib folder on your micro controller.
-
-## <a name="block_circ04">⚓</a> [CIRC04](CIRC04.html) Servos
-
-### CIRC04a
-
-The servo should step up and back 5 degrees at a time.
-
-Use a separate power supply for the servo. Remember to connect the ground from the separate power supply to the ground of the CircuitPythonExpress. The servo’s power supply should be 5 or 6 volts.
-
-Did you get: ImportError: no module named 'adafruit_motor'?
-
-There is not room for all of the library files available on this small board so you will have copy individual library files as needed.
-
-You will have to copy the file folder adafruit_motor from the library files you extracted in setup above to the lib folder on your circuitPythonExpress.
-
-### CIRC04b
-
-Do you see the print messages from the program on the serial terminal that is built into the MU editor?
-
-You may have to tweak your program to adjust the control waveform depending on the exact type of servo used. The servos that I used seem to work best with a Min of 750 mSec and a Max of 2250 mSec. Adjust these values so that your servo moves from 0 degrees to 90 degrees and then to 180 degrees.
-
-### CIRC04c
-
-Experiment with the waveform timing until you find which is best for your servo. Don’t try to drive the servo below 0 degrees or past 180 degrees or you may damage the servo.
-
-If you have an oscilloscope; view the servo control signal to see how it changes to move the servo to each position.
-
-## <a name="block_circ05">⚓</a> [CIRC05](CIRC05.html) Shift Registers
-
-### CIRC05b Shift Register
-
-Some boards have special internal hardware and pins for SPI and other protocols. In order to be able to use this special hardware we need to use the pins: board.SCK and board.MOSI for this Lab. If you do not know where they are on your board the print statements in the program may help you find them, or you can check the hardware documentation.
-
-* The Grand Central M4 uses these pins:
-  * SCK microcontroller.pin.D52
-  * MOSI microcontroller.pin.D51
-  * MISO microcontroller.pin.D50
-* The CircuitPython Express uses these pins:
-  * SCK microcontroller.pin.A1
-  * MOSI microcontroller.pin.A3
-  * MISO microcontroller.pin.A2
-
-Use 3.3 volts for VCC on the shift register chip so there is no logic mismatch or chance of 5 volts getting to the 3.3 volt micro controller.
-
-Did you get an error: ImportError: no module named 'adafruit_74hc595' ? You will have to copy another library into your Micro controller LIB directory.
-
-Go to the place where you extracted the library zip file and look in the lib directory for adafruit_74hc595.mpy.
-
-Use your file browser to copy it and then go to the lib folder on your micro controller and paste it there.
-
-### CIRC05c
-
-Some loops make the code much cleaner, but it is still doing the same thing.
-
-### CIRC05e
-
-Lets count from 0 to 255 and do parallel writes to the library function. Do the LEDS count up in binary for you?
-
-### CIRC05f
-
-Lets try out the SPI library this time. Still counting from 0 to 255.
-
-### CIRC05h
-
-Lets ignore the special SPI hardware built into the CPU and instead use bit bang I/O. Now we do not have to use the pins that are connected to the micro controller’s internal SPI hardware. We can, for example on the Grand Central M4, use the same I/O pins as in the ARDX document.
-
-## <a name="block_circ06">⚓</a> [CIRC06](CIRC06.html) Piezo Speaker
-
-### CIRC06a
-
-Lets play some music. And we’ll see a Python list.
-
-### CIRC06b
-
-Lets play a tune. Look at how a Python dictionary is used to link the note’s name to it’s frequency.
-
-### CIRC06c
-
-Musicians use 1/4 notes and 1/2 notes so let’s use them too. This should make transcribing music easier.
-
-### CIRC06d
-
-Musicians need rests too. Some subroutines help clean up the code.
-
-## <a name="block_circ07">⚓</a> [CIRC07](CIRC07.html) Pushbuttons
-
-### CIRC07a
-
-Read a push button, use a pull up resistor just like in the ARDX documentation. Note that when the button is pushed the input goes False. Its opposite on the CPX version see below.
-
-### CIRC07b
-
-Separate turn on and turn off push buttons
-
-### CIRC07c
-
-We can remove the resistors and let the micro controller supply the pull up on the Grand Central M4.
-
-If you are using a CircuitPythonExpress: use program CIRC07cCPX. This version uses the onboard LED and the onboard push buttons. These push buttons need a pull down and go to true on a button press.
-
-### CIRC07d
-
-We can also add some simple de-bouncing to the push buttons.
-
-## <a name="block_circ08">⚓</a> [CIRC08](CIRC08.html) Potentiometers
-
-### CIRC08a
-
-Read an analogue value from a potentiometer. Don’t forget to try out the plotter built into MU.
-
-The top of the pot should go the micro controller’s VCC: 3.3 volts in this case not 5 volts as the Arduino documents show. We do not want any voltages higher than the micro controller’s VCC to ever be applied to any of the micro controller’s pins.
-
-### CIRC08b
-
-Light a LED if we get above a threshold.
-
-### CIRC08c
-
-Use a servo to display the Pot setting.
-
-## <a name="block_circ09">⚓</a> [CIRC09](CIRC09.html) Photo Resistor
-
-Read a value from a photo resistor. Light a LED if we get above a threshold.
-The top of the photo resistor / resistor voltage divider goes to 3.3 volts so that there is no change of 5 volts getting to the micro controller.
-
-## <a name="block_circ10">⚓</a> [CIRC10](CIRC10.html) Temperature Sensor
-
-Read the temperature and display with a servo.
-
-The top of the temperature sensor should go the micro controller’s VCC: 3.3 volts in this case not 5 volts as the Arduino documents show. We do not want any voltages higher than the micro controller’s VCC to ever be applied to any of the micro controller’s pins. Use a separate power supply for the servo (5 or 6 volts).
-
-Discuss why the servo jitters.
-
-Hint: it is a low resolution Analog to digital conversion, even though the library pretends that it is a 16 bit conversion (how many bits of resolution are really in the A to D hardware?)
-
-## <a name="block_circ11">⚓</a> [CIRC11](CIRC11.html) Relays
-
-Same code as CIRC01
-
-## <a name="block_circ12">⚓</a> [CIRC12](CIRC12.html) RRB LED
-
-Note: if you are using a common anode LED on a 3.3 volt board, the LED anode should go to 3.3 volts not 5 volts as shown in the ARDX schematic. We do not want any voltages higher than the micro controller’s VCC to ever be applied to any of the micro controller’s pins.
-
-Control a three colour LED. Look carefully at the dictionary of Lists, do you see how it works? Each colour name links to a list containing three values.
-
-Look at the serial terminal built into MU, do the colour names match the LED? If not, check the wiring for each colour and try interchanging the values for COLOUR_ON and COLOUR_OFF. The correct value will depend on if the type of LED used is a common cathode or common anode type.
-
-### CIRC12b
-
-Note that the micro controller pins used have changed.
-
-Look at the serial terminal built into MU, do the colour names match the LED? If not, check the wiring for each colour and try the opposite value for REVERSER. The correct value for REVERSER  will depend on if the type of LED used is a common cathode or common anode type.
-
-Three modifications have been applied:
-
-1. A subroutine cleans it up a bit.
-
-2. Instead of just off/on we can now assign a value between 0 and 255 (00 to FF Hex) to each colour. Instead of being limited to just 8 colours we can now have 2 to the power of 24 colours in the dictionary.
-
-   * I have added a new colour to the list. Can you add another?
-
-   * Does FFAF00 (Hex) look like orange?
-     * you could code it like this: 'Orange'  : [255   , 175  , 0  ],
-
-   * Does 4B0082 (Hex) look indigo?
-
-   * Does 7F00FF (Hex) look violet?
-     * Or you could code it like this: 'Violet'  : [0x7F   , 0x00  , 0xFF  ],
-
-   * Look up some other colours on the Internet, add them to the dictionary and then tweak them to look best on your LED.
-
-   * Would a diffuser help? How about putting a LED sized hole in a ping-pong ball and putting the LED into the ball.
-
-3. When you use a for loop to dump the contents of a dictionary, you do not know in which order that they will come out. So let’s use a list to get the rainbow’s colours to display in the correct order.
-
-   * Expand the Rainbow list to include more colours. Does it look realistic?
-
-<!-- cSpell:disable -->
-<!-- cSpell:enable -->
-<!--
-# cSpell:disable
-# cSpell:enable
-cSpell:words
-cSpell:ignore
-cSpell:enableCompoundWords
--->
+board.SCK</pre></div>
+<p>When you want to save a MU file to a different file name, start by double clicking on the tab in the editor. (There is a <a href="https://cdn-learn.adafruit.com/assets/assets/000/067/029/original/Mu_CircuitPython_Mode_Cheat_Sheet_1.pdf" rel="nofollow">MU editor command cheat sheet</a> available at AdaFruit that you may want to keep handy.</p>
+<p>You can edit <code>code.py</code> directly, but don’t forget that after you get your code working as <code>code.py</code> on the Micro controller board – you still have to save the new version with it’s own file name to the hard drive on your laptop/workstation.</p>
+<h2><a name="block_circ01">⚓</a> <a href="circ01.html">CIRC01</a> Blinking LED</h2>
+<p>If your LED is not on pin board.D13 then revise the program appropriately. See the hardware documentation on the AdaFruit web site.</p>
+<p>This code also works on the CircuitPythonExpress.</p>
+<p><a href="code/CIRC01p-code.txt">View</a> or <a href="code/CIRC01.py">download</a> the code</p>
+<h2><a name="block_circ02">⚓</a> <a href="circ02.html">CIRC02</a> 8 LEDs</h2>
+<p>Choose the correct boardPins list for the micro controller that you have.</p>
+<p><a href="code/CIRC02p-code.txt">View</a> or <a href="code/CIRC02.py">download</a> the code</p>
+<h2><a name="block_circ03">⚓</a> <a href="circ03.html">CIRC03</a> Transistor &amp; Motor</h2>
+<p>Note: the motor goes to 5 volts (or whatever the motor’s voltage is) even though this is a 3.3 volt VCC board. Use a separate power supply for the motor. Remember to connect the ground from the separate power supply to the ground of the micro controller.</p>
+<p>If you are using a 3.3 volt micro controller board, you should drop the value of resistor on the base of the transistor from 2.2 K ohm down to a 1.2K ohm resistor (or a 1K ohm resistor or two 560 ohm resistors in series, whatever you have available). This because the output from the pin will only go to a 3.3 volt high instead of approximately 5 volts the way it would on a 5 volt VCC board, and we want to be sure the transistor gets fully turned on (saturated).</p>
+<p><a href="code/CIRC03p-code.txt">View</a> or <a href="code/CIRC03.py">download</a> the code</p>
+<p>Did you get: ImportError: no module named 'adafruit_motor' on the MU serial terminal?</p>
+<p>There is not room for all of the library files available on this small board so you will have copy individual library files as needed.</p>
+<p>You will have to copy the file folder adafruit_motor from the library files you extracted in setup above to the lib folder on your micro controller.</p>
+<h2><a name="block_circ04">⚓</a> <a href="circ04.html">CIRC04</a> Servos</h2>
+<h3>CIRC04a</h3>
+<p>The servo should step up and back 5 degrees at a time.</p>
+<p>Use a separate power supply for the servo. Remember to connect the ground from the separate power supply to the ground of the CircuitPythonExpress. The servo’s power supply should be 5 or 6 volts.</p>
+<p><a href="code/CIRC04p-code.txt">View</a> or <a href="code/CIRC04.py">download</a> the code</p>
+<p>Did you get: ImportError: no module named 'adafruit_motor'?</p>
+<p>There is not room for all of the library files available on this small board so you will have copy individual library files as needed.</p>
+<p>You will have to copy the file folder adafruit_motor from the library files you extracted in setup above to the lib folder on your circuitPythonExpress.</p>
+<h3>CIRC04b</h3>
+<p><a href="code/CIRC04bp-code.txt">View</a> or <a href="code/CIRC04b.py">download</a> the code</p>
+<p>Do you see the print messages from the program on the serial terminal that is built into the MU editor?</p>
+<p>You may have to tweak your program to adjust the control waveform depending on the exact type of servo used. The servos that I used seem to work best with a Min of 750 mSec and a Max of 2250 mSec. Adjust these values so that your servo moves from 0 degrees to 90 degrees and then to 180 degrees.</p>
+<h3>CIRC04c</h3>
+<p><a href="code/CIRC04cp-code.txt">View</a> or <a href="code/CIRC04c.py">download</a> the code</p>
+<p>Experiment with the waveform timing until you find which is best for your servo. Don’t try to drive the servo below 0 degrees or past 180 degrees or you may damage the servo.</p>
+<p>If you have an oscilloscope; view the servo control signal to see how it changes to move the servo to each position.</p>
+<h2><a name="block_circ05">⚓</a> <a href="circ05.html">CIRC05</a> Shift Registers</h2>
+<p>Some boards have special internal hardware and pins for SPI and other protocols. In order to be able to use this special hardware we need to use the pins: board.SCK and board.MOSI for this Lab. If you do not know where they are on your board the print statements in the program may help you find them, or you can check the hardware documentation.</p>
+<ul>
+<li>The Grand Central M4 uses these pins:
+<ul>
+<li>SCK microcontroller.pin.D52</li>
+<li>MOSI microcontroller.pin.D51</li>
+<li>MISO microcontroller.pin.D50</li>
+</ul>
+</li>
+<li>The CircuitPython Express uses these pins:
+<ul>
+<li>SCK microcontroller.pin.A1</li>
+<li>MOSI microcontroller.pin.A3</li>
+<li>MISO microcontroller.pin.A2</li>
+</ul>
+</li>
+</ul>
+<p>Use 3.3 volts for VCC on the shift register chip so there is no logic mismatch or chance of 5 volts getting to the 3.3 volt micro controller.</p>
+<h3>CIRC05a</h3>
+<p><a href="code/CIRC05p-code.txt">View</a> or <a href="code/CIRC05.py">download</a> the code</p>
+<p>Did you get an error: ImportError: no module named 'adafruit_74hc595' ? You will have to copy another library into your Micro controller LIB directory.</p>
+<p>Go to the place where you extracted the library zip file and look in the lib directory for adafruit_74hc595.mpy.</p>
+<p>Use your file browser to copy it and then go to the lib folder on your micro controller and paste it there.</p>
+<h3>CIRC05b</h3>
+<p><a href="code/CIRC05bp-code.txt">View</a> or <a href="code/CIRC05b.py">download</a> the code</p>
+<h3>CIRC05c</h3>
+<p><a href="code/CIRC05cp-code.txt">View</a> or <a href="code/CIRC05c.py">download</a> the code</p>
+<h3>CIRC05d</h3>
+<p>Some loops make the code much cleaner, but it is still doing the same thing.</p>
+<p><a href="code/CIRC05dp-code.txt">View</a> or <a href="code/CIRC05d.py">download</a> the code</p>
+<h3>CIRC05e</h3>
+<p>Lets count from 0 to 255 and do parallel writes to the library function. Do the LEDS count up in binary for you?</p>
+<p><a href="code/CIRC05ep-code.txt">View</a> or <a href="code/CIRC05e.py">download</a> the code</p>
+<h3>CIRC05f</h3>
+<p>Lets try out the SPI library this time. Still counting from 0 to 255.</p>
+<p><a href="code/CIRC05fp-code.txt">View</a> or <a href="code/CIRC05f.py">download</a> the code</p>
+<h3>CIRC05g</h3>
+<p><a href="code/CIRC05gp-code.txt">View</a> or <a href="code/CIRC05g.py">download</a> the code</p>
+<h3>CIRC05h</h3>
+<p>Lets ignore the special SPI hardware built into the CPU and instead use bit bang I/O. Now we do not have to use the pins that are connected to the micro controller’s internal SPI hardware. We can, for example on the Grand Central M4, use the same I/O pins as in the ARDX document.</p>
+<p><a href="code/CIRC05hp-code.txt">View</a> or <a href="code/CIRC05h.py">download</a> the code</p>
+<h2><a name="block_circ06">⚓</a> <a href="circ06.html">CIRC06</a> Piezo Speaker</h2>
+<h3>CIRC06a</h3>
+<p>Lets play some music. And we’ll see a Python list.</p>
+<p><a href="code/CIRC06p-code.txt">View</a> or <a href="code/CIRC06.py">download</a> the code</p>
+<h3>CIRC06b</h3>
+<p>Lets play a tune. Look at how a Python dictionary is used to link the note’s name to it’s frequency.</p>
+<p><a href="code/CIRC06bp-code.txt">View</a> or <a href="code/CIRC06b.py">download</a> the code</p>
+<h3>CIRC06c</h3>
+<p>Musicians use 1/4 notes and 1/2 notes so let’s use them too. This should make transcribing music easier.</p>
+<p><a href="code/CIRC06cp-code.txt">View</a> or <a href="code/CIRC06c.py">download</a> the code</p>
+<h3>CIRC06d</h3>
+<p>Musicians need rests too. Some subroutines help clean up the code.</p>
+<p><a href="code/CIRC06dp-code.txt">View</a> or <a href="code/CIRC06d.py">download</a> the code</p>
+<h2><a name="block_circ07">⚓</a> <a href="circ07.html">CIRC07</a> Pushbuttons</h2>
+<h3>CIRC07a</h3>
+<p>Read a push button, use a pull up resistor just like in the ARDX documentation. Note that when the button is pushed the input goes False. Its opposite on the CPX version see below.</p>
+<p><a href="code/CIRC07p-code.txt">View</a> or <a href="code/CIRC07.py">download</a> the code</p>
+<h3>CIRC07b</h3>
+<p>Separate turn on and turn off push buttons</p>
+<p><a href="code/CIRC07bp-code.txt">View</a> or <a href="code/CIRC07b.py">download</a> the code</p>
+<h3>CIRC07c</h3>
+<p>We can remove the resistors and let the micro controller supply the pull up on the Grand Central M4.</p>
+<p><a href="code/CIRC07cp-code.txt">View</a> or <a href="code/CIRC07c.py">download</a> the code</p>
+<p>If you are using a CircuitPythonExpress: use program CIRC07cCPX. This version uses the onboard LED and the onboard push buttons. These push buttons need a pull down and go to true on a button press.</p>
+<p><a href="code/CIRC07cCPXp-code.txt">View</a> or <a href="code/CIRC07cCPX.py">download</a> the code</p>
+<h3>CIRC07d</h3>
+<p>We can also add some simple de-bouncing to the push buttons.</p>
+<p><a href="code/CIRC07dp-code.txt">View</a> or <a href="code/CIRC07d.py">download</a> the code</p>
+<h2><a name="block_circ08">⚓</a> <a href="circ08.html">CIRC08</a> Potentiometers</h2>
+<h3>CIRC08a</h3>
+<p>Read an analogue value from a potentiometer. Don’t forget to try out the plotter built into MU.</p>
+<p>The top of the pot should go the micro controller’s VCC: 3.3 volts in this case not 5 volts as the Arduino documents show. We do not want any voltages higher than the micro controller’s VCC to ever be applied to any of the micro controller’s pins.</p>
+<p><a href="code/CIRC08ap-code.txt">View</a> or <a href="code/CIRC08a.py">download</a> the code</p>
+<h3>CIRC08b</h3>
+<p>Light a LED if we get above a threshold.</p>
+<p><a href="code/CIRC08bp-code.txt">View</a> or <a href="code/CIRC08b.py">download</a> the code</p>
+<h3>CIRC08c</h3>
+<p>Use a servo to display the Pot setting.</p>
+<p><a href="code/CIRC08cp-code.txt">View</a> or <a href="code/CIRC08c.py">download</a> the code</p>
+<h2><a name="block_circ09">⚓</a> <a href="circ09.html">CIRC09</a> Photo Resistor</h2>
+<p>Read a value from a photo resistor. Light a LED if we get above a threshold.<br>
+The top of the photo resistor / resistor voltage divider goes to 3.3 volts so that there is no chance of 5 volts getting to the micro controller.</p>
+<p><a href="code/CIRC09p-code.txt">View</a> or <a href="code/CIRC09.py">download</a> the code</p>
+<h2><a name="block_circ10">⚓</a> <a href="circ10.html">CIRC10</a> Temperature Sensor</h2>
+<p>Read the temperature and display with a servo.</p>
+<p>The top of the temperature sensor should go the micro controller’s VCC: 3.3 volts in this case not 5 volts as the Arduino documents show. We do not want any voltages higher than the micro controller’s VCC to ever be applied to any of the micro controller’s pins. Use a separate power supply for the servo (5 or 6 volts).</p>
+<p><a href="code/CIRC10p-code.txt">View</a> or <a href="code/CIRC10.py">download</a> the code</p>
+<p>Discuss why the servo jitters.</p>
+<p>Hint: it is a low resolution Analog to digital conversion, even though the library pretends that it is a 16 bit conversion (how many bits of resolution are really in the A to D hardware?)</p>
+<h2><a name="block_circ11">⚓</a> <a href="circ11.html">CIRC11</a> Relays</h2>
+<p>Same code as CIRC01</p>
+<p><a href="code/CIRC11p-code.txt">View</a> or <a href="code/CIRC11.py">download</a> the code</p>
+<h2><a name="block_circ12">⚓</a> <a href="circ12.html">CIRC12</a> RRB LED</h2>
+<p>Note: if you are using a common anode LED on a 3.3 volt board, the LED anode should go to 3.3 volts not 5 volts as shown in the ARDX schematic. We do not want any voltages higher than the micro controller’s VCC to ever be applied to any of the micro controller’s pins.</p>
+<p>Control a three colour LED. Look carefully at the dictionary of Lists, do you see how it works? Each colour name links to a list containing three values.</p>
+<p><a href="code/CIRC12p-code.txt">View</a> or <a href="code/CIRC12.py">download</a> the code</p>
+<p>Look at the serial terminal built into MU, do the colour names match the LED? If not, check the wiring for each colour and try interchanging the values for COLOUR_ON and COLOUR_OFF. The correct value will depend on if the type of LED used is a common cathode or common anode type.</p>
+<h3>CIRC12b</h3>
+<p>Note that the micro controller pins used have changed.</p>
+<p><a href="code/CIRC12bp-code.txt">View</a> or <a href="code/CIRCb12.py">download</a> the code</p>
+<p>Look at the serial terminal built into MU, do the colour names match the LED? If not, check the wiring for each colour and try the opposite value for REVERSER. The correct value for REVERSER  will depend on if the type of LED used is a common cathode or common anode type.</p>
+<p>Three modifications have been applied:</p>
+<ol>
+<li>
+<p>A subroutine cleans it up a bit.</p>
+</li>
+<li>
+<p>Instead of just off/on we can now assign a value between 0 and 255 (00 to FF Hex) to each colour. Instead of being limited to just 8 colours we can now have 2 to the power of 24 colours in the dictionary.</p>
+<ul>
+<li>
+<p>I have added a new colour to the list. Can you add another?</p>
+</li>
+<li>
+<p>Does FFAF00 (Hex) look like orange?</p>
+<ul>
+<li>you could code it like this: 'Orange'  : [255   , 175  , 0  ],</li>
+</ul>
+</li>
+<li>
+<p>Does 4B0082 (Hex) look indigo?</p>
+</li>
+<li>
+<p>Does 7F00FF (Hex) look violet?</p>
+<ul>
+<li>Or you could code it like this: 'Violet'  : [0x7F   , 0x00  , 0xFF  ],</li>
+</ul>
+</li>
+<li>
+<p>Look up some other colours on the Internet, add them to the dictionary and then tweak them to look best on your LED.</p>
+</li>
+<li>
+<p>Would a diffuser help? How about putting a LED sized hole in a ping-pong ball and putting the LED into the ball.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>When you use a for loop to dump the contents of a dictionary, you do not know in which order that they will come out. So let’s use a list to get the rainbow’s colours to display in the correct order.</p>
+<ul>
+<li>Expand the Rainbow list to include more colours. Does it look realistic?</li>
+</ul>
+</li>
+</ol></div>
+</body>
+</html>
