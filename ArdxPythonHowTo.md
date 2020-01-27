@@ -124,7 +124,7 @@ When you want to save a MU file to a different file name, start by double clicki
 
 You can edit `code.py` directly, but don’t forget that after you get your code working as `code.py` on the Micro controller board – you still have to save the new version with it’s own file name to the hard drive on your laptop/workstation.
 
-## <a name="block_circ01">⚓</a> [CIRC01](CIRC01.html) Blinking LED
+## <a name="block_circ01">⚓</a> [CIRC01](circ01.html) Blinking LED
 
 If your LED is not on pin board.D13 then revise the program appropriately. See the hardware documentation on the AdaFruit web site.
 
@@ -132,13 +132,13 @@ This code also works on the `CircuitPythonExpress`.
 
 [View](code/CIRC01p-code.txt) or [download](code/CIRC01.py) the code
 
-## <a name="block_circ02">⚓</a> [CIRC02](CIRC02.html) 8 LEDs
+## <a name="block_circ02">⚓</a> [CIRC02](circ02.html) 8 LEDs
 
 Choose the correct boardPins list for the micro controller that you have.
 
 [View](code/CIRC02p-code.txt) or [download](code/CIRC02.py) the code
 
-## <a name="block_circ03">⚓</a> [CIRC03](CIRC03.html) Transistor & Motor
+## <a name="block_circ03">⚓</a> [CIRC03](circ03.html) Transistor & Motor
 
 Note: the motor goes to 5 volts (or whatever the motor’s voltage is) even though this is a 3.3 volt VCC board. Use a separate power supply for the motor. Remember to connect the ground from the separate power supply to the ground of the micro controller.
 
@@ -152,7 +152,7 @@ There is not enough room for all of the library files available on this small bo
 
 You will have to copy the file folder adafruit_motor from the library files you extracted in the setup above to the lib folder on your micro controller.
 
-## <a name="block_circ04">⚓</a> [CIRC04](CIRC04.html) Servos
+## <a name="block_circ04">⚓</a> [CIRC04](circ04.html) Servos
 
 ### CIRC04a
 
@@ -184,7 +184,7 @@ Experiment with the waveform timing until you find which is best for your servo.
 
 If you have an oscilloscope; view the servo control signal to see how it changes to move the servo to each position.
 
-## <a name="block_circ05">⚓</a> [CIRC05](CIRC05.html) Shift Registers
+## <a name="block_circ05">⚓</a> [CIRC05](circ05.html) Shift Registers
 
 Some boards have special internal hardware and pins for SPI and other protocols. In order to be able to use this special hardware we need to use the pins: board.SCK and board.MOSI for this Lab. If you do not know where they are on your board the print statements in the program may help you find them, or you can check the hardware documentation.
 
@@ -245,7 +245,7 @@ Lets ignore the special SPI hardware built into the CPU and instead use bit bang
 
 [View](code/CIRC05hp-code.txt) or [download](code/CIRC05h.py) the code
 
-## <a name="block_circ06">⚓</a> [CIRC06](CIRC06.html) Piezo Speaker
+## <a name="block_circ06">⚓</a> [CIRC06](circ06.html) Piezo Speaker
 
 ### CIRC06a
 
@@ -269,9 +269,9 @@ Musicians use 1/4 notes and 1/2 notes so let’s use them too. This should make 
 
 Musicians need rests too. Some subroutines help clean up the code.
 
-[View](code/CIRC06dp-code.txt) or [download](code/CIRCd06.py) the code
+[View](code/CIRC06dp-code.txt) or [download](code/CIRCd06d.py) the code
 
-## <a name="block_circ07">⚓</a> [CIRC07](CIRC07.html) Pushbuttons
+## <a name="block_circ07">⚓</a> [CIRC07](circ07.html) Pushbuttons
 
 ### CIRC07a
 
@@ -301,7 +301,7 @@ We can also add some simple de-bouncing to the push buttons.
 
 [View](code/CIRC07dp-code.txt) or [download](code/CIRC07d.py) the code
 
-## <a name="block_circ08">⚓</a> [CIRC08](CIRC08.html) Potentiometers
+## <a name="block_circ08">⚓</a> [CIRC08](circ08.html) Potentiometers
 
 ### CIRC08a
 
@@ -323,12 +323,14 @@ Use a servo to display the Pot setting.
 
 [View](code/CIRC08cp-code.txt) or [download](code/CIRC08c.py) the code
 
-## <a name="block_circ09">⚓</a> [CIRC09](CIRC09.html) Photo Resistor
+## <a name="block_circ09">⚓</a> [CIRC09](circ09.html) Photo Resistor
 
 Read a value from a photo resistor. Light a LED if we get above a threshold.
 The top of the photo resistor / resistor voltage divider goes to 3.3 volts so that there is no change of 5 volts getting to the micro controller.
 
-## <a name="block_circ10">⚓</a> [CIRC10](CIRC10.html) Temperature Sensor
+[View](code/CIRC09p-code.txt) or [download](code/CIRC09.py) the code
+
+## <a name="block_circ10">⚓</a> [CIRC10](circ10.html) Temperature Sensor
 
 Read the temperature and display with a servo.
 
@@ -340,13 +342,13 @@ Discuss why the servo jitters.
 
 Hint: it is a low resolution Analog to digital conversion, even though the library pretends that it is a 16 bit conversion (how many bits of resolution are really in the A to D hardware?)
 
-## <a name="block_circ11">⚓</a> [CIRC11](CIRC11.html) Relays
+## <a name="block_circ11">⚓</a> [CIRC11](circ11.html) Relays
 
 Same code as CIRC01
 
 [View](code/CIRC11p-code.txt) or [download](code/CIRC11.py) the code
 
-## <a name="block_circ12">⚓</a> [CIRC12](CIRC12.html) RRB LED
+## <a name="block_circ12">⚓</a> [CIRC12](circ12.html) RRB LED
 
 Note: if you are using a common anode LED on a 3.3 volt board, the LED anode should go to 3.3 volts not 5 volts as shown in the ARDX schematic. We do not want any voltages higher than the micro controller’s VCC to ever be applied to any of the micro controller’s pins.
 
