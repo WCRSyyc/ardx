@@ -518,6 +518,7 @@ main#prog section > div p {
 main#prog dl {
   float: left;
   width: 28rem;
+  overflow: hidden;
   padding: 3px;
   margin: 0 5px 0 10px;
   text-align: left;
@@ -526,12 +527,18 @@ main#prog dl {
   -webkit-border-radius: 15px;
 }
 main#prog dt {
+  clear: left;
   display: inline-block;
   float: left;
+  margin: 0;
   padding-left: 0.3rem;
+  width: 5%;
 }
 main#prog dd {
-  margin-left: 2rem;
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 93%; /* reduced to allow for dt padding */
 }
 main#prog dd span {
   font-size: 0.65rem;
@@ -540,6 +547,9 @@ main#prog h3 a,
 main#prog dl a {
   text-decoration: none;
   color: #06f;
+}
+main#prog h3.code_title {
+  text-align: left;
 }
 main#prog a:hover {
   text-decoration: underline;;
@@ -599,20 +609,12 @@ main#elec .half ul {
 }
 main#elec .half:last-child {
   margin-right: 0;
-  font-size: 0.8rem;
 }
 main#elec dl {
-  margin: 0;
-  clear: both;
+  margin: 0 0 0.4rem 0;
 }
-main#elec dt,
-main#elec dd {
-  margin: 0;
-  display: inline;
-  /*clear: both;*/
-}
-main#elec dd {
-  /*float: left;*/
+main#elec dt {
+  margin-top: 0;
 }
 
 main#frtz article > h3 {
