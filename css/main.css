@@ -48,8 +48,8 @@ hr {
 }
 
 /*
-* Remove the gap between audio, canvas, iframes,
-* images, videos and the bottom of their containers:
+* Remove the gap between audio, canvas, iframe,
+* image, video and the bottom of their containers:
 * https://github.com/h5bp/html5-boilerplate/issues/440
 */
 
@@ -139,6 +139,10 @@ dt {
 dd {
   margin-left: 1rem;
 }
+.glue {
+  break-inside: avoid-column;
+  page-break-inside: avoid;
+}
 
 /* The top common page header and navigation bar */
 #topnav {
@@ -157,7 +161,7 @@ dd {
   color: #444;
 }
 #topnav ul {
-  display: inline-block;
+  display: block;
   font-size: 0.89rem;
   font-weight: bold;
   list-style: none;
@@ -214,10 +218,11 @@ dd {
   border-width: 0;
 }
 
-#menu { /* nested navication menus */
+#menu { /* nested navigation menus */
   border-right: 1px solid #000;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
+  border-radius: 0;
   padding-right: 10px;
   padding-bottom: 1.5rem;
 }
@@ -302,6 +307,7 @@ main > header {
   display: table;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
+  border-radius: 15px;
 }
 main > header > * {
   display: table-cell;
@@ -332,6 +338,7 @@ main section {
   border: 3px solid #444;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
+  border-radius: 15px;
 }
 h2 {
   color: #444;
@@ -396,6 +403,7 @@ main p:last-child {
   width: 12.3rem;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
+  border-radius: 15px;
 }
 #circuit h3 {
   text-align: center;
@@ -462,6 +470,7 @@ main p:last-child {
   border: 1.5px solid #444;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
+  border-radius: 15px;
 }
 #CIRC-notworking div p:first-of-type {
   margin-top: 0;
@@ -525,10 +534,11 @@ main#prog dl {
   border: 1.5px solid #444;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
+  border-radius: 15px;
 }
 main#prog dt {
   clear: left;
-  display: inline-block;
+  display: block;
   float: left;
   margin: 0;
   padding-left: 0.3rem;
@@ -572,27 +582,32 @@ main#elec li {
 main#elec span {
   font-size: 0.7rem;
 }
-main#elec a {
-  padding-left: 0.6rem;
-}
 main#elec p {
   margin-bottom: 0;
 }
-main#elec div div:first-child {
-  width: 8rem;
-  float: left;
+main#elec h3 {
+  font-size: 1.08rem;
+}
+main#elec .details > div {
   clear: both;
 }
-main#elec div div:last-child {
-  width: 36rem;
+main#elec .details > div > div:first-child {
+  width: 8rem;
+  float: left;
+}
+main#elec .details > div > div:first-child > img {
+  width: 7.5rem;
+}
+main#elec .details > div > div:last-child {
   border-bottom: 1px solid #111;
   margin-top: 0.2rem;
   -webkit-column-count: 2;
   -moz-column-count: 2;
-  -column-count: 2;
+  column-count: 2;
   -webkit-column-gap: 0.5rem;
   -moz-column-gap: 0.5rem;
-  -column-gap: 0.5rem;
+  column-gap: 0.5rem;
+  width: 36rem;
 }
 main#elec .half {
   width: 21rem;
@@ -602,10 +617,10 @@ main#elec .half ul {
   list-style-type: none;
   -webkit-column-count: 3;
   -moz-column-count: 3;
-  -column-count: 3;
+  column-count: 3;
   -webkit-column-gap: 0.5rem;
   -moz-column-gap: 0.5rem;
-  -column-gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 main#elec .half:last-child {
   margin-right: 0;
