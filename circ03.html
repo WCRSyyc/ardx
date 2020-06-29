@@ -149,13 +149,13 @@
 	<header>
 		<h1>CIRC<br/>03</h1>
 		<h2>.:Spin Motor Spin:.<br/>.:Transistor &amp; Motor:.</h2>
-		<img src="http://www.ardx.org/src/circ/CIRC-03-square-100.jpg" width="100" height="100" alt="small motor">
+		<img src="img/experiments/CIRC-03-square-100.jpg" width="100" height="100" alt="small dc motor">
 	</header>
 	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
 	<section>
 		<h2>What We're Doing</h2>
-		<p>The Arduino's pins are great for directly controlling small electric items like LEDs. However, when dealing with larger items (like a toy motor or washing machine), an external transistor is required. A transistor is incredibly useful. It switches a lot of current using a much smaller current. A transistor has 3 pins. For a negative type (NPN) transistor, you connect your load to collector and the emitter to ground. Then when a small current flows from base to the emitter, a current will flow through the transistor and your motor will spin (this happens when we set our Arduino pin HIGH). There are literally thousands of different types of transistors, allowing every situation to be perfectly matched. We have chosen a P2N2222AG a rather common general purpose transistor. The important factors in our case are that its maximum voltage (40v) and its maximum current (200 milliamp) are both high enough for our toy motor (full details can be found on its datasheet <a href="http://ardx.org/2222">http://ardx.org/2222</a>).<br/>
-		(The 1N4001 diode is acting as a flyback diode. For details on why its there visit: <a href="http://ardx.org/4001">http://ardx.org/4001</a>)<br/>
+		<p>The Arduino's pins are great for directly controlling small electric items like LEDs. However, when dealing with larger items (like a toy motor or washing machine), an external transistor is required. A transistor is incredibly useful. It switches a lot of current using a much smaller current. A transistor has 3 pins. For a negative type (NPN) transistor, you connect your load to collector and the emitter to ground. Then when a small current flows from base to the emitter, a current will flow through the transistor and your motor will spin (this happens when we set our Arduino pin HIGH). There are literally thousands of different types of transistors, allowing every situation to be perfectly matched. We have chosen a P2N2222AG a rather common general purpose transistor. The important factors in our case are that its maximum voltage (40v) and its maximum current (200 milliamp) are both high enough for our toy motor (full details can be found on its datasheet <a href="https://www.onsemi.com/pub/Collateral/P2N2222A-D.PDF">http://ardx.org/2222</a>).<br/>
+		(The 1N4001 diode is acting as a flyback diode. For details on why its there visit: <a href="https://en.wikipedia.org/wiki/Flyback_diode">http://ardx.org/4001</a>)<br/>
 	  The layout picture includes a capacitor that is not in either the parts list or schematic.  The component is optional.  It is used to smooth the power flow when the motor is turned on and off.  See <a href="https://en.wikipedia.org/wiki/Filter_capacitor">https://en.wikipedia.org/wiki/Filter_capacitor</a> for more information.</p>
 	</section>
 	<section id="circuit">
@@ -164,7 +164,7 @@
 			<h3>The Parts</h3>
 			<table>
 				<tr>
-					<td><img src="img/CIRC-03-3dsheet-60.png"
+					<td><img src="img/parts/CIRC-03-3dsheet-60.png"
 						width="60" height="36" alt="circuit 3 breadboard sheet 3d view"/></td>
 					<td>CIRC-03<br/>Breadboard Sheet<br/>x1</td>
 					<td><img src="img/parts/HEAD-02-60.png"
@@ -196,7 +196,7 @@
 			viewBox="29 13 71 71"
 			preserveAspectRatio="xMaxYMin meet">
 			<image height="100" width="100"
-				xlink:href="img/CIRC03_bb.svg"/>
+				xlink:href="img/experiments/CIRC03-bb.svg"/>
 		</svg></span>
 		<div>
 			<h3>Schematic</h3>
@@ -206,28 +206,28 @@
 				viewBox="49 50.6 32 32"
 				preserveAspectRatio="xMidYMin meet">
 				<image height="100" width="100"
-					xlink:href="img/CIRC03_schem.svg" />
+					xlink:href="img/experiments/CIRC03-sch.svg" />
 			</svg></span>
 		</div>
 		<div>
 			<h3>Resources</h3>
 			<h4>.:download:.</h4>
 			<p>Breadboard layout sheet<br/>
-				<a href="http://ardx.org/src/circ/CIRC03-sheet-OOML.pdf">http://ardx.org/BBLS03</a>
+				<a href="img/experiments/CIRC03-sheet-OOML.pdf">http://ardx.org/BBLS03</a>
 			</p>
 			<p>Fritzing diagram<br/><a href="fritzing/CIRC03.fzz">
 				https://wcrsyyc.github.io/ardx/fritzing/CIRC03.fzz</a></p>
 			<h4>.:view:.</h4>
 			<p>
 				assembly video<br/>
-				<a href="http://ardx.org/VIDE03">http://ardx.org/VIDE03</a>
+				<a href="https://www.youtube.com/watch?v=K3GtbPcOT50">http://ardx.org/VIDE03</a>
 			</p>
 		</div>
 	</section>
 	<section id="code">
 		<h2>Code <span>(no need to type everything in just)</span></h2>
 		<p>Download the Code from ( <a
-			href="http://ardx.org/src/circ/CIRC03-code.txt">http://ardx.org/CODE03</a> )<br/>
+			href="code/CIRC03-code.txt">https://wcrsyyc.github.io/ardx/code/CIRC03-code.txt</a> )<br/>
 			(and then copy the text and paste it into an empty Arduino Sketch)</p>
 		<pre>/*     -----------------------------------------------------------
  *     |  Arduino Experimentation Kit Example Code               |
