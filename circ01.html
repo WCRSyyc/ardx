@@ -149,13 +149,13 @@
 	<header>
 		<h1>CIRC<br/>01</h1>
 		<h2>.:Getting Started:.<br/>.:Blinking LED:.</h2>
-		<img src="http://www.ardx.org/src/circ/CIRC-01-square-100.jpg" width="100" height="100" alt="blinking led circuit">
+		<img src="img/experiments/CIRC-01-square-100.jpg" width="100" height="100" alt="blinking led circuit">
 	</header>
 	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
 	<section>
 		<h2>What We're Doing</h2>
-		<p>LEDs (light emitting diodes) are used in all sorts of clever things, which is why we have included them in this kit. We will start off with something very simple, turning one on and off, repeatedly, producing a pleasant blinking effect. To get started, grab the parts listed below, Optionally, <a href="https://github.com/WCRSyyc/ardx/wiki/potentiometer">pin the layout sheet to your breadboard</a>, then plug everything in. Once the circuit is assembled you'll need to upload the program. To do this plug the Arduino board into your USB port. Then select the proper board in Tools > Board > (<a href="https://github.com/WCRSyyc/ardx/wiki/Arduino-Boards">your Arduino board</a>), and port in Tools > Serial Port > (the comm port of your Arduino). Next upload the program by going to File > Upload to I/O Board (ctrl+U). Finally, bask in the glory and possibility that controlling lights offers.</p>
-		<p>If you are having trouble uploading, a full trouble shooting guide can be found here: <a href="http://ardx.org/TRBL">http://ardx.org/TRBL</a></p>
+		<p>LEDs (light emitting diodes) are used in all sorts of clever things, which is why we have included them in this kit. We will start off with something very simple, turning one on and off, repeatedly, producing a pleasant blinking effect. To get started, grab the parts listed below, Optionally, <a href="https://github.com/WCRSyyc/ardx/wiki/layout-sheet">pin the layout sheet to your breadboard</a>, then plug everything in. Once the circuit is assembled you'll need to upload the program. To do this plug the Arduino board into your USB port. Then select the proper board in Tools > Board > (<a href="https://github.com/WCRSyyc/ardx/wiki/Arduino-Boards">your Arduino board</a>), and port in Tools > Serial Port > (the comm port of your Arduino). Next upload the program by going to File > Upload to I/O Board (ctrl+U). Finally, bask in the glory and possibility that controlling lights offers.</p>
+		<p>If you are having trouble uploading, a full trouble shooting guide can be found here: <a href="https://www.arduino.cc/en/Guide/Troubleshooting">http://ardx.org/TRBL</a></p>
 		<p>If you have having trouble identifying the parts, have a look at the <a href="electronics.html">Electronics Primer</a> page, which is also available from the (WCRS) menu to the left.</p>
 	</section>
 	<section id="circuit">
@@ -164,7 +164,7 @@
 			<h3>The Parts</h3>
 			<table>
 				<tr>
-					<td><img src="img/CIRC-01-3dsheet-60.png"
+					<td><img src="img/parts/CIRC-01-3dsheet-60.png"
 						width="60" height="36" alt="circuit 1 breadboard sheet 3d view"/></td>
 					<td>CIRC-01<br/>Breadboard Sheet<br/>x1</td>
 					<td><img src="img/parts/HEAD-02-60.png"
@@ -179,7 +179,7 @@
 				</tr><tr>
 					<td><img src="img/parts/RES-561-60.png"
 						width="60" height="36" alt="resistor"/></td>
-					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>x1</td>
+					<td>560 Ohm Resistor<br/>Green-Blue-Black-Black<br/>x1</td>
 					<td colspan="6"></td>
 				</tr>
 			</table>
@@ -187,34 +187,34 @@
 		<span class="bb-svg-container"><svg
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
-			viewBox="23 13 76 76"
+			viewBox="24 12 76 76"
 			preserveAspectRatio="xMaxYMin meet">
 			<image height="100" width="100"
-				xlink:href="img/CIRC01_bb.svg"/>
+				xlink:href="img/experiments/CIRC01-bb.svg"/>
 		</svg></span>
 		<div>
 			<h3>Schematic</h3>
 			<span class="sch-svg-container"><svg
 				xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
-				viewBox="68 53.5 27 27"
+				viewBox="78 57 27 27"
 				preserveAspectRatio="xMidYMin meet">
 				<image height="100" width="100"
-					xlink:href="img/CIRC01_schem.svg" />
+					xlink:href="img/experiments/CIRC01-sch.svg" />
 			</svg></span>
 		</div>
 		<div>
 			<h3>Resources</h3>
 			<h4>.:download:.</h4>
 			<p>Breadboard layout sheet<br/>
-				<a href="http://ardx.org/src/circ/CIRC01-sheet-OOML.pdf">http://ardx.org/BBLS01</a>
+				<a href="img/experiments/CIRC01-sheet-OOML.pdf">http://ardx.org/BBLS01</a>
 			</p>
 			<p>Fritzing diagram<br/><a href="fritzing/CIRC01.fzz">
 				https://wcrsyyc.github.io/ardx/fritzing/CIRC01.fzz</a></p>
 			<h4>.:view:.</h4>
 			<p>
 				assembly video<br/>
-				<a href="http://ardx.org/VIDE01">http://ardx.org/VIDE01</a>
+				<a href="https://www.youtube.com/watch?v=vGHjV50NxqY">http://ardx.org/VIDE01</a>
 			</p>
 		</div>
 	</section>
@@ -229,7 +229,7 @@
 		<p>(example from the great <a href="https://www.arduino.cc/">arduino.cc</a> site, check it out for other ideas)</p>
 		<pre>/*
   *Blink
-  *Turns on an LED on for one second, then off for one second, repeatedly.
+  *Turns an LED on for one second, then off for one second, repeatedly.
   *The circuit:
   * LED connected from digital pin 13 to ground.
   * Note: On most Arduino boards, there is already an LED on the board
@@ -245,7 +245,8 @@ int ledPin = 13;     // LED connected to digital pin 13
 
 // The setup() method runs once, when the sketch starts
 
-void setup()   {
+void setup()
+{
   // initialize the digital pin as an output:
   pinMode(ledPin, OUTPUT);
 }
