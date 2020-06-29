@@ -149,7 +149,7 @@
 	<header>
 		<h1>CIRC<br/>02</h1>
 		<h2>.:8 LED Fun:.<br/>.:Multiple LEDs:.</h2>
-		<img src="http://www.ardx.org/src/circ/CIRC-02-square-100.jpg" width="100" height="100" alt="8 green LEDs">
+		<img src="img/experiments/CIRC-02-square-100.jpg" width="100" height="100" alt="8 green LEDs">
 	</header>
 	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
 	<section>
@@ -165,7 +165,7 @@
 			<h3>The Parts</h3>
 			<table>
 				<tr>
-					<td><img src="img/CIRC-02-3dsheet-60.png"
+					<td><img src="img/parts/CIRC-02-3dsheet-60.png"
 						width="60" height="36" alt="circuit 2 breadboard sheet 3d view"/></td>
 					<td>CIRC-02<br/>Breadboard Sheet<br/>x1</td>
 					<td><img src="img/parts/HEAD-02-60.png"
@@ -191,71 +191,66 @@
 			viewBox="18 11 81 81"
 			preserveAspectRatio="xMaxYMin meet">
 			<image height="100" width="100"
-				xlink:href="img/CIRC02_bb.svg"/>
+				xlink:href="img/experiments/CIRC02-bb.svg"/>
 		</svg></span>
 		<div>
 			<h3>Schematic</h3>
 			<span class="sch-svg-container"><svg
 				xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
-				viewBox="51 33.2 54 54"
+				viewBox="50 32.5 55 55"
 				preserveAspectRatio="xMidYMin meet">
 				<image height="100" width="100"
-					xlink:href="img/CIRC02_schem.svg" />
+					xlink:href="img/experiments/CIRC02-sch.svg" />
 			</svg></span>
 		</div>
 		<div>
 			<h3>Resources</h3>
 			<h4>.:download:.</h4>
 			<p>Breadboard layout sheet<br/>
-				<a href="http://ardx.org/src/circ/CIRC02-sheet-OOML.pdf">http://ardx.org/BBLS02</a>
+				<a href="img/experiments/CIRC02-sheet-OOML.pdf">http://ardx.org/BBLS02</a>
 			</p>
 			<p>Fritzing diagram<br/><a href="fritzing/CIRC02.fzz">
 				https://wcrsyyc.github.io/ardx/fritzing/CIRC02.fzz</a></p>
 			<h4>.:view:.</h4>
 			<p>
 				assembly video<br/>
-				<a href="http://ardx.org/VIDE02">http://ardx.org/VIDE02</a>
+				<a href="https://www.youtube.com/watch?v=fPRzvLQ7XwI">http://ardx.org/VIDE02</a>
 			</p>
 		</div>
 	</section>
 	<section id="code">
 		<h2>Code <span>(no need to type everything in just)</span></h2>
 		<p>Download the Code from ( <a
-			href="http://ardx.org/src/circ/CIRC02-code.txt">http://ardx.org/CODE02</a> )<br/>
+			href="code/CIRC02-code.txt">https://wcrsyyc.github.io/ardx/code/CIRC02-code.txt</a> )<br/>
 		(and then copy the text and paste it into an empty Arduino Sketch)</p>
 		<pre>/*     ---------------------------------------------------------
  *     |  Arduino Experimentation Kit Example Code             |
- *     |  CIRC-02 .: 8 LED Fun :. (Multiple LEDs)   |
+ *     |  CIRC-02 .: 8 LED Fun :. (Multiple LEDs)              |
  *     ---------------------------------------------------------
  *
  *  A few Simple LED animations
- *
- * For more information on this circuit http://tinyurl.com/d2hrud
- *
  */
 
-//LED Pin Variables
-int ledPins[] = {2,3,4,5,6,7,8,9}; //An array to hold the pin each LED is connected to
-                                   //i.e. LED #0 is connected to pin 2, LED #1, 3 and so on
-                                   //to address an array use ledPins[0] this would equal 2
-                                   //and ledPins[7] would equal 9
+// LED Pin Variables
+int ledPins[] = {2,3,4,5,6,7,8,9}; // An array to hold the pin each LED is
+// connected to i.e. LED #0 is connected to pin 2, LED #1, 3 and so on
+// to access, ledPins[0] would equal 2 and ledPins[7] would equal 9
 
 /*
  * setup() - this function runs once when you turn your Arduino on
- * We the three control pins to outputs
+ * We set the control pins to outputs
  */
 void setup()
 {
-
-  //Set each pin connected to an LED to output mode (pulling high (on) or low (off)
-  for(int i = 0; i &lt; 8; i++){         //this is a loop and will repeat eight times
-      pinMode(ledPins[i],OUTPUT); //we use this to set each LED pin to output
-  }                                   //the code this replaces is below
+  // Set each pin connected to an LED to output mode (pulling high (on) or low (off))
+  for(int i = 0; i < 8; i++) {    // this is a loop and will repeat eight times
+    pinMode(ledPins[i],OUTPUT); // we use this to set each LED pin to output
+  }                               // the code this replaces is below
 
   /* (commented code will not run)
-   * these are the lines replaced by the for loop above they do exactly the
-   * same thing the one above just uses less typing
+   * these are the lines replaced by the for loop above. They do exactly the
+   * same thing as the one above just needing less typing
   pinMode(ledPins[0],OUTPUT);
   pinMode(ledPins[1],OUTPUT);
   pinMode(ledPins[2],OUTPUT);
@@ -267,167 +262,193 @@ void setup()
   (end of commented code)*/
 }
 
-
 /*
- * loop() - this function will start after setup finishes and then repeat
- * we call a function called oneAfterAnother(). if you would like a different behaviour
- * uncomment (delete the two slashes) one of the other lines
+ * loop() - this function will start after setup finishes, then repeat
+ * this calls a function called oneAfterAnother(). if you would like a different
+ * behaviour uncomment (delete the two slashes) on one of the other lines
  */
-void loop()                     // run over and over again
+void loop()                 // run over and over again
 {
-  oneAfterAnotherNoLoop();   //this will turn on each LED one by one then turn each off
-  //oneAfterAnotherLoop();   //does the same as oneAfterAnotherNoLoop but with
-                             //much less typing
-  //oneOnAtATime();          //this will turn one LED on then turn the next one
-                             //on turning the
-                             //former off (one LED will look like it is scrolling
-                             //along the line
-  //inAndOut();              //lights the two middle LEDs then moves them out then back
-                             //in again
+  oneAfterAnotherNoLoop();  // turn on each LED one by one then turn each off
+  //oneAfterAnotherLoop();  // does the same as oneAfterAnotherNoLoop but with
+                            // much less typing
+  //oneOnAtATime();         // this will turn one LED on then turn the next one
+                            // on turning the former off (one LED will look like
+                            // it is scrolling along the line
+  //inAndOut();             // lights the two middle LEDs then moves them out
+                            // then back in again
+  //inAndOutSub();          // does the same as inAndOut but moves duplicate code
+                            // into a separate function
 }
 
 /*
- * oneAfterAnotherNoLoop() - Will light one LED then delay for delayTime then light
- * the next LED until all LEDs are on it will then turn them off one after another
+ * oneAfterAnotherNoLoop() - Light one LED then delay for delayTime then light
+ * the next LED until all LEDs are on, then turn them off one after another
  *
- * this does it without using a loop which makes for a lot of typing.
+ * this does it without using a loop, which makes for a lot of typing.
  * oneOnAtATimeLoop() does exactly the same thing with less typing
  */
-void oneAfterAnotherNoLoop(){
-  int delayTime = 100; //the time (in milliseconds) to pause between LEDs
-                       //make smaller for quicker switching and larger for slower
-  digitalWrite(ledPins[0], HIGH);  //Turns on LED #0 (connected to pin 2 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[1], HIGH);  //Turns on LED #1 (connected to pin 3 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[2], HIGH);  //Turns on LED #2 (connected to pin 4 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[3], HIGH);  //Turns on LED #3 (connected to pin 5 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[4], HIGH);  //Turns on LED #4 (connected to pin 6 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[5], HIGH);  //Turns on LED #5 (connected to pin 7 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[6], HIGH);  //Turns on LED #6 (connected to pin 8 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[7], HIGH);  //Turns on LED #7 (connected to pin 9 )
-  delay(delayTime);                //waits delayTime milliseconds
+void oneAfterAnotherNoLoop()
+{
+  int delayTime = 100;  // the time (in milliseconds) to pause between LEDs
+                        // make smaller for quicker switching and larger for slower
+  digitalWrite(ledPins[0], HIGH);  // Turns on LED #0 (connected to pin 2 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[1], HIGH);  // Turns on LED #1 (connected to pin 3 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[2], HIGH);  // Turns on LED #2 (connected to pin 4 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[3], HIGH);  // Turns on LED #3 (connected to pin 5 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[4], HIGH);  // Turns on LED #4 (connected to pin 6 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[5], HIGH);  // Turns on LED #5 (connected to pin 7 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[6], HIGH);  // Turns on LED #6 (connected to pin 8 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[7], HIGH);  // Turns on LED #7 (connected to pin 9 )
+  delay(delayTime);                // waits delayTime milliseconds
 
-//Turns Each LED Off
-  digitalWrite(ledPins[7], LOW);  //Turns on LED #0 (connected to pin 2 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[6], LOW);  //Turns on LED #1 (connected to pin 3 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[5], LOW);  //Turns on LED #2 (connected to pin 4 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[4], LOW);  //Turns on LED #3 (connected to pin 5 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[3], LOW);  //Turns on LED #4 (connected to pin 6 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[2], LOW);  //Turns on LED #5 (connected to pin 7 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[1], LOW);  //Turns on LED #6 (connected to pin 8 )
-  delay(delayTime);                //waits delayTime milliseconds
-  digitalWrite(ledPins[0], LOW);  //Turns on LED #7 (connected to pin 9 )
-  delay(delayTime);                //waits delayTime milliseconds
+  // Turns Each LED Off in the reverse sequence
+  digitalWrite(ledPins[7], LOW);   // Turns on LED #0 (connected to pin 2 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[6], LOW);   // Turns on LED #1 (connected to pin 3 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[5], LOW);   // Turns on LED #2 (connected to pin 4 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[4], LOW);   // Turns on LED #3 (connected to pin 5 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[3], LOW);   // Turns on LED #4 (connected to pin 6 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[2], LOW);   // Turns on LED #5 (connected to pin 7 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[1], LOW);   // Turns on LED #6 (connected to pin 8 )
+  delay(delayTime);                // waits delayTime milliseconds
+  digitalWrite(ledPins[0], LOW);   // Turns on LED #7 (connected to pin 9 )
+  delay(delayTime);                // waits delayTime milliseconds
 }
 
 /*
- * oneAfterAnotherLoop() - Will light one LED then delay for delayTime then light
- * the next LED until all LEDs are on it will then turn them off one after another
+ * oneAfterAnotherLoop() - Light one LED then delay for delayTime then light
+ * the next LED until all LEDs are on, then turn them off one after another
  *
- * this does it using a loop which makes for a lot less typing.
- * than oneOnAtATimeNoLoop() does exactly the same thing with less typing
+ * this does exactly the same as oneOnAtATimeNoLoop() using loops which makes
+ * for a lot less typing
  */
-void oneAfterAnotherLoop(){
-  int delayTime = 100; //the time (in milliseconds) to pause between LEDs
-                       //make smaller for quicker switching and larger for slower
+void oneAfterAnotherLoop()
+{
+  int delayTime = 100;  // the time (in milliseconds) to pause between LEDs
+                        // make smaller for quicker switching and larger for slower
 
-//Turn Each LED on one after another
-  for(int i = 0; i &lt;= 7; i++){
-    digitalWrite(ledPins[i], HIGH);  //Turns on LED #i each time this runs i
-    delay(delayTime);                //gets one added to it so this will repeat
-  }                                  //8 times the first time i will = 0 the final
-                                     //time i will equal 7;
+  // Turn Each LED on one after another
+  for(int i = 0; i <= 7; i++){
+    digitalWrite(ledPins[i], HIGH); // Turns on LED #i; each time this runs, i
+    delay(delayTime);               // gets one added to it so this will repeat
+  }                                 // 8 times. the first time i will = 0, the
+                                    // final time i will equal 7;
 
-//Turn Each LED off one after another
-  for(int i = 7; i >= 0; i--){  //same as above but rather than starting at 0 and counting up
-                                //we start at seven and count down
-    digitalWrite(ledPins[i], LOW);  //Turns off LED #i each time this runs i
-    delay(delayTime);                //gets one subtracted from it so this will repeat
-  }                                  //8 times the first time i will = 7 the final
-                                     //time it will equal 0
-
-
+  // Turn Each LED off one after another
+  for(int i = 7; i >= 0; i--) {     // same as above but rather than starting at 0 and
+                                    // counting up, we start at seven and count down
+    digitalWrite(ledPins[i], LOW);  // Turns off LED #i; each time this runs, i
+    delay(delayTime);               // gets one subtracted from it so this will
+  }                                 // repeat 8 times. the first time i will = 7,
+                                    // the final time it will equal 0
 }
 
 /*
  * oneOnAtATime() - Will light one LED then the next turning off all the others
  */
-void oneOnAtATime(){
-  int delayTime = 100; //the time (in milliseconds) to pause between LEDs
-                       //make smaller for quicker switching and larger for slower
+void oneOnAtATime()
+{
+  int delayTime = 100; // the time (in milliseconds) to pause between LEDs
+                       // make smaller for quicker switching and larger for slower
+  int offLED = 7;      // the last led (index number) that was turned on
 
-  for(int i = 0; i &lt;= 7; i++){
-    int offLED = i - 1;  //Calculate which LED was turned on last time through
-    if(i == 0) {         //for i = 1 to 7 this is i minus 1 (i.e. if i = 2 we will
-      offLED = 7;        //turn on LED 2 and off LED 1)
-    }                    //however if i = 0 we don't want to turn of led -1 (doesn't exist)
-                         //instead we turn off LED 7, (looping around)
-    digitalWrite(ledPins[i], HIGH);     //turn on LED #i
-    digitalWrite(ledPins[offLED], LOW); //turn off the LED we turned on last time
+  for(int i = 0; i <= 7; i++) {
+    digitalWrite(ledPins[i], HIGH);     // turn on LED #i
+    digitalWrite(ledPins[offLED], LOW); // turn off the LED we turned on last time
+    offLED = i;                         // remember which LED was last turned on
     delay(delayTime);
   }
 }
 
 /*
- * inAndOut() - This will turn on the two middle LEDs then the next two out
- * making an in and out look
+ * inAndOut() - This will turn on the two middle LEDs then the next two out,
+ * making an out and in look
  */
-void inAndOut(){
-  int delayTime = 100; //the time (in milliseconds) to pause between LEDs
-                       //make smaller for quicker switching and larger for slower
+void inAndOut()
+{
+  int delayTime = 100;  // the time (in milliseconds) to pause between LEDs
+                        // make smaller for quicker switching and larger for slower
+  int offLED1 = 2;      // the last led (index number) that was turned on (first)
+  int offLED2 = 5;      // the last led that was turned on (second)
 
-  //runs the LEDs out from the middle
-  for(int i = 0; i &lt;= 3; i++){
-    int offLED = i - 1;  //Calculate which LED was turned on last time through
-    if(i == 0) {         //for i = 1 to 7 this is i minus 1 (i.e. if i = 2 we will
-      offLED = 3;        //turn on LED 2 and off LED 1)
-    }                    //however if i = 0 we don't want to turn of led -1 (doesn't exist)
-                         //instead we turn off LED 7, (looping around)
-    int onLED1 = 3 - i;       //this is the first LED to go on ie. LED #3 when i = 0 and LED
-                             //#0 when i = 3
-    int onLED2 = 4 + i;       //this is the first LED to go on ie. LED #4 when i = 0 and LED
-                             //#7 when i = 3
-    int offLED1 = 3 - offLED; //turns off the LED we turned on last time
-    int offLED2 = 4 + offLED; //turns off the LED we turned on last time
-
-    digitalWrite(ledPins[onLED1], HIGH);
-    digitalWrite(ledPins[onLED2], HIGH);
-    digitalWrite(ledPins[offLED1], LOW);
-    digitalWrite(ledPins[offLED2], LOW);
+  // runs the LEDs out from the middle
+  for(int i = 3; i >= 0; i--) {
+    int onLED2 = 7 - i; // this is the second LED to go on ie. LED #7 when i = 0
+                        // and LED #4 when i = 3
+    digitalWrite(ledPins[offLED1], LOW); // turns off first LED turned on last time
+    digitalWrite(ledPins[offLED2], LOW); // turns off second LED turned on last time
+    digitalWrite(ledPins[i], HIGH);      // turns on the new LED
+    digitalWrite(ledPins[onLED2], HIGH); // turns on the new LED
+    offLED1 = i;                         // remember which LEDs were just turned on
+    offLED2 = onLED2;
     delay(delayTime);
   }
 
-  //runs the LEDs into the middle
-  for(int i = 3; i >= 0; i--){
-    int offLED = i + 1;  //Calculate which LED was turned on last time through
-    if(i == 3) {         //for i = 1 to 7 this is i minus 1 (i.e. if i = 2 we will
-      offLED = 0;        //turn on LED 2 and off LED 1)
-    }                    //however if i = 0 we don't want to turn of led -1 (doesn't exist)
-                         //instead we turn off LED 7, (looping around)
-    int onLED1 = 3 - i;       //this is the first LED to go on ie. LED #3 when i = 0 and LED
-                             //#0 when i = 3
-    int onLED2 = 4 + i;       //this is the first LED to go on ie. LED #4 when i = 0 and LED
-                             //#7 when i = 3
-    int offLED1 = 3 - offLED; //turns off the LED we turned on last time
-    int offLED2 = 4 + offLED; //turns off the LED we turned on last time
-
-    digitalWrite(ledPins[onLED1], HIGH);
-    digitalWrite(ledPins[onLED2], HIGH);
+  // runs the LEDs into the middle
+  for(int i = 0; i <= 3; i++) {
+    int onLED2 = 7 - i; // this is the second LED to go on ie. LED #7 when i = 0
+                        // and LED #4 when i = 3
     digitalWrite(ledPins[offLED1], LOW);
     digitalWrite(ledPins[offLED2], LOW);
+    digitalWrite(ledPins[i], HIGH);
+    digitalWrite(ledPins[onLED2], HIGH);
+    offLED1 = i;
+    offLED2 = onLED2;
     delay(delayTime);
+  }
+}
+
+/*
+ * inAndOutStep() - This turns on 2 LEDs, and turns 2 others off.
+ */
+void inAndOutStep(int offLED1, int onIndex)
+{
+  int delayTime = 100;  // the time (in milliseconds) to pause between LEDs
+  int onLED2 = 7 - onIndex;   // the second LED to turn on
+  int offLED2 = 7 - offLED1;  // the second LED to turn off
+  digitalWrite(ledPins[offLED1], LOW);
+  digitalWrite(ledPins[offLED2], LOW);
+  digitalWrite(ledPins[onIndex], HIGH);
+  digitalWrite(ledPins[onLED2], HIGH);
+  delay(delayTime);
+}
+
+/*
+ * inAndOutSub() - This will turn on the two middle LEDs then the next two out,
+ * making an out and in look. This does the same thing as inAndOut(), but with
+ * a function to *refactor* the common code, which will be less typing.
+ *
+ * One of the standard programming practices is DRY (Don't repeat yourself). When
+ * the same, or very similar, thing is being done multiple times, the code for
+ * it can often be written once, then *called* from each place that needs it.
+ */
+void inAndOutSub()
+{
+  int offLED1 = 2;      // the last led (index number) that was turned on (first)
+
+  // runs the LEDs out from the middle
+  for(int i = 3; i >= 0; i--) {
+    inAndOutStep(offLED1, i);
+    offLED1 = i;
+  }
+
+  // runs the LEDs into the middle
+  for(int i = 0; i <= 3; i++) {
+    inAndOutStep(offLED1, i);
+    offLED1 = i;
   }
 }</pre>
 	</section>
@@ -435,7 +456,7 @@ void inAndOut(){
 		<h2>Not Working? <span>(3 things to try)</span></h2>
 		<div>
 			<h3>Some LEDs Fail to Light</h3>
-			<p>It is easy to insert an LED backwards. Check the LEDs that aren't working and ensure they the right way around.</p>
+			<p>It is easy to insert an LED backwards. Check the LEDs that aren't working and ensure they are the right way around.</p>
 		</div>
 		<div>
 			<h3>Operating out of sequence</h3>
@@ -449,14 +470,15 @@ void inAndOut(){
 	<section id="CIRC-makingBetter">
 		<h2>Making it Better?</h2>
 		<h3>Switching to Loops:</h3>
-		<p>in the loop() function there are 4 lines. The last three all start with a '//' this means the line is treated as a comment (not run). To switch the program to use loops change the void loop() code to:</p>
+		<p>in the loop() function there are 5 lines. The last four all start with a '//'. this means the line is treated as a comment (not run). To switch the program to use loops change the void loop() code to:</p>
 		<pre>//oneAfterAnotherNoLoop();
 oneAfterAnotherLoop();
 //oneOnAtATime();
-//inAndOut();</pre>
+//inAndOut();
+//inAndOutSub();</pre>
 		<p>Upload the program, and notice that nothing has changed. You can take a look at the two functions, each does the same thing, but use different approaches (hint the second one uses a for loop)</p>
 		<h3>Extra Animations:</h3>
-		<p>Tired of this animation? Then try the other two sample animations. Uncomment their lines and upload the program to your board and enjoy the new light animations. (delete the slashes in front of row 3 and then 4)</p>
+		<p>Tired of this animation? Then try the other two sample animations. Uncomment their lines and upload the program to your board and enjoy the new light animations. (delete the slashes in front of row 3, 4 and then 5)</p>
 		<h3>Testing out your own Animations:</h3>
 		<p>Jump into the included code and start changing things. The main point is to turn an LED on use:</p>
 		<pre>  digitalWrite(pinNumber, HIGH);</pre>

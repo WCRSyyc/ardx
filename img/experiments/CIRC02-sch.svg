@@ -1,1 +1,1021 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.2" width="343.497" height="257.995" viewBox="0 0 257.622 193.496"><path class="other" stroke="#000" stroke-linecap="round" stroke-width=".432" d="M237.6 172.373l-2.88-1.08M234.72 171.293l5.76-1.8M240.48 169.493l-5.76-1.8M234.72 167.693l5.76-1.8M240.48 165.893l-5.76-1.8M234.72 164.093l5.76-1.8M240.48 162.293l-5.76-1.8M234.72 160.493l5.76-1.8M240.48 158.693l-2.88-.72"/><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M237.6 150.773v7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="25.55" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 207.214 -27.29)">2</text><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M237.6 179.573v-7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="3.95" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 207.214 -27.29)">1</text><path class="other" stroke="#000" stroke-linecap="round" stroke-width=".432" d="M180 100.373l-2.88-1.08M177.12 99.293l5.76-1.8M182.88 97.493l-5.76-1.8M177.12 95.693l5.76-1.8M182.88 93.893l-5.76-1.8M177.12 92.093l5.76-1.8M182.88 90.293l-5.76-1.8M177.12 88.493l5.76-1.8M182.88 86.693l-2.88-.72"/><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M180 78.773v7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="25.55" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 142.413 -34.49)">2</text><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M180 107.573v-7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="3.95" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 142.413 -34.49)">1</text><path class="other" stroke="#000" stroke-linecap="round" stroke-width=".432" d="M208.8 100.373l-2.88-1.08M205.92 99.293l5.76-1.8M211.68 97.493l-5.76-1.8M205.92 95.693l5.76-1.8M211.68 93.893l-5.76-1.8M205.92 92.093l5.76-1.8M211.68 90.293l-5.76-1.8M205.92 88.493l5.76-1.8M211.68 86.693l-2.88-.72"/><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M208.8 78.773v7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="25.55" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 156.814 -48.89)">2</text><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M208.8 107.573v-7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="3.95" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 156.814 -48.89)">1</text><path class="other" stroke="#000" stroke-linecap="round" stroke-width=".432" d="M237.6 100.373l-2.88-1.08M234.72 99.293l5.76-1.8M240.48 97.493l-5.76-1.8M234.72 95.693l5.76-1.8M240.48 93.893l-5.76-1.8M234.72 92.093l5.76-1.8M240.48 90.293l-5.76-1.8M234.72 88.493l5.76-1.8M240.48 86.693l-2.88-.72"/><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M237.6 78.773v7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="25.55" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 171.214 -63.29)">2</text><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M237.6 107.573v-7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="3.95" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 171.214 -63.29)">1</text><path class="other" stroke="#000" stroke-linecap="round" stroke-width=".432" d="M151.2 172.373l-2.88-1.08M148.32 171.293l5.76-1.8M154.08 169.493l-5.76-1.8M148.32 167.693l5.76-1.8M154.08 165.893l-5.76-1.8M148.32 164.093l5.76-1.8M154.08 162.293l-5.76-1.8M148.32 160.493l5.76-1.8M154.08 158.693l-2.88-.72"/><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M151.2 150.773v7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="25.55" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 164.014 15.91)">2</text><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M151.2 179.573v-7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="3.95" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 164.014 15.91)">1</text><path class="other" stroke="#000" stroke-linecap="round" stroke-width=".432" d="M180 172.373l-2.88-1.08M177.12 171.293l5.76-1.8M182.88 169.493l-5.76-1.8M177.12 167.693l5.76-1.8M182.88 165.893l-5.76-1.8M177.12 164.093l5.76-1.8M182.88 162.293l-5.76-1.8M177.12 160.493l5.76-1.8M182.88 158.693l-2.88-.72"/><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M180 150.773v7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="25.55" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 178.413 1.51)">2</text><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M180 179.573v-7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="3.95" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 178.413 1.51)">1</text><path class="other" stroke="#000" stroke-linecap="round" stroke-width=".432" d="M208.8 172.373l-2.88-1.08M205.92 171.293l5.76-1.8M211.68 169.493l-5.76-1.8M205.92 167.693l5.76-1.8M211.68 165.893l-5.76-1.8M205.92 164.093l5.76-1.8M211.68 162.293l-5.76-1.8M205.92 160.493l5.76-1.8M211.68 158.693l-2.88-.72"/><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M208.8 150.773v7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="25.55" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 192.814 -12.89)">2</text><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M208.8 179.573v-7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="3.95" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 192.814 -12.89)">1</text><g><path class="other" stroke="#000" stroke-linecap="round" stroke-width=".432" d="M151.2 100.373l-2.88-1.08M148.32 99.293l5.76-1.8M154.08 97.493l-5.76-1.8M148.32 95.693l5.76-1.8M154.08 93.893l-5.76-1.8M148.32 92.093l5.76-1.8M154.08 90.293l-5.76-1.8M148.32 88.493l5.76-1.8M154.08 86.693l-2.88-.72"/><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M151.2 78.773v7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="25.55" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 128.014 -20.09)">2</text><path class="pin" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M151.2 107.573v-7.2"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="3.95" text-anchor="middle" font-size="2.5" y="2.046" stroke-width="0" transform="rotate(-90 128.014 -20.09)">1</text></g><g><g fill="none"><path d="M194.4 186.671v-7.2" stroke="#787878" stroke-linecap="round" stroke-width=".75"/><path d="M187.699 186.807h13.4M189.931 189.552h8.935M196.63 192.271h-4.464" stroke="#000" stroke-linecap="round" stroke-width=".9"/></g></g><g><g fill="none"><path d="M57.6 186.671v-7.2" stroke="#787878" stroke-linecap="round" stroke-width=".75"/><path d="M50.9 186.807h13.4M53.132 189.552h8.935M59.83 192.271h-4.463" stroke="#000" stroke-linecap="round" stroke-width=".9"/></g></g><g><path d="M234.001 143.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path d="M237.601 143.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path fill="#FFF" d="M237.601 143.572l3.6-7.2h-7.2z"/><path d="M237.601 144.354l4.166-8.332h-8.333l4.167 8.332zm3.034-7.632l-3.034 6.068-3.034-6.068h6.068z"/><path d="M237.601 143.797a.225.225 0 0 0 .225-.225v-7.2a.225.225 0 0 0-.45 0v7.2a.226.226 0 0 0 .225.225zM245.701 141.097a.225.225 0 0 0 .159-.383l-2.34-2.341a.225.225 0 1 0-.318.318l2.34 2.341a.222.222 0 0 0 .159.065zM245.341 144.337a.225.225 0 0 0 .159-.383l-2.34-2.34a.225.225 0 1 0-.318.318l2.34 2.34a.225.225 0 0 0 .159.065z"/><path fill="#787878" d="M237.601 151.122a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2a.35.35 0 0 0 .35.35z"/><path fill="none" d="M237.601 150.772h-.001v.001h.001z"/><path fill="#787878" d="M238.532 147.03v.89h.152l.372-.342c.053-.049.101-.093.145-.13s.086-.072.128-.1a.69.69 0 0 1 .125-.062.412.412 0 0 1 .24-.004c.03.012.054.027.075.047.02.021.035.045.046.073s.016.06.016.094a.363.363 0 0 1-.038.167.629.629 0 0 1-.096.143l.116.1a.671.671 0 0 0 .155-.29.59.59 0 0 0-.013-.29.359.359 0 0 0-.076-.129.325.325 0 0 0-.119-.082.485.485 0 0 0-.318-.002.765.765 0 0 0-.148.07 1.227 1.227 0 0 0-.146.11c-.049.04-.1.086-.152.135l-.294.274h-.008v-.673h-.162zM237.601 136.722a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2c.001.193.157.35.35.35z"/><path fill="none" d="M237.601 129.172h-.001z"/><path fill="#787878" d="M238.532 132.918v.172h.982c.032 0 .063 0 .095-.002.032 0 .063-.002.092-.003l.076-.002-.03.03c-.009.008-.017.016-.024.025l-.025.028-.03.035-.118.145.12.094.292-.374v-.146h-1.43z"/><path d="M247.321 142.492l-1.08-2.521-1.44 1.438 2.52 1.083z"/><g><path d="M246.961 145.732l-1.08-2.521-1.438 1.438 2.518 1.083z"/></g></g><g><path d="M205.201 143.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path d="M208.801 143.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path fill="#FFF" d="M208.801 143.572l3.6-7.2h-7.2z"/><path d="M208.801 144.354l4.166-8.332h-8.333l4.167 8.332zm3.034-7.632l-3.034 6.068-3.034-6.068h6.068z"/><path d="M208.801 143.797a.225.225 0 0 0 .225-.225v-7.2a.225.225 0 0 0-.45 0v7.2a.226.226 0 0 0 .225.225zM216.901 141.097a.225.225 0 0 0 .159-.383l-2.34-2.341a.225.225 0 1 0-.318.318l2.34 2.341a.222.222 0 0 0 .159.065zM216.541 144.337a.225.225 0 0 0 .159-.383l-2.34-2.34a.225.225 0 1 0-.318.318l2.34 2.34a.225.225 0 0 0 .159.065z"/><path fill="#787878" d="M208.801 151.122a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2a.35.35 0 0 0 .35.35z"/><path fill="none" d="M208.801 150.772h-.001v.001h.001z"/><path fill="#787878" d="M209.732 147.03v.89h.152l.372-.342c.053-.049.101-.093.145-.13s.086-.072.128-.1a.69.69 0 0 1 .125-.062.412.412 0 0 1 .24-.004c.03.012.054.027.075.047.02.021.035.045.046.073s.016.06.016.094a.363.363 0 0 1-.038.167.629.629 0 0 1-.096.143l.116.1a.671.671 0 0 0 .155-.29.59.59 0 0 0-.013-.29.359.359 0 0 0-.076-.129.325.325 0 0 0-.119-.082.485.485 0 0 0-.318-.002.765.765 0 0 0-.148.07 1.227 1.227 0 0 0-.146.11c-.049.04-.1.086-.152.135l-.294.274h-.008v-.673h-.162zM208.801 136.722a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2c.001.193.157.35.35.35z"/><path fill="none" d="M208.801 129.172h-.001z"/><path fill="#787878" d="M209.732 132.918v.172h.982c.032 0 .063 0 .095-.002.032 0 .063-.002.092-.003l.076-.002-.03.03c-.009.008-.017.016-.024.025l-.025.028-.03.035-.118.145.12.094.292-.374v-.146h-1.43z"/><path d="M218.521 142.492l-1.08-2.521-1.44 1.438 2.52 1.083z"/><g><path d="M218.161 145.732l-1.08-2.521-1.438 1.438 2.518 1.083z"/></g></g><g><path d="M176.401 143.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path d="M180.001 143.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path fill="#FFF" d="M180.001 143.572l3.6-7.2h-7.2z"/><path d="M180.001 144.354l4.166-8.332h-8.333l4.167 8.332zm3.034-7.632l-3.034 6.068-3.034-6.068h6.068z"/><path d="M180.001 143.797a.225.225 0 0 0 .225-.225v-7.2a.225.225 0 0 0-.45 0v7.2a.226.226 0 0 0 .225.225zM188.101 141.097a.225.225 0 0 0 .159-.383l-2.34-2.341a.225.225 0 1 0-.318.318l2.34 2.341a.222.222 0 0 0 .159.065zM187.741 144.337a.225.225 0 0 0 .159-.383l-2.34-2.34a.225.225 0 1 0-.318.318l2.34 2.34a.225.225 0 0 0 .159.065z"/><path fill="#787878" d="M180.001 151.122a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2a.35.35 0 0 0 .35.35z"/><path fill="none" d="M180.001 150.772H180v.001h.001z"/><path fill="#787878" d="M180.932 147.03v.89h.152l.372-.342c.053-.049.101-.093.145-.13s.086-.072.128-.1a.69.69 0 0 1 .125-.062.412.412 0 0 1 .24-.004c.03.012.054.027.075.047.02.021.035.045.046.073s.016.06.016.094a.363.363 0 0 1-.038.167.629.629 0 0 1-.096.143l.116.1a.671.671 0 0 0 .155-.29.59.59 0 0 0-.013-.29.359.359 0 0 0-.076-.129.325.325 0 0 0-.119-.082.485.485 0 0 0-.318-.002.765.765 0 0 0-.148.07 1.227 1.227 0 0 0-.146.11c-.049.04-.1.086-.152.135l-.294.274h-.008v-.673h-.162zM180.001 136.722a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2c.001.193.157.35.35.35z"/><path fill="none" d="M180.001 129.172H180z"/><path fill="#787878" d="M180.932 132.918v.172h.982c.032 0 .063 0 .095-.002.032 0 .063-.002.092-.003l.076-.002-.03.03c-.009.008-.017.016-.024.025l-.025.028-.03.035-.118.145.12.094.292-.374v-.146h-1.43z"/><path d="M189.721 142.492l-1.08-2.521-1.44 1.438 2.52 1.083z"/><g><path d="M189.361 145.732l-1.08-2.521-1.438 1.438 2.518 1.083z"/></g></g><g><path d="M147.601 143.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path d="M151.201 143.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path fill="#FFF" d="M151.201 143.572l3.6-7.2h-7.2z"/><path d="M151.201 144.354l4.166-8.332h-8.333l4.167 8.332zm3.034-7.632l-3.034 6.068-3.034-6.068h6.068z"/><path d="M151.201 143.797a.225.225 0 0 0 .225-.225v-7.2a.225.225 0 0 0-.45 0v7.2a.226.226 0 0 0 .225.225zM159.301 141.097a.225.225 0 0 0 .159-.383l-2.34-2.341a.225.225 0 1 0-.318.318l2.34 2.341a.222.222 0 0 0 .159.065zM158.941 144.337a.225.225 0 0 0 .159-.383l-2.34-2.34a.225.225 0 1 0-.318.318l2.34 2.34a.225.225 0 0 0 .159.065z"/><path fill="#787878" d="M151.201 151.122a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2a.35.35 0 0 0 .35.35z"/><path fill="none" d="M151.201 150.772h-.001v.001h.001z"/><path fill="#787878" d="M152.132 147.03v.89h.152l.372-.342c.053-.049.101-.093.145-.13s.086-.072.128-.1a.69.69 0 0 1 .125-.062.412.412 0 0 1 .24-.004c.03.012.054.027.075.047.02.021.035.045.046.073s.016.06.016.094a.363.363 0 0 1-.038.167.629.629 0 0 1-.096.143l.116.1a.671.671 0 0 0 .155-.29.59.59 0 0 0-.013-.29.359.359 0 0 0-.076-.129.325.325 0 0 0-.119-.082.485.485 0 0 0-.318-.002.765.765 0 0 0-.148.07 1.227 1.227 0 0 0-.146.11c-.049.04-.1.086-.152.135l-.294.274h-.008v-.673h-.162zM151.201 136.722a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2c.001.193.157.35.35.35z"/><path fill="none" d="M151.201 129.172h-.001z"/><path fill="#787878" d="M152.132 132.918v.172h.982c.032 0 .063 0 .095-.002.032 0 .063-.002.092-.003l.076-.002-.03.03c-.009.008-.017.016-.024.025l-.025.028-.03.035-.118.145.12.094.292-.374v-.146h-1.43z"/><path d="M160.921 142.492l-1.08-2.521-1.44 1.438 2.52 1.083z"/><g><path d="M160.561 145.732l-1.08-2.521-1.438 1.438 2.518 1.083z"/></g></g><g><path d="M234.001 71.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path d="M237.601 71.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path fill="#FFF" d="M237.601 71.572l3.6-7.2h-7.2z"/><path d="M237.601 72.354l4.166-8.332h-8.333l4.167 8.332zm3.034-7.632l-3.034 6.068-3.034-6.068h6.068z"/><path d="M237.601 71.797a.225.225 0 0 0 .225-.225v-7.2a.225.225 0 0 0-.45 0v7.2a.226.226 0 0 0 .225.225zM245.701 69.097a.225.225 0 0 0 .159-.383l-2.34-2.34a.225.225 0 1 0-.318.317l2.34 2.341a.222.222 0 0 0 .159.065zM245.341 72.337a.225.225 0 0 0 .159-.383l-2.34-2.34a.225.225 0 1 0-.318.318l2.34 2.34a.225.225 0 0 0 .159.065z"/><path fill="#787878" d="M237.601 79.122a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2a.35.35 0 0 0 .35.35z"/><path fill="none" d="M237.601 78.772h-.001v.001h.001z"/><path fill="#787878" d="M238.532 75.03v.89h.152l.372-.341c.053-.05.101-.093.145-.131s.086-.071.128-.1a.69.69 0 0 1 .125-.061.412.412 0 0 1 .24-.005c.03.013.054.028.075.048.02.02.035.044.046.072s.016.06.016.094a.363.363 0 0 1-.038.167.629.629 0 0 1-.096.143l.116.1a.671.671 0 0 0 .155-.29.59.59 0 0 0-.013-.29.359.359 0 0 0-.076-.128.325.325 0 0 0-.119-.083.485.485 0 0 0-.318-.002.765.765 0 0 0-.148.07 1.227 1.227 0 0 0-.146.11c-.049.04-.1.086-.152.135l-.294.274h-.008v-.673h-.162zM237.601 64.722a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2c.001.193.157.35.35.35z"/><path fill="none" d="M237.601 57.172h-.001z"/><path fill="#787878" d="M238.532 60.919v.172h.982c.032 0 .063-.002.095-.003.032 0 .063-.002.092-.003l.076-.002-.03.03c-.009.008-.017.016-.024.025l-.025.029c-.008.01-.019.02-.03.034l-.118.145.12.095.292-.375v-.146h-1.43z"/><path d="M247.321 70.492l-1.08-2.52-1.44 1.437 2.52 1.083z"/><g><path d="M246.961 73.732l-1.08-2.52-1.438 1.437 2.518 1.083z"/></g></g><g><path d="M205.201 71.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path d="M208.801 71.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path fill="#FFF" d="M208.801 71.572l3.6-7.2h-7.2z"/><path d="M208.801 72.354l4.166-8.332h-8.333l4.167 8.332zm3.034-7.632l-3.034 6.068-3.034-6.068h6.068z"/><path d="M208.801 71.797a.225.225 0 0 0 .225-.225v-7.2a.225.225 0 0 0-.45 0v7.2a.226.226 0 0 0 .225.225zM216.901 69.097a.225.225 0 0 0 .159-.383l-2.34-2.34a.225.225 0 1 0-.318.317l2.34 2.341a.222.222 0 0 0 .159.065zM216.541 72.337a.225.225 0 0 0 .159-.383l-2.34-2.34a.225.225 0 1 0-.318.318l2.34 2.34a.225.225 0 0 0 .159.065z"/><path fill="#787878" d="M208.801 79.122a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2a.35.35 0 0 0 .35.35z"/><path fill="none" d="M208.801 78.772h-.001v.001h.001z"/><path fill="#787878" d="M209.732 75.03v.89h.152l.372-.341c.053-.05.101-.093.145-.131s.086-.071.128-.1a.69.69 0 0 1 .125-.061.412.412 0 0 1 .24-.005c.03.013.054.028.075.048.02.02.035.044.046.072s.016.06.016.094a.363.363 0 0 1-.038.167.629.629 0 0 1-.096.143l.116.1a.671.671 0 0 0 .155-.29.59.59 0 0 0-.013-.29.359.359 0 0 0-.076-.128.325.325 0 0 0-.119-.083.485.485 0 0 0-.318-.002.765.765 0 0 0-.148.07 1.227 1.227 0 0 0-.146.11c-.049.04-.1.086-.152.135l-.294.274h-.008v-.673h-.162zM208.801 64.722a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2c.001.193.157.35.35.35z"/><path fill="none" d="M208.801 57.172h-.001z"/><path fill="#787878" d="M209.732 60.919v.172h.982c.032 0 .063-.002.095-.003.032 0 .063-.002.092-.003l.076-.002-.03.03c-.009.008-.017.016-.024.025l-.025.029c-.008.01-.019.02-.03.034l-.118.145.12.095.292-.375v-.146h-1.43z"/><path d="M218.521 70.492l-1.08-2.52-1.44 1.437 2.52 1.083z"/><g><path d="M218.161 73.732l-1.08-2.52-1.438 1.437 2.518 1.083z"/></g></g><g><path d="M176.401 71.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path d="M180.001 71.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path fill="#FFF" d="M180.001 71.572l3.6-7.2h-7.2z"/><path d="M180.001 72.354l4.166-8.332h-8.333l4.167 8.332zm3.034-7.632l-3.034 6.068-3.034-6.068h6.068z"/><path d="M180.001 71.797a.225.225 0 0 0 .225-.225v-7.2a.225.225 0 0 0-.45 0v7.2a.226.226 0 0 0 .225.225zM188.101 69.097a.225.225 0 0 0 .159-.383l-2.34-2.34a.225.225 0 1 0-.318.317l2.34 2.341a.222.222 0 0 0 .159.065zM187.741 72.337a.225.225 0 0 0 .159-.383l-2.34-2.34a.225.225 0 1 0-.318.318l2.34 2.34a.225.225 0 0 0 .159.065z"/><path fill="#787878" d="M180.001 79.122a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2a.35.35 0 0 0 .35.35z"/><path fill="none" d="M180.001 78.772H180v.001h.001z"/><path fill="#787878" d="M180.932 75.03v.89h.152l.372-.341c.053-.05.101-.093.145-.131s.086-.071.128-.1a.69.69 0 0 1 .125-.061.412.412 0 0 1 .24-.005c.03.013.054.028.075.048.02.02.035.044.046.072s.016.06.016.094a.363.363 0 0 1-.038.167.629.629 0 0 1-.096.143l.116.1a.671.671 0 0 0 .155-.29.59.59 0 0 0-.013-.29.359.359 0 0 0-.076-.128.325.325 0 0 0-.119-.083.485.485 0 0 0-.318-.002.765.765 0 0 0-.148.07 1.227 1.227 0 0 0-.146.11c-.049.04-.1.086-.152.135l-.294.274h-.008v-.673h-.162zM180.001 64.722a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2c.001.193.157.35.35.35z"/><path fill="none" d="M180.001 57.172H180z"/><path fill="#787878" d="M180.932 60.919v.172h.982c.032 0 .063-.002.095-.003.032 0 .063-.002.092-.003l.076-.002-.03.03c-.009.008-.017.016-.024.025l-.025.029c-.008.01-.019.02-.03.034l-.118.145.12.095.292-.375v-.146h-1.43z"/><path d="M189.721 70.492l-1.08-2.52-1.44 1.437 2.52 1.083z"/><g><path d="M189.361 73.732l-1.08-2.52-1.438 1.437 2.518 1.083z"/></g></g><g><path d="M147.601 71.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path d="M151.201 71.922h3.6a.35.35 0 1 0 0-.7h-3.6a.35.35 0 1 0 0 .7z"/><path fill="#FFF" d="M151.201 71.572l3.6-7.2h-7.2z"/><path d="M151.201 72.354l4.166-8.332h-8.333l4.167 8.332zm3.034-7.632l-3.034 6.068-3.034-6.068h6.068z"/><path d="M151.201 71.797a.225.225 0 0 0 .225-.225v-7.2a.225.225 0 0 0-.45 0v7.2a.226.226 0 0 0 .225.225zM159.301 69.097a.225.225 0 0 0 .159-.383l-2.34-2.34a.225.225 0 1 0-.318.317l2.34 2.341a.222.222 0 0 0 .159.065zM158.941 72.337a.225.225 0 0 0 .159-.383l-2.34-2.34a.225.225 0 1 0-.318.318l2.34 2.34a.225.225 0 0 0 .159.065z"/><path fill="#787878" d="M151.201 79.122a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2a.35.35 0 0 0 .35.35z"/><path fill="none" d="M151.201 78.772h-.001v.001h.001z"/><path fill="#787878" d="M152.132 75.03v.89h.152l.372-.341c.053-.05.101-.093.145-.131s.086-.071.128-.1a.69.69 0 0 1 .125-.061.412.412 0 0 1 .24-.005c.03.013.054.028.075.048.02.02.035.044.046.072s.016.06.016.094a.363.363 0 0 1-.038.167.629.629 0 0 1-.096.143l.116.1a.671.671 0 0 0 .155-.29.59.59 0 0 0-.013-.29.359.359 0 0 0-.076-.128.325.325 0 0 0-.119-.083.485.485 0 0 0-.318-.002.765.765 0 0 0-.148.07 1.227 1.227 0 0 0-.146.11c-.049.04-.1.086-.152.135l-.294.274h-.008v-.673h-.162zM151.201 64.722a.35.35 0 0 0 .35-.35v-7.2a.35.35 0 1 0-.7 0v7.2c.001.193.157.35.35.35z"/><path fill="none" d="M151.201 57.172h-.001z"/><path fill="#787878" d="M152.132 60.919v.172h.982c.032 0 .063-.002.095-.003.032 0 .063-.002.092-.003l.076-.002-.03.03c-.009.008-.017.016-.024.025l-.025.029c-.008.01-.019.02-.03.034l-.118.145.12.095.292-.375v-.146h-1.43z"/><path d="M160.921 70.492l-1.08-2.52-1.44 1.437 2.52 1.083z"/><g><path d="M160.561 73.732l-1.08-2.52-1.438 1.437 2.518 1.083z"/></g></g><g><g fill="none"><path d="M194.4 114.671v-7.2" stroke="#787878" stroke-linecap="round" stroke-width=".75"/><path d="M187.699 114.807h13.4M189.931 117.552h8.935M196.63 120.271h-4.464" stroke="#000" stroke-linecap="round" stroke-width=".9"/></g></g><g><path fill="none" d="M111.61 111.176h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M108.123 107.576l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M241.21 132.776h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M237.723 129.176l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M111.61 103.976h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M108.123 100.376l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M212.41 132.776h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M208.923 129.176l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M111.61 96.776h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M108.123 93.176l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M183.61 132.776h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M180.123 129.176l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M111.61 89.576h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M108.123 85.976l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M154.738 132.74h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M151.25 129.14l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M111.61 82.376h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M108.123 78.776l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M241.21 60.776h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M237.723 57.176l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M111.61 75.176h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M108.123 71.576l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M212.41 60.776h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M208.923 57.176l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M111.61 67.976h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M108.123 64.376l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M183.61 60.776h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M180.123 57.176l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M111.61 60.776h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M108.123 57.176l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path fill="none" d="M154.81 60.776h-3.6v-7.2h3.6z"/><path fill="#fff" stroke="#000" stroke-width=".24" d="M151.323 57.176l3.48 3.48h11.36v-6.96h-11.36z"/></g><g><path stroke-miterlimit="10" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".75" d="M50.419 6.78v7.2"/><path fill="none" d="M43.669 6.564h13.5" stroke="#000" stroke-linecap="round" stroke-width=".9"/><text font-family="'DroidSans'" font-size="4.499" transform="translate(44.717 4.988)">5V</text></g><g><path class="interior rect" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-width=".9" d="M14.85 28.823h78.3v135.9h-78.3z"/><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 42.773h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="29.5" stroke-width="0" transform="translate(0 13.973)">D0/RX</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 49.973h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="36.7" stroke-width="0" transform="translate(0 13.973)">D1/TX</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 57.173h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="43.9" stroke-width="0" transform="translate(0 13.973)">D2</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 64.373h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="51.1" stroke-width="0" transform="translate(0 13.973)">D3 PWM</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 71.573h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="58.3" stroke-width="0" transform="translate(0 13.973)">D4</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 78.773h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="65.5" stroke-width="0" transform="translate(0 13.973)">D5 PWM</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 85.973h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="72.7" stroke-width="0" transform="translate(0 13.973)">D6 PWM</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 93.173h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="79.9" stroke-width="0" transform="translate(0 13.973)">D7</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 100.373h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="87.1" stroke-width="0" transform="translate(0 13.973)">D8</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 107.573h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="94.3" stroke-width="0" transform="translate(0 13.973)">D9 PWM</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 114.773h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="101.5" stroke-width="0" transform="translate(0 13.973)">D10 PWM/SS</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 121.973h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="108.7" stroke-width="0" transform="translate(0 13.973)">D11 PWM/MOSI</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 129.173h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="115.9" stroke-width="0" transform="translate(0 13.973)">D12/MISO</text><path class="pin" fill="none" d="M93.25 136.373h14.4"/><path class="terminal" fill="none" d="M107.65 136.023h.7v.7h-.7z"/><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M93.25 136.373h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="91.85" text-anchor="end" font-size="3.5" y="123.1" stroke-width="0" transform="translate(0 13.973)">D13/SCK</text><path class="pin" fill="none" d="M.35 42.773h14.4"/><path class="terminal" fill="none" d="M-.35 42.423h.7v.7h-.7z"/><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M.35 42.773h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="16.15" font-size="3.5" y="29.5" stroke-width="0" transform="translate(0 13.973)">RESET</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M.35 49.973h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="16.15" font-size="3.5" y="36.7" stroke-width="0" transform="translate(0 13.973)">RESET2</text><path class="terminal" fill="none" d="M-.35 49.623h.7v.7h-.7z"/><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M.35 57.173h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="16.15" font-size="3.5" y="43.9" stroke-width="0" transform="translate(0 13.973)">AREF</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M.35 64.373h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="16.15" font-size="3.5" y="51.1" stroke-width="0" transform="translate(0 13.973)">ioref</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M.35 78.773h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="16.15" font-size="3.5" y="65.5" stroke-width="0" transform="translate(0 13.973)">A0</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M.35 85.973h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="16.15" font-size="3.5" y="72.7" stroke-width="0" transform="translate(0 13.973)">A1</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M.35 93.173h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="16.15" font-size="3.5" y="79.9" stroke-width="0" transform="translate(0 13.973)">A2</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M.35 100.373h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="16.15" font-size="3.5" y="87.1" stroke-width="0" transform="translate(0 13.973)">A3</text><path class="pin" fill="none" d="M.35 107.573h14.4"/><path class="terminal" fill="none" d="M-.35 107.223h.7v.7h-.7z"/><path class="pin" fill="none" d="M.35 107.573h14.4"/><path class="terminal" fill="none" d="M-.35 107.223h.7v.7h-.7z"/><path class="pin" fill="none" d="M.35 107.573h14.4M.35 107.573h14.4"/><path class="terminal" fill="none" d="M-.35 107.223h.7v.7h-.7z"/><path class="pin" fill="none" d="M.35 107.573h14.4"/><path class="terminal" fill="none" d="M-.35 107.223h.7v.7h-.7z"/><path class="pin" fill="none" d="M.35 107.573h14.4"/><path class="terminal" fill="none" d="M-.35 107.223h.7v.7h-.7z"/><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M.35 107.573h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="16.15" font-size="3.5" y="94.3" stroke-width="0" transform="translate(0 13.973)">A4/SDA</text><path class="pin" fill="none" d="M.35 114.773h14.4"/><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M.35 114.773h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="16.15" font-size="3.5" y="101.5" stroke-width="0" transform="translate(0 13.973)">A5/SCL</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M.35 150.773h14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" x="16.15" font-size="3.5" y="137.5" stroke-width="0" transform="translate(0 13.973)">N/C</text><path class="pin" fill="none" d="M57.6 164.823v14.4M57.6 164.823v14.4M57.6 164.823v14.4"/><path class="terminal" fill="none" d="M57.25 179.223h.7v.7h-.7z"/><path class="pin" fill="none" d="M57.6 164.823v14.4"/><path class="terminal" fill="none" d="M57.25 179.223h.7v.7h-.7z"/><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M57.6 164.823v14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" font-size="3.5" stroke-width="0" transform="rotate(-90 110.861 52.561)">GND</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M36 14.323v14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" text-anchor="end" font-size="3.5" stroke-width="0" transform="rotate(-90 33.411 -3.289)">3V3</text><path class="pin" fill="none" d="M50.4 14.323v14.4"/><path class="terminal" fill="none" d="M50.05 13.623h.7v.7h-.7z"/><path class="pin" fill="none" d="M50.4 14.323v14.4"/><path class="terminal" fill="none" d="M50.05 13.623h.7v.7h-.7z"/><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M50.4 14.323v14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" text-anchor="end" font-size="3.5" stroke-width="0" transform="rotate(-90 40.611 -10.489)">5V</text><path class="pin" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7" d="M64.8 14.323v14.4"/><text class="text" font-family="'Droid Sans'" fill="#8c8c8c" text-anchor="end" font-size="3.5" stroke-width="0" transform="rotate(-90 47.811 -17.689)">VIN</text><text class="text" font-family="'Droid Sans'" x="54.45" text-anchor="middle" font-size="4.25" y="76.45" stroke-width="0" transform="translate(0 13.973)">Arduino</text><text class="text" font-family="'Droid Sans'" x="54.45" text-anchor="middle" font-size="4.25" y="80.983" stroke-width="0" transform="translate(0 13.973)">Uno</text><text class="text" font-family="'Droid Sans'" x="54.45" text-anchor="middle" font-size="4.25" y="85.517" stroke-width="0" transform="translate(0 13.973)">(Rev3)</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(111.38 109.11)">pin 9</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(240.98 130.71)">pin 9</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(111.38 101.91)">pin 8</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(212.18 130.71)">pin 8</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(111.38 94.711)">pin 7</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(183.38 130.71)">pin 7</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(111.38 87.511)">pin 6</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(154.58 130.71)">pin 6</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(111.38 80.311)">pin 5</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(240.98 58.711)">pin 5</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(111.38 73.111)">pin 4</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(212.18 58.711)">pin 4</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(111.38 65.911)">pin 3</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(183.38 58.711)">pin 3</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(111.38 58.711)">pin 2</text></g><g><text font-size="4.8" font-family="Droid Sans" transform="translate(154.58 58.711)">pin 2</text></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M151.2 78.773"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M151.2 57.173v-.001"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M180 57.173v-.001"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M180 78.773"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M208.8 57.173v-.001"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M208.8 78.773"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M237.6 57.173v-.001"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M237.6 78.773"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M151.2 129.173v-.001"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M151.2 150.773"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M180 150.773"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M180 129.173v-.001"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M208.8 129.173v-.001"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M208.8 150.773"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M237.6 129.173v-.001"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M237.6 150.773"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M108 64.373"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M108 71.573"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M108 78.773"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M108 85.973"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M108 93.173"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M108 100.373"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M108 107.573"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M180 179.573h-28.8"/></g><circle cx="180" cy="179.573" r="1.44"/><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M180 179.573h14.4"/></g><circle cx="180" cy="179.573" r="1.44"/><circle cx="194.4" cy="179.573" r="1.44"/><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M194.4 179.573h14.4"/></g><circle cx="194.4" cy="179.573" r="1.44"/><circle cx="208.8" cy="179.573" r="1.44"/><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M208.8 179.573h28.8"/></g><circle cx="208.8" cy="179.573" r="1.44"/><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M208.8 107.573h28.8"/></g><circle cx="208.8" cy="107.573" r="1.44"/><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M208.8 107.573h-14.4"/></g><circle cx="208.8" cy="107.573" r="1.44"/><circle cx="194.4" cy="107.573" r="1.44"/><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M194.4 107.573H180"/></g><circle cx="194.4" cy="107.573" r="1.44"/><circle cx="180" cy="107.573" r="1.44"/><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M180 107.573h-28.8"/></g><circle cx="180" cy="107.573" r="1.44"/><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M57.6 179.573"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M50.4 13.973"/></g><g><path stroke-linecap="round" stroke="#404040" stroke-width=".7" d="M108 57.173"/></g><g><g font-size="5" font-family="'DroidSans'"><text y="3.75" transform="translate(243.222 87.505)">R4</text><text y="8.75" transform="translate(243.222 87.505)">560Ω</text></g></g><g><g font-size="5" font-family="'DroidSans'"><text y="3.75" transform="translate(242.858 158.471)">R8</text><text y="8.75" transform="translate(242.858 158.471)">560Ω</text></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10.95in" height="8.0624in" version="1.2" viewBox="0 0 262.8 193.5" xmlns="http://www.w3.org/2000/svg">
+ <g partID="57720">
+  <g transform="translate(0,13.973)">
+   <g id="schematic">
+    <rect class="interior rect" x="14.85" y="14.85" width="78.3" height="135.9" fill="#fff" stroke="#000" stroke-linecap="round" stroke-width=".9"/>
+    <line id="connector61pin" class="pin" x1="93.25" x2="107.65" y1="28.8" y2="28.8" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="29.4999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D0/RX</text>
+    <line id="connector62pin" class="pin" x1="93.25" x2="107.65" y1="36" y2="36" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="36.6999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D1/TX</text>
+    <line id="connector63pin" class="pin" x1="93.25" x2="107.65" y1="43.2" y2="43.2" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="43.8999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D2</text>
+    <line id="connector64pin" class="pin" x1="93.25" x2="107.65" y1="50.4" y2="50.4" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="51.0999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D3 PWM</text>
+    <line id="connector65pin" class="pin" x1="93.25" x2="107.65" y1="57.6" y2="57.6" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="58.2999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D4</text>
+    <line id="connector66pin" class="pin" x1="93.25" x2="107.65" y1="64.8" y2="64.8" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="65.4999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D5 PWM</text>
+    <line id="connector67pin" class="pin" x1="93.25" x2="107.65" y1="72" y2="72" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="72.6999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D6 PWM</text>
+    <line id="connector68pin" class="pin" x1="93.25" x2="107.65" y1="79.2" y2="79.2" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="79.8999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D7</text>
+    <line id="connector51pin" class="pin" x1="93.25" x2="107.65" y1="86.4" y2="86.4" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="87.0999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D8</text>
+    <line id="connector52pin" class="pin" x1="93.25" x2="107.65" y1="93.6" y2="93.6" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="94.2999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D9 PWM</text>
+    <line id="connector53pin" class="pin" x1="93.25" x2="107.65" y1="100.8" y2="100.8" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="101.5" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D10 PWM/SS</text>
+    <line id="connector54pin" class="pin" x1="93.25" x2="107.65" y1="108" y2="108" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="108.7" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D11 PWM/MOSI</text>
+    <line id="connector55pin" class="pin" x1="93.25" x2="107.65" y1="115.2" y2="115.2" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="91.8499" y="115.9" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D12/MISO</text>
+    <g fill="none">
+     <line id="connector41pin" class="pin" x1="93.25" x2="107.65" y1="122.4" y2="122.4" stroke-linecap="round" stroke-width="0"/>
+     <rect id="connector41terminal" class="terminal" x="107.65" y="122.05" width=".7" height=".7" stroke-width="0"/>
+     <line id="connector56pin" class="pin" x1="93.25" x2="107.65" y1="122.4" y2="122.4" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    </g>
+    <text class="text" x="91.8499" y="123.1" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">D13/SCK</text>
+    <g fill="none">
+     <line id="connector43pin" class="pin" x1=".35" x2="14.75" y1="28.8" y2="28.8" stroke-linecap="round" stroke-width="0"/>
+     <rect id="connector43terminal" class="terminal" x="-.35" y="28.45" width=".7" height=".7" stroke-width="0"/>
+     <line id="connector85pin" class="pin" x1=".35" x2="14.75" y1="28.8" y2="28.8" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    </g>
+    <text class="text" x="16.15" y="29.4999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0">RESET</text>
+    <line id="connector49pin" class="pin" x1=".35" x2="14.75" y1="36" y2="36" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="16.15" y="36.6999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0">RESET2</text>
+    <rect id="connector49terminal" class="terminal" x="-.35" y="35.65" width=".7" height=".7" fill="none" stroke-width="0"/>
+    <line id="connector58pin" class="pin" x1=".35" x2="14.75" y1="43.2" y2="43.2" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="16.15" y="43.8999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0">AREF</text>
+    <line id="connector84pin" class="pin" x1=".35" x2="14.75" y1="50.4" y2="50.4" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="16.15" y="51.0999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0">ioref</text>
+    <line id="connector0pin" class="pin" x1=".35" x2="14.75" y1="64.8" y2="64.8" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="16.15" y="65.4999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0">A0</text>
+    <line id="connector1pin" class="pin" x1=".35" x2="14.75" y1="72" y2="72" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="16.15" y="72.6999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0">A1</text>
+    <line id="connector2pin" class="pin" x1=".35" x2="14.75" y1="79.2" y2="79.2" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="16.15" y="79.8999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0">A2</text>
+    <line id="connector3pin" class="pin" x1=".35" x2="14.75" y1="86.4" y2="86.4" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="16.15" y="87.0999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0">A3</text>
+    <g fill="none">
+     <g stroke-width="0">
+      <line id="connector48pin" class="pin" x1=".35" x2="14.75" y1="93.6" y2="93.6" stroke-linecap="round"/>
+      <rect id="connector48terminal" class="terminal" x="-.35" y="93.25" width=".7" height=".7"/>
+      <line id="connector45pin" class="pin" x1=".35" x2="14.75" y1="93.6" y2="93.6" stroke-linecap="round"/>
+      <rect id="connector45terminal" class="terminal" x="-.35" y="93.25" width=".7" height=".7"/>
+      <line id="connector4pin" class="pin" x1=".35" x2="14.75" y1="93.6" y2="93.6" stroke-linecap="round"/>
+      <line id="connector39pin" class="pin" x1=".35" x2="14.75" y1="93.6" y2="93.6" stroke-linecap="round"/>
+      <rect id="connector39terminal" class="terminal" x="-.35" y="93.25" width=".7" height=".7"/>
+      <line id="connector47pin" class="pin" x1=".35" x2="14.75" y1="93.6" y2="93.6" stroke-linecap="round"/>
+      <rect id="connector47terminal" class="terminal" x="-.35" y="93.25" width=".7" height=".7"/>
+      <line id="connector42pin" class="pin" x1=".35" x2="14.75" y1="93.6" y2="93.6" stroke-linecap="round"/>
+      <rect id="connector42terminal" class="terminal" x="-.35" y="93.25" width=".7" height=".7"/>
+     </g>
+     <line id="connector59pin" class="pin" x1=".35" x2="14.75" y1="93.6" y2="93.6" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    </g>
+    <text class="text" x="16.15" y="94.2999" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0">A4/SDA</text>
+    <line id="connector5pin" class="pin" x1=".35" x2="14.75" y1="100.8" y2="100.8" fill="none" stroke-linecap="round" stroke-width="0"/>
+    <line id="connector60pin" class="pin" x1=".35" x2="14.75" y1="100.8" y2="100.8" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="16.15" y="101.5" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0">A5/SCL</text>
+    <line id="connector91pin" class="pin" x1=".35" x2="14.75" y1="136.8" y2="136.8" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <text class="text" x="16.15" y="137.5" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0">N/C</text>
+    <g fill="none">
+     <g stroke-width="0">
+      <g stroke-linecap="round">
+       <line id="connector88pin" class="pin" x1="57.6" x2="57.6" y1="150.85" y2="165.25"/>
+       <line id="connector57pin" class="pin" x1="57.6" x2="57.6" y1="150.85" y2="165.25"/>
+       <line id="connector44pin" class="pin" x1="57.6" x2="57.6" y1="150.85" y2="165.25"/>
+      </g>
+      <rect id="connector44terminal" class="terminal" x="57.25" y="165.25" width=".7" height=".7"/>
+      <line id="connector50pin" class="pin" x1="57.6" x2="57.6" y1="150.85" y2="165.25" stroke-linecap="round"/>
+      <rect id="connector50terminal" class="terminal" x="57.25" y="165.25" width=".7" height=".7"/>
+     </g>
+     <line id="connector89pin" class="pin" x1="57.6" x2="57.6" y1="150.85" y2="165.25" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    </g>
+    <g transform="translate(58.3 149.45)">
+     <g transform="rotate(270)">
+      <text class="text" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0">GND</text>
+     </g>
+    </g>
+    <line id="connector86pin" class="pin" x1="36" x2="36" y1=".35" y2="14.75" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <g transform="translate(36.7 16.15)">
+     <g transform="rotate(270)">
+      <text class="text" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">3V3</text>
+     </g>
+    </g>
+    <g fill="none">
+     <g stroke-width="0">
+      <line id="connector40pin" class="pin" x1="50.4" x2="50.4" y1=".35" y2="14.75" stroke-linecap="round"/>
+      <rect id="connector40terminal" class="terminal" x="50.05" y="-.35" width=".7" height=".7"/>
+      <line id="connector46pin" class="pin" x1="50.4" x2="50.4" y1=".35" y2="14.75" stroke-linecap="round"/>
+      <rect id="connector46terminal" class="terminal" x="50.05" y="-.35" width=".7" height=".7"/>
+     </g>
+     <line id="connector87pin" class="pin" x1="50.4" x2="50.4" y1=".35" y2="14.75" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    </g>
+    <g transform="translate(51.1 16.15)">
+     <g transform="rotate(270)">
+      <text class="text" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">5V</text>
+     </g>
+    </g>
+    <line id="connector90pin" class="pin" x1="64.8" x2="64.8" y1=".35" y2="14.75" fill="none" stroke="#787878" stroke-linecap="round" stroke-width=".7"/>
+    <g transform="translate(65.5 16.15)">
+     <g transform="rotate(270)">
+      <text class="text" fill="#8c8c8c" font-family="'Droid Sans'" font-size="3.5" stroke-width="0" text-anchor="end">VIN</text>
+     </g>
+    </g>
+    <g fill="#000000" font-family="'Droid Sans'" font-size="4.25" stroke-width="0" text-anchor="middle">
+     <text id="label" class="text" x="54.4501" y="76.4498">Arduino</text>
+     <text class="text" x="54.4501" y="80.9833">Uno</text>
+     <text class="text" x="54.4501" y="85.5167">(Rev3)</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="75860">
+  <g transform="translate(198.5 179.92)">
+   <g transform="rotate(-90)">
+    <g stroke="#000" stroke-linecap="round" stroke-width=".432">
+     <line class="other" x1="7.55" x2="8.63" y1="3.096" y2=".216"/>
+     <line class="other" x1="8.63" x2="10.43" y1=".216" y2="5.976"/>
+     <line class="other" x1="10.43" x2="12.23" y1="5.976" y2=".216"/>
+     <line class="other" x1="12.23" x2="14.03" y1=".216" y2="5.976"/>
+     <line class="other" x1="14.03" x2="15.83" y1="5.976" y2=".216"/>
+     <line class="other" x1="15.83" x2="17.63" y1=".216" y2="5.976"/>
+     <line class="other" x1="17.63" x2="19.43" y1="5.976" y2=".216"/>
+     <line class="other" x1="19.43" x2="21.23" y1=".216" y2="5.976"/>
+     <line class="other" x1="21.23" x2="21.95" y1="5.976" y2="3.096"/>
+    </g>
+    <line class="pin" x1="29.15" x2="21.95" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="2"/>
+    <text class="text" x="25.5501" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">2</text>
+    <line class="pin" x1=".35" x2="7.55" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="1"/>
+    <text class="text" x="3.95001" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">1</text>
+   </g>
+  </g>
+ </g>
+ <g partID="75560">
+  <g transform="translate(169.7 107.92)">
+   <g transform="rotate(-90)">
+    <g stroke="#000" stroke-linecap="round" stroke-width=".432">
+     <line class="other" x1="7.55" x2="8.63" y1="3.096" y2=".216"/>
+     <line class="other" x1="8.63" x2="10.43" y1=".216" y2="5.976"/>
+     <line class="other" x1="10.43" x2="12.23" y1="5.976" y2=".216"/>
+     <line class="other" x1="12.23" x2="14.03" y1=".216" y2="5.976"/>
+     <line class="other" x1="14.03" x2="15.83" y1="5.976" y2=".216"/>
+     <line class="other" x1="15.83" x2="17.63" y1=".216" y2="5.976"/>
+     <line class="other" x1="17.63" x2="19.43" y1="5.976" y2=".216"/>
+     <line class="other" x1="19.43" x2="21.23" y1=".216" y2="5.976"/>
+     <line class="other" x1="21.23" x2="21.95" y1="5.976" y2="3.096"/>
+    </g>
+    <line class="pin" x1="29.15" x2="21.95" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="2"/>
+    <text class="text" x="25.5501" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">2</text>
+    <line class="pin" x1=".35" x2="7.55" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="1"/>
+    <text class="text" x="3.95001" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">1</text>
+   </g>
+  </g>
+ </g>
+ <g partID="74860">
+  <g transform="translate(227.3 179.92)">
+   <g transform="rotate(-90)">
+    <g stroke="#000" stroke-linecap="round" stroke-width=".432">
+     <line class="other" x1="7.55" x2="8.63" y1="3.096" y2=".216"/>
+     <line class="other" x1="8.63" x2="10.43" y1=".216" y2="5.976"/>
+     <line class="other" x1="10.43" x2="12.23" y1="5.976" y2=".216"/>
+     <line class="other" x1="12.23" x2="14.03" y1=".216" y2="5.976"/>
+     <line class="other" x1="14.03" x2="15.83" y1="5.976" y2=".216"/>
+     <line class="other" x1="15.83" x2="17.63" y1=".216" y2="5.976"/>
+     <line class="other" x1="17.63" x2="19.43" y1="5.976" y2=".216"/>
+     <line class="other" x1="19.43" x2="21.23" y1=".216" y2="5.976"/>
+     <line class="other" x1="21.23" x2="21.95" y1="5.976" y2="3.096"/>
+    </g>
+    <line class="pin" x1="29.15" x2="21.95" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="2"/>
+    <text class="text" x="25.5501" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">2</text>
+    <line class="pin" x1=".35" x2="7.55" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="1"/>
+    <text class="text" x="3.95001" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">1</text>
+   </g>
+  </g>
+ </g>
+ <g partID="74220">
+  <g transform="translate(169.7 179.92)">
+   <g transform="rotate(-90)">
+    <g stroke="#000" stroke-linecap="round" stroke-width=".432">
+     <line class="other" x1="7.55" x2="8.63" y1="3.096" y2=".216"/>
+     <line class="other" x1="8.63" x2="10.43" y1=".216" y2="5.976"/>
+     <line class="other" x1="10.43" x2="12.23" y1="5.976" y2=".216"/>
+     <line class="other" x1="12.23" x2="14.03" y1=".216" y2="5.976"/>
+     <line class="other" x1="14.03" x2="15.83" y1="5.976" y2=".216"/>
+     <line class="other" x1="15.83" x2="17.63" y1=".216" y2="5.976"/>
+     <line class="other" x1="17.63" x2="19.43" y1="5.976" y2=".216"/>
+     <line class="other" x1="19.43" x2="21.23" y1=".216" y2="5.976"/>
+     <line class="other" x1="21.23" x2="21.95" y1="5.976" y2="3.096"/>
+    </g>
+    <line class="pin" x1="29.15" x2="21.95" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="2"/>
+    <text class="text" x="25.5501" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">2</text>
+    <line class="pin" x1=".35" x2="7.55" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="1"/>
+    <text class="text" x="3.95001" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">1</text>
+   </g>
+  </g>
+ </g>
+ <g partID="73900">
+  <g transform="translate(140.9 179.92)">
+   <g transform="rotate(-90)">
+    <g stroke="#000" stroke-linecap="round" stroke-width=".432">
+     <line class="other" x1="7.55" x2="8.63" y1="3.096" y2=".216"/>
+     <line class="other" x1="8.63" x2="10.43" y1=".216" y2="5.976"/>
+     <line class="other" x1="10.43" x2="12.23" y1="5.976" y2=".216"/>
+     <line class="other" x1="12.23" x2="14.03" y1=".216" y2="5.976"/>
+     <line class="other" x1="14.03" x2="15.83" y1="5.976" y2=".216"/>
+     <line class="other" x1="15.83" x2="17.63" y1=".216" y2="5.976"/>
+     <line class="other" x1="17.63" x2="19.43" y1="5.976" y2=".216"/>
+     <line class="other" x1="19.43" x2="21.23" y1=".216" y2="5.976"/>
+     <line class="other" x1="21.23" x2="21.95" y1="5.976" y2="3.096"/>
+    </g>
+    <line class="pin" x1="29.15" x2="21.95" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="2"/>
+    <text class="text" x="25.5501" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">2</text>
+    <line class="pin" x1=".35" x2="7.55" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="1"/>
+    <text class="text" x="3.95001" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">1</text>
+   </g>
+  </g>
+ </g>
+ <g partID="73600">
+  <g transform="translate(234.5 107.92)">
+   <g transform="rotate(-90)">
+    <g stroke="#000" stroke-linecap="round" stroke-width=".432">
+     <line class="other" x1="7.55" x2="8.63" y1="3.096" y2=".216"/>
+     <line class="other" x1="8.63" x2="10.43" y1=".216" y2="5.976"/>
+     <line class="other" x1="10.43" x2="12.23" y1="5.976" y2=".216"/>
+     <line class="other" x1="12.23" x2="14.03" y1=".216" y2="5.976"/>
+     <line class="other" x1="14.03" x2="15.83" y1="5.976" y2=".216"/>
+     <line class="other" x1="15.83" x2="17.63" y1=".216" y2="5.976"/>
+     <line class="other" x1="17.63" x2="19.43" y1="5.976" y2=".216"/>
+     <line class="other" x1="19.43" x2="21.23" y1=".216" y2="5.976"/>
+     <line class="other" x1="21.23" x2="21.95" y1="5.976" y2="3.096"/>
+    </g>
+    <line class="pin" x1="29.15" x2="21.95" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="2"/>
+    <text class="text" x="25.5501" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">2</text>
+    <line class="pin" x1=".35" x2="7.55" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="1"/>
+    <text class="text" x="3.95001" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">1</text>
+   </g>
+  </g>
+ </g>
+ <g partID="73340">
+  <g transform="translate(205.7 107.92)">
+   <g transform="rotate(-90)">
+    <g stroke="#000" stroke-linecap="round" stroke-width=".432">
+     <line class="other" x1="7.55" x2="8.63" y1="3.096" y2=".216"/>
+     <line class="other" x1="8.63" x2="10.43" y1=".216" y2="5.976"/>
+     <line class="other" x1="10.43" x2="12.23" y1="5.976" y2=".216"/>
+     <line class="other" x1="12.23" x2="14.03" y1=".216" y2="5.976"/>
+     <line class="other" x1="14.03" x2="15.83" y1="5.976" y2=".216"/>
+     <line class="other" x1="15.83" x2="17.63" y1=".216" y2="5.976"/>
+     <line class="other" x1="17.63" x2="19.43" y1="5.976" y2=".216"/>
+     <line class="other" x1="19.43" x2="21.23" y1=".216" y2="5.976"/>
+     <line class="other" x1="21.23" x2="21.95" y1="5.976" y2="3.096"/>
+    </g>
+    <line class="pin" x1="29.15" x2="21.95" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="2"/>
+    <text class="text" x="25.5501" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">2</text>
+    <line class="pin" x1=".35" x2="7.55" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="1"/>
+    <text class="text" x="3.95001" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">1</text>
+   </g>
+  </g>
+ </g>
+ <g partID="73100">
+  <g transform="translate(240.3 128.96)">
+   <g transform="scale(-1 1)">
+    <path d="m13.5 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.156-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.156 0.35-0.35 0.35z"/>
+    <path d="m9.9 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.157-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.157 0.35-0.35 0.35z"/>
+    <polygon points="9.9 14.616 6.3 7.416 9.9 7.416 13.5 7.416" fill="#fff"/>
+    <path d="m9.9 15.398-4.166-8.332h8.333l-4.167 8.332zm-3.034-7.632 3.034 6.068 3.034-6.068h-6.068z"/>
+    <path d="m9.9 14.841c-0.124 0-0.225-0.101-0.225-0.225v-7.2c0-0.124 0.101-0.225 0.225-0.225s0.225 0.101 0.225 0.225v7.2c-1e-3 0.124-0.101 0.225-0.225 0.225z"/>
+    <path d="m1.8 12.141c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.341c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.341c-0.044 0.044-0.101 0.065-0.159 0.065z"/>
+    <path d="m2.16 15.381c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.34c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.34c-0.043 0.043-0.101 0.065-0.159 0.065z"/>
+    <path d="m9.9 22.166c-0.193 0-0.35-0.156-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.156 0.35 0.35v7.2c-1e-3 0.194-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <rect x="9.9" y="21.816" width=".001" height=".001" fill="none"/>
+    <g transform="translate(3.429 6.4262)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-11.647 5.54h-0.891v-0.152l0.342-0.372c0.049-0.053 0.093-0.101 0.131-0.145s0.071-0.086 0.099-0.128c0.026-0.042 0.047-0.084 0.062-0.125 0.015-0.043 0.021-0.088 0.021-0.138 0-0.038-5e-3 -0.072-0.017-0.102s-0.027-0.054-0.047-0.075c-0.021-0.02-0.045-0.035-0.073-0.046s-0.06-0.016-0.094-0.016c-0.062 0-0.118 0.013-0.167 0.038-0.051 0.024-0.098 0.057-0.143 0.096l-0.1-0.116c0.025-0.023 0.055-0.046 0.084-0.065 0.029-0.021 0.063-0.039 0.097-0.054s0.071-0.026 0.109-0.036c0.038-8e-3 0.079-0.013 0.121-0.013 0.063 0 0.119 9e-3 0.169 0.026 0.051 0.018 0.094 0.043 0.129 0.076 0.035 0.032 0.063 0.072 0.082 0.119 0.019 0.048 0.028 0.101 0.028 0.16 0 0.056-9e-3 0.108-0.026 0.158s-0.041 0.1-0.07 0.148c-0.031 0.048-0.066 0.097-0.109 0.146-0.041 0.049-0.087 0.1-0.136 0.152l-0.274 0.294v8e-3h0.673v0.162z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m9.9 7.766c-0.193 0-0.35-0.157-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.157 0.35 0.35v7.2c-1e-3 0.193-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <polygon points="9.9 0.216 9.901 0.216 9.901 0.216" fill="none"/>
+    <g transform="translate(3.429 1.3462)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-2.616 5.54h-0.172v-0.892-0.09s1e-3 -0.063 2e-3 -0.095 2e-3 -0.063 3e-3 -0.092c1e-3 -0.028 2e-3 -0.054 2e-3 -0.076-0.011 0.012-0.021 0.021-0.029 0.03s-0.017 0.017-0.026 0.024-0.018 0.016-0.028 0.025c-0.01 8e-3 -0.021 0.019-0.035 0.03l-0.145 0.118-0.094-0.12 0.374-0.292h0.146v1.43z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m0.18 13.536 1.08-2.521 1.44 1.438-2.52 1.083z"/>
+    <path d="m0.54 16.776 1.08-2.521 1.438 1.438-2.518 1.083z"/>
+   </g>
+  </g>
+ </g>
+ <g partID="73080">
+  <g transform="translate(211.5 128.96)">
+   <g transform="scale(-1 1)">
+    <path d="m13.5 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.156-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.156 0.35-0.35 0.35z"/>
+    <path d="m9.9 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.157-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.157 0.35-0.35 0.35z"/>
+    <polygon points="9.9 14.616 6.3 7.416 9.9 7.416 13.5 7.416" fill="#fff"/>
+    <path d="m9.9 15.398-4.166-8.332h8.333l-4.167 8.332zm-3.034-7.632 3.034 6.068 3.034-6.068h-6.068z"/>
+    <path d="m9.9 14.841c-0.124 0-0.225-0.101-0.225-0.225v-7.2c0-0.124 0.101-0.225 0.225-0.225s0.225 0.101 0.225 0.225v7.2c-1e-3 0.124-0.101 0.225-0.225 0.225z"/>
+    <path d="m1.8 12.141c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.341c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.341c-0.044 0.044-0.101 0.065-0.159 0.065z"/>
+    <path d="m2.16 15.381c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.34c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.34c-0.043 0.043-0.101 0.065-0.159 0.065z"/>
+    <path d="m9.9 22.166c-0.193 0-0.35-0.156-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.156 0.35 0.35v7.2c-1e-3 0.194-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <rect x="9.9" y="21.816" width=".001" height=".001" fill="none"/>
+    <g transform="translate(3.429 6.4262)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-11.647 5.54h-0.891v-0.152l0.342-0.372c0.049-0.053 0.093-0.101 0.131-0.145s0.071-0.086 0.099-0.128c0.026-0.042 0.047-0.084 0.062-0.125 0.015-0.043 0.021-0.088 0.021-0.138 0-0.038-5e-3 -0.072-0.017-0.102s-0.027-0.054-0.047-0.075c-0.021-0.02-0.045-0.035-0.073-0.046s-0.06-0.016-0.094-0.016c-0.062 0-0.118 0.013-0.167 0.038-0.051 0.024-0.098 0.057-0.143 0.096l-0.1-0.116c0.025-0.023 0.055-0.046 0.084-0.065 0.029-0.021 0.063-0.039 0.097-0.054s0.071-0.026 0.109-0.036c0.038-8e-3 0.079-0.013 0.121-0.013 0.063 0 0.119 9e-3 0.169 0.026 0.051 0.018 0.094 0.043 0.129 0.076 0.035 0.032 0.063 0.072 0.082 0.119 0.019 0.048 0.028 0.101 0.028 0.16 0 0.056-9e-3 0.108-0.026 0.158s-0.041 0.1-0.07 0.148c-0.031 0.048-0.066 0.097-0.109 0.146-0.041 0.049-0.087 0.1-0.136 0.152l-0.274 0.294v8e-3h0.673v0.162z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m9.9 7.766c-0.193 0-0.35-0.157-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.157 0.35 0.35v7.2c-1e-3 0.193-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <polygon points="9.9 0.216 9.901 0.216 9.901 0.216" fill="none"/>
+    <g transform="translate(3.429 1.3462)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-2.616 5.54h-0.172v-0.892-0.09s1e-3 -0.063 2e-3 -0.095 2e-3 -0.063 3e-3 -0.092c1e-3 -0.028 2e-3 -0.054 2e-3 -0.076-0.011 0.012-0.021 0.021-0.029 0.03s-0.017 0.017-0.026 0.024-0.018 0.016-0.028 0.025c-0.01 8e-3 -0.021 0.019-0.035 0.03l-0.145 0.118-0.094-0.12 0.374-0.292h0.146v1.43z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m0.18 13.536 1.08-2.521 1.44 1.438-2.52 1.083z"/>
+    <path d="m0.54 16.776 1.08-2.521 1.438 1.438-2.518 1.083z"/>
+   </g>
+  </g>
+ </g>
+ <g partID="73020">
+  <g transform="translate(182.7 128.96)">
+   <g transform="scale(-1 1)">
+    <path d="m13.5 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.156-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.156 0.35-0.35 0.35z"/>
+    <path d="m9.9 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.157-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.157 0.35-0.35 0.35z"/>
+    <polygon points="9.9 14.616 6.3 7.416 9.9 7.416 13.5 7.416" fill="#fff"/>
+    <path d="m9.9 15.398-4.166-8.332h8.333l-4.167 8.332zm-3.034-7.632 3.034 6.068 3.034-6.068h-6.068z"/>
+    <path d="m9.9 14.841c-0.124 0-0.225-0.101-0.225-0.225v-7.2c0-0.124 0.101-0.225 0.225-0.225s0.225 0.101 0.225 0.225v7.2c-1e-3 0.124-0.101 0.225-0.225 0.225z"/>
+    <path d="m1.8 12.141c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.341c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.341c-0.044 0.044-0.101 0.065-0.159 0.065z"/>
+    <path d="m2.16 15.381c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.34c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.34c-0.043 0.043-0.101 0.065-0.159 0.065z"/>
+    <path d="m9.9 22.166c-0.193 0-0.35-0.156-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.156 0.35 0.35v7.2c-1e-3 0.194-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <rect x="9.9" y="21.816" width=".001" height=".001" fill="none"/>
+    <g transform="translate(3.429 6.4262)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-11.647 5.54h-0.891v-0.152l0.342-0.372c0.049-0.053 0.093-0.101 0.131-0.145s0.071-0.086 0.099-0.128c0.026-0.042 0.047-0.084 0.062-0.125 0.015-0.043 0.021-0.088 0.021-0.138 0-0.038-5e-3 -0.072-0.017-0.102s-0.027-0.054-0.047-0.075c-0.021-0.02-0.045-0.035-0.073-0.046s-0.06-0.016-0.094-0.016c-0.062 0-0.118 0.013-0.167 0.038-0.051 0.024-0.098 0.057-0.143 0.096l-0.1-0.116c0.025-0.023 0.055-0.046 0.084-0.065 0.029-0.021 0.063-0.039 0.097-0.054s0.071-0.026 0.109-0.036c0.038-8e-3 0.079-0.013 0.121-0.013 0.063 0 0.119 9e-3 0.169 0.026 0.051 0.018 0.094 0.043 0.129 0.076 0.035 0.032 0.063 0.072 0.082 0.119 0.019 0.048 0.028 0.101 0.028 0.16 0 0.056-9e-3 0.108-0.026 0.158s-0.041 0.1-0.07 0.148c-0.031 0.048-0.066 0.097-0.109 0.146-0.041 0.049-0.087 0.1-0.136 0.152l-0.274 0.294v8e-3h0.673v0.162z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m9.9 7.766c-0.193 0-0.35-0.157-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.157 0.35 0.35v7.2c-1e-3 0.193-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <polygon points="9.9 0.216 9.901 0.216 9.901 0.216" fill="none"/>
+    <g transform="translate(3.429 1.3462)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-2.616 5.54h-0.172v-0.892-0.09s1e-3 -0.063 2e-3 -0.095 2e-3 -0.063 3e-3 -0.092c1e-3 -0.028 2e-3 -0.054 2e-3 -0.076-0.011 0.012-0.021 0.021-0.029 0.03s-0.017 0.017-0.026 0.024-0.018 0.016-0.028 0.025c-0.01 8e-3 -0.021 0.019-0.035 0.03l-0.145 0.118-0.094-0.12 0.374-0.292h0.146v1.43z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m0.18 13.536 1.08-2.521 1.44 1.438-2.52 1.083z"/>
+    <path d="m0.54 16.776 1.08-2.521 1.438 1.438-2.518 1.083z"/>
+   </g>
+  </g>
+ </g>
+ <g partID="73000">
+  <g transform="translate(153.9 128.96)">
+   <g transform="scale(-1 1)">
+    <path d="m13.5 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.156-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.156 0.35-0.35 0.35z"/>
+    <path d="m9.9 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.157-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.157 0.35-0.35 0.35z"/>
+    <polygon points="9.9 14.616 6.3 7.416 9.9 7.416 13.5 7.416" fill="#fff"/>
+    <path d="m9.9 15.398-4.166-8.332h8.333l-4.167 8.332zm-3.034-7.632 3.034 6.068 3.034-6.068h-6.068z"/>
+    <path d="m9.9 14.841c-0.124 0-0.225-0.101-0.225-0.225v-7.2c0-0.124 0.101-0.225 0.225-0.225s0.225 0.101 0.225 0.225v7.2c-1e-3 0.124-0.101 0.225-0.225 0.225z"/>
+    <path d="m1.8 12.141c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.341c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.341c-0.044 0.044-0.101 0.065-0.159 0.065z"/>
+    <path d="m2.16 15.381c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.34c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.34c-0.043 0.043-0.101 0.065-0.159 0.065z"/>
+    <path d="m9.9 22.166c-0.193 0-0.35-0.156-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.156 0.35 0.35v7.2c-1e-3 0.194-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <rect x="9.9" y="21.816" width=".001" height=".001" fill="none"/>
+    <g transform="translate(3.429 6.4262)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-11.647 5.54h-0.891v-0.152l0.342-0.372c0.049-0.053 0.093-0.101 0.131-0.145s0.071-0.086 0.099-0.128c0.026-0.042 0.047-0.084 0.062-0.125 0.015-0.043 0.021-0.088 0.021-0.138 0-0.038-5e-3 -0.072-0.017-0.102s-0.027-0.054-0.047-0.075c-0.021-0.02-0.045-0.035-0.073-0.046s-0.06-0.016-0.094-0.016c-0.062 0-0.118 0.013-0.167 0.038-0.051 0.024-0.098 0.057-0.143 0.096l-0.1-0.116c0.025-0.023 0.055-0.046 0.084-0.065 0.029-0.021 0.063-0.039 0.097-0.054s0.071-0.026 0.109-0.036c0.038-8e-3 0.079-0.013 0.121-0.013 0.063 0 0.119 9e-3 0.169 0.026 0.051 0.018 0.094 0.043 0.129 0.076 0.035 0.032 0.063 0.072 0.082 0.119 0.019 0.048 0.028 0.101 0.028 0.16 0 0.056-9e-3 0.108-0.026 0.158s-0.041 0.1-0.07 0.148c-0.031 0.048-0.066 0.097-0.109 0.146-0.041 0.049-0.087 0.1-0.136 0.152l-0.274 0.294v8e-3h0.673v0.162z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m9.9 7.766c-0.193 0-0.35-0.157-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.157 0.35 0.35v7.2c-1e-3 0.193-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <polygon points="9.9 0.216 9.901 0.216 9.901 0.216" fill="none"/>
+    <g transform="translate(3.429 1.3462)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-2.616 5.54h-0.172v-0.892-0.09s1e-3 -0.063 2e-3 -0.095 2e-3 -0.063 3e-3 -0.092c1e-3 -0.028 2e-3 -0.054 2e-3 -0.076-0.011 0.012-0.021 0.021-0.029 0.03s-0.017 0.017-0.026 0.024-0.018 0.016-0.028 0.025c-0.01 8e-3 -0.021 0.019-0.035 0.03l-0.145 0.118-0.094-0.12 0.374-0.292h0.146v1.43z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m0.18 13.536 1.08-2.521 1.44 1.438-2.52 1.083z"/>
+    <path d="m0.54 16.776 1.08-2.521 1.438 1.438-2.518 1.083z"/>
+   </g>
+  </g>
+ </g>
+ <g partID="72980">
+  <g transform="translate(247.5 56.957)">
+   <g transform="scale(-1 1)">
+    <path d="m13.5 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.156-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.156 0.35-0.35 0.35z"/>
+    <path d="m9.9 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.157-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.157 0.35-0.35 0.35z"/>
+    <polygon points="9.9 14.616 6.3 7.416 9.9 7.416 13.5 7.416" fill="#fff"/>
+    <path d="m9.9 15.398-4.166-8.332h8.333l-4.167 8.332zm-3.034-7.632 3.034 6.068 3.034-6.068h-6.068z"/>
+    <path d="m9.9 14.841c-0.124 0-0.225-0.101-0.225-0.225v-7.2c0-0.124 0.101-0.225 0.225-0.225s0.225 0.101 0.225 0.225v7.2c-1e-3 0.124-0.101 0.225-0.225 0.225z"/>
+    <path d="m1.8 12.141c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.341c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.341c-0.044 0.044-0.101 0.065-0.159 0.065z"/>
+    <path d="m2.16 15.381c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.34c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.34c-0.043 0.043-0.101 0.065-0.159 0.065z"/>
+    <path d="m9.9 22.166c-0.193 0-0.35-0.156-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.156 0.35 0.35v7.2c-1e-3 0.194-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <rect x="9.9" y="21.816" width=".001" height=".001" fill="none"/>
+    <g transform="translate(3.429 6.4262)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-11.647 5.54h-0.891v-0.152l0.342-0.372c0.049-0.053 0.093-0.101 0.131-0.145s0.071-0.086 0.099-0.128c0.026-0.042 0.047-0.084 0.062-0.125 0.015-0.043 0.021-0.088 0.021-0.138 0-0.038-5e-3 -0.072-0.017-0.102s-0.027-0.054-0.047-0.075c-0.021-0.02-0.045-0.035-0.073-0.046s-0.06-0.016-0.094-0.016c-0.062 0-0.118 0.013-0.167 0.038-0.051 0.024-0.098 0.057-0.143 0.096l-0.1-0.116c0.025-0.023 0.055-0.046 0.084-0.065 0.029-0.021 0.063-0.039 0.097-0.054s0.071-0.026 0.109-0.036c0.038-8e-3 0.079-0.013 0.121-0.013 0.063 0 0.119 9e-3 0.169 0.026 0.051 0.018 0.094 0.043 0.129 0.076 0.035 0.032 0.063 0.072 0.082 0.119 0.019 0.048 0.028 0.101 0.028 0.16 0 0.056-9e-3 0.108-0.026 0.158s-0.041 0.1-0.07 0.148c-0.031 0.048-0.066 0.097-0.109 0.146-0.041 0.049-0.087 0.1-0.136 0.152l-0.274 0.294v8e-3h0.673v0.162z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m9.9 7.766c-0.193 0-0.35-0.157-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.157 0.35 0.35v7.2c-1e-3 0.193-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <polygon points="9.9 0.216 9.901 0.216 9.901 0.216" fill="none"/>
+    <g transform="translate(3.429 1.3462)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-2.616 5.54h-0.172v-0.892-0.09s1e-3 -0.063 2e-3 -0.095 2e-3 -0.063 3e-3 -0.092c1e-3 -0.028 2e-3 -0.054 2e-3 -0.076-0.011 0.012-0.021 0.021-0.029 0.03s-0.017 0.017-0.026 0.024-0.018 0.016-0.028 0.025c-0.01 8e-3 -0.021 0.019-0.035 0.03l-0.145 0.118-0.094-0.12 0.374-0.292h0.146v1.43z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m0.18 13.536 1.08-2.521 1.44 1.438-2.52 1.083z"/>
+    <path d="m0.54 16.776 1.08-2.521 1.438 1.438-2.518 1.083z"/>
+   </g>
+  </g>
+ </g>
+ <g partID="72960">
+  <g transform="translate(218.7 56.957)">
+   <g transform="scale(-1 1)">
+    <path d="m13.5 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.156-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.156 0.35-0.35 0.35z"/>
+    <path d="m9.9 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.157-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.157 0.35-0.35 0.35z"/>
+    <polygon points="9.9 14.616 6.3 7.416 9.9 7.416 13.5 7.416" fill="#fff"/>
+    <path d="m9.9 15.398-4.166-8.332h8.333l-4.167 8.332zm-3.034-7.632 3.034 6.068 3.034-6.068h-6.068z"/>
+    <path d="m9.9 14.841c-0.124 0-0.225-0.101-0.225-0.225v-7.2c0-0.124 0.101-0.225 0.225-0.225s0.225 0.101 0.225 0.225v7.2c-1e-3 0.124-0.101 0.225-0.225 0.225z"/>
+    <path d="m1.8 12.141c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.341c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.341c-0.044 0.044-0.101 0.065-0.159 0.065z"/>
+    <path d="m2.16 15.381c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.34c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.34c-0.043 0.043-0.101 0.065-0.159 0.065z"/>
+    <path d="m9.9 22.166c-0.193 0-0.35-0.156-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.156 0.35 0.35v7.2c-1e-3 0.194-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <rect x="9.9" y="21.816" width=".001" height=".001" fill="none"/>
+    <g transform="translate(3.429 6.4262)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-11.647 5.54h-0.891v-0.152l0.342-0.372c0.049-0.053 0.093-0.101 0.131-0.145s0.071-0.086 0.099-0.128c0.026-0.042 0.047-0.084 0.062-0.125 0.015-0.043 0.021-0.088 0.021-0.138 0-0.038-5e-3 -0.072-0.017-0.102s-0.027-0.054-0.047-0.075c-0.021-0.02-0.045-0.035-0.073-0.046s-0.06-0.016-0.094-0.016c-0.062 0-0.118 0.013-0.167 0.038-0.051 0.024-0.098 0.057-0.143 0.096l-0.1-0.116c0.025-0.023 0.055-0.046 0.084-0.065 0.029-0.021 0.063-0.039 0.097-0.054s0.071-0.026 0.109-0.036c0.038-8e-3 0.079-0.013 0.121-0.013 0.063 0 0.119 9e-3 0.169 0.026 0.051 0.018 0.094 0.043 0.129 0.076 0.035 0.032 0.063 0.072 0.082 0.119 0.019 0.048 0.028 0.101 0.028 0.16 0 0.056-9e-3 0.108-0.026 0.158s-0.041 0.1-0.07 0.148c-0.031 0.048-0.066 0.097-0.109 0.146-0.041 0.049-0.087 0.1-0.136 0.152l-0.274 0.294v8e-3h0.673v0.162z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m9.9 7.766c-0.193 0-0.35-0.157-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.157 0.35 0.35v7.2c-1e-3 0.193-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <polygon points="9.9 0.216 9.901 0.216 9.901 0.216" fill="none"/>
+    <g transform="translate(3.429 1.3462)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-2.616 5.54h-0.172v-0.892-0.09s1e-3 -0.063 2e-3 -0.095 2e-3 -0.063 3e-3 -0.092c1e-3 -0.028 2e-3 -0.054 2e-3 -0.076-0.011 0.012-0.021 0.021-0.029 0.03s-0.017 0.017-0.026 0.024-0.018 0.016-0.028 0.025c-0.01 8e-3 -0.021 0.019-0.035 0.03l-0.145 0.118-0.094-0.12 0.374-0.292h0.146v1.43z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m0.18 13.536 1.08-2.521 1.44 1.438-2.52 1.083z"/>
+    <path d="m0.54 16.776 1.08-2.521 1.438 1.438-2.518 1.083z"/>
+   </g>
+  </g>
+ </g>
+ <g partID="72940">
+  <g transform="translate(182.7 56.957)">
+   <g transform="scale(-1 1)">
+    <path d="m13.5 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.156-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.156 0.35-0.35 0.35z"/>
+    <path d="m9.9 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.157-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.157 0.35-0.35 0.35z"/>
+    <polygon points="9.9 14.616 6.3 7.416 9.9 7.416 13.5 7.416" fill="#fff"/>
+    <path d="m9.9 15.398-4.166-8.332h8.333l-4.167 8.332zm-3.034-7.632 3.034 6.068 3.034-6.068h-6.068z"/>
+    <path d="m9.9 14.841c-0.124 0-0.225-0.101-0.225-0.225v-7.2c0-0.124 0.101-0.225 0.225-0.225s0.225 0.101 0.225 0.225v7.2c-1e-3 0.124-0.101 0.225-0.225 0.225z"/>
+    <path d="m1.8 12.141c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.341c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.341c-0.044 0.044-0.101 0.065-0.159 0.065z"/>
+    <path d="m2.16 15.381c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.34c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.34c-0.043 0.043-0.101 0.065-0.159 0.065z"/>
+    <path d="m9.9 22.166c-0.193 0-0.35-0.156-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.156 0.35 0.35v7.2c-1e-3 0.194-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <rect x="9.9" y="21.816" width=".001" height=".001" fill="none"/>
+    <g transform="translate(3.429 6.4262)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-11.647 5.54h-0.891v-0.152l0.342-0.372c0.049-0.053 0.093-0.101 0.131-0.145s0.071-0.086 0.099-0.128c0.026-0.042 0.047-0.084 0.062-0.125 0.015-0.043 0.021-0.088 0.021-0.138 0-0.038-5e-3 -0.072-0.017-0.102s-0.027-0.054-0.047-0.075c-0.021-0.02-0.045-0.035-0.073-0.046s-0.06-0.016-0.094-0.016c-0.062 0-0.118 0.013-0.167 0.038-0.051 0.024-0.098 0.057-0.143 0.096l-0.1-0.116c0.025-0.023 0.055-0.046 0.084-0.065 0.029-0.021 0.063-0.039 0.097-0.054s0.071-0.026 0.109-0.036c0.038-8e-3 0.079-0.013 0.121-0.013 0.063 0 0.119 9e-3 0.169 0.026 0.051 0.018 0.094 0.043 0.129 0.076 0.035 0.032 0.063 0.072 0.082 0.119 0.019 0.048 0.028 0.101 0.028 0.16 0 0.056-9e-3 0.108-0.026 0.158s-0.041 0.1-0.07 0.148c-0.031 0.048-0.066 0.097-0.109 0.146-0.041 0.049-0.087 0.1-0.136 0.152l-0.274 0.294v8e-3h0.673v0.162z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m9.9 7.766c-0.193 0-0.35-0.157-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.157 0.35 0.35v7.2c-1e-3 0.193-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <polygon points="9.9 0.216 9.901 0.216 9.901 0.216" fill="none"/>
+    <g transform="translate(3.429 1.3462)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-2.616 5.54h-0.172v-0.892-0.09s1e-3 -0.063 2e-3 -0.095 2e-3 -0.063 3e-3 -0.092c1e-3 -0.028 2e-3 -0.054 2e-3 -0.076-0.011 0.012-0.021 0.021-0.029 0.03s-0.017 0.017-0.026 0.024-0.018 0.016-0.028 0.025c-0.01 8e-3 -0.021 0.019-0.035 0.03l-0.145 0.118-0.094-0.12 0.374-0.292h0.146v1.43z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m0.18 13.536 1.08-2.521 1.44 1.438-2.52 1.083z"/>
+    <path d="m0.54 16.776 1.08-2.521 1.438 1.438-2.518 1.083z"/>
+   </g>
+  </g>
+ </g>
+ <g partID="70190">
+  <g transform="translate(153.9 56.957)">
+   <g transform="scale(-1 1)">
+    <path d="m13.5 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.156-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.156 0.35-0.35 0.35z"/>
+    <path d="m9.9 14.966h-3.6c-0.193 0-0.35-0.156-0.35-0.35s0.157-0.35 0.35-0.35h3.6c0.193 0 0.35 0.156 0.35 0.35s-0.157 0.35-0.35 0.35z"/>
+    <polygon points="9.9 14.616 6.3 7.416 9.9 7.416 13.5 7.416" fill="#fff"/>
+    <path d="m9.9 15.398-4.166-8.332h8.333l-4.167 8.332zm-3.034-7.632 3.034 6.068 3.034-6.068h-6.068z"/>
+    <path d="m9.9 14.841c-0.124 0-0.225-0.101-0.225-0.225v-7.2c0-0.124 0.101-0.225 0.225-0.225s0.225 0.101 0.225 0.225v7.2c-1e-3 0.124-0.101 0.225-0.225 0.225z"/>
+    <path d="m1.8 12.141c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.341c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.341c-0.044 0.044-0.101 0.065-0.159 0.065z"/>
+    <path d="m2.16 15.381c-0.058 0-0.115-0.021-0.159-0.065-0.088-0.088-0.088-0.23 0-0.318l2.34-2.34c0.088-0.088 0.23-0.088 0.318 0s0.088 0.23 0 0.318l-2.34 2.34c-0.043 0.043-0.101 0.065-0.159 0.065z"/>
+    <path d="m9.9 22.166c-0.193 0-0.35-0.156-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.156 0.35 0.35v7.2c-1e-3 0.194-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <rect x="9.9" y="21.816" width=".001" height=".001" fill="none"/>
+    <g transform="translate(3.429 6.4262)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-11.647 5.54h-0.891v-0.152l0.342-0.372c0.049-0.053 0.093-0.101 0.131-0.145s0.071-0.086 0.099-0.128c0.026-0.042 0.047-0.084 0.062-0.125 0.015-0.043 0.021-0.088 0.021-0.138 0-0.038-5e-3 -0.072-0.017-0.102s-0.027-0.054-0.047-0.075c-0.021-0.02-0.045-0.035-0.073-0.046s-0.06-0.016-0.094-0.016c-0.062 0-0.118 0.013-0.167 0.038-0.051 0.024-0.098 0.057-0.143 0.096l-0.1-0.116c0.025-0.023 0.055-0.046 0.084-0.065 0.029-0.021 0.063-0.039 0.097-0.054s0.071-0.026 0.109-0.036c0.038-8e-3 0.079-0.013 0.121-0.013 0.063 0 0.119 9e-3 0.169 0.026 0.051 0.018 0.094 0.043 0.129 0.076 0.035 0.032 0.063 0.072 0.082 0.119 0.019 0.048 0.028 0.101 0.028 0.16 0 0.056-9e-3 0.108-0.026 0.158s-0.041 0.1-0.07 0.148c-0.031 0.048-0.066 0.097-0.109 0.146-0.041 0.049-0.087 0.1-0.136 0.152l-0.274 0.294v8e-3h0.673v0.162z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m9.9 7.766c-0.193 0-0.35-0.157-0.35-0.35v-7.2c0-0.193 0.156-0.35 0.35-0.35s0.35 0.157 0.35 0.35v7.2c-1e-3 0.193-0.157 0.35-0.35 0.35z" fill="#787878"/>
+    <polygon points="9.9 0.216 9.901 0.216 9.901 0.216" fill="none"/>
+    <g transform="translate(3.429 1.3462)">
+     <g transform="rotate(270)">
+      <g enable-background="new    ">
+       <path d="m-2.616 5.54h-0.172v-0.892-0.09s1e-3 -0.063 2e-3 -0.095 2e-3 -0.063 3e-3 -0.092c1e-3 -0.028 2e-3 -0.054 2e-3 -0.076-0.011 0.012-0.021 0.021-0.029 0.03s-0.017 0.017-0.026 0.024-0.018 0.016-0.028 0.025c-0.01 8e-3 -0.021 0.019-0.035 0.03l-0.145 0.118-0.094-0.12 0.374-0.292h0.146v1.43z" fill="#787878"/>
+      </g>
+     </g>
+    </g>
+    <path d="m0.18 13.536 1.08-2.521 1.44 1.438-2.52 1.083z"/>
+    <path d="m0.54 16.776 1.08-2.521 1.438 1.438-2.518 1.083z"/>
+   </g>
+  </g>
+ </g>
+ <g partID="70170">
+  <g transform="translate(140.9 107.92)">
+   <g transform="rotate(-90)">
+    <g stroke="#000" stroke-linecap="round" stroke-width=".432">
+     <line class="other" x1="7.55" x2="8.63" y1="3.096" y2=".216"/>
+     <line class="other" x1="8.63" x2="10.43" y1=".216" y2="5.976"/>
+     <line class="other" x1="10.43" x2="12.23" y1="5.976" y2=".216"/>
+     <line class="other" x1="12.23" x2="14.03" y1=".216" y2="5.976"/>
+     <line class="other" x1="14.03" x2="15.83" y1="5.976" y2=".216"/>
+     <line class="other" x1="15.83" x2="17.63" y1=".216" y2="5.976"/>
+     <line class="other" x1="17.63" x2="19.43" y1="5.976" y2=".216"/>
+     <line class="other" x1="19.43" x2="21.23" y1=".216" y2="5.976"/>
+     <line class="other" x1="21.23" x2="21.95" y1="5.976" y2="3.096"/>
+    </g>
+    <line class="pin" x1="29.15" x2="21.95" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="2"/>
+    <text class="text" x="25.5501" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">2</text>
+    <line class="pin" x1=".35" x2="7.55" y1="3.096" y2="3.096" stroke="#787878" stroke-linecap="round" stroke-width=".7" connectorname="1"/>
+    <text class="text" x="3.95001" y="2.046" fill="#8c8c8c" font-family="'Droid Sans'" font-size="2.5" stroke-width="0" text-anchor="middle">1</text>
+   </g>
+  </g>
+ </g>
+ <g partID="79350">
+  <g transform="translate(180 179.1)">
+   <g fill="none" stroke-linecap="round">
+    <path d="m7.201 7.575v-7.2" stroke="#787878" stroke-width=".75"/>
+    <g stroke="#000" stroke-width=".9">
+     <path d="m0.5 7.711h13.4"/>
+     <path d="m2.732 10.456h8.935"/>
+     <path d="m9.431 13.175h-4.464"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="70840">
+  <g transform="translate(50.399 179.1)">
+   <g fill="none" stroke-linecap="round">
+    <path d="m7.201 7.575v-7.2" stroke="#787878" stroke-width=".75"/>
+    <g stroke="#000" stroke-width=".9">
+     <path d="m0.5 7.711h13.4"/>
+     <path d="m2.732 10.456h8.935"/>
+     <path d="m9.431 13.175h-4.464"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="70900">
+  <g transform="translate(180 107.1)">
+   <g fill="none" stroke-linecap="round">
+    <path d="m7.201 7.575v-7.2" stroke="#787878" stroke-width=".75"/>
+    <g stroke="#000" stroke-width=".9">
+     <path d="m0.5 7.711h13.4"/>
+     <path d="m2.732 10.456h8.935"/>
+     <path d="m9.431 13.175h-4.464"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="70960">
+  <g transform="translate(43.218)">
+   <line x1="7.2" x2="7.2" y1="6.78" y2="13.98" fill="none" stroke="#787878" stroke-linecap="round" stroke-miterlimit="10" stroke-width=".75"/>
+   <path d="m0.45 6.564h13.5" fill="none" stroke="#000" stroke-linecap="round" stroke-width=".9"/>
+   <g transform="translate(1.4985 4.9878)">
+    <text font-family="'DroidSans'" font-size="4.4991">5V</text>
+   </g>
+  </g>
+ </g>
+ <g partID="136290">
+  <g transform="translate(159.22 53.569)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="136260">
+  <g transform="translate(123.22 53.569)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="136480">
+  <g transform="translate(123.22 60.769)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="136450">
+  <g transform="translate(188.02 53.569)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="136640">
+  <g transform="translate(123.22 67.969)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="136610">
+  <g transform="translate(224.02 53.569)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="136800">
+  <g transform="translate(123.22 75.169)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="136770">
+  <g transform="translate(252.82 53.569)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="137100">
+  <g transform="translate(123.22 82.369)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="137070">
+  <g transform="translate(159.22 125.57)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="137300">
+  <g transform="translate(123.22 89.569)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="137270">
+  <g transform="translate(188.02 125.57)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="137470">
+  <g transform="translate(123.22 96.769)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="137440">
+  <g transform="translate(216.82 125.57)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="137640">
+  <g transform="translate(123.22 103.97)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="137610">
+  <g transform="translate(245.62 125.57)">
+   <g transform="scale(-1 1)">
+    <rect x="11.614" width="3.6" height="7.2" fill="none" stroke-width="0"/>
+    <polygon points="15.101 3.6 11.621 0.12 0.12 0.12 0.12 7.08 11.621 7.08" fill="#fff" stroke="#000" stroke-width=".24"/>
+   </g>
+  </g>
+ </g>
+ <g partID="136291">
+  <g transform="translate(144 53.569)">
+   <g id="schematicText">
+    <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 2</text>
+   </g>
+  </g>
+ </g>
+ <g partID="136261">
+  <g transform="translate(108 53.569)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 2</text>
+  </g>
+ </g>
+ <g partID="136481">
+  <g transform="translate(108 60.769)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 3</text>
+  </g>
+ </g>
+ <g partID="136451">
+  <g transform="translate(172.8 53.569)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 3</text>
+  </g>
+ </g>
+ <g partID="136641">
+  <g transform="translate(108 67.969)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 4</text>
+  </g>
+ </g>
+ <g partID="136611">
+  <g transform="translate(208.8 53.569)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 4</text>
+  </g>
+ </g>
+ <g partID="136801">
+  <g transform="translate(108 75.169)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 5</text>
+  </g>
+ </g>
+ <g partID="136771">
+  <g transform="translate(237.6 53.569)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 5</text>
+  </g>
+ </g>
+ <g partID="137101">
+  <g transform="translate(108 82.369)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 6</text>
+  </g>
+ </g>
+ <g partID="137071">
+  <g transform="translate(144 125.57)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 6</text>
+  </g>
+ </g>
+ <g partID="137301">
+  <g transform="translate(108 89.569)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 7</text>
+  </g>
+ </g>
+ <g partID="137271">
+  <g transform="translate(172.8 125.57)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 7</text>
+  </g>
+ </g>
+ <g partID="137471">
+  <g transform="translate(108 96.769)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 8</text>
+  </g>
+ </g>
+ <g partID="137441">
+  <g transform="translate(201.6 125.57)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 8</text>
+  </g>
+ </g>
+ <g partID="137641">
+  <g transform="translate(108 103.97)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 9</text>
+  </g>
+ </g>
+ <g partID="137611">
+  <g transform="translate(230.4 125.57)">
+   <text x="3.48" y="5.28" fill="#000000" font-family="Droid Sans" font-size="4.8">Pin 9</text>
+  </g>
+ </g>
+ <g partID="70870">
+  <line x1="57.6" x2="57.6" y1="179.57" y2="179.57" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="70990">
+  <line x1="50.4" x2="50.4" y1="13.973" y2="13.973" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="71040">
+  <line x1="144" x2="144" y1="78.773" y2="78.774" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="82720">
+  <line x1="172.8" x2="187.2" y1="107.66" y2="107.57" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <circle cx="172.8" cy="107.66" r="1.44" stroke-width="0"/>
+ <circle cx="187.2" cy="107.57" r="1.44" stroke-width="0"/>
+ <g partID="71130">
+  <line x1="144" x2="172.8" y1="107.57" y2="107.66" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="80710">
+  <line x1="172.91" x2="144" y1="179.57" y2="179.57" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <circle cx="172.91" cy="179.57" r="1.44" stroke-width="0"/>
+ <g partID="79550">
+  <line x1="187.2" x2="172.91" y1="179.57" y2="179.57" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <circle cx="187.2" cy="179.57" r="1.44" stroke-width="0"/>
+ <g partID="80150">
+  <line x1="201.46" x2="230.4" y1="179.57" y2="179.57" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <circle cx="201.46" cy="179.57" r="1.44" stroke-width="0"/>
+ <g partID="79860">
+  <line x1="187.2" x2="201.46" y1="179.57" y2="179.57" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <circle cx="187.2" cy="179.57" r="1.44" stroke-width="0"/>
+ <g partID="80440">
+  <line x1="201.46" x2="201.6" y1="179.57" y2="179.57" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="80980">
+  <line x1="172.91" x2="172.8" y1="179.57" y2="179.57" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="81630">
+  <line x1="172.8" x2="172.8" y1="78.773" y2="78.774" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="81770">
+  <line x1="208.8" x2="208.8" y1="78.773" y2="78.774" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="81910">
+  <line x1="237.6" x2="237.6" y1="78.773" y2="78.774" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="82280">
+  <line x1="208.78" x2="237.6" y1="107.66" y2="107.57" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <circle cx="208.78" cy="107.66" r="1.44" stroke-width="0"/>
+ <g partID="82050">
+  <line x1="187.2" x2="208.78" y1="107.57" y2="107.66" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <circle cx="187.2" cy="107.57" r="1.44" stroke-width="0"/>
+ <g partID="82510">
+  <line x1="208.78" x2="208.8" y1="107.66" y2="107.57" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="82930">
+  <line x1="172.8" x2="172.8" y1="107.66" y2="107.57" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="83400">
+  <line x1="144" x2="144" y1="150.77" y2="150.77" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="83440">
+  <line x1="172.8" x2="172.8" y1="150.77" y2="150.77" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="83480">
+  <line x1="201.6" x2="201.6" y1="150.77" y2="150.77" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="83520">
+  <line x1="230.4" x2="230.4" y1="150.77" y2="150.77" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="136310">
+  <line x1="108" x2="108" y1="57.173" y2="57.173" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="136400">
+  <line x1="144" x2="144" y1="57.173" y2="57.173" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="136500">
+  <line x1="108" x2="108" y1="64.373" y2="64.373" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="136660">
+  <line x1="108" x2="108" y1="71.573" y2="71.573" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="136820">
+  <line x1="108" x2="108" y1="78.773" y2="78.773" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="136930">
+  <line x1="172.8" x2="172.8" y1="57.173" y2="57.173" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="136990">
+  <line x1="208.8" x2="208.8" y1="57.173" y2="57.173" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="137030">
+  <line x1="237.6" x2="237.6" y1="57.173" y2="57.173" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="137120">
+  <line x1="108" x2="108" y1="85.973" y2="85.973" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="137230">
+  <line x1="144" x2="144" y1="129.17" y2="129.17" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="137320">
+  <line x1="108" x2="108" y1="93.173" y2="93.173" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="137390">
+  <line x1="172.8" x2="172.8" y1="129.17" y2="129.17" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="137490">
+  <line x1="108" x2="108" y1="100.37" y2="100.37" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="137560">
+  <line x1="201.6" x2="201.6" y1="129.17" y2="129.17" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="137660">
+  <line x1="108" x2="108" y1="107.57" y2="107.57" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g partID="137730">
+  <line x1="230.4" x2="230.4" y1="129.17" y2="129.17" stroke="#404040" stroke-linecap="round" stroke-width=".7"/>
+ </g>
+ <g id="partLabel" partID="73340">
+  <g transform="translate(212.83 88.227)">
+   <g id="schematicLabel" font-family="'DroidSans'" font-size="5">
+    <text y="3.75">R3</text>
+    <text y="8.75">560Ω</text>
+   </g>
+  </g>
+ </g>
+ <g partID="74860">
+  <g transform="translate(234.43 160.23)">
+   <g font-family="'DroidSans'" font-size="5">
+    <text y="3.75">R8</text>
+    <text y="8.75">560Ω</text>
+   </g>
+  </g>
+ </g>
+ <g partID="73900">
+  <g transform="translate(148.03 160.23)">
+   <g font-family="'DroidSans'" font-size="5">
+    <text y="3.75">R5</text>
+    <text y="8.75">560Ω</text>
+   </g>
+  </g>
+ </g>
+ <g partID="73600">
+  <g transform="translate(241.63 88.227)">
+   <g font-family="'DroidSans'" font-size="5">
+    <text y="3.75">R4</text>
+    <text y="8.75">560Ω</text>
+   </g>
+  </g>
+ </g>
+ <g partID="70170">
+  <g transform="translate(148.03 88.227)">
+   <g font-family="'DroidSans'" font-size="5">
+    <text y="3.75">R1</text>
+    <text y="8.75">560Ω</text>
+   </g>
+  </g>
+ </g>
+ <g partID="74220">
+  <g transform="translate(176.83 160.23)">
+   <g font-family="'DroidSans'" font-size="5">
+    <text y="3.75">R6</text>
+    <text y="8.75">560Ω</text>
+   </g>
+  </g>
+ </g>
+ <g partID="73100">
+  <g transform="translate(241.19 135.3)">
+   <g font-family="'DroidSans'" font-size="5">
+    <text y="3.75">LED8</text>
+   </g>
+  </g>
+ </g>
+ <g partID="72980">
+  <g transform="translate(248.39 63.304)">
+   <g font-family="'DroidSans'" font-size="5">
+    <text y="3.75">LED4</text>
+   </g>
+  </g>
+ </g>
+ <g partID="75560">
+  <g transform="translate(178.03 87.502)">
+   <g font-family="'DroidSans'" font-size="5">
+    <text y="3.75">R2</text>
+    <text y="8.75">560Ω</text>
+   </g>
+  </g>
+ </g>
+ <g partID="75860">
+  <g transform="translate(205.94 160.4)">
+   <g font-family="'DroidSans'" font-size="5">
+    <text y="3.75">R7</text>
+    <text y="8.75">560Ω</text>
+   </g>
+  </g>
+ </g>
+</svg>
