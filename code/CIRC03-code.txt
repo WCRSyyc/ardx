@@ -7,13 +7,10 @@
  * up something that requires more power you will quickly break them.
  * To control bigger items we need the help of a transistor. 
  * Here we will use a transistor to control a small toy motor
- * 
- * http://tinyurl.com/d4wht7
- *
  */
 
 int motorPin = 9;  // define the pin the motor is connected to
-                   // (if you use pin 9,10,11 or 3you can also control speed)
+                   // (if you use pin 9,10,11 or 3 you can also control speed)
 
 /*
  * setup() - this function runs once when you turn your Arduino on
@@ -43,7 +40,8 @@ void loop()                     // run over and over again
  * (notice this code is identical to the code we used for
  * the blinking LED)
  */
-void motorOnThenOff(){
+void motorOnThenOff()
+{
   int onTime = 2500;  //the number of milliseconds for the motor to turn on for
   int offTime = 1000; //the number of milliseconds for the motor to turn off for
   
@@ -58,13 +56,14 @@ void motorOnThenOff(){
  * (notice this code is identical to the code we used for
  * the blinking LED)
  */
-void motorOnThenOffWithSpeed(){
+void motorOnThenOffWithSpeed()
+{
   
   int onSpeed = 200;  // a number between 0 (stopped) and 255 (full speed) 
-  int onTime = 2500;  //the number of milliseconds for the motor to turn on for
+  int onTime = 2500;  // number of milliseconds for the motor to turn on for
   
   int offSpeed = 50;  // a number between 0 (stopped) and 255 (full speed) 
-  int offTime = 1000; //the number of milliseconds for the motor to turn off for
+  int offTime = 1000; // number of milliseconds for the motor to turn off for
   
   analogWrite(motorPin, onSpeed);   // turns the motor On
   delay(onTime);                    // waits for onTime milliseconds
@@ -76,18 +75,19 @@ void motorOnThenOffWithSpeed(){
  * motorAcceleration() - accelerates the motor to full speed then
  * back down to zero
 */
-void motorAcceleration(){
-  int delayTime = 50; //milliseconds between each speed step
+void motorAcceleration()
+{
+  int delayTime = 50; // milliseconds between each speed step
   
   //Accelerates the motor
-  for(int i = 0; i < 256; i++){ //goes through each speed from 0 to 255
-    analogWrite(motorPin, i);   //sets the new speed
+  for(int i = 0; i < 256; i++){ // goes through each speed from 0 to 255
+    analogWrite(motorPin, i);   // sets the new speed
     delay(delayTime);           // waits for delayTime milliseconds
   }
   
   //Decelerates the motor
-  for(int i = 255; i >= 0; i--){ //goes through each speed from 255 to 0
-    analogWrite(motorPin, i);   //sets the new speed
+  for(int i = 255; i >= 0; i--){ // goes through each speed from 255 to 0
+    analogWrite(motorPin, i);   // sets the new speed
     delay(delayTime);           // waits for delayTime milliseconds
   }
 }
