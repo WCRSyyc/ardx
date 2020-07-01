@@ -149,7 +149,7 @@
 	<header>
 		<h1>CIRC<br/>04</h1>
 		<h2>.:A Single Servo:.<br/>.:Servos:.</h2>
-		<img src="http://www.ardx.org/src/circ/CIRC-04-square-100.jpg" width="100" height="100" alt="micro servo">
+		<img src="img/experiments/CIRC-04-square-100.jpg" width="100" height="100" alt="micro servo">
 	</header>
 	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
 	<section>
@@ -163,7 +163,7 @@
 			<h3>The Parts</h3>
 			<table>
 				<tr>
-					<td><img src="img/CIRC-04-3dsheet-60.png"
+					<td><img src="img/parts/CIRC-04-3dsheet-60.png"
 						width="60" height="36" alt="circuit 4 breadboard sheet 3d view"/></td>
 					<td>CIRC-04<br/>Breadboard Sheet<br/>x1</td>
 					<td><img src="img/parts/HEAD-02-60.png"
@@ -189,7 +189,7 @@
 			viewBox="23.8 12 76 76"
 			preserveAspectRatio="xMaxYMin meet">
 			<image height="100" width="100"
-				xlink:href="img/CIRC04_bb.svg"/>
+				xlink:href="img/experiments/CIRC04-bb.svg"/>
 		</svg></span>
 		<div>
 			<h3>Schematic</h3>
@@ -199,21 +199,21 @@
 				viewBox="54.5 61 31 31"
 				preserveAspectRatio="xMidYMin meet">
 				<image height="100" width="100"
-					xlink:href="img/CIRC04_schem.svg" />
+					xlink:href="img/experiments/CIRC04-sch.svg" />
 			</svg></span>
 		</div>
 		<div>
 			<h3>Resources</h3>
 			<h4>.:download:.</h4>
 			<p>Breadboard layout sheet<br/>
-				<a href="http://ardx.org/src/circ/CIRC04-sheet-OOML.pdf">http://ardx.org/BBLS04</a>
+				<a href="img/experiments/CIRC04-sheet-OOML.pdf">http://ardx.org/BBLS04</a>
 			</p>
 			<p>Fritzing diagram<br/><a href="fritzing/CIRC04.fzz">
 				https://wcrsyyc.github.io/ardx/fritzing/CIRC04.fzz</a></p>
 			<h4>.:view:.</h4>
 			<p>
 				assembly video<br/>
-				<a href="http://ardx.org/VIDE04">http://ardx.org/VIDE04</a>
+				<a href="https://www.youtube.com/watch?v=gsh_ch6Jv7s">http://ardx.org/VIDE04</a>
 			</p>
 		</div>
 	</section>
@@ -269,7 +269,7 @@ void loop()
 	<section id="CIRC-makingBetter">
 		<h2>Making it Better?</h2>
 		<h3>Potentiometer Control:</h3>
-		<p>We have yet to experiment with inputs but if you would like to read ahead, there is an example program File > Library-Servo > Knob. This uses a potentiometer (CIRC08) to control the servo. You can find instructions online here: <a href="http://ardx.org/KNOB">http://ardx.org/KNOB</a></p>
+		<p>We have yet to experiment with inputs but if you would like to read ahead, there is an example program File > Library-Servo > Knob. This uses a potentiometer (CIRC08) to control the servo. You can find instructions online here: <a href="https://www.arduino.cc/en/Tutorial/Knob">http://ardx.org/KNOB</a></p>
 		<h3>Self Timing:</h3>
 		<p>While it is easy to control a servo using the Arduino's included library sometimes it is fun to figure out how to program something yourself. Try it. We're controlling the pulse directly so you could use this method to control servos on any of the Arduino's 20 available pins (you need to highly optimize this code before doing that).</p>
 		<pre>int servoPin = 9;
