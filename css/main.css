@@ -460,6 +460,10 @@ main p:last-child {
   font-weight: bold;
   line-height: 1.4;
 }
+#code pre {
+  max-height: 25rem;
+  overflow-y: auto;
+}
 .infoblock section > div,
 #CIRC-notworking > div {
   float: left;
