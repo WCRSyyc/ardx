@@ -149,12 +149,12 @@
 	<header>
 		<h1>CIRC<br/>09</h1>
 		<h2>.:Light:.<br/>.:Photo Resistors:.</h2>
-		<img src="http://www.ardx.org/src/circ/CIRC-09-square-100.jpg" width="100" height="100" alt="green led and photo resistor on circuit 9 breadboard sheet">
+		<img src="img/experiments/CIRC-09-square-100.jpg" width="100" height="100" alt="green led and photo resistor on circuit 9 breadboard sheet">
 	</header>
 	<h2>(ARDX) .:Arduino Experimentation Kit:. (ARDX)</h2>
 	<section>
 		<h2>What We're Doing</h2>
-		<p>Whilst getting input from a potentiometer can be useful for human controlled experiments, what do we use when we want an environmentally controlled experiment? We use exactly the same principles but instead of a potentiometer (twist based resistance) we use a photo resistor (light based resistance). The Arduino cannot directly sense resistance (it senses voltage) so we set up a <a href="https://github.com/WCRSyyc/ardx/wiki/voltage-divider">voltage divider</a> (<a href="http://ardx.org/VODI">http://ardx.org/VODI</a>). The exact voltage at the sensing pin is calculable, but for our purposes (just sensing relative light) we can experiment with the values and see what works for us. A low resistance value will occur when the sensor is well lit while a high value will occur when it is in darkness.</p>
+		<p>Whilst getting input from a potentiometer can be useful for human controlled experiments, what do we use when we want an environmentally controlled experiment? We use exactly the same principles but instead of a potentiometer (twist based resistance) we use a photo resistor (light based resistance). The Arduino cannot directly sense resistance (it senses voltage) so we set up a <a href="https://github.com/WCRSyyc/ardx/wiki/voltage-divider">voltage divider</a> (<a href="https://en.wikipedia.org/wiki/Voltage_divider">http://ardx.org/VODI</a>). The exact voltage at the sensing pin is calculable, but for our purposes (just sensing relative light) we can experiment with the values and see what works for us. A low resistance value will occur when the sensor is well lit while a high value will occur when it is in darkness.</p>
 	</section>
 	<section id="circuit">
 		<h2>The Circuit</h2>
@@ -162,7 +162,7 @@
 			<h3>The Parts</h3>
 			<table>
 				<tr>
-					<td><img src="img/CIRC-09-3dsheet-60.png"
+					<td><img src="img/parts/CIRC-09-3dsheet-60.png"
 						width="60" height="36" alt="circuit 9 breadboard sheet 3d view"/></td>
 					<td>CIRC-09<br/>Breadboard Sheet<br/>x1</td>
 					<td><img src="img/parts/HEAD-02-60.png"
@@ -177,10 +177,10 @@
 				</tr><tr>
 					<td><img src="img/parts/RES-103-60.png"
 						width="60" height="36" alt="10k ohm resistor"/></td>
-					<td>10k Ohm Resistor<br/>Brown-Black-Orange<br/>x1</td>
+					<td>10k Ohm Resistor<br/>Brown-Black-Black-Red<br/>x1</td>
 					<td><img src="img/parts/RES-561-60.png"
 						width="60" height="36" alt="560 ohm resistor"/></td>
-					<td>560 Ohm Resistor<br/>Green-Blue-Brown<br/>x1</td>
+					<td>560 Ohm Resistor<br/>Green-Blue-Black-Black<br/>x1</td>
 					<td><img src="img/parts/LED-05G-60.png"
 						width="60" height="36" alt="green LED"/></td>
 					<td>Green LED<br/>x1</td>
@@ -194,7 +194,7 @@
 			viewBox="30 13 70 70"
 			preserveAspectRatio="xMaxYMin meet">
 			<image height="100" width="100"
-				xlink:href="img/CIRC09_bb.svg"/>
+				xlink:href="img/experiments/CIRC09-bb.svg"/>
 		</svg></span>
 		<div>
 			<h3>Schematic</h3>
@@ -204,28 +204,28 @@
 				viewBox="63 42 37 37"
 				preserveAspectRatio="xMidYMin meet">
 				<image height="100" width="100"
-					xlink:href="img/CIRC09_schem.svg" />
+					xlink:href="img/experiments/CIRC09-sch.svg" />
 			</svg></span>
 		</div>
 		<div>
 			<h3>Resources</h3>
 			<h4>.:download:.</h4>
 			<p>Breadboard layout sheet<br/>
-				<a href="http://ardx.org/src/circ/CIRC09-sheet-OOML.pdf">http://ardx.org/BBLS09</a>
+				<a href="img/experiments/CIRC09-sheet-OOML.pdf">http://ardx.org/BBLS09</a>
 			</p>
 			<p>Fritzing diagram<br/><a href="fritzing/CIRC09.fzz">
 				https://wcrsyyc.github.io/ardx/fritzing/CIRC09.fzz</a></p>
 			<h4>.:view:.</h4>
 			<p>
 				assembly video<br/>
-				<a href="http://ardx.org/VIDE09">http://ardx.org/VIDE09</a>
+				<a href="https://www.youtube.com/watch?v=5WOPv9WEi4Q">http://ardx.org/VIDE09</a>
 			</p>
 		</div>
 	</section>
 	<section id="code">
 		<h2>Code <span>(no need to type everything in just)</span></h2>
 		<p>Download the Code from ( <a
-			href="http://ardx.org/src/circ/CIRC09-code.txt">
+			href="code/CIRC09-code.txt">
 			http://ardx.org/CODE09</a> )<br/>
 			(and then copy the text and paste it into an empty Arduino Sketch)</p>
 		<pre>/*
@@ -281,7 +281,7 @@ void loop()
 		</div>
 		<div>
 			<h3>Still not quite working?</h3>
-			<p>You may be in a room which is either too bright or dark. Try turning the lights on or off to see if this helps. Or if you have a flashlight near by give that a try.</p>
+			<p>You may be in a room which is either too bright or dark. Try turning the lights on or off to see if this helps. Or if you have a flashlight nearby give that a try.</p>
 		</div>
 	</section>
 	<section id="CIRC-makingBetter">
