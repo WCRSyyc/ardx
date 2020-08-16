@@ -224,7 +224,10 @@
  *     |  CIRC-10 .: Temperature :. (TMP36 Temperature Sensor) |
  *     ---------------------------------------------------------
  *
- *  A simple program to output the current temperature to the IDE's debug window
+ * A simple program to output the current temperature to the IDE's debug window
+ *
+ * For more details on this circuit:
+ * https://learn.adafruit.com/tmp36-temperature-sensor/using-a-temp-sensor
  */
 
 //TMP36 Pin Variables
@@ -246,19 +249,18 @@ void setup()
 void loop()                     // run over and over again
 {
  float temperature = getVoltage(temperaturePin);  //getting the voltage reading from the temperature sensor
- temperature = (temperature - .5) * 100;          //converting from 10 mv per degree wit 500 mV offset
-                                                  //to degrees ((volatge - 500mV) times 100)
+ temperature = (temperature - .5) * 100;          //converting from 10 mv per degree with 500 mV offset
+                                                  //to degrees ((voltage - 500mV) times 100)
  Serial.println(temperature);                     //printing the result
  delay(1000);                                     //waiting a second
 }
 
 /*
- * getVoltage() - returns the voltage on the analog input defined by
- * pin
+ * getVoltage() - returns the voltage on the analog input defined by pin
  */
 float getVoltage(int pin){
  return (analogRead(pin) * .004882814); //converting from a 0 to 1023 digital range
-                                        // to 0 to 5 volts (each 1 reading equals ~ 5 millivolts
+                                        // to 0 to 5 volts (each 1 reading equals ~ 5 millivolts)
 }</pre>
 	</section>
 	<section id="CIRC-notworking">
