@@ -236,29 +236,30 @@
 	</section>
 	<section id="code">
 		<h2>Code <span>(no need to type everything in just)</span></h2>
-		<h3>File > Examples > 1.Basic > Blink</h3>
-		<p>(example from the great <a	href="https://www.arduino.cc/">arduino.cc</a> site, check it out for other great ideas)</p>
+		<p>Previously, this used the standard "Blink" example code. However, the example provided with the Arduino IDE has been changed, so it is no longer as close to what is needed here as it used to be.</p>
+		<p>Download our Code, based on the older Blink version from ( <a
+			href="code/CIRC11-code.txt">https://wcrsyyc.github.io/ardx/code/CIRC11-code.txt</a> )<br/>
+			(and then copy the text and paste it into an empty Arduino Sketch)</p>
 		<pre>/*
   Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
-  The circuit:
- * LED connected from digital pin 13 to ground.
-  * Note: On most Arduino boards, there is already an LED on the board
- connected to pin 13, so you don´t need any extra components for this example.
+  Turn a Transistor on for one second, then off for one second, repeatedly.
 
- Created 1 June 2005
- By David Cuartielles
- http://arduino.cc/en/Tutorial/Blink
+  The circuit:
+    NPN Transistor connected from digital pin 2 (base) to ground (emitter).
+    The load (here a relay) connected to power (5V) from transistor collector
+
+ Created 16 Aug 2020
  based on an original by H. Barragan for the Wiring i/o board
  */
 
-int ledPin =  2;    // Relay connected to digital pin 2   &lt;----- Change this to pin 2
+const int DRIVE_PIN = 2;    // Transistor base connected to digital pin 2
 
 // The setup() method runs once, when the sketch starts
 
-void setup()   {
+void setup()
+{
   // initialize the digital pin as an output:
-  pinMode(ledPin, OUTPUT);
+  pinMode(DRIVE_PIN, OUTPUT);
 }
 
 // the loop() method runs over and over again,
@@ -266,9 +267,9 @@ void setup()   {
 
 void loop()
 {
-  digitalWrite(ledPin, HIGH);   // set the LED on
+  digitalWrite(DRIVE_PIN, HIGH);// turn the Green LED on
   delay(1000);                  // wait for a second
-  digitalWrite(ledPin, LOW);    // set the LED off
+  digitalWrite(DRIVE_PIN, LOW); // turn the Red LED on
   delay(1000);                  // wait for a second
 }</pre>
 	</section>
@@ -276,7 +277,7 @@ void loop()
 		<h2>Not Working? <span>3 things to try</span></h2>
 		<div>
 			<h3>Nothing Happens</h3>
-			<p>The example code uses pin 13 and we have the relay connected to pin 2. Make sure you made this change in the code.</p>
+			<p>If you are familiar with the Blink code example, maybe you connected to pin 13. Verify that the transistor base is connected to pin 2.</p>
 		</div>
 		<div>
 			<h3>No Clicking Sound</h3>
@@ -290,7 +291,7 @@ void loop()
 	<section id="CIRC-makingBetter">
 		<h2>Making it Better?</h2>
 		<h3>Watch the Back-EMF Pulse</h3>
-		<p>Replace the 1N4001 diode with an LED. You´ll see it blink each time it "snubs" the coil voltage spike when it turns off.</p>
+		<p>Replace the 1N4001 diode with an LED. You´ll see it blink each time it "snubs" the coil voltage spike when it turns off. Make sure to get the LED the right way around. Here it is backwards from the way it would be connected to just turn it on from power. The power actually comes from the energy stored in the magnetic field of the relay coil, when the power is turned off.</p>
 		<h3>Controlling a Motor</h3>
 		<p>In CIRC-03 we controlled a motor using a transistor. However if you want to control a larger motor, a relay is a good option. To do this simply remove the red LED, and connect the motor in its place (remember to bypass the 560 Ohm resistor).</p>
 		<span class="sch-svg-container"><svg
